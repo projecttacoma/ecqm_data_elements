@@ -1,8 +1,19 @@
 # ecqm_data_elements
 
+This GitHub repository can be used with the [SHR Command-Line Interface](https://github.com/standardhealth/shr-cli) a Node.js command-line interface for parsing SHR text definitions and exporting them as FHIR profiles, CIMCORE JSON serialized files, JSON schema, ES6 classes, or a JSON document (for website generation).
+
+# Exporting ECQM Data Elements
+
+After setting up SHR Command-Line Interface, run the shr-cli tool using the following commands:
+
+```
+cd ~/cimpl/shr-cli
+node . ../ecqm_data_elements/cimpl -o ../ecqm_data_elements/out
+```
+
 # License
 
-Copyright 2016, 2017 The MITRE Corporation
+Copyright 2018 The MITRE Corporation
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

@@ -1,0 +1,1044 @@
+Grammar: DataElement 5.0
+Namespace: qdm.dataelement
+Description: "Insert Text Here"
+Uses: shr.core, shr.base, ecqm.valueset, ecqm.measure, qdm.attribute
+Abstract Element: QdmDataElement
+0..1 QdmCategory
+0..1 QdmDataType
+0..* Coding
+0..* CodingValueset
+Element: QdmDataType
+Description: "A datatype is the context in which each category is used to describe a part of the clinical care process. Examples of datatypes include ‘Medication, Active’ and ‘Medication, Administered’ as applied to the Medication category."
+Value: code from DataTypeVS
+Element: QdmCategory
+Description: "A category consists of a single clinical concept identified by a value set. A category is the highest level of definition for a QDM element. The QDM currently contains 19 categories. Some examples of categories are Medication, Procedure, Condition/Diagnosis/Problem, Communication, and Encounter."
+Value: code from CategoryVS
+EntryElement: AdverseEvent
+Based on: QdmDataElement
+Description: "Adverse Event is used to define any untoward medical occurrence associated with the clinical care delivery, whether or not considered drug related."
+CodingValueset is #adverse_event
+0..1 AdverseEventAuthorDatetime
+0..1 AdverseEventRelevantPeriod
+0..1 AdverseEventSeverity
+0..1 AdverseEventFacilityLocation
+0..1 AdverseEventType
+Element: AdverseEventAuthorDatetime
+Description: "Description of AuthorDatetime For AdverseEvent"
+Based on: AuthorDatetime
+Value: dateTime
+Element: AdverseEventRelevantPeriod
+Description: "The Relevant Period references: startTime – the time the adverse event began stopTime – the time the adverse event completed"
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: AdverseEventSeverity
+Description: "Description of Severity For AdverseEvent "
+Based on: Severity
+Value: Coding
+Element: AdverseEventFacilityLocation
+Description: "Description of FacilityLocation For AdverseEvent "
+Based on: FacilityLocation
+Value: Coding
+Element: AdverseEventType
+Description: "Description of Type For AdverseEvent "
+Based on: Type
+Value: Coding
+EntryElement: AllergyIntolerance
+Based on: QdmDataElement
+Description: "Allergy is used to address immune-mediated reactions to a substance such as type 1 hypersensitivity reactions, other allergy-like reactions, including pseudo-allergy. Intolerance is a record of a clinical assessment of a propensity, or a potential risk to an individual, to have a non-immune mediated adverse reaction on future exposure to the specified substance, or class of substance."
+CodingValueset is #allergy_intolerance
+0..1 AllergyIntoleranceAuthorDatetime
+0..1 AllergyIntolerancePrevalencePeriod
+0..1 AllergyIntoleranceType
+0..1 AllergyIntoleranceSeverity
+Element: AllergyIntoleranceAuthorDatetime
+Description: "Description of AuthorDatetime For AllergyIntolerance "
+Based on: AuthorDatetime
+Value: dateTime
+Element: AllergyIntolerancePrevalencePeriod
+Description: "Timing: The Prevalence Period references the time from the onset date to the abatement date."
+Based on: PrevalencePeriod
+Value: TimePeriod
+Element: AllergyIntoleranceType
+Description: "Description of Type For AllergyIntolerance "
+Based on: Type
+Value: Coding
+Element: AllergyIntoleranceSeverity
+Description: "Description of Severity For AllergyIntolerance "
+Based on: Severity
+Value: Coding
+EntryElement: Assessment
+Based on: QdmDataElement
+Description: "Assessment is a resource used to define specific observations that clinicians use to guide treatment of the patient. An assessment can be a single question, or observable entity with an expected response, an organized collection of questions intended to solicit information from patients, providers or other individuals, or a single observable entity that is part of such a collection of questions."
+CodingValueset is #assessment
+EntryElement: AssessmentPerformed
+Based on: Assessment
+Description: "Data elements that meet criteria using this datatype should document completion of the assessment indicated by the QDM category and its corresponding value set."
+QdmDataType is #performed
+QdmCategory is #assessment
+0..1 AssessmentPerformedAuthorDatetime
+0..1 AssessmentPerformedNegationRationale
+0..1 AssessmentPerformedReason
+0..1 AssessmentPerformedMethod
+0..1 AssessmentPerformedResult
+0..1 AssessmentPerformedComponents
+0..1 AssessmentPerformedRelatedTo
+Element: AssessmentPerformedAuthorDatetime
+Description: "The time the assessment is completed."
+Based on: AuthorDatetime
+Value: dateTime
+Element: AssessmentPerformedNegationRationale
+Description: "Description of NegationRationale For AssessmentPerformed "
+Based on: NegationRationale
+Value: Coding
+Element: AssessmentPerformedReason
+Description: "Description of Reason For AssessmentPerformed "
+Based on: Reason
+Value: Coding
+Element: AssessmentPerformedMethod
+Description: "Description of Method For AssessmentPerformed "
+Based on: Method
+Value: Coding
+Element: AssessmentPerformedResult
+Description: "Description of Result For AssessmentPerformed "
+Based on: Result
+Value: string
+Element: AssessmentPerformedComponents
+Description: "Description of Components For AssessmentPerformed "
+Based on: Components
+Value: string
+Element: AssessmentPerformedRelatedTo
+Description: "Description of RelatedTo For AssessmentPerformed "
+Based on: RelatedTo
+Value: string
+EntryElement: CommunicationFromPatientToProvider
+Based on: QdmDataElement
+Description: "Communication represents the transmission, receipt, or acknowledgement of information sent from a source to a recipient, such as from one clinician to another regarding findings, assessments, plans of care, consultative advice, instructions, educational resources, etc."
+CodingValueset is #communication_from_patient_to_provider
+0..1 CommunicationFromPatientToProviderAuthorDatetime
+0..1 CommunicationFromPatientToProviderRelatedTo
+0..1 CommunicationFromPatientToProviderNegationRationale
+Element: CommunicationFromPatientToProviderAuthorDatetime
+Description: "The time the communication is documented (specifically significant for negation rationale, i.e., Communication Not Performed)"
+Based on: AuthorDatetime
+Value: dateTime
+Element: CommunicationFromPatientToProviderRelatedTo
+Description: "Description of RelatedTo For CommunicationFromPatientToProvider "
+Based on: RelatedTo
+Value: string
+Element: CommunicationFromPatientToProviderNegationRationale
+Description: "Description of NegationRationale For CommunicationFromPatientToProvider "
+Based on: NegationRationale
+Value: Coding
+EntryElement: CommunicationFromProviderToPatient
+Based on: QdmDataElement
+Description: "Communication represents the transmission, receipt, or acknowledgement of information sent from a source to a recipient, such as from one clinician to another regarding findings, assessments, plans of care, consultative advice, instructions, educational resources, etc."
+CodingValueset is #communication_from_provider_to_patient
+0..1 CommunicationFromProviderToPatientAuthorDatetime
+0..1 CommunicationFromProviderToPatientRelatedTo
+0..1 CommunicationFromProviderToPatientNegationRationale
+Element: CommunicationFromProviderToPatientAuthorDatetime
+Description: "The time the communication is documented (specifically significant for negation rationale, i.e., Communication Not Performed)"
+Based on: AuthorDatetime
+Value: dateTime
+Element: CommunicationFromProviderToPatientRelatedTo
+Description: "Description of RelatedTo For CommunicationFromProviderToPatient "
+Based on: RelatedTo
+Value: string
+Element: CommunicationFromProviderToPatientNegationRationale
+Description: "Description of NegationRationale For CommunicationFromProviderToPatient "
+Based on: NegationRationale
+Value: Coding
+EntryElement: CommunicationFromProviderToProvider
+Based on: QdmDataElement
+Description: "Communication represents the transmission, receipt, or acknowledgement of information sent from a source to a recipient, such as from one clinician to another regarding findings, assessments, plans of care, consultative advice, instructions, educational resources, etc."
+CodingValueset is #communication_from_provider_to_provider
+0..1 CommunicationFromProviderToProviderAuthorDatetime
+0..1 CommunicationFromProviderToProviderRelatedTo
+0..1 CommunicationFromProviderToProviderNegationRationale
+Element: CommunicationFromProviderToProviderAuthorDatetime
+Description: "The time the communication is documented (specifically significant for negation rationale, i.e., Communication Not Performed)"
+Based on: AuthorDatetime
+Value: dateTime
+Element: CommunicationFromProviderToProviderRelatedTo
+Description: "Description of RelatedTo For CommunicationFromProviderToProvider "
+Based on: RelatedTo
+Value: string
+Element: CommunicationFromProviderToProviderNegationRationale
+Description: "Description of NegationRationale For CommunicationFromProviderToProvider "
+Based on: NegationRationale
+Value: Coding
+EntryElement: Device
+Based on: QdmDataElement
+Description: "Device represents an instrument, apparatus, implement, machine, contrivance, implant, in-vitro reagent, or other similar or related article, including a component part or accessory, intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease and not dependent on being metabolized to achieve any of its primary intended purposes. Documented evidence of a device may exist in a clinical record in various ways. A provider may document placement of a device as an intervention or procedure (e.g., the QDM datatypes Intervention, Performed, or Procedure, Performed). Example: Procedure, Performed: Pacemaker insertion. The provider may document presence of the device as a finding, perhaps including the finding on the problem list. Example: Diagnosis: Pacemaker present, or Assessment, Performed: Pacemaker present. A provider may also document the device in a specific device use statement or assessment. Example: Device, Applied: Transtelephonic monitoring of pacemaker assessment. e Note that the current use of the QDM datatype “Device, Applied” usually references the procedure to “apply” the device (i.e., to use for the patient, to use on the patient’s body, or to implant in the patient’s body). Each of these current uses should address the concept using the QDM datatypes, Intervention, Performed, or Procedure, Performed. Given the variation in determining evidence of device usage, a measure developer may need to include multiple queries (or retrieves) to assure capture of all devices present in the measure population. The QDM datatype, Device, Applied, provides the best method to determine specific details about the device in use if a device usage assessment exists to provide such information. It also allow a measure developer to expicitly express which devices should be included in the query."
+CodingValueset is #device
+EntryElement: DeviceApplied
+Based on: Device
+Description: "Data elements that meet criteria using this datatype should document that the device indicated by the QDM category and its corresponding value set is in use, or impacts or alters the treatment, care plan, or encounter (e.g., an antithrombotic device has been placed on the patient's legs to prevent thromboembolism, or a cardiac pacemaker is in place)."
+QdmDataType is #applied
+QdmCategory is #device
+0..1 DeviceAppliedAuthorDatetime
+0..1 DeviceAppliedRelevantPeriod
+0..1 DeviceAppliedNegationRationale
+0..1 DeviceAppliedReason
+0..1 DeviceAppliedAnatomicalLocationSite
+0..1 DeviceAppliedAnatomicalApproachSite
+Element: DeviceAppliedAuthorDatetime
+Description: "Description of AuthorDatetime For DeviceApplied "
+Based on: AuthorDatetime
+Value: dateTime
+Element: DeviceAppliedRelevantPeriod
+Description: "The Relevant Period addresses: startTime – When the device is inserted or first used, stopTime – when the device is removed or last used"
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: DeviceAppliedNegationRationale
+Description: "Description of NegationRationale For DeviceApplied "
+Based on: NegationRationale
+Value: Coding
+Element: DeviceAppliedReason
+Description: "Description of Reason For DeviceApplied "
+Based on: Reason
+Value: Coding
+Element: DeviceAppliedAnatomicalLocationSite
+Description: "Description of AnatomicalLocationSite For DeviceApplied "
+Based on: AnatomicalLocationSite
+Value: Coding
+Element: DeviceAppliedAnatomicalApproachSite
+Description: "Description of AnatomicalApproachSite For DeviceApplied "
+Based on: AnatomicalApproachSite
+Value: Coding
+EntryElement: DeviceOrder
+Based on: Device
+Description: "Data elements that meet criteria using this datatype should document an order for the device indicated by the QDM category and its corresponding value set."
+QdmDataType is #order
+QdmCategory is #device
+0..1 DeviceOrderAuthorDatetime
+0..1 DeviceOrderNegationRationale
+0..1 DeviceOrderReason
+Element: DeviceOrderAuthorDatetime
+Description: "The time the order is signed."
+Based on: AuthorDatetime
+Value: dateTime
+Element: DeviceOrderNegationRationale
+Description: "Description of NegationRationale For DeviceOrder "
+Based on: NegationRationale
+Value: Coding
+Element: DeviceOrderReason
+Description: "Description of Reason For DeviceOrder "
+Based on: Reason
+Value: Coding
+EntryElement: Diagnosis
+Based on: QdmDataElement
+Description: "Data elements that meet criteria using this datatype should document the Condition/Diagnosis/Problem and its corresponding value set. The onset dateTime corresponds to the implicit start dateTime of the datatype and the abatement dateTime corresponds to the implicit stop dateTime of the datatype. If the abatement dateTime is not present, then the diagnosis is considered to still be active. When this datatype is used with timing relationships, the criterion is looking for an active diagnosis for the time frame indicated by the timing relationships."
+CodingValueset is #diagnosis
+0..1 DiagnosisAuthorDatetime
+0..1 DiagnosisPrevalencePeriod
+0..1 DiagnosisAnatomicalLocationSite
+0..1 DiagnosisSeverity
+Element: DiagnosisAuthorDatetime
+Description: "Description of AuthorDatetime For Diagnosis "
+Based on: AuthorDatetime
+Value: dateTime
+Element: DiagnosisPrevalencePeriod
+Description: "The Prevalence Period references the time from the onset date to the abatement date."
+Based on: PrevalencePeriod
+Value: TimePeriod
+Element: DiagnosisAnatomicalLocationSite
+Description: "Description of AnatomicalLocationSite For Diagnosis "
+Based on: AnatomicalLocationSite
+Value: Coding
+Element: DiagnosisSeverity
+Description: "Description of Severity For Diagnosis "
+Based on: Severity
+Value: Coding
+EntryElement: DiagnosticStudy
+Based on: QdmDataElement
+Description: "Diagnostic Study represents any kind of medical test performed as a specific test or series of steps to aid in diagnosing or detecting disease (e.g., to establish a diagnosis, measure the progress or recovery from disease, confirm that a person is free from disease).13 The QDM defines diagnostic studies as those that are not performed in organizations that perform testing on samples of human blood, tissue, or other substance from the body. Diagnostic studies may make use of digital images and textual reports. Such studies include but are not limited to imaging studies, cardiology studies (electrocardiogram, treadmill stress testing), pulmonary-function testing, vascular laboratory testing, and others."
+CodingValueset is #diagnostic_study
+EntryElement: DiagnosticStudyOrder
+Based on: DiagnosticStudy
+Description: "Data elements that meet criteria using this datatype should document a request by a clinician or appropriately licensed care provider to an appropriate provider or organization to perform the diagnostic study indicated by the QDM category and its corresponding value set. The request may be in the form of a consultation or a direct order to the organization that performs the diagnostic study. Diagnostic studies are those that are not performed in the clinical laboratory. Such studies include but are not limited to imaging studies, cardiology studies (electrocardiogram, treadmill stress testing), pulmonary function testing, vascular laboratory testing, and others."
+QdmDataType is #order
+QdmCategory is #diagnostic_study
+0..1 DiagnosticStudyOrderAuthorDatetime
+0..1 DiagnosticStudyOrderReason
+0..1 DiagnosticStudyOrderMethod
+0..1 DiagnosticStudyOrderNegationRationale
+Element: DiagnosticStudyOrderAuthorDatetime
+Description: "The time the order is signed"
+Based on: AuthorDatetime
+Value: dateTime
+Element: DiagnosticStudyOrderReason
+Description: "Description of Reason For DiagnosticStudyOrder "
+Based on: Reason
+Value: Coding
+Element: DiagnosticStudyOrderMethod
+Description: "Description of Method For DiagnosticStudyOrder "
+Based on: Method
+Value: Coding
+Element: DiagnosticStudyOrderNegationRationale
+Description: "Description of NegationRationale For DiagnosticStudyOrder "
+Based on: NegationRationale
+Value: Coding
+EntryElement: DiagnosticStudyPerformed
+Based on: DiagnosticStudy
+Description: "Data elements that meet criteria using this datatype should document the completion of the diagnostic study indicated by the QDM category and its corresponding value set."
+QdmDataType is #performed
+QdmCategory is #diagnostic_study
+0..1 DiagnosticStudyPerformedAuthorDatetime
+0..1 DiagnosticStudyPerformedRelevantPeriod
+0..1 DiagnosticStudyPerformedReason
+0..1 DiagnosticStudyPerformedResult
+0..1 DiagnosticStudyPerformedResultDatetime
+0..1 DiagnosticStudyPerformedStatus
+0..1 DiagnosticStudyPerformedMethod
+0..1 DiagnosticStudyPerformedFacilityLocation
+0..1 DiagnosticStudyPerformedNegationRationale
+0..1 DiagnosticStudyPerformedComponents
+Element: DiagnosticStudyPerformedAuthorDatetime
+Description: "Description of AuthorDatetime For DiagnosticStudyPerformed "
+Based on: AuthorDatetime
+Value: dateTime
+Element: DiagnosticStudyPerformedRelevantPeriod
+Description: "startTime – when the diagnostic study is initiated, stopTime – when the diagnostic study is completed"
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: DiagnosticStudyPerformedReason
+Description: "Description of Reason For DiagnosticStudyPerformed "
+Based on: Reason
+Value: Coding
+Element: DiagnosticStudyPerformedResult
+Description: "Description of Result For DiagnosticStudyPerformed "
+Based on: Result
+Value: string
+Element: DiagnosticStudyPerformedResultDatetime
+Description: "Description of ResultDatetime For DiagnosticStudyPerformed "
+Based on: ResultDatetime
+Value: dateTime
+Element: DiagnosticStudyPerformedStatus
+Description: "Description of Status For DiagnosticStudyPerformed "
+Based on: Status
+Value: Coding
+Element: DiagnosticStudyPerformedMethod
+Description: "Description of Method For DiagnosticStudyPerformed "
+Based on: Method
+Value: Coding
+Element: DiagnosticStudyPerformedFacilityLocation
+Description: "Description of FacilityLocation For DiagnosticStudyPerformed "
+Based on: FacilityLocation
+Value: Coding
+Element: DiagnosticStudyPerformedNegationRationale
+Description: "Description of NegationRationale For DiagnosticStudyPerformed "
+Based on: NegationRationale
+Value: Coding
+Element: DiagnosticStudyPerformedComponents
+Description: "Description of Components For DiagnosticStudyPerformed "
+Based on: Components
+Value: string
+EntryElement: Encounter
+Based on: QdmDataElement
+Description: "Encounter represents an identifiable grouping of healthcare-related activities characterized by the entity relationship between the subject of care and a healthcare provider; such a grouping is determined by the healthcare provider.14 A patient encounter represents interaction between a healthcare provider and a patient with a face-to-face patient visit to a clinician’s office, or any electronically remote interaction with a clinician for any form of diagnostic treatment or therapeutic event. Encounters can be billable events but are not limited to billable interactions. Each encounter has an associated location or modality within which it occurred (such as an office, home, electronic methods, phone encounter, or telemedicine methods). The encounter location is the patient’s location at the time of measurement. Different levels of interaction can be specified in the value associated with the element while modes of interaction (e.g., telephone) may be modeled using the data flow attribute."
+CodingValueset is #encounter
+EntryElement: EncounterOrder
+Based on: Encounter
+Description: "Data elements that meet criteria using this datatype should document that an order for the encounter indicated by the QDM category and its corresponding value set has been recommended."
+QdmDataType is #order
+QdmCategory is #encounter
+0..1 EncounterOrderAuthorDatetime
+0..1 EncounterOrderReason
+0..1 EncounterOrderFacilityLocation
+0..1 EncounterOrderNegationRationale
+Element: EncounterOrderAuthorDatetime
+Description: "Description of AuthorDatetime For EncounterOrder "
+Based on: AuthorDatetime
+Value: dateTime
+Element: EncounterOrderReason
+Description: "Description of Reason For EncounterOrder "
+Based on: Reason
+Value: Coding
+Element: EncounterOrderFacilityLocation
+Description: "Description of FacilityLocation For EncounterOrder "
+Based on: FacilityLocation
+Value: Coding
+Element: EncounterOrderNegationRationale
+Description: "Description of NegationRationale For EncounterOrder "
+Based on: NegationRationale
+Value: Coding
+EntryElement: EncounterPerformed
+Based on: Encounter
+Description: " Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed."
+QdmDataType is #performed
+QdmCategory is #encounter
+0..1 EncounterPerformedAuthorDatetime
+0..1 EncounterPerformedAdmissionSource
+0..1 EncounterPerformedRelevantPeriod
+0..1 EncounterPerformedDischargeDisposition
+0..1 EncounterPerformedFacilityLocations
+0..1 EncounterPerformedDiagnoses
+0..1 EncounterPerformedPrincipalDiagnosis
+0..1 EncounterPerformedNegationRationale
+0..1 EncounterPerformedLengthOfStay
+Element: EncounterPerformedAuthorDatetime
+Description: "Description of AuthorDatetime For EncounterPerformed "
+Based on: AuthorDatetime
+Value: dateTime
+Element: EncounterPerformedAdmissionSource
+Description: "Description of AdmissionSource For EncounterPerformed "
+Based on: AdmissionSource
+Value: Coding
+Element: EncounterPerformedRelevantPeriod
+Description: "Description of RelevantPeriod For EncounterPerformed "
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: EncounterPerformedDischargeDisposition
+Description: "Description of DischargeDisposition For EncounterPerformed "
+Based on: DischargeDisposition
+Value: Coding
+Element: EncounterPerformedFacilityLocations
+Description: "Description of FacilityLocations For EncounterPerformed "
+Based on: FacilityLocations
+Value: string
+Element: EncounterPerformedDiagnoses
+Description: "Description of Diagnoses For EncounterPerformed "
+Based on: Diagnoses
+Value: CodeableConcept
+Element: EncounterPerformedPrincipalDiagnosis
+Description: "Description of PrincipalDiagnosis For EncounterPerformed "
+Based on: PrincipalDiagnosis
+Value: Coding
+Element: EncounterPerformedNegationRationale
+Description: "Description of NegationRationale For EncounterPerformed "
+Based on: NegationRationale
+Value: Coding
+Element: EncounterPerformedLengthOfStay
+Description: "Description of LengthOfStay For EncounterPerformed "
+Based on: LengthOfStay
+Value: Quantity
+EntryElement: Immunization
+Based on: QdmDataElement
+Description: "Immunization represents vaccines administered to patients in healthcare settings but does not include non-vaccine agents."
+CodingValueset is #immunization
+EntryElement: ImmunizationAdministered
+Based on: Immunization
+Description: "Data elements that meet criteria using this datatype should document that the vaccine indicated by the QDM category and its corresponding value set was actually administered to the patient."
+QdmDataType is #administered
+QdmCategory is #immunization
+0..1 ImmunizationAdministeredAuthorDatetime
+0..1 ImmunizationAdministeredReason
+0..1 ImmunizationAdministeredDosage
+0..1 ImmunizationAdministeredSupply
+0..1 ImmunizationAdministeredRoute
+0..1 ImmunizationAdministeredNegationRationale
+Element: ImmunizationAdministeredAuthorDatetime
+Description: "Description of AuthorDatetime For ImmunizationAdministered "
+Based on: AuthorDatetime
+Value: dateTime
+Element: ImmunizationAdministeredReason
+Description: "Description of Reason For ImmunizationAdministered "
+Based on: Reason
+Value: Coding
+Element: ImmunizationAdministeredDosage
+Description: "Description of Dosage For ImmunizationAdministered "
+Based on: Dosage
+Value: Quantity
+Element: ImmunizationAdministeredSupply
+Description: "Description of Supply For ImmunizationAdministered "
+Based on: Supply
+Value: Quantity
+Element: ImmunizationAdministeredRoute
+Description: "Description of Route For ImmunizationAdministered "
+Based on: Route
+Value: Coding
+Element: ImmunizationAdministeredNegationRationale
+Description: "Description of NegationRationale For ImmunizationAdministered "
+Based on: NegationRationale
+Value: Coding
+EntryElement: Intervention
+Based on: QdmDataElement
+Description: "Intervention represents a course of action intended to achieve a result in the care of persons with health problems that does not involve direct physical contact with a patient. Examples include patient education and therapeutic communication. The QDM User Group carefully considered merging the Intervention and Procedure QDM categories as each is modeled identically and interoperability standards does not differentiate between interventions and procedures. However, the measure developers prefer to retain the intervention and procedure categories as they are more clinically expressive for clinicians to understand the measure intent."
+CodingValueset is #intervention
+EntryElement: InterventionOrder
+Based on: Intervention
+Description: " Data elements that meet criteria using this datatype should document a request to perform the intervention indicated by the QDM category and its corresponding value set."
+QdmDataType is #order
+QdmCategory is #intervention
+0..1 InterventionOrderAuthorDatetime
+0..1 InterventionOrderReason
+0..1 InterventionOrderNegationRationale
+Element: InterventionOrderAuthorDatetime
+Description: "Description of AuthorDatetime For InterventionOrder "
+Based on: AuthorDatetime
+Value: dateTime
+Element: InterventionOrderReason
+Description: "Description of Reason For InterventionOrder "
+Based on: Reason
+Value: Coding
+Element: InterventionOrderNegationRationale
+Description: "Description of NegationRationale For InterventionOrder "
+Based on: NegationRationale
+Value: Coding
+EntryElement: InterventionPerformed
+Based on: Intervention
+Description: "Data elements that meet criteria using this datatype should document the completion of the intervention indicated by the QDM category and its corresponding value set."
+QdmDataType is #performed
+QdmCategory is #intervention
+0..1 InterventionPerformedAuthorDatetime
+0..1 InterventionPerformedRelevantPeriod
+0..1 InterventionPerformedReason
+0..1 InterventionPerformedResult
+0..1 InterventionPerformedStatus
+0..1 InterventionPerformedNegationRationale
+Element: InterventionPerformedAuthorDatetime
+Description: "Description of AuthorDatetime For InterventionPerformed "
+Based on: AuthorDatetime
+Value: dateTime
+Element: InterventionPerformedRelevantPeriod
+Description: "Description of RelevantPeriod For InterventionPerformed "
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: InterventionPerformedReason
+Description: "Description of Reason For InterventionPerformed "
+Based on: Reason
+Value: Coding
+Element: InterventionPerformedResult
+Description: "Description of Result For InterventionPerformed "
+Based on: Result
+Value: string
+Element: InterventionPerformedStatus
+Description: "Description of Status For InterventionPerformed "
+Based on: Status
+Value: Coding
+Element: InterventionPerformedNegationRationale
+Description: "Description of NegationRationale For InterventionPerformed "
+Based on: NegationRationale
+Value: Coding
+EntryElement: LaboratoryTest
+Based on: QdmDataElement
+Description: "Laboratory Test represents a medical procedure that involves testing a sample of blood, urine, or other substance from the body. Tests can help determine a diagnosis, plan treatment, check to see if treatment is working, or monitor the disease over time.15 This QDM data category for Laboratory Test is only used for information about the subject of record."
+CodingValueset is #laboratory_test
+EntryElement: LaboratoryTestOrder
+Based on: LaboratoryTest
+Description: "Data elements that meet criteria using this datatype should document a request for the laboratory test indicated by the QDM category and its corresponding value set."
+QdmDataType is #order
+QdmCategory is #laboratory_test
+0..1 LaboratoryTestOrderAuthorDatetime
+0..1 LaboratoryTestOrderReason
+0..1 LaboratoryTestOrderMethod
+0..1 LaboratoryTestOrderNegationRationale
+Element: LaboratoryTestOrderAuthorDatetime
+Description: "Description of AuthorDatetime For LaboratoryTestOrder "
+Based on: AuthorDatetime
+Value: dateTime
+Element: LaboratoryTestOrderReason
+Description: "Description of Reason For LaboratoryTestOrder "
+Based on: Reason
+Value: Coding
+Element: LaboratoryTestOrderMethod
+Description: "Description of Method For LaboratoryTestOrder "
+Based on: Method
+Value: Coding
+Element: LaboratoryTestOrderNegationRationale
+Description: "Description of NegationRationale For LaboratoryTestOrder "
+Based on: NegationRationale
+Value: Coding
+EntryElement: LaboratoryTestPerformed
+Based on: LaboratoryTest
+Description: "Data elements that meet criteria using this datatype should document the laboratory test indicated by the QDM category and its corresponding value set was performed."
+QdmDataType is #performed
+QdmCategory is #laboratory_test
+0..1 LaboratoryTestPerformedAuthorDatetime
+0..1 LaboratoryTestPerformedRelevantPeriod
+0..1 LaboratoryTestPerformedStatus
+0..1 LaboratoryTestPerformedMethod
+0..1 LaboratoryTestPerformedResult
+0..1 LaboratoryTestPerformedResultDatetime
+0..1 LaboratoryTestPerformedReason
+0..1 LaboratoryTestPerformedReferenceRange
+0..1 LaboratoryTestPerformedNegationRationale
+0..1 LaboratoryTestPerformedComponents
+Element: LaboratoryTestPerformedAuthorDatetime
+Description: "Description of AuthorDatetime For LaboratoryTestPerformed "
+Based on: AuthorDatetime
+Value: dateTime
+Element: LaboratoryTestPerformedRelevantPeriod
+Description: "Description of RelevantPeriod For LaboratoryTestPerformed "
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: LaboratoryTestPerformedStatus
+Description: "Description of Status For LaboratoryTestPerformed "
+Based on: Status
+Value: Coding
+Element: LaboratoryTestPerformedMethod
+Description: "Description of Method For LaboratoryTestPerformed "
+Based on: Method
+Value: Coding
+Element: LaboratoryTestPerformedResult
+Description: "Description of Result For LaboratoryTestPerformed "
+Based on: Result
+Value: string
+Element: LaboratoryTestPerformedResultDatetime
+Description: "Description of ResultDatetime For LaboratoryTestPerformed "
+Based on: ResultDatetime
+Value: dateTime
+Element: LaboratoryTestPerformedReason
+Description: "Description of Reason For LaboratoryTestPerformed "
+Based on: Reason
+Value: Coding
+Element: LaboratoryTestPerformedReferenceRange
+Description: "Description of ReferenceRange For LaboratoryTestPerformed "
+Based on: ReferenceRange
+Value: Range
+Element: LaboratoryTestPerformedNegationRationale
+Description: "Description of NegationRationale For LaboratoryTestPerformed "
+Based on: NegationRationale
+Value: Coding
+Element: LaboratoryTestPerformedComponents
+Description: "Description of Components For LaboratoryTestPerformed "
+Based on: Components
+Value: string
+EntryElement: Medication
+Based on: QdmDataElement
+Description: "Medication represents clinical drugs or chemical substances intended for use in the medical diagnosis, cure, treatment, or prevention of disease. Medications are defined as direct referenced values or value sets containing values derived from code systems such as RxNorm."
+CodingValueset is #medication
+EntryElement: MedicationActive
+Based on: Medication
+Description: " Data elements that meet criteria using this datatype should document that the medication indicated by the QDM category and its corresponding value set is being taken by the patient. Keep in mind that when this datatype is used with timing relationships, the criterion is looking for a medication being taken for the time frame indicated by the timing relationships."
+QdmDataType is #active
+QdmCategory is #medication
+0..1 MedicationActiveRelevantPeriod
+0..1 MedicationActiveDosage
+0..1 MedicationActiveSupply
+0..1 MedicationActiveFrequency
+0..1 MedicationActiveRoute
+Element: MedicationActiveRelevantPeriod
+Description: "Description of RelevantPeriod For MedicationActive "
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: MedicationActiveDosage
+Description: "Description of Dosage For MedicationActive "
+Based on: Dosage
+Value: Quantity
+Element: MedicationActiveSupply
+Description: "Description of Supply For MedicationActive "
+Based on: Supply
+Value: Quantity
+Element: MedicationActiveFrequency
+Description: "Description of Frequency For MedicationActive "
+Based on: Frequency
+Value: Coding
+Element: MedicationActiveRoute
+Description: "Description of Route For MedicationActive "
+Based on: Route
+Value: Coding
+EntryElement: MedicationAdministered
+Based on: Medication
+Description: "Data elements that meet criteria using this datatype should document that the medication indicated by the QDM category and its corresponding value set was actually administered to the patient."
+QdmDataType is #administered
+QdmCategory is #medication
+0..1 MedicationAdministeredAuthorDatetime
+0..1 MedicationAdministeredRelevantPeriod
+0..1 MedicationAdministeredDosage
+0..1 MedicationAdministeredSupply
+0..1 MedicationAdministeredFrequency
+0..1 MedicationAdministeredRoute
+0..1 MedicationAdministeredReason
+0..1 MedicationAdministeredNegationRationale
+Element: MedicationAdministeredAuthorDatetime
+Description: "Description of AuthorDatetime For MedicationAdministered "
+Based on: AuthorDatetime
+Value: dateTime
+Element: MedicationAdministeredRelevantPeriod
+Description: "Description of RelevantPeriod For MedicationAdministered "
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: MedicationAdministeredDosage
+Description: "Description of Dosage For MedicationAdministered "
+Based on: Dosage
+Value: Quantity
+Element: MedicationAdministeredSupply
+Description: "Description of Supply For MedicationAdministered "
+Based on: Supply
+Value: Quantity
+Element: MedicationAdministeredFrequency
+Description: "Description of Frequency For MedicationAdministered "
+Based on: Frequency
+Value: Coding
+Element: MedicationAdministeredRoute
+Description: "Description of Route For MedicationAdministered "
+Based on: Route
+Value: Coding
+Element: MedicationAdministeredReason
+Description: "Description of Reason For MedicationAdministered "
+Based on: Reason
+Value: Coding
+Element: MedicationAdministeredNegationRationale
+Description: "Description of NegationRationale For MedicationAdministered "
+Based on: NegationRationale
+Value: Coding
+EntryElement: MedicationDischarge
+Based on: Medication
+Description: "Data elements that meet criteria using this datatype should document that the medications indicated by the QDM category and its corresponding value set should be taken by or given to the patient after being discharged from an inpatient encounter."
+QdmDataType is #discharge
+QdmCategory is #medication
+0..1 MedicationDischargeAuthorDatetime
+0..1 MedicationDischargeRefills
+0..1 MedicationDischargeDosage
+0..1 MedicationDischargeSupply
+0..1 MedicationDischargeFrequency
+0..1 MedicationDischargeRoute
+0..1 MedicationDischargeNegationRationale
+Element: MedicationDischargeAuthorDatetime
+Description: "Description of AuthorDatetime For MedicationDischarge "
+Based on: AuthorDatetime
+Value: dateTime
+Element: MedicationDischargeRefills
+Description: "Description of Refills For MedicationDischarge "
+Based on: Refills
+Value: integer
+Element: MedicationDischargeDosage
+Description: "Description of Dosage For MedicationDischarge "
+Based on: Dosage
+Value: Quantity
+Element: MedicationDischargeSupply
+Description: "Description of Supply For MedicationDischarge "
+Based on: Supply
+Value: Quantity
+Element: MedicationDischargeFrequency
+Description: "Description of Frequency For MedicationDischarge "
+Based on: Frequency
+Value: Coding
+Element: MedicationDischargeRoute
+Description: "Description of Route For MedicationDischarge "
+Based on: Route
+Value: Coding
+Element: MedicationDischargeNegationRationale
+Description: "Description of NegationRationale For MedicationDischarge "
+Based on: NegationRationale
+Value: Coding
+EntryElement: MedicationDispensed
+Based on: Medication
+Description: "Data elements that meet criteria using this datatype should document that a prescription for the medication indicated by the QDM category and its corresponding value set has been dispensed and provided to the patient or patient proxy. In the ambulatory setting, medications are primarily taken directly by patients and not directly observed. Hence, dispensed, or fulfillment, information is the closest health provider documentation of medication compliance. In settings where patients attest to taking medications in electronic format (perhaps a Personal Health Record), patient attestation of medication taken may be available. The QDM datatype, Medication, Administered addresses medication taken; to address the source of the information, a measure addressing such patient attestation would require use of the dataflow attribute, source."
+QdmDataType is #dispensed
+QdmCategory is #medication
+0..1 MedicationDispensedAuthorDatetime
+0..1 MedicationDispensedRelevantPeriod
+0..1 MedicationDispensedRefills
+0..1 MedicationDispensedDosage
+0..1 MedicationDispensedSupply
+0..1 MedicationDispensedFrequency
+0..1 MedicationDispensedRoute
+0..1 MedicationDispensedNegationRationale
+Element: MedicationDispensedAuthorDatetime
+Description: "Description of AuthorDatetime For MedicationDispensed "
+Based on: AuthorDatetime
+Value: dateTime
+Element: MedicationDispensedRelevantPeriod
+Description: "Description of RelevantPeriod For MedicationDispensed "
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: MedicationDispensedRefills
+Description: "Description of Refills For MedicationDispensed "
+Based on: Refills
+Value: integer
+Element: MedicationDispensedDosage
+Description: "Description of Dosage For MedicationDispensed "
+Based on: Dosage
+Value: Quantity
+Element: MedicationDispensedSupply
+Description: "Description of Supply For MedicationDispensed "
+Based on: Supply
+Value: Quantity
+Element: MedicationDispensedFrequency
+Description: "Description of Frequency For MedicationDispensed "
+Based on: Frequency
+Value: Coding
+Element: MedicationDispensedRoute
+Description: "Description of Route For MedicationDispensed "
+Based on: Route
+Value: Coding
+Element: MedicationDispensedNegationRationale
+Description: "Description of NegationRationale For MedicationDispensed "
+Based on: NegationRationale
+Value: Coding
+EntryElement: MedicationOrder
+Based on: Medication
+Description: "Data elements that meet criteria using this datatype should document a request to a pharmacy to provide the medication indicated by the QDM category and its corresponding value set."
+QdmDataType is #order
+QdmCategory is #medication
+0..1 MedicationOrderActiveDatetime
+0..1 MedicationOrderRelevantPeriod
+0..1 MedicationOrderAuthorDatetime
+0..1 MedicationOrderRefills
+0..1 MedicationOrderDosage
+0..1 MedicationOrderSupply
+0..1 MedicationOrderFrequency
+0..1 MedicationOrderRoute
+0..1 MedicationOrderMethod
+0..1 MedicationOrderReason
+0..1 MedicationOrderNegationRationale
+Element: MedicationOrderActiveDatetime
+Description: "Description of ActiveDatetime For MedicationOrder "
+Based on: ActiveDatetime
+Value: dateTime
+Element: MedicationOrderRelevantPeriod
+Description: "Description of RelevantPeriod For MedicationOrder "
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: MedicationOrderAuthorDatetime
+Description: "Description of AuthorDatetime For MedicationOrder "
+Based on: AuthorDatetime
+Value: dateTime
+Element: MedicationOrderRefills
+Description: "Description of Refills For MedicationOrder "
+Based on: Refills
+Value: integer
+Element: MedicationOrderDosage
+Description: "Description of Dosage For MedicationOrder "
+Based on: Dosage
+Value: Quantity
+Element: MedicationOrderSupply
+Description: "Description of Supply For MedicationOrder "
+Based on: Supply
+Value: Quantity
+Element: MedicationOrderFrequency
+Description: "Description of Frequency For MedicationOrder "
+Based on: Frequency
+Value: Coding
+Element: MedicationOrderRoute
+Description: "Description of Route For MedicationOrder "
+Based on: Route
+Value: Coding
+Element: MedicationOrderMethod
+Description: "Description of Method For MedicationOrder "
+Based on: Method
+Value: Coding
+Element: MedicationOrderReason
+Description: "Description of Reason For MedicationOrder "
+Based on: Reason
+Value: Coding
+Element: MedicationOrderNegationRationale
+Description: "Description of NegationRationale For MedicationOrder "
+Based on: NegationRationale
+Value: Coding
+EntryElement: PatientCharacteristicEthnicity
+Based on: QdmDataElement
+Description: "Data elements that meet criteria using this datatype should document that the patient has one or more of the ethnicities indicated by the QDM category and its corresponding value set."
+CodingValueset is #patient_characteristic_ethnicity
+EntryElement: PatientCharacteristicGender
+Based on: QdmDataElement
+Description: "Data elements that meet criteria using this datatype should document that the patient's sex matches the QDM category and its corresponding value set."
+CodingValueset is #patient_characteristic_gender
+EntryElement: PatientCharacteristicPayer
+Based on: QdmDataElement
+Description: "Data elements that meet criteria using this datatype should document that the patient has one or more of the payers indicated by the QDM category and its corresponding value set."
+CodingValueset is #patient_characteristic_payer
+0..1 PatientCharacteristicPayerRelevantPeriod
+Element: PatientCharacteristicPayerRelevantPeriod
+Description: "Description of RelevantPeriod For PatientCharacteristicPayer "
+Based on: RelevantPeriod
+Value: TimePeriod
+EntryElement: PatientCharacteristicRace
+Based on: QdmDataElement
+Description: "Data elements that meet criteria using this datatype should document the patient’s race."
+CodingValueset is #patient_characteristic_race
+EntryElement: PhysicalExam
+Based on: QdmDataElement
+Description: "Physical Exam represents the evaluation of the patient's body and/or mental status exam to determine its state of health. The techniques of examination can include palpation (feeling with the hands or fingers), percussion (tapping with the fingers), auscultation (listening), visual inspection or observation, inquisition and smell. Measurements may include vital signs (blood pressure, pulse, respiration) as well as other clinical measures (such as expiratory flow rate and size of lesion). Physical exam includes psychiatric examinations."
+CodingValueset is #physical_exam
+EntryElement: PhysicalExamPerformed
+Based on: PhysicalExam
+Description: "Data elements that meet criteria using this datatype should document the completion of the physical exam indicated by the QDM category and its corresponding value set."
+QdmDataType is #performed
+QdmCategory is #physical_exam
+0..1 PhysicalExamPerformedAuthorDatetime
+0..1 PhysicalExamPerformedRelevantPeriod
+0..1 PhysicalExamPerformedReason
+0..1 PhysicalExamPerformedMethod
+0..1 PhysicalExamPerformedResult
+0..1 PhysicalExamPerformedAnatomicalLocationSite
+0..1 PhysicalExamPerformedNegationRationale
+0..1 PhysicalExamPerformedComponents
+Element: PhysicalExamPerformedAuthorDatetime
+Description: "Description of AuthorDatetime For PhysicalExamPerformed "
+Based on: AuthorDatetime
+Value: dateTime
+Element: PhysicalExamPerformedRelevantPeriod
+Description: "Description of RelevantPeriod For PhysicalExamPerformed "
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: PhysicalExamPerformedReason
+Description: "Description of Reason For PhysicalExamPerformed "
+Based on: Reason
+Value: Coding
+Element: PhysicalExamPerformedMethod
+Description: "Description of Method For PhysicalExamPerformed "
+Based on: Method
+Value: Coding
+Element: PhysicalExamPerformedResult
+Description: "Description of Result For PhysicalExamPerformed "
+Based on: Result
+Value: string
+Element: PhysicalExamPerformedAnatomicalLocationSite
+Description: "Description of AnatomicalLocationSite For PhysicalExamPerformed "
+Based on: AnatomicalLocationSite
+Value: Coding
+Element: PhysicalExamPerformedNegationRationale
+Description: "Description of NegationRationale For PhysicalExamPerformed "
+Based on: NegationRationale
+Value: Coding
+Element: PhysicalExamPerformedComponents
+Description: "Description of Components For PhysicalExamPerformed "
+Based on: Components
+Value: string
+EntryElement: Procedure
+Based on: QdmDataElement
+Description: "and primary outcome (post-condition) is the alteration of the physical condition of the subject. ... Procedure is but one among several types of clinical activities such as observation, substance- administrations, and communicative interactions ... Procedure does not comprise all acts of [sic] whose intent is intervention or treatment.”18 A procedure may be a surgery or other type of physical manipulation of a person’s body in whole or in part for purposes of making observations and diagnoses or providing treatment."
+CodingValueset is #procedure
+EntryElement: ProcedureOrder
+Based on: Procedure
+Description: "Data elements that meet criteria using this datatype should document a request for the procedure indicated by the QDM category and its corresponding value set."
+QdmDataType is #order
+QdmCategory is #procedure
+0..1 ProcedureOrderAuthorDatetime
+0..1 ProcedureOrderReason
+0..1 ProcedureOrderMethod
+0..1 ProcedureOrderAnatomicalApproachSite
+0..1 ProcedureOrderAnatomicalLocationSite
+0..1 ProcedureOrderOrdinality
+0..1 ProcedureOrderNegationRationale
+Element: ProcedureOrderAuthorDatetime
+Description: "Description of AuthorDatetime For ProcedureOrder "
+Based on: AuthorDatetime
+Value: dateTime
+Element: ProcedureOrderReason
+Description: "Description of Reason For ProcedureOrder "
+Based on: Reason
+Value: Coding
+Element: ProcedureOrderMethod
+Description: "Description of Method For ProcedureOrder "
+Based on: Method
+Value: Coding
+Element: ProcedureOrderAnatomicalApproachSite
+Description: "Description of AnatomicalApproachSite For ProcedureOrder "
+Based on: AnatomicalApproachSite
+Value: Coding
+Element: ProcedureOrderAnatomicalLocationSite
+Description: "Description of AnatomicalLocationSite For ProcedureOrder "
+Based on: AnatomicalLocationSite
+Value: Coding
+Element: ProcedureOrderOrdinality
+Description: "Description of Ordinality For ProcedureOrder "
+Based on: Ordinality
+Value: Coding
+Element: ProcedureOrderNegationRationale
+Description: "Description of NegationRationale For ProcedureOrder "
+Based on: NegationRationale
+Value: Coding
+EntryElement: ProcedurePerformed
+Based on: Procedure
+Description: "Data elements that meet criteria using this datatype should document the completion of the procedure indicated by the QDM category and its corresponding value set."
+QdmDataType is #performed
+QdmCategory is #procedure
+0..1 ProcedurePerformedAuthorDatetime
+0..1 ProcedurePerformedRelevantPeriod
+0..1 ProcedurePerformedReason
+0..1 ProcedurePerformedMethod
+0..1 ProcedurePerformedResult
+0..1 ProcedurePerformedStatus
+0..1 ProcedurePerformedAnatomicalApproachSite
+0..1 ProcedurePerformedAnatomicalLocationSite
+0..1 ProcedurePerformedOrdinality
+0..1 ProcedurePerformedIncisionDatetime
+0..1 ProcedurePerformedNegationRationale
+0..1 ProcedurePerformedComponents
+Element: ProcedurePerformedAuthorDatetime
+Description: "Description of AuthorDatetime For ProcedurePerformed "
+Based on: AuthorDatetime
+Value: dateTime
+Element: ProcedurePerformedRelevantPeriod
+Description: "Description of RelevantPeriod For ProcedurePerformed "
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: ProcedurePerformedReason
+Description: "Description of Reason For ProcedurePerformed "
+Based on: Reason
+Value: Coding
+Element: ProcedurePerformedMethod
+Description: "Description of Method For ProcedurePerformed "
+Based on: Method
+Value: Coding
+Element: ProcedurePerformedResult
+Description: "Description of Result For ProcedurePerformed "
+Based on: Result
+Value: string
+Element: ProcedurePerformedStatus
+Description: "Description of Status For ProcedurePerformed "
+Based on: Status
+Value: Coding
+Element: ProcedurePerformedAnatomicalApproachSite
+Description: "Description of AnatomicalApproachSite For ProcedurePerformed "
+Based on: AnatomicalApproachSite
+Value: Coding
+Element: ProcedurePerformedAnatomicalLocationSite
+Description: "Description of AnatomicalLocationSite For ProcedurePerformed "
+Based on: AnatomicalLocationSite
+Value: Coding
+Element: ProcedurePerformedOrdinality
+Description: "Description of Ordinality For ProcedurePerformed "
+Based on: Ordinality
+Value: Coding
+Element: ProcedurePerformedIncisionDatetime
+Description: "Description of IncisionDatetime For ProcedurePerformed "
+Based on: IncisionDatetime
+Value: dateTime
+Element: ProcedurePerformedNegationRationale
+Description: "Description of NegationRationale For ProcedurePerformed "
+Based on: NegationRationale
+Value: Coding
+Element: ProcedurePerformedComponents
+Description: "Description of Components For ProcedurePerformed "
+Based on: Components
+Value: string
+EntryElement: Substance
+Based on: QdmDataElement
+Description: "Substance represents a homogeneous material with definite composition that includes allergens, biological materials, chemicals, foods, drugs and materials.20 QDM distinguishes between medications from non-medication substances by separately listing medication datatypes. Substance may or may not have a code or be classified by a code system such RxNorm. Examples of a substance may include environmental agents (e.g., pollen, dust) and food (e.g., vitamins). Measure developers have considered the use of the QDM substance category in light of alignment with existing interoperability data standards."
+CodingValueset is #substance
+EntryElement: SubstanceAdministered
+Based on: Substance
+Description: "Data elements that meet criteria using this datatype should document that the substance indicated by the QDM category and its corresponding value set was actually given to the patient."
+QdmDataType is #administered
+QdmCategory is #substance
+0..1 SubstanceAdministeredAuthorDatetime
+0..1 SubstanceAdministeredRelevantPeriod
+0..1 SubstanceAdministeredDosage
+0..1 SubstanceAdministeredSupply
+0..1 SubstanceAdministeredFrequency
+0..1 SubstanceAdministeredRoute
+0..1 SubstanceAdministeredNegationRationale
+Element: SubstanceAdministeredAuthorDatetime
+Description: "Description of AuthorDatetime For SubstanceAdministered "
+Based on: AuthorDatetime
+Value: dateTime
+Element: SubstanceAdministeredRelevantPeriod
+Description: "Description of RelevantPeriod For SubstanceAdministered "
+Based on: RelevantPeriod
+Value: TimePeriod
+Element: SubstanceAdministeredDosage
+Description: "Description of Dosage For SubstanceAdministered "
+Based on: Dosage
+Value: Quantity
+Element: SubstanceAdministeredSupply
+Description: "Description of Supply For SubstanceAdministered "
+Based on: Supply
+Value: Quantity
+Element: SubstanceAdministeredFrequency
+Description: "Description of Frequency For SubstanceAdministered "
+Based on: Frequency
+Value: Coding
+Element: SubstanceAdministeredRoute
+Description: "Description of Route For SubstanceAdministered "
+Based on: Route
+Value: Coding
+Element: SubstanceAdministeredNegationRationale
+Description: "Description of NegationRationale For SubstanceAdministered "
+Based on: NegationRationale
+Value: Coding

@@ -1,0 +1,10 @@
+Grammar: ValueSet 5.0
+Namespace: qdm.dataelement
+ValueSet: DataTypeVS
+#performed "Performed"
+#applied "Applied"
+#order "Order"
+#administered "Administered"
+#active "Active"
+#discharge "Discharge"
+#dispensed "Dispensed"

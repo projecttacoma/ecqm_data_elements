@@ -1,0 +1,22 @@
+Grammar: Map 5.0
+Namespace: qdm.dataelement
+Target: FHIR_STU_3
+
+QdmDataElement maps to Basic:
+AllergyIntolerance maps to AllergyIntolerance:
+AdverseEvent maps to AdverseEvent:
+Assessment maps to Observation:
+CommunicationFromPatientToProvider maps to Communication:
+CommunicationFromProviderToPatient maps to Communication:
+CommunicationFromProviderToProvider maps to Communication:
+Device maps to Device:
+Diagnosis maps to Condition:
+DiagnosticStudy maps to DiagnosticReport:
+Encounter maps to Encounter:
+Immunization maps to Immunization:
+Intervention maps to RequestGroup:
+LaboratoryTest maps to Observation:
+Medication maps to Medication:
+PhysicalExam maps to Observation:
+Procedure maps to Procedure:
+Substance maps to Substance:
