@@ -1,0 +1,21 @@
+Grammar:	Map 5.1
+Namespace:	shr.entity
+Target:		FHIR_STU_3
+
+Organization maps to Organization:
+//    ObjectIdentifier maps to identifier
+    ObjectTypeCode maps to type
+
+//BodyStructure maps to BodySite:
+//   Subject.Value maps to patient
+//    ObjectTypeCode maps to code
+//    AnatomicalLocation maps to code
+//    AnatomicalLaterality maps to qualifier
+
+Patient maps to Patient:
+
+Person maps to Patient:
+
+//AnatomicalLocation maps to BodySite:
+//   Value maps to code
+//    Laterality.Value maps to qualifier

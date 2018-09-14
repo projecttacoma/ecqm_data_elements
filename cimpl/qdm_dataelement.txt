@@ -1,0 +1,254 @@
+Grammar: DataElement 5.0
+Namespace: qdm.dataelement
+Description: "Insert Text Here"
+Uses: shr.core, shr.base, shr.entity
+
+EntryElement: AdverseEvent
+Based on: Observation
+Description: "AdverseEvent"
+    ObservableCode is SCT#281647001
+    Subject value is type Patient
+
+EntryElement: AllergyIntolerance
+Based on: Observation
+Description: "AllergyIntolerance"
+    ObservableCode is SCT#419199007
+    Subject value is type Patient
+
+EntryElement: Assessment
+Based on: Observation
+Description: "Assessment"
+    Subject value is type Patient
+
+EntryElement: AssessmentPerformed
+Based on: Assessment
+Description: "AssessmentPerformed"
+    Subject value is type Patient
+
+EntryElement: CommunicationFromPatientToProvider
+Based on: Observation
+Description: "CommunicationFromPatientToProvider"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: CommunicationFromProviderToPatient
+Based on: Observation
+Description: "CommunicationFromProviderToPatient"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: CommunicationFromProviderToProvider
+Based on: Observation
+Description: "CommunicationFromProviderToProvider"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: Device
+Based on: Observation
+Description: "Device"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: DeviceApplied
+Based on: Device
+Description: "DeviceApplied"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: DeviceOrder
+Based on: Device
+Description: "DeviceOrder"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: Diagnosis
+Based on: Observation
+Description: "Diagnosis"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: DiagnosticStudy
+Based on: Observation
+Description: "DiagnosticStudy"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: DiagnosticStudyOrder
+Based on: DiagnosticStudy
+Description: "DiagnosticStudyOrder"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: DiagnosticStudyPerformed
+Based on: DiagnosticStudy
+Description: "DiagnosticStudyPerformed"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: Encounter
+Based on: Observation
+Description: "Encounter"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: EncounterOrder
+Based on: Encounter
+Description: "EncounterOrder"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: EncounterPerformed
+Based on: Encounter
+Description: "EncounterPerformed"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: Immunization
+Based on: Observation
+Description: "Immunization"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: ImmunizationAdministered
+Based on: Immunization
+Description: "ImmunizationAdministered"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: Intervention
+Based on: Observation
+Description: "Intervention"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: InterventionOrder
+Based on: Intervention
+Description: "InterventionOrder"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: InterventionPerformed
+Based on: Intervention
+Description: "InterventionPerformed"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: LaboratoryTest
+Based on: Observation
+Description: "LaboratoryTest"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: LaboratoryTestOrder
+Based on: LaboratoryTest
+Description: "LaboratoryTestOrder"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: LaboratoryTestPerformed
+Based on: LaboratoryTest
+Description: "LaboratoryTestPerformed"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: Medication
+Based on: Observation
+Description: "Medication"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: MedicationActive
+Based on: Medication
+Description: "MedicationActive"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: MedicationAdministered
+Based on: Medication
+Description: "MedicationAdministered"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: MedicationDischarge
+Based on: Medication
+Description: "MedicationDischarge"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: MedicationDispensed
+Based on: Medication
+Description: "MedicationDispensed"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: MedicationOrder
+Based on: Medication
+Description: "MedicationOrder"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: PatientCharacteristicEthnicity
+Based on: Observation
+Description: "PatientCharacteristicEthnicity"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: PatientCharacteristicGender
+Based on: Observation
+Description: "PatientCharacteristicGender"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: PatientCharacteristicPayer
+Based on: Observation
+Description: "PatientCharacteristicPayer"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: PatientCharacteristicRace
+Based on: Observation
+Description: "PatientCharacteristicRace"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: PhysicalExam
+Based on: Observation
+Description: "PhysicalExam"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: PhysicalExamPerformed
+Based on: PhysicalExam
+Description: "PhysicalExamPerformed"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: Procedure
+Based on: Observation
+Description: "Procedure"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: ProcedureOrder
+Based on: Procedure
+Description: "ProcedureOrder"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: ProcedurePerformed
+Based on: Procedure
+Description: "ProcedurePerformed"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: Substance
+Based on: Observation
+Description: "Substance"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient
+
+EntryElement: SubstanceAdministered
+Based on: Substance
+Description: "SubstanceAdministered"
+    ObservableCode is TBD#TBD
+    Subject value is type Patient

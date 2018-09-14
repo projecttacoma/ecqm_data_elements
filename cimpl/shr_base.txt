@@ -1,0 +1,233 @@
+Grammar:		DataElement 5.0
+Namespace:		shr.base
+Description:	"Contains the SHR Entry definition -- the metadata added to any independent item in the SHR."
+Uses:			shr.core
+
+
+//------------ BASE CLASSES----------------
+/* PRINCIPLES:
+1) NO CONCEPT MODEL --- THAT'S TERMNOLOGY - this means we will never have a type hierarchy
+2)  FLAT, PURPOSE-AGNOSTIC LIST OF OBSERVATIONS AND ASSERTIONS THAT CAN BE GROUPED AS NEEDED
+3)  NO NEED TO DISTINGUISH "STAND-ALONE" FROM "COMPONENT" OBSERVATIONS, OR PANELS FROM "COMPOUND OBSERVATIONS"
+4) ALL COMPUTABLE INFORMATION IN CODES -- CLASS NAMES ARE CONSIDERED NON-COMPUTABLE AND CANNOT BE RELIED UPON AS ANYTHING OTHER THAN A HUMAN-READABLE DESCRIPTION OF THE CONTENTS
+5)  OPEN-WORLD ASSUMPTION 
+* just because something isn't stated, it doesn't mean it doesn't exist
+* something stated to NOT exist, does not exist					
+*/
+
+Abstract Element:	Statement
+Description:		"Base class for all types of clinical statements."
+
+Abstract Element:	Finding
+Based on:			Statement
+Description:		"A determination, such as an observation, assertion, opinion, fact, or judgment."
+1..1				FindingStatus			
+0..1				RelevantTime
+0..1				FindingMethod
+
+		Element:		FindingStatus
+		Concept:		TBD
+		Description:	"Indicates whether the finding is preliminary, amended, final, etc."
+		Value:			code from http://hl7.org/fhir/ValueSet/observation-status
+
+		Element:		RelevantTime
+		Description:	"The time or time period that the statement addresses."
+		Value:			dateTime or TimePeriod 
+
+		Element:		FindingMethod
+		Description:	"The method used to determine the finding."
+		Value:			CodeableConcept
+
+Abstract Element:	ExistentialFinding
+Based on:			Finding
+Description:		"An assertion of a physical or conceptual entity, relationship, situation, condition, or phenomenon present or absent."
+1..1				PresentOrAbsent
+
+		Element:		PresentOrAbsent	
+		Description:	"Whether the object is present or absent, exists or does not exist."
+		Value:			CodeableConcept  from PresentAbsentVS
+
+Abstract Element:	ObjectPresentOrAbsent
+Based on:			ExistentialFinding
+Description:		"An assertion of a physical or conceptual entity, relationship, role, situation, condition, or phenomenon present or absent."
+0..1				Subject
+0..1				ObjectTypeCode
+0..1				ObjectIdentifier
+
+		Element:		Subject
+		Description:	"The person, place, event, condition, other statement that this statement addresses or belongs to. 
+		For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements."
+		Value:			Statement
+
+		Element:		ObjectTypeCode
+		Description: 	"A code representing the type of entity, person, role, condition, or phenomenon that is being asserted to exist or not exist."
+		Value:			CodeableConcept
+
+		Element: 		ObjectIdentifier
+		Description:	"For later reference, an identifier for the object implied by the assertion, which allows the object to be tracked over time. For example, a wound number is used to track a specific wound's condition over time."
+		Value:			string
+
+EntryElement:		RelationshipPresentOrAbsent
+Based on:			ExistentialFinding
+Description:		"An assertion of a realtionship between two things, either present or absent."
+0..1				Subject
+0..1				RelationshipCode
+0..1				Object
+
+		Element:		RelationshipCode
+		Description:	"The code describing the relationship asserted between the two objects."
+		Value:			CodeableConcept
+
+		Element:		Object
+		Description:	"The phenomenon (person, place, event, condition, other statement) that the subject of this statement addresses or belongs to."
+		Value:			Statement
+
+// + ExceptionValue, DeltaFlag, Issued, Observer, Recorder, +Method of observation, etc.
+
+
+Abstract Element: 	Observation
+Based on:			Finding
+Description:		"A statement that asserts the value of a property (observable) of the subject. The subject is often the patient, but may be a condition, a physical structure, or another clinical statement. For example, an interpretation is a finding about an observation."
+1..1				Subject
+1..1				ObservableCode
+0..1				ResultValue
+0..*				Qualifier
+
+		Element:		ObservableCode
+		Description:	"A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue."
+		Value:			CodeableConcept
+
+		Element:		ResultValue
+		Description:	"The finding itself, such as the blood pressure value recorded."
+		Value:			(Quantity or CodeableConcept or string or boolean or Range or Ratio or time or dateTime or TimePeriod or Media)
+
+
+		Element:		Qualifier
+		Description:	"A condition or circumstance associated with an observation that affects the interpretation of the result value."
+		Value:			CodeableConcept
+
+
+EntryElement:		CodedObservation
+Based on:			Observation
+					ResultValue value is type CodeableConcept
+
+EntryElement:		QuantitativeObservation
+Based on:			Observation
+					ResultValue value is type Quantity
+
+/*
+//		0..1			DistanceFromLandmarkBodySite
+//		0..1			ClockDirectionFromLandmarkBodySite
+
+			Element:		BodySiteOrLandmarkCode
+			Concept:		LNC#72369-2
+			Description:	"A code describing a body site that might be the body site of interest, or a landmark used to determine a body site."
+			Value:			CodeableConcept from 
+
+
+			Element:		DistanceFromLandmarkBodySite
+			Concept:		TBD
+			Description:	"The distance of the target body site from a landmark body site."
+			Value:			Quantity
+
+			Element:		ClockDirectionFromLandmarkBodySite
+			Concept:        SCT#272485000 "Clockface position (qualifier value)"
+			Description:	"A direction indicated by an angle relative to 12 o'clock."
+			Value:			CodeableConcept from ClockDirectionVS
+
+			Element:		AnatomicalLaterality
+			Concept:        SCT#272741003 "Laterality (attribute)"
+			Description:	"Anatomical location or specimen further detailing the side(s) of interest."
+			Value:			CodeableConcept from http://hl7.org/fhir/ValueSet/bodysite-laterality
+*/
+
+
+// -------------  Clusters -----------------
+
+EntryElement:   Composition
+Based on:       Statement
+Description:    "A set of one or more statements or aggregations that should be interpreted together, exchanged as a collection, or may be aggregregated for the purpose of clinical input or output."
+1..1			Subject
+1..1            TypeCode
+0..*			Statement
+//0..*			Cluster
+
+		Element:	Cluster
+		Based on:	Statement
+		Description:	"A collection of statements and groups."
+		0..1		TypeCode
+		0..*		Statement
+	//	0..*		Cluster
+
+		Element:	TypeCode
+		Description:	"A code that describes the type of composition or section, such as a section or document type identifier."
+		Value:		CodeableConcept
+
+// -------------  Entry Metadata -----------------
+
+Element: 		Entry
+Concept:		MTH#C1705654
+Description:	"Metadata attributes that apply to any item represented in the standard health record. An Entry may not belong exclusively to a single person's health record, but could represent an entity that surfaces in multiple records, such as organizations or practitioners. If the entry belongs to a single person's record, then the identity of the person of record must be recorded."
+0..1			ShrId
+1..1			EntryId
+0..1			Version
+1..1			EntryType
+1..1    		CreationTime
+1..1			LastUpdated
+0..1			Narrative
+0..1			Language
+0..*			SecurityLabel
+0..*			Tag
+0..*			DerivedFrom
+				Version value is type id
+
+	Element:		ShrId
+	Concept:		TBD
+	Description:	"A unique, persistent, permanent identifier for the overall health record belonging to the PersonOfRecord."
+	Value:			id
+	
+	Element:    	EntryId
+	Concept:        MTH#C0600091
+	Description:    "A persistent, permanent identifier for an entry in a health record, unique within the scope of the health record."
+	Value:          id
+	
+	Element:		EntryType  // Would EntryClass be clearer?
+	Concept:		TBD
+	Description:	"SHR data element identifier, as a URI."
+	Value:			uri
+
+	Element: 		LastUpdated
+	Concept:		TBD
+	Description:	"The most recent date the entry was changed."
+	Value:			instant
+
+	Element:		Narrative
+	Concept:		TBD
+	Description:	"A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human."
+	Value:			xhtml
+	1..1			NarrativeQualifier
+
+			Element:		NarrativeQualifier
+			Concept:		TBD
+			Description:	"Additional information on how the narrative was generated, and the scope of information contained."
+			Value:			code from http://hl7.org/fhir/ValueSet/narrative-status
+	
+	Element:		SecurityLabel
+	Concept:		TBD
+	Description:	"A code that connects the entry to a security policy. Security labels can be updated when the resource changes, or whenever the security sub-system chooses to."
+	Value:			Coding
+	
+	Element:		Tag
+	Concept:		TBD
+	Description:	"A code used to relate entries to categories or workflows. Applications are not required to consider the tags when interpreting the meaning of an entry."
+	Value:			Coding
+	
+	Element:		DerivedFrom
+	Concept:		TBD
+	Description:	"Indicates the source of information in the case the Entry has been created by logical extension or modification of one or more source entries."
+	Value:			ref(Statement)
+
+	Element:		Version
+	Concept:		MTH#C0333052
+	Description:	"A number or code associated with the product that identifies a particular release iteration."
+	Value:			string or id

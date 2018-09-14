@@ -1,0 +1,11 @@
+Grammar:	ValueSet 5.0
+Namespace:	shr.entity
+
+CodeSystem:     SCT = http://snomed.info/sct
+
+ValueSet:		RolePlayedByPersonVS
+Includes codes descending from SCT#125676002 "Person (person)"
+
+ValueSet:		ConditionVS
+Description:    "Value set of Snomed codes corresponding to disorders."
+Includes codes descending from SCT#404684003 "Condition"
