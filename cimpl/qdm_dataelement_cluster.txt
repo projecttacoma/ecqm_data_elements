@@ -33,7 +33,7 @@ Subject value is type Assessment
 EntryElement: AssessmentPerformedComposition
 Based on: Composition
 Description: "AssessmentPerformed"
-Subject value is type Assessment
+Subject value is type AssessmentPerformed
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   NegationRationale
@@ -79,7 +79,7 @@ Subject value is type Device
 EntryElement: DeviceAppliedComposition
 Based on: Composition
 Description: "DeviceApplied"
-Subject value is type Device
+Subject value is type DeviceApplied
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   RelevantPeriod
@@ -91,7 +91,7 @@ Subject value is type Device
 EntryElement: DeviceOrderComposition
 Based on: Composition
 Description: "DeviceOrder"
-Subject value is type Device
+Subject value is type DeviceOrder
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   NegationRationale
@@ -116,7 +116,7 @@ Subject value is type DiagnosticStudy
 EntryElement: DiagnosticStudyOrderComposition
 Based on: Composition
 Description: "DiagnosticStudyOrder"
-Subject value is type DiagnosticStudy
+Subject value is type DiagnosticStudyOrder
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   Reason
@@ -126,7 +126,7 @@ Subject value is type DiagnosticStudy
 EntryElement: DiagnosticStudyPerformedComposition
 Based on: Composition
 Description: "DiagnosticStudyPerformed"
-Subject value is type DiagnosticStudy
+Subject value is type DiagnosticStudyPerformed
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   RelevantPeriod
@@ -148,7 +148,7 @@ Subject value is type Encounter
 EntryElement: EncounterOrderComposition
 Based on: Composition
 Description: "EncounterOrder"
-Subject value is type Encounter
+Subject value is type EncounterOrder
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   Reason
@@ -158,7 +158,7 @@ Subject value is type Encounter
 EntryElement: EncounterPerformedComposition
 Based on: Composition
 Description: "EncounterPerformed"
-Subject value is type Encounter
+Subject value is type EncounterPerformed
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   AdmissionSource
@@ -179,7 +179,7 @@ Subject value is type Immunization
 EntryElement: ImmunizationAdministeredComposition
 Based on: Composition
 Description: "ImmunizationAdministered"
-Subject value is type Immunization
+Subject value is type ImmunizationAdministered
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   Reason
@@ -197,7 +197,7 @@ Subject value is type Intervention
 EntryElement: InterventionOrderComposition
 Based on: Composition
 Description: "InterventionOrder"
-Subject value is type Intervention
+Subject value is type InterventionOrder
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   Reason
@@ -206,7 +206,7 @@ Subject value is type Intervention
 EntryElement: InterventionPerformedComposition
 Based on: Composition
 Description: "InterventionPerformed"
-Subject value is type Intervention
+Subject value is type InterventionPerformed
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   RelevantPeriod
@@ -224,7 +224,7 @@ Subject value is type LaboratoryTest
 EntryElement: LaboratoryTestOrderComposition
 Based on: Composition
 Description: "LaboratoryTestOrder"
-Subject value is type LaboratoryTest
+Subject value is type LaboratoryTestOrder
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   Reason
@@ -234,7 +234,7 @@ Subject value is type LaboratoryTest
 EntryElement: LaboratoryTestPerformedComposition
 Based on: Composition
 Description: "LaboratoryTestPerformed"
-Subject value is type LaboratoryTest
+Subject value is type LaboratoryTestPerformed
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   RelevantPeriod
@@ -256,7 +256,7 @@ Subject value is type Medication
 EntryElement: MedicationActiveComposition
 Based on: Composition
 Description: "MedicationActive"
-Subject value is type Medication
+Subject value is type MedicationActive
                     Statement
     includes 0..1   RelevantPeriod
     includes 0..1   Dosage
@@ -267,7 +267,7 @@ Subject value is type Medication
 EntryElement: MedicationAdministeredComposition
 Based on: Composition
 Description: "MedicationAdministered"
-Subject value is type Medication
+Subject value is type MedicationAdministered
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   RelevantPeriod
@@ -281,7 +281,7 @@ Subject value is type Medication
 EntryElement: MedicationDischargeComposition
 Based on: Composition
 Description: "MedicationDischarge"
-Subject value is type Medication
+Subject value is type MedicationDischarge
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   Refills
@@ -294,7 +294,7 @@ Subject value is type Medication
 EntryElement: MedicationDispensedComposition
 Based on: Composition
 Description: "MedicationDispensed"
-Subject value is type Medication
+Subject value is type MedicationDispensed
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   RelevantPeriod
@@ -308,7 +308,7 @@ Subject value is type Medication
 EntryElement: MedicationOrderComposition
 Based on: Composition
 Description: "MedicationOrder"
-Subject value is type Medication
+Subject value is type MedicationOrder
                     Statement
     includes 0..1   ActiveDatetime
     includes 0..1   RelevantPeriod
@@ -356,7 +356,7 @@ Subject value is type PhysicalExam
 EntryElement: PhysicalExamPerformedComposition
 Based on: Composition
 Description: "PhysicalExamPerformed"
-Subject value is type PhysicalExam
+Subject value is type PhysicalExamPerformed
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   RelevantPeriod
@@ -376,7 +376,7 @@ Subject value is type Procedure
 EntryElement: ProcedureOrderComposition
 Based on: Composition
 Description: "ProcedureOrder"
-Subject value is type Procedure
+Subject value is type ProcedureOrder
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   Reason
@@ -389,7 +389,7 @@ Subject value is type Procedure
 EntryElement: ProcedurePerformedComposition
 Based on: Composition
 Description: "ProcedurePerformed"
-Subject value is type Procedure
+Subject value is type ProcedurePerformed
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   RelevantPeriod
@@ -413,7 +413,7 @@ Subject value is type Substance
 EntryElement: SubstanceAdministeredComposition
 Based on: Composition
 Description: "SubstanceAdministered"
-Subject value is type Substance
+Subject value is type SubstanceAdministered
                     Statement
     includes 0..1   AuthorDatetime
     includes 0..1   RelevantPeriod
