@@ -10,7 +10,7 @@ EntryElement: CMS102v7
 Based on: CmsEcqmComposition
 Description: "CMS102v7"
     0..* DischargedtoRehabilitationFacilityDischargeDisposition
-    0..* NonElectiveInpatientEncounterEncounterPerformedComposition
+    0..* NonElectiveInpatientEncounterPerformedComposition
     0..* DischargedtoHealthCareFacilityforHospiceCareDischargeDisposition
     0..* DischargedtoHomeforHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
@@ -18,47 +18,47 @@ Description: "CMS102v7"
     0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
-    0..* ComfortMeasuresInterventionOrderComposition
-    0..* ComfortMeasuresInterventionPerformedComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
+    0..* ComfortMeasuresOrderComposition
+    0..* ComfortMeasuresPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* RehabilitationAssessmentProcedurePerformedComposition
-    0..* RehabilitationTherapyProcedurePerformedComposition
+    0..* RehabilitationAssessmentPerformedComposition
+    0..* RehabilitationTherapyPerformedComposition
     0..* MedicalReasonNegationRationale
     0..* PatientRefusalNegationRationale
-    0..* InterventionComfortMeasures
-    0..* RehabilitationAssessmentorTherapy
-    0..* NoRehabProcedure
-    0..* NoRehabilitationAssessmentorTherapy
-    0..* Numerator4
+    0..* InterventionComfortMeasuresUnion
+    0..* RehabilitationAssessmentorTherapyUnion
+    0..* NoRehabProcedureUnion
+    0..* NoRehabilitationAssessmentorTherapyUnion
+    0..* Numerator0Union
 
 EntryElement: CMS104v7
 Based on: CmsEcqmComposition
 Description: "CMS104v7"
     0..* DischargedtoHealthCareFacilityforHospiceCareDischargeDisposition
-    0..* NonElectiveInpatientEncounterEncounterPerformedComposition
+    0..* NonElectiveInpatientEncounterPerformedComposition
     0..* DischargedtoHomeforHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
     0..* PatientExpiredDischargeDisposition
     0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
-    0..* ComfortMeasuresInterventionOrderComposition
-    0..* ComfortMeasuresInterventionPerformedComposition
-    0..* AntithromboticTherapyMedicationAdministeredComposition
-    0..* AntithromboticTherapyMedicationDischargeComposition
-    0..* AntithromboticTherapyMedicationOrderComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
+    0..* ComfortMeasuresOrderComposition
+    0..* ComfortMeasuresPerformedComposition
+    0..* AntithromboticTherapyAdministeredComposition
+    0..* AntithromboticTherapyDischargeComposition
+    0..* AntithromboticTherapyOrderComposition
     0..* MedicalReasonNegationRationale
     0..* PatientRefusalNegationRationale
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* InterventionComfortMeasures
+    0..* InterventionComfortMeasuresUnion
 
 EntryElement: CMS105v7
 Based on: CmsEcqmComposition
@@ -66,26 +66,26 @@ Description: "CMS105v7"
     0..* StatinAllergenAdverseEventComposition
     0..* StatinAllergenAllergyIntoleranceComposition
     0..* DischargedtoHealthCareFacilityforHospiceCareDischargeDisposition
-    0..* NonElectiveInpatientEncounterEncounterPerformedComposition
+    0..* NonElectiveInpatientEncounterPerformedComposition
     0..* DischargedtoHomeforHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
     0..* PatientExpiredDischargeDisposition
     0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
-    0..* ComfortMeasuresInterventionOrderComposition
-    0..* ComfortMeasuresInterventionPerformedComposition
-    0..* LDLcLaboratoryTestPerformedComposition
-    0..* StatinGrouperMedicationDischargeComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
+    0..* ComfortMeasuresOrderComposition
+    0..* ComfortMeasuresPerformedComposition
+    0..* LDLcPerformedComposition
+    0..* StatinGrouperDischargeComposition
     0..* MedicalReasonNegationRationale
     0..* PatientRefusalNegationRationale
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* InterventionComfortMeasures
-    0..* DenominatorExceptions0
+    0..* InterventionComfortMeasuresUnion
+    0..* DenominatorExceptionsUnion
 
 EntryElement: CMS107v7
 Based on: CmsEcqmComposition
@@ -98,7 +98,7 @@ Description: "CMS107v7"
     0..* WarningSignsandSymptomsEducationCommunicationFromProviderToPatientComposition
     0..* PatientRefusalNegationRationale
     0..* DischargedtoHealthCareFacilityforHospiceCareDischargeDisposition
-    0..* NonElectiveInpatientEncounterEncounterPerformedComposition
+    0..* NonElectiveInpatientEncounterPerformedComposition
     0..* DischargedtoHomeforHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
     0..* PatientExpiredDischargeDisposition
@@ -106,26 +106,26 @@ Description: "CMS107v7"
     0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
-    0..* ComfortMeasuresInterventionOrderComposition
-    0..* ComfortMeasuresInterventionPerformedComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
+    0..* ComfortMeasuresOrderComposition
+    0..* ComfortMeasuresPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* InterventionComfortMeasures
-    0..* Numerator5
+    0..* InterventionComfortMeasuresUnion
+    0..* Numerator4Union
 
 EntryElement: CMS108v7
 Based on: CmsEcqmComposition
 Description: "CMS108v7"
-    0..* RiskforvenousthromboembolismAssessmentPerformedComposition
-    0..* IntermittentpneumaticcompressiondevicesIPCDeviceAppliedComposition
-    0..* IntermittentpneumaticcompressiondevicesIPCDeviceOrderComposition
-    0..* VenousfootpumpsVFPDeviceAppliedComposition
-    0..* VenousfootpumpsVFPDeviceOrderComposition
-    0..* GraduatedcompressionstockingsGCSDeviceAppliedComposition
-    0..* GraduatedcompressionstockingsGCSDeviceOrderComposition
+    0..* RiskforvenousthromboembolismPerformedComposition
+    0..* IntermittentpneumaticcompressiondevicesIPCAppliedComposition
+    0..* IntermittentpneumaticcompressiondevicesIPCOrderComposition
+    0..* VenousfootpumpsVFPAppliedComposition
+    0..* VenousfootpumpsVFPOrderComposition
+    0..* GraduatedcompressionstockingsGCSAppliedComposition
+    0..* GraduatedcompressionstockingsGCSOrderComposition
     0..* MedicalReasonNegationRationale
     0..* PatientRefusalNegationRationale
     0..* ObstetricsDiagnosisComposition
@@ -133,23 +133,23 @@ Description: "CMS108v7"
     0..* AtrialFibrillationFlutterDiagnosisComposition
     0..* AtrialFibrillationFlutterDiagnoses
     0..* VenousThromboembolismDiagnosisComposition
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* ComfortMeasuresInterventionOrderComposition
-    0..* ComfortMeasuresInterventionPerformedComposition
-    0..* INRLaboratoryTestPerformedComposition
-    0..* LowDoseUnfractionatedHeparinforVTEProphylaxisMedicationAdministeredComposition
-    0..* LowDoseUnfractionatedHeparinforVTEProphylaxisMedicationOrderComposition
-    0..* InjectableFactorXaInhibitorforVTEProphylaxisMedicationAdministeredComposition
-    0..* InjectableFactorXaInhibitorforVTEProphylaxisMedicationOrderComposition
-    0..* LowMolecularWeightHeparinforVTEProphylaxisMedicationAdministeredComposition
-    0..* LowMolecularWeightHeparinforVTEProphylaxisMedicationOrderComposition
-    0..* WarfarinMedicationAdministeredComposition
-    0..* WarfarinMedicationOrderComposition
-    0..* GlycoproteinIIbIIIaInhibitorsMedicationAdministeredComposition
-    0..* DirectThrombinInhibitorMedicationAdministeredComposition
-    0..* UnfractionatedHeparinMedicationAdministeredComposition
-    0..* OralFactorXaInhibitorforVTEProphylaxisorVTETreatmentMedicationAdministeredComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* ComfortMeasuresOrderComposition
+    0..* ComfortMeasuresPerformedComposition
+    0..* INRPerformedComposition
+    0..* LowDoseUnfractionatedHeparinforVTEProphylaxisAdministeredComposition
+    0..* LowDoseUnfractionatedHeparinforVTEProphylaxisOrderComposition
+    0..* InjectableFactorXaInhibitorforVTEProphylaxisAdministeredComposition
+    0..* InjectableFactorXaInhibitorforVTEProphylaxisOrderComposition
+    0..* LowMolecularWeightHeparinforVTEProphylaxisAdministeredComposition
+    0..* LowMolecularWeightHeparinforVTEProphylaxisOrderComposition
+    0..* WarfarinAdministeredComposition
+    0..* WarfarinOrderComposition
+    0..* GlycoproteinIIbIIIaInhibitorsAdministeredComposition
+    0..* DirectThrombinInhibitorAdministeredComposition
+    0..* UnfractionatedHeparinAdministeredComposition
+    0..* OralFactorXaInhibitorforVTEProphylaxisorVTETreatmentAdministeredComposition
     0..* IntravenousrouteRoute
     0..* SubcutaneousrouteRoute
     0..* EthnicityPatientCharacteristicEthnicityComposition
@@ -157,39 +157,39 @@ Description: "CMS108v7"
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
     0..* PrincipalOrdinality
-    0..* GeneralSurgeryProcedurePerformedComposition
-    0..* GynecologicalSurgeryProcedurePerformedComposition
-    0..* HipFractureSurgeryProcedurePerformedComposition
-    0..* HipReplacementSurgeryProcedurePerformedComposition
-    0..* IntracranialNeurosurgeryProcedurePerformedComposition
-    0..* KneeReplacementSurgeryProcedurePerformedComposition
-    0..* UrologicalSurgeryProcedurePerformedComposition
-    0..* GeneralorNeuraxialAnesthesiaProcedurePerformedComposition
-    0..* InterventionComfortMeasures
-    0..* NoVTEProphylaxisDeviceAppliedorOrdered
-    0..* NoVTEProphylaxisMedicationAdministeredorOrdered
-    0..* SCIPVTESelectedSurgery
-    0..* VTEProphylaxisbyMedicationAdministeredorDeviceApplied
-    0..* VTEProphylaxisReceivedonDayoforDayAfterAdmissionorProcedure
-    0..* MedicationOralFactorXaInhibitorAdministeredonDayoforDayAfterAdmissionorProcedure
-    0..* EncounterWithPriororPresentDiagnosisofAtrialFibrillationorVTE
-    0..* DenominatorExclusions3
-    0..* IsInLowRiskforVTEorOnAnticoagulant
-    0..* LowRiskforVTEorAnticoagulantAdministered
-    0..* NoVTEProphylaxisDuetoMedicalReason
-    0..* NoVTEProphylaxis
-    0..* NoVTEProphylaxisMedicationorDeviceDuetoPatientRefusal
-    0..* NoVTEProphylaxisDuetoPatientRefusal
-    0..* Numerator2
+    0..* GeneralSurgeryPerformedComposition
+    0..* GynecologicalSurgeryPerformedComposition
+    0..* HipFractureSurgeryPerformedComposition
+    0..* HipReplacementSurgeryPerformedComposition
+    0..* IntracranialNeurosurgeryPerformedComposition
+    0..* KneeReplacementSurgeryPerformedComposition
+    0..* UrologicalSurgeryPerformedComposition
+    0..* GeneralorNeuraxialAnesthesiaPerformedComposition
+    0..* InterventionComfortMeasuresUnion
+    0..* NoVTEProphylaxisDeviceAppliedorOrderedUnion
+    0..* NoVTEProphylaxisMedicationAdministeredorOrderedUnion
+    0..* SCIPVTESelectedSurgeryUnion
+    0..* VTEProphylaxisbyMedicationAdministeredorDeviceAppliedUnion
+    0..* VTEProphylaxisReceivedonDayoforDayAfterAdmissionorProcedureUnion
+    0..* MedicationOralFactorXaInhibitorAdministeredonDayoforDayAfterAdmissionorProcedureUnion
+    0..* EncounterWithPriororPresentDiagnosisofAtrialFibrillationorVTEUnion
+    0..* DenominatorExclusions3Union
+    0..* IsInLowRiskforVTEorOnAnticoagulantUnion
+    0..* LowRiskforVTEorAnticoagulantAdministeredUnion
+    0..* NoVTEProphylaxisDuetoMedicalReasonUnion
+    0..* NoVTEProphylaxisUnion
+    0..* NoVTEProphylaxisMedicationorDeviceDuetoPatientRefusalUnion
+    0..* NoVTEProphylaxisDuetoPatientRefusalUnion
+    0..* Numerator1Union
 
 EntryElement: CMS111v7
 Based on: CmsEcqmComposition
 Description: "CMS111v7"
-    0..* DecisiontoAdmittoHospitalInpatientEncounterOrderComposition
+    0..* DecisiontoAdmittoHospitalInpatientOrderComposition
     0..* HospitalSettingsAdmissionSource
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
     0..* PsychiatricMentalHealthDiagnosisPrincipalDiagnosis
-    0..* EncounterInpatientEncounterPerformedComposition
+    0..* EncounterInpatientPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
@@ -198,38 +198,38 @@ Description: "CMS111v7"
 EntryElement: CMS113v7
 Based on: CmsEcqmComposition
 Description: "CMS113v7"
-    0..* EstimatedGestationalAgeatDeliveryAssessmentPerformedComposition
-    0..* TimeofDeliveryAssessmentPerformedComposition
-    0..* LaborAssessmentPerformedComposition
+    0..* EstimatedGestationalAgeatDeliveryPerformedComposition
+    0..* TimeofDeliveryPerformedComposition
+    0..* LaborPerformedComposition
     0..* CornualEctopicPregnancyDiagnosisComposition
     0..* PerforationofUterusDiagnosisComposition
     0..* UterineRuptureDiagnosisComposition
     0..* UterineWindowDiagnosisComposition
     0..* ConditionsPossiblyJustifyingElectiveDeliveryPriortoWeeksGestationDiagnosisComposition
     0..* ConditionsPossiblyJustifyingElectiveDeliveryPriortoWeeksGestationDiagnoses
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OxytocinMedicationAdministeredComposition
-    0..* DinoprostoneMedicationAdministeredComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OxytocinAdministeredComposition
+    0..* DinoprostoneAdministeredComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ArtificialRuptureofMembranesProcedurePerformedComposition
-    0..* DeliveryProceduresProcedurePerformedComposition
-    0..* TransabdominalCerclageProcedurePerformedComposition
-    0..* UterineHornProcedurePerformedComposition
-    0..* MetroplastyProcedurePerformedComposition
-    0..* CesareanBirthProcedurePerformedComposition
-    0..* MedicalInductionofLaborProcedurePerformedComposition
-    0..* ClassicalCesareanBirthProcedurePerformedComposition
-    0..* MyomectomyProcedurePerformedComposition
-    0..* DeliveryEncounterwithJustifyingConditions
-    0..* MedicalInductionMedication
-    0..* MedicalInductionProcedure
-    0..* MedicalInductionWhileNotInLabor
-    0..* HistoryofUterineSurgeryProcedure
-    0..* HistoryofUterineSurgeryDiagnosis
-    0..* Numerator0
+    0..* ArtificialRuptureofMembranesPerformedComposition
+    0..* DeliveryProceduresPerformedComposition
+    0..* TransabdominalCerclagePerformedComposition
+    0..* UterineHornPerformedComposition
+    0..* MetroplastyPerformedComposition
+    0..* CesareanBirthPerformedComposition
+    0..* MedicalInductionofLaborPerformedComposition
+    0..* ClassicalCesareanBirthPerformedComposition
+    0..* MyomectomyPerformedComposition
+    0..* DeliveryEncounterwithJustifyingConditionsUnion
+    0..* MedicalInductionMedicationUnion
+    0..* MedicalInductionProcedureUnion
+    0..* MedicalInductionWhileNotInLaborUnion
+    0..* HistoryofUterineSurgeryProcedureUnion
+    0..* HistoryofUterineSurgeryDiagnosisUnion
+    0..* Numerator5Union
 
 EntryElement: CMS117v7
 Based on: CmsEcqmComposition
@@ -258,169 +258,171 @@ Description: "CMS117v7"
     0..* AnaphylacticReactiontoCommonBakersYeastDiagnosisComposition
     0..* SevereCombinedImmunodeficiencyDiagnosisComposition
     0..* IntussusceptionDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* RotaviruslivemonovalentvaccineImmunizationAdministeredComposition
-    0..* VaricellaZosterVaccineVZVImmunizationAdministeredComposition
-    0..* DTaPVaccineImmunizationAdministeredComposition
-    0..* HepatitisAVaccineImmunizationAdministeredComposition
-    0..* HepatitisBVaccineImmunizationAdministeredComposition
-    0..* HaemophilusInfluenzaeTypeBHiBVaccineImmunizationAdministeredComposition
-    0..* InfluenzaVaccineImmunizationAdministeredComposition
-    0..* InactivatedPolioVaccineIPVImmunizationAdministeredComposition
-    0..* PneumococcalConjugateVaccineImmunizationAdministeredComposition
-    0..* RotavirusVaccinedosescheduleImmunizationAdministeredComposition
-    0..* MeaslesMumpsandRubellaMMRVaccineImmunizationAdministeredComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* AntiHepatitisAIgGAntigenTestLaboratoryTestPerformedComposition
-    0..* VaricellaZosterAntibodyTestIgGAntibodyTiterLaboratoryTestPerformedComposition
-    0..* VaricellaZosterAntibodyTestIgGAntibodyPresenceLaboratoryTestPerformedComposition
-    0..* AntiHepatitisBVirusSurfaceAbLaboratoryTestPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* RotaviruslivemonovalentvaccineAdministeredComposition
+    0..* VaricellaZosterVaccineVZVAdministeredComposition
+    0..* DTaPVaccineAdministeredComposition
+    0..* HepatitisAVaccineAdministeredComposition
+    0..* HepatitisBVaccineAdministeredComposition
+    0..* HaemophilusInfluenzaeTypeBHiBVaccineAdministeredComposition
+    0..* InfluenzaVaccineAdministeredComposition
+    0..* InactivatedPolioVaccineIPVAdministeredComposition
+    0..* PneumococcalConjugateVaccineAdministeredComposition
+    0..* RotavirusVaccinedosescheduleAdministeredComposition
+    0..* MeaslesMumpsandRubellaMMRVaccineAdministeredComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* AntiHepatitisAIgGAntigenTestPerformedComposition
+    0..* VaricellaZosterAntibodyTestIgGAntibodyTiterPerformedComposition
+    0..* VaricellaZosterAntibodyTestIgGAntibodyPresencePerformedComposition
+    0..* AntiHepatitisBVirusSurfaceAbPerformedComposition
     0..* PositiveFindingResult
-    0..* MeaslesAntibodyTestIgGAntibodypresenceLaboratoryTestPerformedComposition
-    0..* MumpsAntibodyTestIgGAntibodypresenceLaboratoryTestPerformedComposition
-    0..* RubellaAntibodyTestIgGAntibodypresenceLaboratoryTestPerformedComposition
-    0..* MeaslesAntibodyTestIgGAntibodyTiterLaboratoryTestPerformedComposition
-    0..* MumpsAntibodyTestIgGAntibodyTiterLaboratoryTestPerformedComposition
-    0..* RubellaAntibodyTestIgGAntibodyTiterLaboratoryTestPerformedComposition
+    0..* MeaslesAntibodyTestIgGAntibodypresencePerformedComposition
+    0..* MumpsAntibodyTestIgGAntibodypresencePerformedComposition
+    0..* RubellaAntibodyTestIgGAntibodypresencePerformedComposition
+    0..* MeaslesAntibodyTestIgGAntibodyTiterPerformedComposition
+    0..* MumpsAntibodyTestIgGAntibodyTiterPerformedComposition
+    0..* RubellaAntibodyTestIgGAntibodyTiterPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* RotavirusvaccinepentavalentRVdoseschedulelivefororaluseProcedurePerformedComposition
-    0..* RotavirusvaccinehumanattenuatedRVdoseschedulelivefororaluseProcedurePerformedComposition
-    0..* DTaPVaccineAdministeredProcedurePerformedComposition
-    0..* MeaslesMumpsandRubellaMMRVaccineAdministeredProcedurePerformedComposition
-    0..* VaricellaZosterVaccineVZVAdministeredProcedurePerformedComposition
-    0..* HepatitisAVaccineAdministeredProcedurePerformedComposition
-    0..* HepatitisBVaccineAdministeredProcedurePerformedComposition
-    0..* HaemophilusInfluenzaeTypeBHiBVaccineAdministeredProcedurePerformedComposition
-    0..* InfluenzaVaccineAdministeredProcedurePerformedComposition
-    0..* InactivatedPolioVaccineIPVAdministeredProcedurePerformedComposition
-    0..* PneumococcalConjugateVaccineAdministeredProcedurePerformedComposition
-    0..* Measles
-    0..* MeaslesIndicators
-    0..* Mumps
-    0..* MumpsIndicators
-    0..* TwoDoseRotavirus
-    0..* Rotavirus2DoseImmunizationsorProcedures
-    0..* ThreeDoseRotavirus
-    0..* Rotavirus3DoseImmunizationsorProcedures
-    0..* Rotavirus2or3DoseVaccinations
-    0..* DTaPVaccination
-    0..* DTaPImmunizationsorProcedures
-    0..* HepatitisAVaccination
-    0..* OneHepatitisAVaccinations
-    0..* ChickenPoxVaccination
-    0..* OneChickenPoxVaccination
-    0..* Rubella
-    0..* RubellaIndicators
-    0..* DTaPConditions
-    0..* DTaPNumeratorInclusionConditions
-    0..* PneumococcalVaccination
-    0..* PneumococcalConjugateImmunizationsorProcedures
-    0..* HepatitisAConditions
-    0..* HepatitisANumeratorInclusionConditions
-    0..* HepatitisBVaccination
-    0..* HepatitisBImmunizationsorProcedures
-    0..* HepBConditions
-    0..* HepatitisBNumeratorInclusionConditions
-    0..* HibVaccination
-    0..* HibImmunizationsorProcedures
-    0..* InfluenzaVaccination
-    0..* InfluenzaImmunizationsorProcedures
-    0..* InfluenzaConditions
-    0..* InfluenzaNumeratorInclusionConditions
-    0..* MMRConditions
-    0..* MMRNumeratorInclusionConditions
-    0..* PolioVaccination
-    0..* PolioImmunizationsorProcedures
-    0..* RotavirusConditions
-    0..* RotavirusNumeratorInclusionConditions
-    0..* VaricellaZosterConditions
-    0..* VaricellaZosterNumeratorInclusionConditions
-    0..* PolioConditions
-    0..* PolioNumeratorInclusionConditions
-    0..* MMRVaccination
-    0..* OneMMRVaccination
+    0..* RotavirusvaccinepentavalentRVdoseschedulelivefororalusePerformedComposition
+    0..* RotavirusvaccinehumanattenuatedRVdoseschedulelivefororalusePerformedComposition
+    0..* DTaPVaccineAdministeredPerformedComposition
+    0..* MeaslesMumpsandRubellaMMRVaccineAdministeredPerformedComposition
+    0..* VaricellaZosterVaccineVZVAdministeredPerformedComposition
+    0..* HepatitisAVaccineAdministeredPerformedComposition
+    0..* HepatitisBVaccineAdministeredPerformedComposition
+    0..* HaemophilusInfluenzaeTypeBHiBVaccineAdministeredPerformedComposition
+    0..* InfluenzaVaccineAdministeredPerformedComposition
+    0..* InactivatedPolioVaccineIPVAdministeredPerformedComposition
+    0..* PneumococcalConjugateVaccineAdministeredPerformedComposition
+    0..* MeaslesUnion
+    0..* MeaslesIndicatorsUnion
+    0..* MumpsUnion
+    0..* MumpsIndicatorsUnion
+    0..* TwoDoseRotavirusUnion
+    0..* Rotavirus2DoseImmunizationsorProceduresUnion
+    0..* ThreeDoseRotavirusUnion
+    0..* Rotavirus3DoseImmunizationsorProceduresUnion
+    0..* Rotavirus2or3DoseVaccinationsUnion
+    0..* DTaPVaccinationUnion
+    0..* DTaPImmunizationsorProceduresUnion
+    0..* HepatitisAVaccinationUnion
+    0..* OneHepatitisAVaccinationsUnion
+    0..* ChickenPoxVaccinationUnion
+    0..* OneChickenPoxVaccinationUnion
+    0..* RubellaUnion
+    0..* RubellaIndicatorsUnion
+    0..* DTaPConditionsUnion
+    0..* DTaPNumeratorInclusionConditionsUnion
+    0..* PneumococcalVaccinationUnion
+    0..* PneumococcalConjugateImmunizationsorProceduresUnion
+    0..* HepatitisAConditionsUnion
+    0..* HepatitisANumeratorInclusionConditionsUnion
+    0..* HepatitisBVaccinationUnion
+    0..* HepatitisBImmunizationsorProceduresUnion
+    0..* HepBConditionsUnion
+    0..* HepatitisBNumeratorInclusionConditionsUnion
+    0..* HibVaccinationUnion
+    0..* HibImmunizationsorProceduresUnion
+    0..* InfluenzaVaccinationUnion
+    0..* InfluenzaImmunizationsorProceduresUnion
+    0..* InfluenzaConditionsUnion
+    0..* InfluenzaNumeratorInclusionConditionsUnion
+    0..* MMRConditionsUnion
+    0..* MMRNumeratorInclusionConditionsUnion
+    0..* PolioVaccinationUnion
+    0..* PolioImmunizationsorProceduresUnion
+    0..* RotavirusConditionsUnion
+    0..* RotavirusNumeratorInclusionConditionsUnion
+    0..* VaricellaZosterConditionsUnion
+    0..* VaricellaZosterNumeratorInclusionConditionsUnion
+    0..* PolioConditionsUnion
+    0..* PolioNumeratorInclusionConditionsUnion
+    0..* MMRVaccinationUnion
+    0..* OneMMRVaccinationUnion
 
 EntryElement: CMS122v7
 Based on: CmsEcqmComposition
 Description: "CMS122v7"
     0..* DiabetesDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* HbAcLaboratoryTestLaboratoryTestPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* HbAcLaboratoryTestPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* QualifyingEncounters
+    0..* ValidEncounterUnion
+    0..* QualifyingEncountersUnion
 
 EntryElement: CMS123v7
 Based on: CmsEcqmComposition
 Description: "CMS123v7"
-    0..* PedalpulsetakingprocedureAssessmentPerformedComposition
-    0..* MonofilamentfootsensationtestprocedureAssessmentPerformedComposition
-    0..* DiabeticfootexaminationregimetherapyAssessmentPerformedComposition
+    0..* PedalpulsetakingprocedurePerformedComposition
+    0..* MonofilamentfootsensationtestprocedurePerformedComposition
+    0..* DiabeticfootexaminationregimetherapyPerformedComposition
     0..* DiabetesDiagnosisComposition
     0..* BilateralamputationoflegbeloworabovekneeDiagnosisComposition
     0..* RightUnilateralAmputationAboveorBelowKneeDiagnosisComposition
     0..* LeftUnilateralAmputationAboveorBelowKneeDiagnosisComposition
     0..* UnilateralAmputationBeloworAboveKneeUnspecifiedLateralityDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* UnilateralAmputationProcedureBeloworAboveKneeUnspecifiedLateralityProcedurePerformedComposition
-    0..* LeftUnilateralAmputationProcedureAboveorBelowKneeProcedurePerformedComposition
-    0..* RightUnilateralAmputationProcedureAboveorBelowKneeProcedurePerformedComposition
-    0..* QualifyingEncounters
-    0..* LeftLowerAmputation
-    0..* LeftLowerExtremityAmputation
-    0..* RightLowerAmputation
-    0..* RightLowerExtremityAmputation
+    0..* UnilateralAmputationProcedureBeloworAboveKneeUnspecifiedLateralityPerformedComposition
+    0..* LeftUnilateralAmputationProcedureAboveorBelowKneePerformedComposition
+    0..* RightUnilateralAmputationProcedureAboveorBelowKneePerformedComposition
+    0..* ValidEncounterUnion
+    0..* QualifyingEncountersUnion
+    0..* LeftLowerAmputationUnion
+    0..* LeftLowerExtremityAmputationUnion
+    0..* RightLowerAmputationUnion
+    0..* RightLowerExtremityAmputationUnion
 
 EntryElement: CMS124v7
 Based on: CmsEcqmComposition
 Description: "CMS124v7"
     0..* CongenitalabsenceofcervixdisorderDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* PapTestLaboratoryTestOrderComposition
-    0..* PapTestLaboratoryTestPerformedComposition
-    0..* HPVTestLaboratoryTestPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* PapTestOrderComposition
+    0..* PapTestPerformedComposition
+    0..* HPVTestPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* FemalePatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* HysterectomywithNoResidualCervixProcedurePerformedComposition
-    0..* ValidEncounter11
-    0..* QualifyingEncounters8
+    0..* HysterectomywithNoResidualCervixPerformedComposition
+    0..* ValidEncounter7Union
+    0..* QualifyingEncounters5Union
 
 EntryElement: CMS125v7
 Based on: CmsEcqmComposition
@@ -431,138 +433,140 @@ Description: "CMS125v7"
     0..* HistoryofbilateralmastectomyDiagnosisComposition
     0..* StatusPostLeftMastectomyDiagnosisComposition
     0..* StatusPostRightMastectomyDiagnosisComposition
-    0..* MammographyDiagnosticStudyPerformedComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* MammographyPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* FemalePatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* BilateralMastectomyProcedurePerformedComposition
-    0..* UnilateralMastectomyProcedurePerformedComposition
-    0..* QualifyingEncounters
-    0..* RightMastectomy
-    0..* RightMastectomy
-    0..* LeftMastectomy
-    0..* LeftMastectomy
+    0..* BilateralMastectomyPerformedComposition
+    0..* UnilateralMastectomyPerformedComposition
+    0..* ValidEncounterUnion
+    0..* QualifyingEncountersUnion
+    0..* RightMastectomyUnion
+    0..* RightMastectomyUnion
+    0..* LeftMastectomyUnion
+    0..* LeftMastectomyUnion
 
 EntryElement: CMS127v7
 Based on: CmsEcqmComposition
 Description: "CMS127v7"
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* DischargeServicesNursingFacilityEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* NursingFacilityVisitEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* PneumococcalVaccineImmunizationAdministeredComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* DischargeServicesNursingFacilityPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* NursingFacilityVisitPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* PneumococcalVaccineAdministeredComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* PneumococcalVaccineAdministeredProcedurePerformedComposition
-    0..* ValidEncounter9
-    0..* QualifyingEncounters6
+    0..* PneumococcalVaccineAdministeredPerformedComposition
+    0..* ValidEncounter14Union
+    0..* QualifyingEncounters12Union
 
 EntryElement: CMS128v7
 Based on: CmsEcqmComposition
 Description: "CMS128v7"
     0..* MajorDepressionDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* TelephoneManagementEncounterPerformedComposition
-    0..* TelephoneEvaluationEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* PsychVisitDiagnosticEvaluationEncounterPerformedComposition
-    0..* PsychVisitPsychotherapyEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* AntidepressantMedicationMedicationActiveComposition
-    0..* AntidepressantMedicationMedicationDispensedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* TelephoneManagementPerformedComposition
+    0..* TelephoneEvaluationPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* PsychVisitDiagnosticEvaluationPerformedComposition
+    0..* PsychVisitPsychotherapyPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* AntidepressantMedicationActiveComposition
+    0..* AntidepressantMedicationDispensedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ValidEncounter12
-    0..* QualifyingEncounters9
+    0..* ValidEncounter8Union
+    0..* QualifyingEncounters6Union
 
 EntryElement: CMS129v8
 Based on: CmsEcqmComposition
 Description: "CMS129v8"
     0..* ProstateCancerDiagnosisComposition
     0..* PainRelatedtoProstateCancerDiagnosisComposition
-    0..* BoneScanDiagnosticStudyPerformedComposition
-    0..* GleasonscoreinSpecimenQualitativeLaboratoryTestPerformedComposition
-    0..* ProstateSpecificAntigenTestLaboratoryTestPerformedComposition
+    0..* BoneScanPerformedComposition
+    0..* GleasonscoreinSpecimenQualitativePerformedComposition
+    0..* ProstateSpecificAntigenTestPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* MalePatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* CancerStagingProcedurePerformedComposition
-    0..* ProstateCancerTreatmentProcedurePerformedComposition
-    0..* SalvageTherapyProcedurePerformedComposition
+    0..* CancerStagingPerformedComposition
+    0..* ProstateCancerTreatmentPerformedComposition
+    0..* SalvageTherapyPerformedComposition
 
 EntryElement: CMS130v7
 Based on: CmsEcqmComposition
 Description: "CMS130v7"
     0..* MalignantNeoplasmofColonDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* FITDNALaboratoryTestPerformedComposition
-    0..* FecalOccultBloodTestFOBTLaboratoryTestPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* FITDNAPerformedComposition
+    0..* FecalOccultBloodTestFOBTPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ColonoscopyProcedurePerformedComposition
-    0..* CTColonographyProcedurePerformedComposition
-    0..* FlexibleSigmoidoscopyProcedurePerformedComposition
-    0..* TotalColectomyProcedurePerformedComposition
-    0..* QualifyingEncounters
+    0..* ColonoscopyPerformedComposition
+    0..* CTColonographyPerformedComposition
+    0..* FlexibleSigmoidoscopyPerformedComposition
+    0..* TotalColectomyPerformedComposition
+    0..* ValidEncounterUnion
+    0..* QualifyingEncountersUnion
 
 EntryElement: CMS131v7
 Based on: CmsEcqmComposition
 Description: "CMS131v7"
     0..* DiabetesDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* OphthalmologicalServicesEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* OphthalmologicalServicesPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* RetinalorDilatedEyeExamPhysicalExamPerformedComposition
+    0..* RetinalorDilatedEyeExamPerformedComposition
     0..* NegativeFindingResult
-    0..* Encounter0
-    0..* QualifyingEncounters11
+    0..* Encounter0Union
+    0..* QualifyingEncounters10Union
 
 EntryElement: CMS132v7
 Based on: CmsEcqmComposition
@@ -598,22 +602,22 @@ Description: "CMS132v7"
     0..* UveitisDiagnosisComposition
     0..* VascularDisordersofIrisandCiliaryBodyDiagnosisComposition
     0..* MorgagnianCataractDiagnosisComposition
-    0..* UseofSystemicSympatheticalphaaAntagonistMedicationforTreatmentofProstaticHypertrophyMedicationActiveComposition
+    0..* UseofSystemicSympatheticalphaaAntagonistMedicationforTreatmentofProstaticHypertrophyActiveComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* AspirationandInjectionProceduresProcedurePerformedComposition
-    0..* ExcisionofAdhesionsProcedurePerformedComposition
-    0..* LensProcedureProcedurePerformedComposition
-    0..* RemovalProceduresProcedurePerformedComposition
-    0..* RetinalRepairProceduresProcedurePerformedComposition
-    0..* RevisionProceduresProcedurePerformedComposition
-    0..* ScleralProceduresProcedurePerformedComposition
-    0..* VitreousProceduresProcedurePerformedComposition
-    0..* CataractSurgeryProcedurePerformedComposition
-    0..* PriorParsPlanaVitrectomyProcedurePerformedComposition
-    0..* DenominatorExclusions
+    0..* AspirationandInjectionProceduresPerformedComposition
+    0..* ExcisionofAdhesionsPerformedComposition
+    0..* LensProcedurePerformedComposition
+    0..* RemovalProceduresPerformedComposition
+    0..* RetinalRepairProceduresPerformedComposition
+    0..* RevisionProceduresPerformedComposition
+    0..* ScleralProceduresPerformedComposition
+    0..* VitreousProceduresPerformedComposition
+    0..* CataractSurgeryPerformedComposition
+    0..* PriorParsPlanaVitrectomyPerformedComposition
+    0..* DenominatorExclusionsUnion
 
 EntryElement: CMS133v7
 Based on: CmsEcqmComposition
@@ -673,8 +677,8 @@ Description: "CMS133v7"
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* BestcorrectedvisualacuityobservableentityPhysicalExamPerformedComposition
-    0..* CataractSurgeryProcedurePerformedComposition
+    0..* BestcorrectedvisualacuityobservableentityPerformedComposition
+    0..* CataractSurgeryPerformedComposition
 
 EntryElement: CMS134v7
 Based on: CmsEcqmComposition
@@ -685,34 +689,35 @@ Description: "CMS134v7"
     0..* GlomerulonephritisandNephroticSyndromeDiagnosisComposition
     0..* KidneyFailureDiagnosisComposition
     0..* ProteinuriaDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* ESRDMonthlyOutpatientServicesEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* OtherServicesRelatedtoDialysisInterventionPerformedComposition
-    0..* DialysisEducationInterventionPerformedComposition
-    0..* UrineProteinTestsLaboratoryTestPerformedComposition
-    0..* ACEInhibitororARBMedicationActiveComposition
-    0..* ACEInhibitororARBMedicationOrderComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* ESRDMonthlyOutpatientServicesPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* OtherServicesRelatedtoDialysisPerformedComposition
+    0..* DialysisEducationPerformedComposition
+    0..* UrineProteinTestsPerformedComposition
+    0..* ACEInhibitororARBActiveComposition
+    0..* ACEInhibitororARBOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* VascularAccessforDialysisProcedurePerformedComposition
-    0..* KidneyTransplantProcedurePerformedComposition
-    0..* DialysisServicesProcedurePerformedComposition
-    0..* QualifyingEncounters
-    0..* RenalProcedures
-    0..* RenalInterventions
-    0..* NephropathyDiagnoses
-    0..* NephropathyDiagnoses
-    0..* NephropathyScreenings
-    0..* NephropathyScreenings
+    0..* VascularAccessforDialysisPerformedComposition
+    0..* KidneyTransplantPerformedComposition
+    0..* DialysisServicesPerformedComposition
+    0..* ValidEncounterUnion
+    0..* QualifyingEncountersUnion
+    0..* RenalProceduresUnion
+    0..* RenalInterventionsUnion
+    0..* NephropathyDiagnosesUnion
+    0..* NephropathyDiagnosesUnion
+    0..* NephropathyScreeningsUnion
+    0..* NephropathyScreeningsUnion
 
 EntryElement: CMS135v7
 Based on: CmsEcqmComposition
@@ -727,16 +732,16 @@ Description: "CMS135v7"
     0..* HeartFailureDiagnosisComposition
     0..* PregnancyDiagnosisComposition
     0..* ModerateorSevereSeverity
-    0..* EjectionFractionDiagnosticStudyPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* DischargeServicesHospitalInpatientEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* NursingFacilityVisitEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PatientProviderInteractionEncounterPerformedComposition
-    0..* ACEInhibitororARBMedicationActiveComposition
-    0..* ACEInhibitororARBMedicationOrderComposition
+    0..* EjectionFractionPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* DischargeServicesHospitalInpatientPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* NursingFacilityVisitPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PatientProviderInteractionPerformedComposition
+    0..* ACEInhibitororARBActiveComposition
+    0..* ACEInhibitororARBOrderComposition
     0..* MedicalReasonNegationRationale
     0..* PatientReasonNegationRationale
     0..* SystemReasonNegationRationale
@@ -744,136 +749,135 @@ Description: "CMS135v7"
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* FaceToFaceEncounter
-    0..* FacetoFaceEncounterDuringMeasurementPeriod
-    0..* ModerateorSevereLVSDFindings
-    0..* ValidEncounter0
-    0..* QualifyingEncounter0
+    0..* FaceToFaceEncounterUnion
+    0..* FacetoFaceEncounterDuringMeasurementPeriodUnion
+    0..* QualifyingEncounterUnion
+    0..* ModerateorSevereLVSDFindingsUnion
 
 EntryElement: CMS136v8
 Based on: CmsEcqmComposition
 Description: "CMS136v8"
     0..* NarcolepsyDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
+    0..* EncounterInpatientPerformedComposition
     0..* AmbulatoryFacilityLocations
-    0..* PsychotherapyandPharmacologicManagementEncounterPerformedComposition
+    0..* PsychotherapyandPharmacologicManagementPerformedComposition
     0..* MentalHealthDiagnosesPrincipalDiagnosis
-    0..* InpatientEncounterEncounterPerformedComposition
+    0..* InpatientEncounterPerformedComposition
     0..* SubstanceAbusePrincipalDiagnosis
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HospitalObservationCareInitialEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesIndividualCounselingEncounterPerformedComposition
-    0..* PreventiveCareServicesGroupCounselingEncounterPerformedComposition
-    0..* TelehealthServicesEncounterPerformedComposition
-    0..* DischargeServicesObservationCareEncounterPerformedComposition
-    0..* TelephoneManagementEncounterPerformedComposition
-    0..* BehavioralHealthFollowupVisitEncounterPerformedComposition
-    0..* PsychVisitDiagnosticEvaluationEncounterPerformedComposition
-    0..* PsychVisitPsychotherapyEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* ADHDMedicationsMedicationActiveComposition
-    0..* ADHDMedicationsMedicationDispensedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HospitalObservationCareInitialPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesIndividualCounselingPerformedComposition
+    0..* PreventiveCareServicesGroupCounselingPerformedComposition
+    0..* TelehealthServicesPerformedComposition
+    0..* DischargeServicesObservationCarePerformedComposition
+    0..* TelephoneManagementPerformedComposition
+    0..* BehavioralHealthFollowupVisitPerformedComposition
+    0..* PsychVisitDiagnosticEvaluationPerformedComposition
+    0..* PsychVisitPsychotherapyPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* ADHDMedicationsActiveComposition
+    0..* ADHDMedicationsDispensedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ValidEncounter6
-    0..* QualifyingEncounter3
-    0..* QualifyingNumeratorEncounter
-    0..* TelehealthEncounter
-    0..* TelehealthServicesorTelephoneManagement
+    0..* ValidEncounter10Union
+    0..* QualifyingEncounter2Union
+    0..* QualifyingNumeratorEncounterUnion
+    0..* TelehealthEncounterUnion
+    0..* TelehealthServicesorTelephoneManagementUnion
 
 EntryElement: CMS137v7
 Based on: CmsEcqmComposition
 Description: "CMS137v7"
     0..* AlcoholandDrugDependenceDiagnosisComposition
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HospitalObservationCareInitialEncounterPerformedComposition
-    0..* HospitalInpatientVisitInitialEncounterPerformedComposition
-    0..* DischargeServicesHospitalInpatientSameDayDischargeEncounterPerformedComposition
-    0..* DischargeServicesHospitalInpatientEncounterPerformedComposition
-    0..* DetoxificationVisitEncounterPerformedComposition
-    0..* AlcoholandDrugDependenceTreatmentEncounterPerformedComposition
-    0..* PsychVisitPsychotherapyEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HospitalObservationCareInitialPerformedComposition
+    0..* HospitalInpatientVisitInitialPerformedComposition
+    0..* DischargeServicesHospitalInpatientSameDayDischargePerformedComposition
+    0..* DischargeServicesHospitalInpatientPerformedComposition
+    0..* DetoxificationVisitPerformedComposition
+    0..* AlcoholandDrugDependenceTreatmentPerformedComposition
+    0..* PsychVisitPsychotherapyPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ValidEncounters
-    0..* QualifyingEncounters2
-    0..* InitiatedTreatment
-    0..* TreatmentInitiation
+    0..* ValidEncountersUnion
+    0..* QualifyingEncounters0Union
+    0..* InitiatedTreatmentUnion
+    0..* TreatmentInitiationUnion
 
 EntryElement: CMS138v7
 Based on: CmsEcqmComposition
 Description: "CMS138v7"
-    0..* TobaccoUseScreeningAssessmentPerformedComposition
+    0..* TobaccoUseScreeningPerformedComposition
     0..* MedicalReasonNegationRationale
     0..* LimitedLifeExpectancyDiagnosisComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesIndividualCounselingEncounterPerformedComposition
-    0..* PreventiveCareServicesGroupCounselingEncounterPerformedComposition
-    0..* PreventiveCareServicesOtherEncounterPerformedComposition
-    0..* OccupationalTherapyEvaluationEncounterPerformedComposition
-    0..* HealthBehavioralAssessmentIndividualEncounterPerformedComposition
-    0..* PsychoanalysisEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* HealthandBehavioralAssessmentInitialEncounterPerformedComposition
-    0..* OphthalmologicalServicesEncounterPerformedComposition
-    0..* PsychVisitDiagnosticEvaluationEncounterPerformedComposition
-    0..* PsychVisitPsychotherapyEncounterPerformedComposition
-    0..* HealthandBehavioralAssessmentReassessmentEncounterPerformedComposition
-    0..* SpeechandHearingEvaluationEncounterPerformedComposition
-    0..* TobaccoUseCessationCounselingInterventionPerformedComposition
-    0..* TobaccoUseCessationPharmacotherapyMedicationActiveComposition
-    0..* TobaccoUseCessationPharmacotherapyMedicationOrderComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesIndividualCounselingPerformedComposition
+    0..* PreventiveCareServicesGroupCounselingPerformedComposition
+    0..* PreventiveCareServicesOtherPerformedComposition
+    0..* OccupationalTherapyEvaluationPerformedComposition
+    0..* HealthBehavioralAssessmentIndividualPerformedComposition
+    0..* PsychoanalysisPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* HealthandBehavioralAssessmentInitialPerformedComposition
+    0..* OphthalmologicalServicesPerformedComposition
+    0..* PsychVisitDiagnosticEvaluationPerformedComposition
+    0..* PsychVisitPsychotherapyPerformedComposition
+    0..* HealthandBehavioralAssessmentReassessmentPerformedComposition
+    0..* SpeechandHearingEvaluationPerformedComposition
+    0..* TobaccoUseCessationCounselingPerformedComposition
+    0..* TobaccoUseCessationPharmacotherapyActiveComposition
+    0..* TobaccoUseCessationPharmacotherapyOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* OfficeBasedEncounter
-    0..* OfficeBasedVisitDuringMeasurementPeriod
-    0..* PreventiveEncounter
-    0..* PreventiveVisitDuringMeasurementPeriod
+    0..* OfficeBasedEncounterUnion
+    0..* OfficeBasedVisitDuringMeasurementPeriodUnion
+    0..* PreventiveEncounterUnion
+    0..* PreventiveVisitDuringMeasurementPeriodUnion
 
 EntryElement: CMS139v7
 Based on: CmsEcqmComposition
 Description: "CMS139v7"
-    0..* AmbulatoryStatusAssessmentPerformedComposition
-    0..* FallsScreeningAssessmentPerformedComposition
+    0..* AmbulatoryStatusPerformedComposition
+    0..* FallsScreeningPerformedComposition
     0..* PatientnotambulatoryResult
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* NursingFacilityVisitEncounterPerformedComposition
-    0..* DischargeServicesNursingFacilityEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesIndividualCounselingEncounterPerformedComposition
-    0..* AudiologyVisitEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* OphthalmologicalServicesEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* NursingFacilityVisitPerformedComposition
+    0..* DischargeServicesNursingFacilityPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesIndividualCounselingPerformedComposition
+    0..* AudiologyVisitPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* OphthalmologicalServicesPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ValidEncounter4
-    0..* QualifyingEncounter2
+    0..* ValidEncounter15Union
+    0..* QualifyingEncounter7Union
 
 EntryElement: CMS142v7
 Based on: CmsEcqmComposition
@@ -885,12 +889,12 @@ Description: "CMS142v7"
     0..* MedicalReasonNegationRationale
     0..* PatientReasonNegationRationale
     0..* DiabeticRetinopathyDiagnosisComposition
-    0..* MacularExamDiagnosticStudyPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* NursingFacilityVisitEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* OphthalmologicalServicesEncounterPerformedComposition
+    0..* MacularExamPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* NursingFacilityVisitPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* OphthalmologicalServicesPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
@@ -900,26 +904,26 @@ EntryElement: CMS143v7
 Based on: CmsEcqmComposition
 Description: "CMS143v7"
     0..* PrimaryOpenAngleGlaucomaDiagnosisComposition
-    0..* CuptoDiscRatioDiagnosticStudyPerformedComposition
-    0..* OpticDiscExamforStructuralAbnormalitiesDiagnosticStudyPerformedComposition
+    0..* CuptoDiscRatioPerformedComposition
+    0..* OpticDiscExamforStructuralAbnormalitiesPerformedComposition
     0..* MedicalReasonNegationRationale
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* NursingFacilityVisitEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* OphthalmologicalServicesEncounterPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* NursingFacilityVisitPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* OphthalmologicalServicesPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* FaceToFaceEncounter1
-    0..* FacetoFaceEncounterDuringMeasurementPeriod1
+    0..* FaceToFaceEncounter0Union
+    0..* FacetoFaceEncounterDuringMeasurementPeriod0Union
 
 EntryElement: CMS144v7
 Based on: CmsEcqmComposition
 Description: "CMS144v7"
     0..* BetaBlockerTherapyIngredientAllergyIntoleranceComposition
-    0..* CardiacPacerDeviceAppliedComposition
+    0..* CardiacPacerAppliedComposition
     0..* ModerateorSevereLVSDDiagnosisComposition
     0..* LeftVentricularSystolicDysfunctionDiagnosisComposition
     0..* AllergytoBetaBlockerTherapyDiagnosisComposition
@@ -932,16 +936,16 @@ Description: "CMS144v7"
     0..* HeartFailureDiagnosisComposition
     0..* BradycardiaDiagnosisComposition
     0..* ModerateorSevereSeverity
-    0..* EjectionFractionDiagnosticStudyPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* DischargeServicesHospitalInpatientEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* NursingFacilityVisitEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PatientProviderInteractionEncounterPerformedComposition
-    0..* BetaBlockerTherapyforLVSDMedicationActiveComposition
-    0..* BetaBlockerTherapyforLVSDMedicationOrderComposition
+    0..* EjectionFractionPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* DischargeServicesHospitalInpatientPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* NursingFacilityVisitPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PatientProviderInteractionPerformedComposition
+    0..* BetaBlockerTherapyforLVSDActiveComposition
+    0..* BetaBlockerTherapyforLVSDOrderComposition
     0..* MedicalReasonNegationRationale
     0..* PatientReasonNegationRationale
     0..* SystemReasonNegationRationale
@@ -949,16 +953,17 @@ Description: "CMS144v7"
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* HeartratePhysicalExamPerformedComposition
-    0..* FaceToFaceEncounter
-    0..* FacetoFaceEncounterDuringMeasurementPeriod
-    0..* ModerateorSevereLVSDFindings
+    0..* HeartratePerformedComposition
+    0..* FaceToFaceEncounterUnion
+    0..* FacetoFaceEncounterDuringMeasurementPeriodUnion
+    0..* QualifyingEncounterUnion
+    0..* ModerateorSevereLVSDFindingsUnion
 
 EntryElement: CMS145v7
 Based on: CmsEcqmComposition
 Description: "CMS145v7"
     0..* BetaBlockerTherapyIngredientAllergyIntoleranceComposition
-    0..* CardiacPacerDeviceAppliedComposition
+    0..* CardiacPacerAppliedComposition
     0..* ModerateorSevereLVSDDiagnosisComposition
     0..* AllergytoBetaBlockerTherapyDiagnosisComposition
     0..* IntolerancetoBetaBlockerTherapyDiagnosisComposition
@@ -972,17 +977,17 @@ Description: "CMS145v7"
     0..* BradycardiaDiagnosisComposition
     0..* ModerateorSevereSeverity
     0..* LeftVentricularSystolicDysfunctionDiagnosisComposition
-    0..* EjectionFractionDiagnosticStudyPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* NursingFacilityVisitEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PatientProviderInteractionEncounterPerformedComposition
-    0..* BetaBlockerTherapyMedicationActiveComposition
-    0..* BetaBlockerTherapyMedicationOrderComposition
-    0..* BetaBlockerTherapyforLVSDMedicationActiveComposition
-    0..* BetaBlockerTherapyforLVSDMedicationOrderComposition
+    0..* EjectionFractionPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* NursingFacilityVisitPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PatientProviderInteractionPerformedComposition
+    0..* BetaBlockerTherapyActiveComposition
+    0..* BetaBlockerTherapyOrderComposition
+    0..* BetaBlockerTherapyforLVSDActiveComposition
+    0..* BetaBlockerTherapyforLVSDOrderComposition
     0..* MedicalReasonNegationRationale
     0..* PatientReasonNegationRationale
     0..* SystemReasonNegationRationale
@@ -990,60 +995,62 @@ Description: "CMS145v7"
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* HeartratePhysicalExamPerformedComposition
-    0..* CardiacSurgeryProcedurePerformedComposition
-    0..* FaceToFaceEncounter
-    0..* FacetoFaceEncounterDuringMeasurementPeriod
-    0..* QualifyingCADEncounter
+    0..* HeartratePerformedComposition
+    0..* CardiacSurgeryPerformedComposition
+    0..* FaceToFaceEncounterUnion
+    0..* FacetoFaceEncounterDuringMeasurementPeriodUnion
+    0..* QualifyingCADEncounterUnion
+    0..* ValidEncounter1Union
+    0..* QualifyingEncounterUnion
 
 EntryElement: CMS146v7
 Based on: CmsEcqmComposition
 Description: "CMS146v7"
     0..* AcutePharyngitisDiagnosisComposition
     0..* AcuteTonsillitisDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* AmbulatoryEDVisitEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* GroupAStreptococcusTestLaboratoryTestPerformedComposition
-    0..* AntibioticMedicationsforPharyngitisMedicationActiveComposition
-    0..* AntibioticMedicationsforPharyngitisMedicationOrderComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* AmbulatoryEDVisitPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* GroupAStreptococcusTestPerformedComposition
+    0..* AntibioticMedicationsforPharyngitisActiveComposition
+    0..* AntibioticMedicationsforPharyngitisOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* PharyngitisorTonsillitis
-    0..* DenominatorExclusions1
+    0..* PharyngitisorTonsillitisUnion
+    0..* DenominatorExclusions1Union
 
 EntryElement: CMS147v8
 Based on: CmsEcqmComposition
 Description: "CMS147v8"
     0..* InfluenzaVaccineAllergyIntoleranceComposition
-    0..* InfluenzaVaccineImmunizationAdministeredComposition
+    0..* InfluenzaVaccineAdministeredComposition
     0..* InfluenzaVaccinationAllergyIntoleranceComposition
-    0..* InfluenzaVaccinationProcedurePerformedComposition
+    0..* InfluenzaVaccinationPerformedComposition
     0..* EggSubstanceAllergyIntoleranceComposition
     0..* PreviousReceiptofInfluenzaVaccineCommunicationFromPatientToProviderComposition
     0..* InfluenzaVaccinationDeclinedCommunicationFromPatientToProviderComposition
     0..* AllergytoEggsDiagnosisComposition
     0..* AllergytoInfluenzaVaccineDiagnosisComposition
     0..* IntolerancetoInfluenzaVaccineDiagnosisComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* NursingFacilityVisitEncounterPerformedComposition
-    0..* DischargeServicesNursingFacilityEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesIndividualCounselingEncounterPerformedComposition
-    0..* PreventiveCareServicesGroupCounselingEncounterPerformedComposition
-    0..* PreventiveCareServicesOtherEncounterPerformedComposition
-    0..* PatientProviderInteractionEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* EncounterInfluenzaEncounterPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* NursingFacilityVisitPerformedComposition
+    0..* DischargeServicesNursingFacilityPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesIndividualCounselingPerformedComposition
+    0..* PreventiveCareServicesGroupCounselingPerformedComposition
+    0..* PreventiveCareServicesOtherPerformedComposition
+    0..* PatientProviderInteractionPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* EncounterInfluenzaPerformedComposition
     0..* MedicalReasonNegationRationale
     0..* PatientReasonNegationRationale
     0..* SystemReasonNegationRationale
@@ -1051,41 +1058,41 @@ Description: "CMS147v8"
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* HemodialysisProcedurePerformedComposition
-    0..* PeritonealDialysisProcedurePerformedComposition
-    0..* QualifyingEncounter7
-    0..* InitialQualifyingEncounterDuringMeasurementPeriod
+    0..* HemodialysisPerformedComposition
+    0..* PeritonealDialysisPerformedComposition
+    0..* QualifyingEncounter5Union
+    0..* InitialQualifyingEncounterDuringMeasurementPeriodUnion
 
 EntryElement: CMS149v7
 Based on: CmsEcqmComposition
 Description: "CMS149v7"
-    0..* StandardizedToolsforAssessmentofCognitionAssessmentPerformedComposition
+    0..* StandardizedToolsforAssessmentofCognitionPerformedComposition
     0..* PatientReasonNegationRationale
     0..* DementiaMentalDegenerationsDiagnosisComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* NursingFacilityVisitEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* OccupationalTherapyEvaluationEncounterPerformedComposition
-    0..* PatientProviderInteractionEncounterPerformedComposition
-    0..* BehavioralNeuropsychAssessmentEncounterPerformedComposition
-    0..* PsychVisitDiagnosticEvaluationEncounterPerformedComposition
-    0..* PsychVisitPsychotherapyEncounterPerformedComposition
-    0..* CognitiveAssessmentInterventionPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* NursingFacilityVisitPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* OccupationalTherapyEvaluationPerformedComposition
+    0..* PatientProviderInteractionPerformedComposition
+    0..* BehavioralNeuropsychAssessmentPerformedComposition
+    0..* PsychVisitDiagnosticEvaluationPerformedComposition
+    0..* PsychVisitPsychotherapyPerformedComposition
+    0..* CognitiveAssessmentPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* FaceToFaceEncounter2
-    0..* FacetoFaceEncounterDuringMeasurementPeriod2
-    0..* ValidEncounter7
-    0..* QualifyingEncounter4
+    0..* FaceToFaceEncounter2Union
+    0..* FacetoFaceEncounterDuringMeasurementPeriod2Union
+    0..* ValidEncounter11Union
+    0..* QualifyingEncounter3Union
 
 EntryElement: CMS153v7
 Based on: CmsEcqmComposition
 Description: "CMS153v7"
-    0..* SexuallyActiveAssessmentPerformedComposition
+    0..* SexuallyActivePerformedComposition
     0..* GenitalHerpesDiagnosisComposition
     0..* OtherFemaleReproductiveConditionsDiagnosisComposition
     0..* ComplicationsofPregnancyChildbirthandthePuerperiumDiagnosisComposition
@@ -1095,344 +1102,344 @@ Description: "CMS153v7"
     0..* ChlamydiaDiagnosisComposition
     0..* InflammatoryDiseasesofFemaleReproductiveOrgansDiagnosisComposition
     0..* HIVDiagnosisComposition
-    0..* DiagnosticStudiesDuringPregnancyDiagnosticStudyOrderComposition
-    0..* XRayStudyallinclusiveDiagnosticStudyOrderComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* PapTestLaboratoryTestOrderComposition
-    0..* PapTestLaboratoryTestPerformedComposition
-    0..* LabTestsforSexuallyTransmittedInfectionsLaboratoryTestOrderComposition
-    0..* LabTestsDuringPregnancyLaboratoryTestOrderComposition
-    0..* PregnancyTestLaboratoryTestOrderComposition
-    0..* ChlamydiaScreeningLaboratoryTestPerformedComposition
-    0..* ContraceptiveMedicationsMedicationActiveComposition
-    0..* ContraceptiveMedicationsMedicationOrderComposition
-    0..* IsotretinoinMedicationOrderComposition
+    0..* DiagnosticStudiesDuringPregnancyOrderComposition
+    0..* XRayStudyallinclusiveOrderComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* PapTestOrderComposition
+    0..* PapTestPerformedComposition
+    0..* LabTestsforSexuallyTransmittedInfectionsOrderComposition
+    0..* LabTestsDuringPregnancyOrderComposition
+    0..* PregnancyTestOrderComposition
+    0..* ChlamydiaScreeningPerformedComposition
+    0..* ContraceptiveMedicationsActiveComposition
+    0..* ContraceptiveMedicationsOrderComposition
+    0..* IsotretinoinOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* FemalePatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ProceduresDuringPregnancyProcedurePerformedComposition
-    0..* ProceduresInvolvingContraceptiveDevicesProcedurePerformedComposition
-    0..* DeliveryLiveBirthsProcedurePerformedComposition
-    0..* ProceduresForSexualActivity
-    0..* ProceduresIdentifyingSexualActivity
-    0..* ValidEncounter3
-    0..* QualifyingEncounters4
-    0..* SexualActivityDiagnosis
-    0..* DiagnosesIdentifyingSexualActivity
-    0..* LabOrders
-    0..* LaboratoryTestsIdentifyingSexualActivityButNotPregnancy
-    0..* AllLabOrders
-    0..* LaboratoryTestsIdentifyingSexualActivity
-    0..* PregnancyTestExclusion
+    0..* ProceduresDuringPregnancyPerformedComposition
+    0..* ProceduresInvolvingContraceptiveDevicesPerformedComposition
+    0..* DeliveryLiveBirthsPerformedComposition
+    0..* ProceduresForSexualActivityUnion
+    0..* ProceduresIdentifyingSexualActivityUnion
+    0..* ValidEncounter6Union
+    0..* QualifyingEncounters4Union
+    0..* SexualActivityDiagnosisUnion
+    0..* DiagnosesIdentifyingSexualActivityUnion
+    0..* LabOrdersUnion
+    0..* LaboratoryTestsIdentifyingSexualActivityButNotPregnancyUnion
+    0..* AllLabOrdersUnion
+    0..* LaboratoryTestsIdentifyingSexualActivityUnion
+    0..* PregnancyTestExclusionUnion
 
 EntryElement: CMS154v7
 Based on: CmsEcqmComposition
 Description: "CMS154v7"
     0..* CompetingConditionsforRespiratoryConditionsDiagnosisComposition
     0..* UpperRespiratoryInfectionDiagnosisComposition
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HospitalObservationCareInitialEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* AntibioticMedicationsforPharyngitisMedicationActiveComposition
-    0..* AntibioticMedicationsforPharyngitisMedicationOrderComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HospitalObservationCareInitialPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* AntibioticMedicationsforPharyngitisActiveComposition
+    0..* AntibioticMedicationsforPharyngitisOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ValidEncounter14
-    0..* QualifyingEncounter6
-    0..* DenominatorExclusions0
+    0..* ValidEncounter13Union
+    0..* QualifyingEncounter6Union
+    0..* DenominatorExclusions0Union
 
 EntryElement: CMS155v7
 Based on: CmsEcqmComposition
 Description: "CMS155v7"
     0..* PregnancyDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesIndividualCounselingEncounterPerformedComposition
-    0..* PreventiveCareServicesGroupCounselingEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* CounselingforPhysicalActivityInterventionPerformedComposition
-    0..* CounselingforNutritionInterventionPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesIndividualCounselingPerformedComposition
+    0..* PreventiveCareServicesGroupCounselingPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* CounselingforPhysicalActivityPerformedComposition
+    0..* CounselingforNutritionPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* BMIpercentilePhysicalExamPerformedComposition
-    0..* HeightPhysicalExamPerformedComposition
-    0..* WeightPhysicalExamPerformedComposition
-    0..* ValidEncounter
-    0..* QualifyingEncounter
+    0..* BMIpercentilePerformedComposition
+    0..* HeightPerformedComposition
+    0..* WeightPerformedComposition
+    0..* ValidEncounter2Union
+    0..* QualifyingEncounter0Union
 
 EntryElement: CMS156v7
 Based on: CmsEcqmComposition
 Description: "CMS156v7"
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OphthalmologicOutpatientVisitEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* NursingFacilityVisitEncounterPerformedComposition
-    0..* DischargeServicesNursingFacilityEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* AmoxapineMedicationOrderComposition
-    0..* AtropineDiphenoxylateMedicationOrderComposition
-    0..* CyproheptadineMedicationOrderComposition
-    0..* DesipramineMedicationOrderComposition
-    0..* DicyclomineMedicationOrderComposition
-    0..* MeprobamateMedicationOrderComposition
-    0..* TrimipramineMedicationOrderComposition
-    0..* AmitriptylineChlordiazepoxideMedicationOrderComposition
-    0..* AcetaminophenDextromethorphanDoxylaminePhenylephrineMedicationOrderComposition
-    0..* DiphenhydramineIbuprofenMedicationOrderComposition
-    0..* ChlorpheniramineHydrocodonePseudoephedrineMedicationOrderComposition
-    0..* DexchlorpheniramineDextromethorphanPseudoephedrineMedicationOrderComposition
-    0..* ChlorpheniramineCodeineMedicationOrderComposition
-    0..* AspirinCaffeineOrphenadrineMedicationOrderComposition
-    0..* ChlorpropamideMedicationOrderComposition
-    0..* CarbinoxamineMedicationOrderComposition
-    0..* DiphenhydraminePhenylephrineMedicationOrderComposition
-    0..* ClemastineMedicationOrderComposition
-    0..* ChlorpheniraminePhenylephrinePyrilamineMedicationOrderComposition
-    0..* AcetaminophenChlorpheniramineDextromethorphanPhenylephrineMedicationOrderComposition
-    0..* DisopyramideMedicationOrderComposition
-    0..* ChlorpheniramineDextromethorphanPhenylephrineMedicationOrderComposition
-    0..* ChlorpheniraminePseudoephedrineMedicationOrderComposition
-    0..* AcetaminophenChlorpheniraminePseudoephedrineMedicationOrderComposition
-    0..* AcetaminophenButalbitalMedicationOrderComposition
-    0..* AcetaminophenDiphenhydraminePhenylephrineMedicationOrderComposition
-    0..* EstropipateMedicationOrderComposition
-    0..* EsterifiedEstrogensMethyltestosteroneMedicationOrderComposition
-    0..* AcetaminophenChlorpheniramineDextromethorphanPseudoephedrineMedicationOrderComposition
-    0..* EstradiolNorethindroneMedicationOrderComposition
-    0..* ConjugatedEstrogensMedroxyprogesteroneMedicationOrderComposition
-    0..* BrompheniramineDextromethorphanPhenylephrineMedicationOrderComposition
-    0..* AcetaminophenButalbitalCaffeineCodeineMedicationOrderComposition
-    0..* BrompheniraminePhenylephrineMedicationOrderComposition
-    0..* AcetaminophenChlorpheniraminePhenylephrineMedicationOrderComposition
-    0..* ChlorpheniramineHydrocodoneMedicationOrderComposition
-    0..* MethyldopaMedicationOrderComposition
-    0..* BrompheniraminePseudoephedrineMedicationOrderComposition
-    0..* TrihexyphenidylMedicationOrderComposition
-    0..* ClomipramineMedicationOrderComposition
-    0..* ChlorpheniramineDextromethorphanPseudoephedrineMedicationOrderComposition
-    0..* AcetaminophenDextromethorphanDoxylamineMedicationOrderComposition
-    0..* BrompheniramineDextromethorphanPseudoephedrineMedicationOrderComposition
-    0..* GuanfacineMedicationOrderComposition
-    0..* MegestrolMedicationOrderComposition
-    0..* ChlorpheniraminePhenylephrineMedicationOrderComposition
-    0..* PseudoephedrineTriprolidineMedicationOrderComposition
-    0..* AspirinButalbitalCaffeineMedicationOrderComposition
-    0..* PhenobarbitalMedicationOrderComposition
-    0..* DipyridamoleMedicationOrderComposition
-    0..* AcetaminophenDiphenhydramineMedicationOrderComposition
-    0..* MeperidineMedicationOrderComposition
-    0..* ChlorpheniramineMedicationOrderComposition
-    0..* NifedipineMedicationOrderComposition
-    0..* DesiccatedThyroidMedicationOrderComposition
-    0..* AtropineHyoscyaminePhenobarbitalScopolamineMedicationOrderComposition
-    0..* ConjugatedEstrogensMedicationOrderComposition
-    0..* MetaxaloneMedicationOrderComposition
-    0..* ImipramineMedicationOrderComposition
-    0..* GlyburideMetforminMedicationOrderComposition
-    0..* BenztropineMedicationOrderComposition
-    0..* ChlorzoxazoneMedicationOrderComposition
-    0..* AcetaminophenButalbitalCaffeineMedicationOrderComposition
-    0..* KetorolacTromethamineMedicationOrderComposition
-    0..* EstradiolMedicationOrderComposition
-    0..* IndomethacinMedicationOrderComposition
-    0..* PromethazineHydrochlorideMedicationOrderComposition
-    0..* GlyburideMedicationOrderComposition
-    0..* CarisoprodolMedicationOrderComposition
-    0..* MethocarbamolMedicationOrderComposition
-    0..* DiphenhydramineHydrochlorideMedicationOrderComposition
-    0..* CyclobenzaprineHydrochlorideMedicationOrderComposition
-    0..* AmitriptylineHydrochlorideMedicationOrderComposition
-    0..* HydroxyzineMedicationOrderComposition
-    0..* DexbrompheniramineMedicationOrderComposition
-    0..* DextromethorphanDiphenhydraminePhenylephrineMedicationOrderComposition
-    0..* DienogestEstradiolMultiphasicMedicationOrderComposition
-    0..* AcetaminophenDextromethorphanDiphenhydraminePhenylephrineMedicationOrderComposition
-    0..* ButabarbitalMedicationOrderComposition
-    0..* AcetaminophenDexbrompheniramineMedicationOrderComposition
-    0..* TriprolidineMedicationOrderComposition
-    0..* BrompheniramineCodeinePhenylephrineMedicationOrderComposition
-    0..* DrospirenoneEstradiolMedicationOrderComposition
-    0..* ChlophedianolChlorpheniraminePhenylephrineMedicationOrderComposition
-    0..* HydrochlorothiazideMethyldopaMedicationOrderComposition
-    0..* EsterifiedEstrogensMedicationOrderComposition
-    0..* AcetaminophenChlorpheniramineDextromethorphanMedicationOrderComposition
-    0..* IsoxsuprineMedicationOrderComposition
-    0..* DexchlorpheniraminePseudoephedrineMedicationOrderComposition
-    0..* DexbrompheniramineDextromethorphanPhenylephrineMedicationOrderComposition
-    0..* BrompheniramineMedicationOrderComposition
-    0..* AmitriptylinePerphenazineMedicationOrderComposition
-    0..* DexbrompheniramineMaleatePseudoephedrineHydrochlorideMedicationOrderComposition
-    0..* DexbrompheniraminePseudoephedrineMedicationOrderComposition
-    0..* ChlophedianolDexchlorpheniraminePseudoephedrineMedicationOrderComposition
-    0..* BrompheniramineCodeinePseudoephedrineMedicationOrderComposition
-    0..* DextromethorphanDoxylamineMedicationOrderComposition
-    0..* ChlorpheniraminePhenylephrinePhenyltoloxamineMedicationOrderComposition
-    0..* DimenhydrinateMedicationOrderComposition
-    0..* HyoscyamineMedicationOrderComposition
-    0..* HyoscyamineMethenamineMbluePhenylSalicylMedicationOrderComposition
-    0..* HyoscyamineMethenamineMbluePhenylSalicylSodiumBiphosphateMedicationOrderComposition
-    0..* HyoscyamineMethenamineMblueSodiumBiphosphateMedicationOrderComposition
-    0..* MeclizineMedicationOrderComposition
-    0..* NortriptylineMedicationOrderComposition
-    0..* ParoxetineMedicationOrderComposition
-    0..* ProtriptylineMedicationOrderComposition
-    0..* HighRiskMedicationsfortheElderlyMedicationOrderComposition
-    0..* ListofSingleRxNormCodeConceptsforHighRiskDrugsfortheElderlyMedicationOrderComposition
-    0..* HighRiskMedicationsWithDaysSupplyCriteriaMedicationOrderComposition
-    0..* NonbenzodiazepinehypnoticsMedicationOrderComposition
-    0..* AntiInfectivesotherMedicationOrderComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OphthalmologicOutpatientVisitPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* NursingFacilityVisitPerformedComposition
+    0..* DischargeServicesNursingFacilityPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* AmoxapineOrderComposition
+    0..* AtropineDiphenoxylateOrderComposition
+    0..* CyproheptadineOrderComposition
+    0..* DesipramineOrderComposition
+    0..* DicyclomineOrderComposition
+    0..* MeprobamateOrderComposition
+    0..* TrimipramineOrderComposition
+    0..* AmitriptylineChlordiazepoxideOrderComposition
+    0..* AcetaminophenDextromethorphanDoxylaminePhenylephrineOrderComposition
+    0..* DiphenhydramineIbuprofenOrderComposition
+    0..* ChlorpheniramineHydrocodonePseudoephedrineOrderComposition
+    0..* DexchlorpheniramineDextromethorphanPseudoephedrineOrderComposition
+    0..* ChlorpheniramineCodeineOrderComposition
+    0..* AspirinCaffeineOrphenadrineOrderComposition
+    0..* ChlorpropamideOrderComposition
+    0..* CarbinoxamineOrderComposition
+    0..* DiphenhydraminePhenylephrineOrderComposition
+    0..* ClemastineOrderComposition
+    0..* ChlorpheniraminePhenylephrinePyrilamineOrderComposition
+    0..* AcetaminophenChlorpheniramineDextromethorphanPhenylephrineOrderComposition
+    0..* DisopyramideOrderComposition
+    0..* ChlorpheniramineDextromethorphanPhenylephrineOrderComposition
+    0..* ChlorpheniraminePseudoephedrineOrderComposition
+    0..* AcetaminophenChlorpheniraminePseudoephedrineOrderComposition
+    0..* AcetaminophenButalbitalOrderComposition
+    0..* AcetaminophenDiphenhydraminePhenylephrineOrderComposition
+    0..* EstropipateOrderComposition
+    0..* EsterifiedEstrogensMethyltestosteroneOrderComposition
+    0..* AcetaminophenChlorpheniramineDextromethorphanPseudoephedrineOrderComposition
+    0..* EstradiolNorethindroneOrderComposition
+    0..* ConjugatedEstrogensMedroxyprogesteroneOrderComposition
+    0..* BrompheniramineDextromethorphanPhenylephrineOrderComposition
+    0..* AcetaminophenButalbitalCaffeineCodeineOrderComposition
+    0..* BrompheniraminePhenylephrineOrderComposition
+    0..* AcetaminophenChlorpheniraminePhenylephrineOrderComposition
+    0..* ChlorpheniramineHydrocodoneOrderComposition
+    0..* MethyldopaOrderComposition
+    0..* BrompheniraminePseudoephedrineOrderComposition
+    0..* TrihexyphenidylOrderComposition
+    0..* ClomipramineOrderComposition
+    0..* ChlorpheniramineDextromethorphanPseudoephedrineOrderComposition
+    0..* AcetaminophenDextromethorphanDoxylamineOrderComposition
+    0..* BrompheniramineDextromethorphanPseudoephedrineOrderComposition
+    0..* GuanfacineOrderComposition
+    0..* MegestrolOrderComposition
+    0..* ChlorpheniraminePhenylephrineOrderComposition
+    0..* PseudoephedrineTriprolidineOrderComposition
+    0..* AspirinButalbitalCaffeineOrderComposition
+    0..* PhenobarbitalOrderComposition
+    0..* DipyridamoleOrderComposition
+    0..* AcetaminophenDiphenhydramineOrderComposition
+    0..* MeperidineOrderComposition
+    0..* ChlorpheniramineOrderComposition
+    0..* NifedipineOrderComposition
+    0..* DesiccatedThyroidOrderComposition
+    0..* AtropineHyoscyaminePhenobarbitalScopolamineOrderComposition
+    0..* ConjugatedEstrogensOrderComposition
+    0..* MetaxaloneOrderComposition
+    0..* ImipramineOrderComposition
+    0..* GlyburideMetforminOrderComposition
+    0..* BenztropineOrderComposition
+    0..* ChlorzoxazoneOrderComposition
+    0..* AcetaminophenButalbitalCaffeineOrderComposition
+    0..* KetorolacTromethamineOrderComposition
+    0..* EstradiolOrderComposition
+    0..* IndomethacinOrderComposition
+    0..* PromethazineHydrochlorideOrderComposition
+    0..* GlyburideOrderComposition
+    0..* CarisoprodolOrderComposition
+    0..* MethocarbamolOrderComposition
+    0..* DiphenhydramineHydrochlorideOrderComposition
+    0..* CyclobenzaprineHydrochlorideOrderComposition
+    0..* AmitriptylineHydrochlorideOrderComposition
+    0..* HydroxyzineOrderComposition
+    0..* DexbrompheniramineOrderComposition
+    0..* DextromethorphanDiphenhydraminePhenylephrineOrderComposition
+    0..* DienogestEstradiolMultiphasicOrderComposition
+    0..* AcetaminophenDextromethorphanDiphenhydraminePhenylephrineOrderComposition
+    0..* ButabarbitalOrderComposition
+    0..* AcetaminophenDexbrompheniramineOrderComposition
+    0..* TriprolidineOrderComposition
+    0..* BrompheniramineCodeinePhenylephrineOrderComposition
+    0..* DrospirenoneEstradiolOrderComposition
+    0..* ChlophedianolChlorpheniraminePhenylephrineOrderComposition
+    0..* HydrochlorothiazideMethyldopaOrderComposition
+    0..* EsterifiedEstrogensOrderComposition
+    0..* AcetaminophenChlorpheniramineDextromethorphanOrderComposition
+    0..* IsoxsuprineOrderComposition
+    0..* DexchlorpheniraminePseudoephedrineOrderComposition
+    0..* DexbrompheniramineDextromethorphanPhenylephrineOrderComposition
+    0..* BrompheniramineOrderComposition
+    0..* AmitriptylinePerphenazineOrderComposition
+    0..* DexbrompheniramineMaleatePseudoephedrineHydrochlorideOrderComposition
+    0..* DexbrompheniraminePseudoephedrineOrderComposition
+    0..* ChlophedianolDexchlorpheniraminePseudoephedrineOrderComposition
+    0..* BrompheniramineCodeinePseudoephedrineOrderComposition
+    0..* DextromethorphanDoxylamineOrderComposition
+    0..* ChlorpheniraminePhenylephrinePhenyltoloxamineOrderComposition
+    0..* DimenhydrinateOrderComposition
+    0..* HyoscyamineOrderComposition
+    0..* HyoscyamineMethenamineMbluePhenylSalicylOrderComposition
+    0..* HyoscyamineMethenamineMbluePhenylSalicylSodiumBiphosphateOrderComposition
+    0..* HyoscyamineMethenamineMblueSodiumBiphosphateOrderComposition
+    0..* MeclizineOrderComposition
+    0..* NortriptylineOrderComposition
+    0..* ParoxetineOrderComposition
+    0..* ProtriptylineOrderComposition
+    0..* HighRiskMedicationsfortheElderlyOrderComposition
+    0..* ListofSingleRxNormCodeConceptsforHighRiskDrugsfortheElderlyOrderComposition
+    0..* HighRiskMedicationsWithDaysSupplyCriteriaOrderComposition
+    0..* NonbenzodiazepinehypnoticsOrderComposition
+    0..* AntiInfectivesotherOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ValidEncounter5
-    0..* QualifyingEncounters5
-    0..* MedicationList
+    0..* ValidEncounter5Union
+    0..* QualifyingEncounters3Union
+    0..* MedicationListUnion
 
 EntryElement: CMS157v7
 Based on: CmsEcqmComposition
 Description: "CMS157v7"
-    0..* StandardizedPainAssessmentToolAssessmentPerformedComposition
+    0..* StandardizedPainAssessmentToolPerformedComposition
     0..* CancerDiagnosisComposition
-    0..* OfficeVisitEncounterPerformedComposition
+    0..* OfficeVisitPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* RadiationTreatmentManagementProcedurePerformedComposition
-    0..* ChemotherapyAdministrationProcedurePerformedComposition
+    0..* RadiationTreatmentManagementPerformedComposition
+    0..* ChemotherapyAdministrationPerformedComposition
 
 EntryElement: CMS158v7
 Based on: CmsEcqmComposition
 Description: "CMS158v7"
     0..* HepatitisBDiagnosisComposition
     0..* DeliveryDiagnosisDiagnosisComposition
-    0..* HBsAgLaboratoryTestPerformedComposition
+    0..* HBsAgPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* FemalePatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* DeliveryProcedureProcedurePerformedComposition
+    0..* DeliveryProcedurePerformedComposition
 
 EntryElement: CMS159v7
 Based on: CmsEcqmComposition
 Description: "CMS159v7"
-    0..* PatientHealthQuestionnaireitemPHQtotalscoreReportedAssessmentPerformedComposition
+    0..* PatientHealthQuestionnaireitemPHQtotalscoreReportedPerformedComposition
     0..* SchizophreniaorPsychoticDisorderDiagnosisComposition
     0..* PervasiveDevelopmentalDisorderDiagnosisComposition
     0..* BipolarDisorderDiagnosisComposition
     0..* PersonalityDisorderDiagnosisComposition
     0..* DysthymiaDiagnosisComposition
     0..* MajorDepressionIncludingRemissionDiagnosisComposition
-    0..* ContactorOfficeVisitEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* PalliativecareencounterEncounterPerformedComposition
-    0..* PalliativeCareInterventionOrderComposition
+    0..* ContactorOfficeVisitPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* PalliativecareencounterPerformedComposition
+    0..* PalliativeCareOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* DepressionDiagnoses
-    0..* DisorderDiagnoses
-    0..* DisorderDiagnoses0
+    0..* DepressionDiagnosesUnion
+    0..* DisorderDiagnosesUnion
+    0..* DisorderDiagnoses0Union
 
 EntryElement: CMS160v7
 Based on: CmsEcqmComposition
 Description: "CMS160v7"
-    0..* PatientHealthQuestionnaireitemPHQtotalscoreReportedAssessmentPerformedComposition
+    0..* PatientHealthQuestionnaireitemPHQtotalscoreReportedPerformedComposition
     0..* SchizophreniaorPsychoticDisorderDiagnosisComposition
     0..* PervasiveDevelopmentalDisorderDiagnosisComposition
     0..* BipolarDisorderDiagnosisComposition
     0..* PersonalityDisorderDiagnosisComposition
     0..* DysthymiaDiagnosisComposition
     0..* MajorDepressionIncludingRemissionDiagnosisComposition
-    0..* ContactorOfficeVisitEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* PalliativecareencounterEncounterPerformedComposition
-    0..* PalliativeCareInterventionOrderComposition
+    0..* ContactorOfficeVisitPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* PalliativecareencounterPerformedComposition
+    0..* PalliativeCareOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* DepressionDiagnoses
-    0..* DisorderDiagnoses
-    0..* DisorderDiagnosesOverlapsDepressionEncounterinMaythroughAugust
-    0..* DisorderDiagnosesOverlapsDepressionEncounterinSeptemberthroughDecember
-    0..* DisorderDiagnosesOverlapsDepressionEncounterinJanuarythroughApril
+    0..* DepressionDiagnosesUnion
+    0..* DisorderDiagnosesUnion
+    0..* DisorderDiagnosesOverlapsDepressionEncounterinMaythroughAugustUnion
+    0..* DisorderDiagnosesOverlapsDepressionEncounterinSeptemberthroughDecemberUnion
+    0..* DisorderDiagnosesOverlapsDepressionEncounterinJanuarythroughAprilUnion
 
 EntryElement: CMS161v7
 Based on: CmsEcqmComposition
 Description: "CMS161v7"
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
     0..* MajorDepressiveDisorderActiveDiagnoses
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* PsychoanalysisEncounterPerformedComposition
-    0..* PsychVisitDiagnosticEvaluationEncounterPerformedComposition
-    0..* PsychVisitPsychotherapyEncounterPerformedComposition
-    0..* SuicideriskassessmentprocedureInterventionPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* PsychoanalysisPerformedComposition
+    0..* PsychVisitDiagnosticEvaluationPerformedComposition
+    0..* PsychVisitPsychotherapyPerformedComposition
+    0..* SuicideriskassessmentprocedurePerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ValidEncounter13
-    0..* MajorDepressiveDisorderEncounter
+    0..* ValidEncounter9Union
+    0..* MajorDepressiveDisorderEncounter0Union
 
 EntryElement: CMS164v7
 Based on: CmsEcqmComposition
 Description: "CMS164v7"
     0..* AcuteMyocardialInfarctionDiagnosisComposition
     0..* IschemicVascularDiseaseDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* AspirinandOtherAntiplateletsMedicationActiveComposition
-    0..* AnticoagulantMedicationsMedicationActiveComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* AspirinandOtherAntiplateletsActiveComposition
+    0..* AnticoagulantMedicationsActiveComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* CoronaryArteryBypassGraftProcedurePerformedComposition
-    0..* PercutaneousCoronaryInterventionsProcedurePerformedComposition
-    0..* HeartProcedure
-    0..* HeartProcedures
-    0..* ValidEncounter1
-    0..* QualifyingEncounters
+    0..* CoronaryArteryBypassGraftPerformedComposition
+    0..* PercutaneousCoronaryInterventionsPerformedComposition
+    0..* ValidEncounterUnion
+    0..* QualifyingEncountersUnion
+    0..* HeartProcedureUnion
+    0..* HeartProceduresUnion
 
 EntryElement: CMS165v7
 Based on: CmsEcqmComposition
@@ -1442,45 +1449,46 @@ Description: "CMS165v7"
     0..* ChronicKidneyDiseaseStageDiagnosisComposition
     0..* EndStageRenalDiseaseDiagnosisComposition
     0..* PregnancyDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HomeHealthcareServicesEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* AdultOutpatientVisitEncounterPerformedComposition
-    0..* ESRDMonthlyOutpatientServicesEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HomeHealthcareServicesPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* AdultOutpatientVisitPerformedComposition
+    0..* ESRDMonthlyOutpatientServicesPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* DiastolicbloodpressurePhysicalExamPerformedComposition
-    0..* SystolicbloodpressurePhysicalExamPerformedComposition
-    0..* VascularAccessforDialysisProcedurePerformedComposition
-    0..* KidneyTransplantProcedurePerformedComposition
-    0..* DialysisServicesProcedurePerformedComposition
-    0..* QualifyingEncounters
-    0..* ESRDProcedure
-    0..* EndStageRenalDiseaseProcedures
-    0..* PregnancyESRDDiagnosis
-    0..* PregnancyOrRenalDiagnosisExclusions
+    0..* DiastolicbloodpressurePerformedComposition
+    0..* SystolicbloodpressurePerformedComposition
+    0..* VascularAccessforDialysisPerformedComposition
+    0..* KidneyTransplantPerformedComposition
+    0..* DialysisServicesPerformedComposition
+    0..* ValidEncounterUnion
+    0..* QualifyingEncountersUnion
+    0..* ESRDProcedureUnion
+    0..* EndStageRenalDiseaseProceduresUnion
+    0..* PregnancyESRDDiagnosisUnion
+    0..* PregnancyOrRenalDiagnosisExclusionsUnion
 
 EntryElement: CMS167v7
 Based on: CmsEcqmComposition
 Description: "CMS167v7"
     0..* DiabeticRetinopathyDiagnosisComposition
-    0..* MacularExamDiagnosticStudyPerformedComposition
+    0..* MacularExamPerformedComposition
     0..* LevelofSeverityofRetinopathyFindingsCommunicationFromProviderToProviderComposition
     0..* LevelofSeverityofRetinopathyFindingsComponents
     0..* MedicalReasonNegationRationale
     0..* PatientReasonNegationRationale
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* NursingFacilityVisitEncounterPerformedComposition
-    0..* CareServicesinLongTermResidentialFacilityEncounterPerformedComposition
-    0..* OphthalmologicalServicesEncounterPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* NursingFacilityVisitPerformedComposition
+    0..* CareServicesinLongTermResidentialFacilityPerformedComposition
+    0..* OphthalmologicalServicesPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
@@ -1491,63 +1499,63 @@ Based on: CmsEcqmComposition
 Description: "CMS169v7"
     0..* BHConditionInvolvingBipolarDisorderDiagnosisComposition
     0..* BHConditionInvolvingUnipolarDepressionDiagnosisComposition
-    0..* BHOutpatientPsychotherapyEncounterPerformedComposition
-    0..* BHOutpatientencounterEncounterPerformedComposition
-    0..* BHMoodStabilizerMedicationMedicationActiveComposition
-    0..* BHMoodStabilizerMedicationMedicationOrderComposition
-    0..* BHAntidepressantMedicationMedicationActiveComposition
-    0..* BHAntidepressantMedicationMedicationOrderComposition
+    0..* BHOutpatientPsychotherapyPerformedComposition
+    0..* BHOutpatientencounterPerformedComposition
+    0..* BHMoodStabilizerMedicationActiveComposition
+    0..* BHMoodStabilizerMedicationOrderComposition
+    0..* BHAntidepressantMedicationActiveComposition
+    0..* BHAntidepressantMedicationOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* BHElectroconvulsiveTherapyProcedureOrderComposition
-    0..* BHElectroconvulsiveTherapyProcedurePerformedComposition
-    0..* BHCounselingforDepressionProcedureOrderComposition
-    0..* BHCounselingforDepressionProcedurePerformedComposition
-    0..* BHAssessmentforAlcoholorOtherDrugsProcedurePerformedComposition
-    0..* BipolarDisorderOrUnipolarDepression
-    0..* BehavioralHealthOutpatientEncounter
-    0..* DepressionTreatmentProcedureOrdered
-    0..* DepressionTreatmentProcedurePerformed
-    0..* AntidepressantorMoodStabilizerOrdered
-    0..* Treatments
-    0..* IndexBehavioralHealthOutpatientEncounterBeforeTreatmentorPsychotherapy
-    0..* ActiveAntidepressantorMoodStabilizer
-    0..* ActiveBehavioralHealthMedicationsorDiagnosis
-    0..* IndexOutpatientEncounterwithin180daysafterPriorEncounterDiagnosisorTreatment
-    0..* InclusiveTreatments
-    0..* QualifyingTreatments
+    0..* BHElectroconvulsiveTherapyOrderComposition
+    0..* BHElectroconvulsiveTherapyPerformedComposition
+    0..* BHCounselingforDepressionOrderComposition
+    0..* BHCounselingforDepressionPerformedComposition
+    0..* BHAssessmentforAlcoholorOtherDrugsPerformedComposition
+    0..* BipolarDisorderOrUnipolarDepressionUnion
+    0..* BehavioralHealthOutpatientEncounterUnion
+    0..* DepressionTreatmentProcedureOrderedUnion
+    0..* DepressionTreatmentProcedurePerformedUnion
+    0..* AntidepressantorMoodStabilizerOrderedUnion
+    0..* TreatmentsUnion
+    0..* IndexBehavioralHealthOutpatientEncounterBeforeTreatmentorPsychotherapyUnion
+    0..* ActiveAntidepressantorMoodStabilizerUnion
+    0..* ActiveBehavioralHealthMedicationsorDiagnosisUnion
+    0..* IndexOutpatientEncounterwithin180daysafterPriorEncounterDiagnosisorTreatmentUnion
+    0..* InclusiveTreatmentsUnion
+    0..* QualifyingTreatmentsUnion
 
 EntryElement: CMS177v7
 Based on: CmsEcqmComposition
 Description: "CMS177v7"
     0..* MajorDepressiveDisorderActiveDiagnoses
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* PsychVisitFamilyPsychotherapyEncounterPerformedComposition
-    0..* PsychoanalysisEncounterPerformedComposition
-    0..* GroupPsychotherapyEncounterPerformedComposition
-    0..* PsychVisitDiagnosticEvaluationEncounterPerformedComposition
-    0..* PsychVisitPsychotherapyEncounterPerformedComposition
-    0..* SuicideriskassessmentprocedureInterventionPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* PsychVisitFamilyPsychotherapyPerformedComposition
+    0..* PsychoanalysisPerformedComposition
+    0..* GroupPsychotherapyPerformedComposition
+    0..* PsychVisitDiagnosticEvaluationPerformedComposition
+    0..* PsychVisitPsychotherapyPerformedComposition
+    0..* SuicideriskassessmentprocedurePerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ValidEncounter15
-    0..* MajorDepressiveDisorderEncounter0
+    0..* ValidEncounter0Union
+    0..* MajorDepressiveDisorderEncounterUnion
 
 EntryElement: CMS190v7
 Based on: CmsEcqmComposition
 Description: "CMS190v7"
-    0..* RiskforvenousthromboembolismAssessmentPerformedComposition
-    0..* IntermittentpneumaticcompressiondevicesIPCDeviceAppliedComposition
-    0..* IntermittentpneumaticcompressiondevicesIPCDeviceOrderComposition
-    0..* VenousfootpumpsVFPDeviceAppliedComposition
-    0..* VenousfootpumpsVFPDeviceOrderComposition
-    0..* GraduatedcompressionstockingsGCSDeviceAppliedComposition
-    0..* GraduatedcompressionstockingsGCSDeviceOrderComposition
+    0..* RiskforvenousthromboembolismPerformedComposition
+    0..* IntermittentpneumaticcompressiondevicesIPCAppliedComposition
+    0..* IntermittentpneumaticcompressiondevicesIPCOrderComposition
+    0..* VenousfootpumpsVFPAppliedComposition
+    0..* VenousfootpumpsVFPOrderComposition
+    0..* GraduatedcompressionstockingsGCSAppliedComposition
+    0..* GraduatedcompressionstockingsGCSOrderComposition
     0..* MedicalReasonNegationRationale
     0..* PatientRefusalNegationRationale
     0..* ObstetricsDiagnosisComposition
@@ -1555,23 +1563,23 @@ Description: "CMS190v7"
     0..* AtrialFibrillationFlutterDiagnosisComposition
     0..* AtrialFibrillationFlutterDiagnoses
     0..* VenousThromboembolismDiagnosisComposition
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* ComfortMeasuresInterventionOrderComposition
-    0..* ComfortMeasuresInterventionPerformedComposition
-    0..* INRLaboratoryTestPerformedComposition
-    0..* LowDoseUnfractionatedHeparinforVTEProphylaxisMedicationAdministeredComposition
-    0..* LowDoseUnfractionatedHeparinforVTEProphylaxisMedicationOrderComposition
-    0..* InjectableFactorXaInhibitorforVTEProphylaxisMedicationAdministeredComposition
-    0..* InjectableFactorXaInhibitorforVTEProphylaxisMedicationOrderComposition
-    0..* LowMolecularWeightHeparinforVTEProphylaxisMedicationAdministeredComposition
-    0..* LowMolecularWeightHeparinforVTEProphylaxisMedicationOrderComposition
-    0..* WarfarinMedicationAdministeredComposition
-    0..* WarfarinMedicationOrderComposition
-    0..* GlycoproteinIIbIIIaInhibitorsMedicationAdministeredComposition
-    0..* DirectThrombinInhibitorMedicationAdministeredComposition
-    0..* UnfractionatedHeparinMedicationAdministeredComposition
-    0..* OralFactorXaInhibitorforVTEProphylaxisorVTETreatmentMedicationAdministeredComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* ComfortMeasuresOrderComposition
+    0..* ComfortMeasuresPerformedComposition
+    0..* INRPerformedComposition
+    0..* LowDoseUnfractionatedHeparinforVTEProphylaxisAdministeredComposition
+    0..* LowDoseUnfractionatedHeparinforVTEProphylaxisOrderComposition
+    0..* InjectableFactorXaInhibitorforVTEProphylaxisAdministeredComposition
+    0..* InjectableFactorXaInhibitorforVTEProphylaxisOrderComposition
+    0..* LowMolecularWeightHeparinforVTEProphylaxisAdministeredComposition
+    0..* LowMolecularWeightHeparinforVTEProphylaxisOrderComposition
+    0..* WarfarinAdministeredComposition
+    0..* WarfarinOrderComposition
+    0..* GlycoproteinIIbIIIaInhibitorsAdministeredComposition
+    0..* DirectThrombinInhibitorAdministeredComposition
+    0..* UnfractionatedHeparinAdministeredComposition
+    0..* OralFactorXaInhibitorforVTEProphylaxisorVTETreatmentAdministeredComposition
     0..* IntravenousrouteRoute
     0..* SubcutaneousrouteRoute
     0..* EthnicityPatientCharacteristicEthnicityComposition
@@ -1579,64 +1587,64 @@ Description: "CMS190v7"
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
     0..* PrincipalOrdinality
-    0..* GeneralSurgeryProcedurePerformedComposition
-    0..* GynecologicalSurgeryProcedurePerformedComposition
-    0..* HipFractureSurgeryProcedurePerformedComposition
-    0..* HipReplacementSurgeryProcedurePerformedComposition
-    0..* IntracranialNeurosurgeryProcedurePerformedComposition
-    0..* KneeReplacementSurgeryProcedurePerformedComposition
-    0..* UrologicalSurgeryProcedurePerformedComposition
-    0..* GeneralorNeuraxialAnesthesiaProcedurePerformedComposition
-    0..* InterventionComfortMeasures
-    0..* NoVTEProphylaxisDeviceAppliedorOrdered
-    0..* NoVTEProphylaxisMedicationAdministeredorOrdered
-    0..* SCIPVTESelectedSurgery
-    0..* VTEProphylaxisbyMedicationAdministeredorDeviceApplied
-    0..* IsInLowRiskforVTEorOnAnticoagulant
-    0..* LowRiskforVTEorAnticoagulantAdministered
-    0..* NoVTEProphylaxisDuetoMedicalReason
-    0..* NoVTEProphylaxis
-    0..* NoVTEProphylaxisMedicationorDeviceDuetoPatientRefusal
-    0..* NoVTEProphylaxisDuetoPatientRefusal
-    0..* VTEProphylaxisReceivedonDayoforDayAfterFirstICUStayorProcedure
-    0..* MedicationOralFactorXaInhibitorAdministeredonDayoforDayAfterFirstICUStayorProcedure
-    0..* EncounterWithPriororPresentDiagnosisofAtrialFibrillationorVTE0
-    0..* Numerator3
+    0..* GeneralSurgeryPerformedComposition
+    0..* GynecologicalSurgeryPerformedComposition
+    0..* HipFractureSurgeryPerformedComposition
+    0..* HipReplacementSurgeryPerformedComposition
+    0..* IntracranialNeurosurgeryPerformedComposition
+    0..* KneeReplacementSurgeryPerformedComposition
+    0..* UrologicalSurgeryPerformedComposition
+    0..* GeneralorNeuraxialAnesthesiaPerformedComposition
+    0..* InterventionComfortMeasuresUnion
+    0..* NoVTEProphylaxisDeviceAppliedorOrderedUnion
+    0..* NoVTEProphylaxisMedicationAdministeredorOrderedUnion
+    0..* SCIPVTESelectedSurgeryUnion
+    0..* VTEProphylaxisbyMedicationAdministeredorDeviceAppliedUnion
+    0..* IsInLowRiskforVTEorOnAnticoagulantUnion
+    0..* LowRiskforVTEorAnticoagulantAdministeredUnion
+    0..* NoVTEProphylaxisDuetoMedicalReasonUnion
+    0..* NoVTEProphylaxisUnion
+    0..* NoVTEProphylaxisMedicationorDeviceDuetoPatientRefusalUnion
+    0..* NoVTEProphylaxisDuetoPatientRefusalUnion
+    0..* VTEProphylaxisReceivedonDayoforDayAfterFirstICUStayorProcedureUnion
+    0..* MedicationOralFactorXaInhibitorAdministeredonDayoforDayAfterFirstICUStayorProcedureUnion
+    0..* EncounterWithPriororPresentDiagnosisofAtrialFibrillationorVTE0Union
+    0..* Numerator2Union
 
 EntryElement: CMS22v7
 Based on: CmsEcqmComposition
 Description: "CMS22v7"
     0..* DiagnosisofhypertensionDiagnosisComposition
-    0..* ECGleadorstudyorderDiagnosticStudyOrderComposition
+    0..* ECGleadorstudyorderOrderComposition
     0..* PatientReasonrefusedNegationRationale
-    0..* BPScreeningEncounterCodesEncounterPerformedComposition
-    0..* ReferraltoAlternativeProviderPrimaryCareProviderInterventionOrderComposition
-    0..* LifestyleRecommendationInterventionOrderComposition
-    0..* WeightReductionRecommendedInterventionOrderComposition
-    0..* DietaryRecommendationsInterventionOrderComposition
-    0..* PhysicalActivityRecommendationInterventionOrderComposition
-    0..* ModerationofETOHConsumptionRecommendationInterventionOrderComposition
-    0..* FollowupwithinoneyearInterventionOrderComposition
-    0..* FollowupwithinweeksInterventionOrderComposition
-    0..* LaboratoryTestsforHypertensionLaboratoryTestOrderComposition
-    0..* AntiHypertensivePharmacologicTherapyMedicationOrderComposition
+    0..* BPScreeningEncounterCodesPerformedComposition
+    0..* ReferraltoAlternativeProviderPrimaryCareProviderOrderComposition
+    0..* LifestyleRecommendationOrderComposition
+    0..* WeightReductionRecommendedOrderComposition
+    0..* DietaryRecommendationsOrderComposition
+    0..* PhysicalActivityRecommendationOrderComposition
+    0..* ModerationofETOHConsumptionRecommendationOrderComposition
+    0..* FollowupwithinoneyearOrderComposition
+    0..* FollowupwithinweeksOrderComposition
+    0..* LaboratoryTestsforHypertensionOrderComposition
+    0..* AntiHypertensivePharmacologicTherapyOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* DiastolicbloodpressurePhysicalExamPerformedComposition
-    0..* SystolicbloodpressurePhysicalExamPerformedComposition
-    0..* HypertensiveInterventions
-    0..* HypertensiveFollowupInterventionsNotOrdered
-    0..* NoBloodPressureScreen
+    0..* DiastolicbloodpressurePerformedComposition
+    0..* SystolicbloodpressurePerformedComposition
+    0..* HypertensiveInterventionsUnion
+    0..* HypertensiveFollowupInterventionsNotOrderedUnion
+    0..* NoBloodPressureScreenUnion
 
 EntryElement: CMS249v1
 Based on: CmsEcqmComposition
 Description: "CMS249v1"
-    0..* AverageNumberofDrinksperDrinkingDayAssessmentPerformedComposition
-    0..* HistoryofhipfractureinparentAssessmentPerformedComposition
-    0..* TenyearprobabilityofallmajorosteoporosisrelatedfractureAssessmentPerformedComposition
-    0..* TobaccoUseScreeningAssessmentPerformedComposition
+    0..* AverageNumberofDrinksperDrinkingDayPerformedComposition
+    0..* HistoryofhipfractureinparentPerformedComposition
+    0..* TenyearprobabilityofallmajorosteoporosisrelatedfracturePerformedComposition
+    0..* TobaccoUseScreeningPerformedComposition
     0..* CurrentTobaccoSmokerResult
     0..* TypeDiabetesDiagnosisComposition
     0..* RheumatoidArthritisDiagnosisComposition
@@ -1656,62 +1664,62 @@ Description: "CMS249v1"
     0..* ChronicMalnutritionDiagnosisComposition
     0..* MalabsorptionSyndromesDiagnosisComposition
     0..* EndStageRenalDiseaseDiagnosisComposition
-    0..* DXADualenergyXrayAbsorptiometryScanDiagnosticStudyOrderComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesOtherEncounterPerformedComposition
-    0..* AromataseInhibitorsMedicationActiveComposition
-    0..* AromataseInhibitorsMedicationOrderComposition
-    0..* GlucocorticoidsoralonlyMedicationActiveComposition
+    0..* DXADualenergyXrayAbsorptiometryScanOrderComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesOtherPerformedComposition
+    0..* AromataseInhibitorsActiveComposition
+    0..* AromataseInhibitorsOrderComposition
+    0..* GlucocorticoidsoralonlyActiveComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* FemalePatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* WhitePatientCharacteristicRaceComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* BMIRatioPhysicalExamPerformedComposition
-    0..* GastricBypassSurgeryProcedurePerformedComposition
-    0..* ValidEncounter8
-    0..* QualifyingEncounter5
-    0..* IndependentRiskFactorsBeforeMeasurementPeriod
-    0..* CombinationRiskDiagnosis
-    0..* CombinationRiskFactorsApplicableAnyTime
-    0..* AgeDependentCombinationRiskFactors
-    0..* IndependentRiskDiagnosis
-    0..* IndependentRiskFactorsApplicableAnyTime
+    0..* BMIRatioPerformedComposition
+    0..* GastricBypassSurgeryPerformedComposition
+    0..* ValidEncounter12Union
+    0..* QualifyingEncounter4Union
+    0..* IndependentRiskFactorsBeforeMeasurementPeriodUnion
+    0..* CombinationRiskDiagnosisUnion
+    0..* CombinationRiskFactorsApplicableAnyTimeUnion
+    0..* AgeDependentCombinationRiskFactorsUnion
+    0..* IndependentRiskDiagnosisUnion
+    0..* IndependentRiskFactorsApplicableAnyTimeUnion
 
 EntryElement: CMS26v6
 Based on: CmsEcqmComposition
 Description: "CMS26v6"
     0..* AsthmaactionplanCommunicationFromProviderToPatientComposition
     0..* DischargeToHomeOrPoliceCustodyDischargeDisposition
-    0..* EncounterInpatientEncounterPerformedComposition
+    0..* EncounterInpatientPerformedComposition
     0..* AsthmaPrincipalDiagnosis
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* Numerator1
+    0..* Numerator3Union
 
 EntryElement: CMS2v8
 Based on: CmsEcqmComposition
 Description: "CMS2v8"
-    0..* AdultdepressionscreeningassessmentAssessmentPerformedComposition
-    0..* AdolescentdepressionscreeningassessmentAssessmentPerformedComposition
+    0..* AdultdepressionscreeningassessmentPerformedComposition
+    0..* AdolescentdepressionscreeningassessmentPerformedComposition
     0..* DepressiondiagnosisDiagnosisComposition
     0..* BipolarDiagnosisDiagnosisComposition
-    0..* DepressionScreeningEncounterCodesEncounterPerformedComposition
-    0..* ReferralforDepressionAdolescentInterventionOrderComposition
-    0..* ReferralforDepressionAdultInterventionOrderComposition
-    0..* AdditionalevaluationfordepressionadolescentInterventionPerformedComposition
-    0..* AdditionalevaluationfordepressionadultInterventionPerformedComposition
-    0..* FollowupfordepressionadolescentInterventionPerformedComposition
-    0..* FollowupfordepressionadultInterventionPerformedComposition
-    0..* SuicideRiskAssessmentInterventionPerformedComposition
-    0..* DepressionmedicationsadolescentMedicationOrderComposition
-    0..* DepressionmedicationsadultMedicationOrderComposition
+    0..* DepressionScreeningEncounterCodesPerformedComposition
+    0..* ReferralforDepressionAdolescentOrderComposition
+    0..* ReferralforDepressionAdultOrderComposition
+    0..* AdditionalevaluationfordepressionadolescentPerformedComposition
+    0..* AdditionalevaluationfordepressionadultPerformedComposition
+    0..* FollowupfordepressionadolescentPerformedComposition
+    0..* FollowupfordepressionadultPerformedComposition
+    0..* SuicideRiskAssessmentPerformedComposition
+    0..* DepressionmedicationsadolescentOrderComposition
+    0..* DepressionmedicationsadultOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
@@ -1722,30 +1730,30 @@ Based on: CmsEcqmComposition
 Description: "CMS31v7"
     0..* LiveBirthNewbornBorninHospitalDiagnosisComposition
     0..* LiveBirthNewbornBorninHospitalDiagnoses
-    0..* NewbornHearingScreenLeftDiagnosticStudyPerformedComposition
-    0..* NewbornHearingScreenRightDiagnosticStudyPerformedComposition
+    0..* NewbornHearingScreenLeftPerformedComposition
+    0..* NewbornHearingScreenRightPerformedComposition
     0..* PassOrReferResult
-    0..* EncounterInpatientEncounterPerformedComposition
+    0..* EncounterInpatientPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* InitialPopulation
-    0..* Numerator
+    0..* InitialPopulationUnion
+    0..* NumeratorUnion
 
 EntryElement: CMS32v8
 Based on: CmsEcqmComposition
 Description: "CMS32v8"
-    0..* ObservationServicesEncounterOrderComposition
+    0..* ObservationServicesOrderComposition
     0..* DischargeToAcuteCareFacilityDischargeDisposition
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
     0..* PsychiatricMentalHealthDiagnosisPrincipalDiagnosis
-    0..* EncounterInpatientEncounterPerformedComposition
+    0..* EncounterInpatientPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* MeasurePopulationExclusions
+    0..* MeasurePopulationExclusionsUnion
 
 EntryElement: CMS347v2
 Based on: CmsEcqmComposition
@@ -1766,129 +1774,129 @@ Description: "CMS347v2"
     0..* MyocardialInfarctionDiagnosisComposition
     0..* PregnancyDxDiagnosisComposition
     0..* HepatitisBDiagnosisComposition
-    0..* OutpatientEncountersforPreventiveCareEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareServicesIndividualCounselingEncounterPerformedComposition
-    0..* PreventiveCareServicesOtherEncounterPerformedComposition
-    0..* AnnualWellnessVisitEncounterPerformedComposition
-    0..* PalliativecareencounterEncounterPerformedComposition
-    0..* PalliativeCareInterventionOrderComposition
-    0..* LDLTestLaboratoryTestPerformedComposition
-    0..* LowintensitystatintherapyMedicationActiveComposition
-    0..* LowintensitystatintherapyMedicationOrderComposition
-    0..* HighintensitystatintherapyMedicationActiveComposition
-    0..* HighintensitystatintherapyMedicationOrderComposition
-    0..* ModerateintensitystatintherapyMedicationActiveComposition
-    0..* ModerateintensitystatintherapyMedicationOrderComposition
+    0..* OutpatientEncountersforPreventiveCarePerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareServicesIndividualCounselingPerformedComposition
+    0..* PreventiveCareServicesOtherPerformedComposition
+    0..* AnnualWellnessVisitPerformedComposition
+    0..* PalliativecareencounterPerformedComposition
+    0..* PalliativeCareOrderComposition
+    0..* LDLTestPerformedComposition
+    0..* LowintensitystatintherapyActiveComposition
+    0..* LowintensitystatintherapyOrderComposition
+    0..* HighintensitystatintherapyActiveComposition
+    0..* HighintensitystatintherapyOrderComposition
+    0..* ModerateintensitystatintherapyActiveComposition
+    0..* ModerateintensitystatintherapyOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* PCIProcedurePerformedComposition
-    0..* CarotidInterventionProcedurePerformedComposition
-    0..* CABGSurgeriesProcedurePerformedComposition
-    0..* HistoryofClinicalASCVDDiagnoses
-    0..* HistoryofClinicalASCVDProcedures
-    0..* ActiveStatinUse
-    0..* QualifyingEncounters0
-    0..* PalliativeCareOrderorEncounter
-    0..* HistoryofASCVDDiagnosisorProcedure
-    0..* StatinOrdered
+    0..* PCIPerformedComposition
+    0..* CarotidInterventionPerformedComposition
+    0..* CABGSurgeriesPerformedComposition
+    0..* HistoryofClinicalASCVDDiagnosesUnion
+    0..* HistoryofClinicalASCVDProceduresUnion
+    0..* ActiveStatinUseUnion
+    0..* QualifyingEncounters7Union
+    0..* PalliativeCareOrderorEncounterUnion
+    0..* HistoryofASCVDDiagnosisorProcedureUnion
+    0..* StatinOrderedUnion
 
 EntryElement: CMS349v1
 Based on: CmsEcqmComposition
 Description: "CMS349v1"
     0..* ConditionsDueToHumanImmunodeficiencyVirusHIVDiagnosisComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* HIVandtestsMeaningfulUsesetLaboratoryTestPerformedComposition
-    0..* HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgLaboratoryTestPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* HIVandtestsMeaningfulUsesetPerformedComposition
+    0..* HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* Encounter
-    0..* QualifyingEncounters10
-    0..* HIVTest
-    0..* HIVTestPerformed
+    0..* EncounterUnion
+    0..* QualifyingEncounters9Union
+    0..* HIVTestUnion
+    0..* HIVTestPerformedUnion
 
 EntryElement: CMS50v7
 Based on: CmsEcqmComposition
 Description: "CMS50v7"
     0..* ConsultantReportCommunicationFromProviderToProviderComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* OphthalmologicalServicesEncounterPerformedComposition
-    0..* ReferralInterventionPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* OphthalmologicalServicesPerformedComposition
+    0..* ReferralPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* FaceToFaceEncounter0
-    0..* FacetoFaceEncounterDuringMeasurementPeriod0
+    0..* FaceToFaceEncounter1Union
+    0..* FacetoFaceEncounterDuringMeasurementPeriod1Union
 
 EntryElement: CMS52v7
 Based on: CmsEcqmComposition
 Description: "CMS52v7"
     0..* HIVDiagnosisComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
-    0..* CDCountLaboratoryTestPerformedComposition
-    0..* CDPercentageLaboratoryTestPerformedComposition
-    0..* DapsoneMGPyrimethamineMGOralTabletMedicationOrderComposition
-    0..* PneumocystisJiroveciPneumoniaPCPProphylaxisMedicationOrderComposition
-    0..* LeucovorinMedicationOrderComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
+    0..* CDCountPerformedComposition
+    0..* CDPercentagePerformedComposition
+    0..* DapsoneMGPyrimethamineMGOralTabletOrderComposition
+    0..* PneumocystisJiroveciPneumoniaPCPProphylaxisOrderComposition
+    0..* LeucovorinOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ValidEncounter10
-    0..* QualifyingEncounters7
-    0..* CD4CountUnder500orCD4PercentageLessThan15
+    0..* ValidEncounter4Union
+    0..* QualifyingEncounters2Union
+    0..* CD4CountUnder500orCD4PercentageLessThan15Union
 
 EntryElement: CMS53v7
 Based on: CmsEcqmComposition
 Description: "CMS53v7"
     0..* CardiopulmonaryarrestDiagnosisComposition
-    0..* ElectrocardiogramECGDiagnosticStudyPerformedComposition
+    0..* ElectrocardiogramECGPerformedComposition
     0..* AcuteorEvolvingMIPrincipalDiagnosis
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
-    0..* FibrinolyticTherapyMedicationAdministeredComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
+    0..* FibrinolyticTherapyAdministeredComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* PCIProcedurePerformedComposition
-    0..* EndotrachealIntubationProcedurePerformedComposition
-    0..* AorticballoonpumpinsertionProcedurePerformedComposition
-    0..* VentricularAssistDeviceplacementProcedurePerformedComposition
-    0..* ExceptionProcedures
-    0..* DenominatorExceptions
+    0..* PCIPerformedComposition
+    0..* EndotrachealIntubationPerformedComposition
+    0..* AorticballoonpumpinsertionPerformedComposition
+    0..* VentricularAssistDeviceplacementPerformedComposition
+    0..* ExceptionProceduresUnion
+    0..* DenominatorExceptions0Union
 
 EntryElement: CMS55v7
 Based on: CmsEcqmComposition
 Description: "CMS55v7"
     0..* HospitalSettingsAdmissionSource
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
     0..* PsychiatricMentalHealthDiagnosisPrincipalDiagnosis
-    0..* EncounterInpatientEncounterPerformedComposition
+    0..* EncounterInpatientPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
@@ -1897,48 +1905,49 @@ Description: "CMS55v7"
 EntryElement: CMS56v7
 Based on: CmsEcqmComposition
 Description: "CMS56v7"
-    0..* QualityoflifescoreHOOSAssessmentPerformedComposition
-    0..* PainscoreHOOSAssessmentPerformedComposition
-    0..* SportrecreationscoreHOOSAssessmentPerformedComposition
-    0..* SymptomsscoreHOOSAssessmentPerformedComposition
-    0..* ActivitiesofdailylivingscoreHOOSAssessmentPerformedComposition
-    0..* PROMISGlobalMentalHealthScoreAssessmentPerformedComposition
-    0..* PROMISGlobalPhysicalHealthScoreAssessmentPerformedComposition
-    0..* VRPhysicalComponentTScoreAssessmentPerformedComposition
-    0..* VRMentalComponentTScoreAssessmentPerformedComposition
-    0..* HipDysfunctionandOsteoarthritisOutcomeScoreforJointReplacementHOOSJRAssessmentPerformedComposition
+    0..* QualityoflifescoreHOOSPerformedComposition
+    0..* PainscoreHOOSPerformedComposition
+    0..* SportrecreationscoreHOOSPerformedComposition
+    0..* SymptomsscoreHOOSPerformedComposition
+    0..* ActivitiesofdailylivingscoreHOOSPerformedComposition
+    0..* PROMISGlobalMentalHealthScorePerformedComposition
+    0..* PROMISGlobalPhysicalHealthScorePerformedComposition
+    0..* VRPhysicalComponentTScorePerformedComposition
+    0..* VRMentalComponentTScorePerformedComposition
+    0..* HipDysfunctionandOsteoarthritisOutcomeScoreforJointReplacementHOOSJRPerformedComposition
     0..* SeveredementiadisorderDiagnosisComposition
     0..* FractureLowerBodyDiagnosisComposition
-    0..* PostoperativefollowupvisitnormallyincludedinthesurgicalpackagetoindicatethatanevaluationandmanagementservicewasperformedduringapostoperativeperiodforareasonsrelatedtotheoriginalprocedureEncounterPerformedComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* PostoperativefollowupvisitnormallyincludedinthesurgicalpackagetoindicatethatanevaluationandmanagementservicewasperformedduringapostoperativeperiodforareasonsrelatedtotheoriginalprocedurePerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* PrimaryTHAProcedureProcedurePerformedComposition
-    0..* CompleteAssessment0
+    0..* PrimaryTHAProcedurePerformedComposition
+    0..* QualifyingEncounter1Union
+    0..* CompleteAssessmentUnion
 
 EntryElement: CMS645v2
 Based on: CmsEcqmComposition
 Description: "CMS645v2"
     0..* ProstateCancerDiagnosisComposition
-    0..* DEXADualEnergyXrayAbsorptiometryBoneDensityforUrologyCareDiagnosticStudyOrderComposition
-    0..* DEXADualEnergyXrayAbsorptiometryBoneDensityforUrologyCareDiagnosticStudyPerformedComposition
+    0..* DEXADualEnergyXrayAbsorptiometryBoneDensityforUrologyCareOrderComposition
+    0..* DEXADualEnergyXrayAbsorptiometryBoneDensityforUrologyCarePerformedComposition
     0..* PatientReasonrefusedNegationRationale
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* AndrogendeprivationtherapyforUrologyCareMedicationActiveComposition
+    0..* OfficeVisitPerformedComposition
+    0..* AndrogendeprivationtherapyforUrologyCareActiveComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* MalePatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* InjectionLeuprolideAcetateProcedureOrderComposition
-    0..* BoneDensityScanOrderedorPerformed
-    0..* NoBoneDensityScanOrderedDuetoPatientRefusal
+    0..* InjectionLeuprolideAcetateOrderComposition
+    0..* BoneDensityScanOrderedorPerformedUnion
+    0..* NoBoneDensityScanOrderedDuetoPatientRefusalUnion
 
 EntryElement: CMS65v8
 Based on: CmsEcqmComposition
@@ -1947,91 +1956,90 @@ Description: "CMS65v8"
     0..* KidneyTransplantRecipientDiagnosisComposition
     0..* EndStageRenalDiseaseDiagnosisComposition
     0..* PregnancyDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* BloodPressureVisitEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* BloodPressureVisitPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* SystolicbloodpressurePhysicalExamPerformedComposition
-    0..* KidneyTransplantProcedurePerformedComposition
-    0..* HemodialysisProcedurePerformedComposition
-    0..* PeritonealDialysisProcedurePerformedComposition
-    0..* ESRDProcedures
-    0..* EndStageRenalDiseaseProcedures0
-    0..* ExclusionDiagnosis
-    0..* PregnancyOrEndStageRenalDiseaseDiagnosesExclusion
+    0..* SystolicbloodpressurePerformedComposition
+    0..* KidneyTransplantPerformedComposition
+    0..* HemodialysisPerformedComposition
+    0..* PeritonealDialysisPerformedComposition
+    0..* ESRDProceduresUnion
+    0..* EndStageRenalDiseaseProcedures0Union
+    0..* ExclusionDiagnosisUnion
+    0..* PregnancyOrEndStageRenalDiseaseDiagnosesExclusionUnion
 
 EntryElement: CMS66v7
 Based on: CmsEcqmComposition
 Description: "CMS66v7"
-    0..* QualityoflifescoreKOOSAssessmentPerformedComposition
-    0..* PROMISGlobalMentalHealthScoreAssessmentPerformedComposition
-    0..* PROMISGlobalPhysicalHealthScoreAssessmentPerformedComposition
-    0..* KneeDysfunctionandOsteoarthritisOutcomeScoreKOOSSportRecreationScoreAssessmentPerformedComposition
-    0..* KneeDysfunctionandOsteoarthritisOutcomeScoreKOOSActivitiesofDailyLivingScoreAssessmentPerformedComposition
-    0..* VRPhysicalComponentTScoreAssessmentPerformedComposition
-    0..* VRMentalComponentTScoreAssessmentPerformedComposition
-    0..* KneeDysfunctionandOsteoarthritisOutcomeScoreKOOSPainScoreAssessmentPerformedComposition
-    0..* KneeDysfunctionandOsteoarthritisOutcomeScoreKOOSSymptomsScoreAssessmentPerformedComposition
-    0..* KneeInjuryandOsteoarthritisOutcomeScoreforJointReplacementKOOSJRAssessmentPerformedComposition
+    0..* QualityoflifescoreKOOSPerformedComposition
+    0..* PROMISGlobalMentalHealthScorePerformedComposition
+    0..* PROMISGlobalPhysicalHealthScorePerformedComposition
+    0..* KneeDysfunctionandOsteoarthritisOutcomeScoreKOOSSportRecreationScorePerformedComposition
+    0..* KneeDysfunctionandOsteoarthritisOutcomeScoreKOOSActivitiesofDailyLivingScorePerformedComposition
+    0..* VRPhysicalComponentTScorePerformedComposition
+    0..* VRMentalComponentTScorePerformedComposition
+    0..* KneeDysfunctionandOsteoarthritisOutcomeScoreKOOSPainScorePerformedComposition
+    0..* KneeDysfunctionandOsteoarthritisOutcomeScoreKOOSSymptomsScorePerformedComposition
+    0..* KneeInjuryandOsteoarthritisOutcomeScoreforJointReplacementKOOSJRPerformedComposition
     0..* SeveredementiadisorderDiagnosisComposition
     0..* FractureLowerBodyDiagnosisComposition
-    0..* PostoperativefollowupvisitnormallyincludedinthesurgicalpackagetoindicatethatanevaluationandmanagementservicewasperformedduringapostoperativeperiodforareasonsrelatedtotheoriginalprocedureEncounterPerformedComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* OutpatientConsultationEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* PostoperativefollowupvisitnormallyincludedinthesurgicalpackagetoindicatethatanevaluationandmanagementservicewasperformedduringapostoperativeperiodforareasonsrelatedtotheoriginalprocedurePerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* OutpatientConsultationPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* PrimaryTKAProcedureProcedurePerformedComposition
-    0..* QualifyingEncounter1
-    0..* QualifyingEncounters3
-    0..* CompletedAssessment
+    0..* PrimaryTKAProcedurePerformedComposition
+    0..* QualifyingEncounters8Union
+    0..* CompletedAssessmentUnion
 
 EntryElement: CMS68v8
 Based on: CmsEcqmComposition
 Description: "CMS68v8"
-    0..* MedicationsEncounterCodeSetEncounterPerformedComposition
+    0..* MedicationsEncounterCodeSetPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* DocumentationofcurrentmedicationsprocedureProcedurePerformedComposition
+    0..* DocumentationofcurrentmedicationsprocedurePerformedComposition
 
 EntryElement: CMS69v7
 Based on: CmsEcqmComposition
 Description: "CMS69v7"
     0..* PregnancyDxDiagnosisComposition
-    0..* PalliativecareencounterEncounterPerformedComposition
-    0..* BMIEncounterCodeSetEncounterPerformedComposition
-    0..* AboveNormalFollowupInterventionOrderComposition
-    0..* ReferralswhereweightassessmentmayoccurInterventionOrderComposition
-    0..* BelowNormalFollowupInterventionOrderComposition
-    0..* PalliativeCareInterventionOrderComposition
+    0..* PalliativecareencounterPerformedComposition
+    0..* BMIEncounterCodeSetPerformedComposition
+    0..* AboveNormalFollowupOrderComposition
+    0..* ReferralswhereweightassessmentmayoccurOrderComposition
+    0..* BelowNormalFollowupOrderComposition
+    0..* PalliativeCareOrderComposition
     0..* MedicalorOtherreasonnotdoneNegationRationale
     0..* OverweightorObeseReason
     0..* UnderweightReason
-    0..* AboveNormalMedicationsMedicationOrderComposition
-    0..* BelowNormalMedicationsMedicationOrderComposition
+    0..* AboveNormalMedicationsOrderComposition
+    0..* BelowNormalMedicationsOrderComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* BodymassindexBMIRatioPhysicalExamPerformedComposition
-    0..* PalliativeCareOrderorEncounter
+    0..* BodymassindexBMIRatioPerformedComposition
+    0..* PalliativeCareOrderorEncounterUnion
 
 EntryElement: CMS71v8
 Based on: CmsEcqmComposition
 Description: "CMS71v8"
     0..* AtrialFibrillationFlutterDiagnosisComposition
     0..* AtrialFibrillationFlutterDiagnoses
-    0..* NonElectiveInpatientEncounterEncounterPerformedComposition
+    0..* NonElectiveInpatientEncounterPerformedComposition
     0..* DischargedtoHealthCareFacilityforHospiceCareDischargeDisposition
     0..* DischargedtoHomeforHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
@@ -2039,83 +2047,83 @@ Description: "CMS71v8"
     0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
-    0..* ComfortMeasuresInterventionOrderComposition
-    0..* ComfortMeasuresInterventionPerformedComposition
-    0..* AnticoagulantTherapyMedicationDischargeComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
+    0..* ComfortMeasuresOrderComposition
+    0..* ComfortMeasuresPerformedComposition
+    0..* AnticoagulantTherapyDischargeComposition
     0..* MedicalReasonNegationRationale
     0..* PatientRefusalNegationRationale
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* AtrialAblationProcedurePerformedComposition
-    0..* InterventionComfortMeasures
-    0..* Denominator
+    0..* AtrialAblationPerformedComposition
+    0..* InterventionComfortMeasuresUnion
+    0..* DenominatorUnion
 
 EntryElement: CMS72v7
 Based on: CmsEcqmComposition
 Description: "CMS72v7"
     0..* DischargedtoHealthCareFacilityforHospiceCareDischargeDisposition
-    0..* NonElectiveInpatientEncounterEncounterPerformedComposition
+    0..* NonElectiveInpatientEncounterPerformedComposition
     0..* DischargedtoHomeforHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
     0..* PatientExpiredDischargeDisposition
     0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
-    0..* EmergencyDepartmentVisitEncounterPerformedComposition
-    0..* ComfortMeasuresInterventionOrderComposition
-    0..* ComfortMeasuresInterventionPerformedComposition
-    0..* AntithromboticTherapyMedicationAdministeredComposition
-    0..* AntithromboticTherapyMedicationDischargeComposition
-    0..* AntithromboticTherapyMedicationOrderComposition
+    0..* EmergencyDepartmentVisitPerformedComposition
+    0..* ComfortMeasuresOrderComposition
+    0..* ComfortMeasuresPerformedComposition
+    0..* AntithromboticTherapyAdministeredComposition
+    0..* AntithromboticTherapyDischargeComposition
+    0..* AntithromboticTherapyOrderComposition
     0..* MedicalReasonNegationRationale
     0..* PatientRefusalNegationRationale
-    0..* ThrombolytictPATherapyMedicationAdministeredComposition
+    0..* ThrombolytictPATherapyAdministeredComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* IntravenousorIntraarterialThrombolytictPATherapyProcedurePerformedComposition
-    0..* ThrombolyticTherapyMedicationorProcedures
-    0..* DenominatorExclusions2
-    0..* NoAntithromboticOrdered
-    0..* InterventionComfortMeasures
+    0..* IntravenousorIntraarterialThrombolytictPATherapyPerformedComposition
+    0..* ThrombolyticTherapyMedicationorProceduresUnion
+    0..* DenominatorExclusions2Union
+    0..* NoAntithromboticOrderedUnion
+    0..* InterventionComfortMeasuresUnion
 
 EntryElement: CMS74v8
 Based on: CmsEcqmComposition
 Description: "CMS74v8"
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* ClinicalOralEvaluationEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* ClinicalOralEvaluationPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* FluorideVarnishApplicationforChildrenProcedurePerformedComposition
-    0..* ValidEncounter2
-    0..* QualifyingEncounters1
+    0..* FluorideVarnishApplicationforChildrenPerformedComposition
+    0..* ValidEncounter3Union
+    0..* QualifyingEncounters1Union
 
 EntryElement: CMS75v7
 Based on: CmsEcqmComposition
 Description: "CMS75v7"
     0..* DentalCariesDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesInitialOfficeVisitandUpEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpEncounterPerformedComposition
-    0..* ClinicalOralEvaluationEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformedComposition
+    0..* ClinicalOralEvaluationPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
@@ -2124,60 +2132,60 @@ Description: "CMS75v7"
 EntryElement: CMS82v6
 Based on: CmsEcqmComposition
 Description: "CMS82v6"
-    0..* MaternalpostpartumdepressionscreeningprocedureAssessmentPerformedComposition
-    0..* PreventiveCareInitialOfficeVisittoEncounterPerformedComposition
-    0..* PreventiveCareEstablishedOfficeVisittoEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* MaternalpostpartumdepressioncareregimetherapyInterventionPerformedComposition
+    0..* MaternalpostpartumdepressionscreeningprocedurePerformedComposition
+    0..* PreventiveCareInitialOfficeVisittoPerformedComposition
+    0..* PreventiveCareEstablishedOfficeVisittoPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* MaternalpostpartumdepressioncareregimetherapyPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* QualifyingEncounters12
+    0..* QualifyingEncounters11Union
 
 EntryElement: CMS90v8
 Based on: CmsEcqmComposition
 Description: "CMS90v8"
-    0..* ClinicalsummaryscoreKCCQAssessmentPerformedComposition
-    0..* QualityoflifescoreKCCQAssessmentPerformedComposition
-    0..* PROMISGlobalMentalHealthScoreAssessmentPerformedComposition
-    0..* PROMISGlobalPhysicalHealthScoreAssessmentPerformedComposition
-    0..* VRPhysicalComponentTScoreAssessmentPerformedComposition
-    0..* VRMentalComponentTScoreAssessmentPerformedComposition
-    0..* PROMISSleepDisturbanceScoreAssessmentPerformedComposition
-    0..* PROMISPhysicalFunctionScoreAssessmentPerformedComposition
-    0..* PROMISPainInterferenceScoreAssessmentPerformedComposition
-    0..* PROMISFatigueScoreAssessmentPerformedComposition
-    0..* PROMISDepressionScoreAssessmentPerformedComposition
-    0..* PROMISAnxietyScoreAssessmentPerformedComposition
-    0..* PROMISSocialRolesScoreAssessmentPerformedComposition
-    0..* KCCQPhysicalLimitationScoreAssessmentPerformedComposition
-    0..* KCCQSelfEfficacyScoreAssessmentPerformedComposition
-    0..* KCCQSocialLimitationScoreAssessmentPerformedComposition
-    0..* KCCQTotalSymptomScoreAssessmentPerformedComposition
-    0..* VRMentalComponentSummaryMCSScoreAssessmentPerformedComposition
-    0..* VRPhysicalComponentSummaryPCSScoreAssessmentPerformedComposition
+    0..* ClinicalsummaryscoreKCCQPerformedComposition
+    0..* QualityoflifescoreKCCQPerformedComposition
+    0..* PROMISGlobalMentalHealthScorePerformedComposition
+    0..* PROMISGlobalPhysicalHealthScorePerformedComposition
+    0..* VRPhysicalComponentTScorePerformedComposition
+    0..* VRMentalComponentTScorePerformedComposition
+    0..* PROMISSleepDisturbanceScorePerformedComposition
+    0..* PROMISPhysicalFunctionScorePerformedComposition
+    0..* PROMISPainInterferenceScorePerformedComposition
+    0..* PROMISFatigueScorePerformedComposition
+    0..* PROMISDepressionScorePerformedComposition
+    0..* PROMISAnxietyScorePerformedComposition
+    0..* PROMISSocialRolesScorePerformedComposition
+    0..* KCCQPhysicalLimitationScorePerformedComposition
+    0..* KCCQSelfEfficacyScorePerformedComposition
+    0..* KCCQSocialLimitationScorePerformedComposition
+    0..* KCCQTotalSymptomScorePerformedComposition
+    0..* VRMentalComponentSummaryMCSScorePerformedComposition
+    0..* VRPhysicalComponentSummaryPCSScorePerformedComposition
     0..* SevereDementiaDiagnosisComposition
     0..* HeartFailureDiagnosisComposition
-    0..* EncounterInpatientEncounterPerformedComposition
-    0..* OfficeVisitEncounterPerformedComposition
-    0..* HospicecareambulatoryInterventionOrderComposition
-    0..* HospicecareambulatoryInterventionPerformedComposition
+    0..* EncounterInpatientPerformedComposition
+    0..* OfficeVisitPerformedComposition
+    0..* HospicecareambulatoryOrderComposition
+    0..* HospicecareambulatoryPerformedComposition
     0..* EthnicityPatientCharacteristicEthnicityComposition
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* CompleteAssessment
+    0..* CompleteAssessment0Union
 
 EntryElement: CMS9v7
 Based on: CmsEcqmComposition
 Description: "CMS9v7"
-    0..* EstimatedGestationalAgeatBirthAssessmentPerformedComposition
+    0..* EstimatedGestationalAgeatBirthPerformedComposition
     0..* SingleLiveBornNewbornBorninHospitalDiagnosisComposition
     0..* SingleLiveBornNewbornBorninHospitalDiagnoses
     0..* GalactosemiaDiagnosisComposition
     0..* GalactosemiaDiagnoses
-    0..* EncounterInpatientEncounterPerformedComposition
+    0..* EncounterInpatientPerformedComposition
     0..* PatientExpiredDischargeDisposition
     0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* NeonatalIntensiveCareUnitNICUFacilityLocations
@@ -2185,7 +2193,7 @@ Description: "CMS9v7"
     0..* ONCAdministrativeSexPatientCharacteristicGenderComposition
     0..* PayerPatientCharacteristicPayerComposition
     0..* RacePatientCharacteristicRaceComposition
-    0..* ParenteralNutritionProcedurePerformedComposition
-    0..* DietaryIntakeOtherthanBreastMilkSubstanceAdministeredComposition
-    0..* BreastMilkSubstanceAdministeredComposition
-    0..* SingleLiveBirthEncounter
+    0..* ParenteralNutritionPerformedComposition
+    0..* DietaryIntakeOtherthanBreastMilkAdministeredComposition
+    0..* BreastMilkAdministeredComposition
+    0..* SingleLiveBirthEncounterUnion

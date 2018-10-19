@@ -38,6 +38,22 @@ Description:		"A determination, such as an observation, assertion, opinion, fact
 		Description:	"The method used to determine the finding."
 		Value:			CodeableConcept
 
+Abstract Element: 	Activity
+Based on:			Finding
+Description:		"A statement that asserts an action relating to the subject. The subject is often the patient, but may...."
+1..1				Subject
+1..1				Beneficiary
+1..1				ActivityCode
+0..*				Qualifier
+
+		Element:		ActivityCode
+		Description:	"A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue."
+		Value:			CodeableConcept
+
+		Element:		Beneficiary
+		Description:	"The person, place, event, condition, other statement that derives advantage from something/"
+		Value:			Statement
+
 Abstract Element:	ExistentialFinding
 Based on:			Finding
 Description:		"An assertion of a physical or conceptual entity, relationship, situation, condition, or phenomenon present or absent."
