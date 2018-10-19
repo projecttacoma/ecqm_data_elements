@@ -5,217 +5,217 @@ Uses: shr.core, shr.base, shr.entity
 
 EntryElement: AdverseEvent
 Based on: Observation
-Description: "AdverseEvent"
+Description: "Adverse Event is used to define any untoward medical occurrence associated with the clinical care delivery, whether or not considered drug related."
     ObservableCode is SCT#281647001
     Subject value is type Patient
 
 EntryElement: AllergyIntolerance
 Based on: Observation
-Description: "AllergyIntolerance"
+Description: "Allergy is used to address immune-mediated reactions to a substance such as type 1 hypersensitivity reactions, other allergy-like reactions, including pseudo-allergy. Intolerance is a record of a clinical assessment of a propensity, or a potential risk to an individual, to have a non-immune mediated adverse reaction on future exposure to the specified substance, or class of substance."
     ObservableCode is SCT#419199007
     Subject value is type Patient
 
 EntryElement: Assessment
 Based on: Observation
-Description: "Assessment"
+Description: "Assessment is a resource used to define specific observations that clinicians use to guide treatment of the patient. An assessment can be a single question, or observable entity with an expected response, an organized collection of questions intended to solicit information from patients, providers or other individuals, or a single observable entity that is part of such a collection of questions."
     Subject value is type Patient
 
 EntryElement: AssessmentPerformed
 Based on: Activity
-Description: "AssessmentPerformed"
+Description: "Data elements that meet criteria using this datatype should document completion of the assessment indicated by the QDM category and its corresponding value set."
     Subject value is type Assessment
 
 EntryElement: CommunicationFromPatientToProvider
 Based on: Observation
-Description: "CommunicationFromPatientToProvider"
+Description: "Communication represents the transmission, receipt, or acknowledgement of information sent from a source to a recipient, such as from one clinician to another regarding findings, assessments, plans of care, consultative advice, instructions, educational resources, etc. It also may include the receipt of response from a patient with respect to any aspect of the care provided. Furthermore, it may include the conveying of information from provider to patient (e.g., results, findings, plans for care, medical advice, instructions, educational resources, appointments). A time and date stamp is required.  To meet criteria using this datatype, the communication indicated by the Communication QDM category and its corresponding value set must be communicated from a patient to a provider."
     Subject value is type Patient
 
 EntryElement: CommunicationFromProviderToPatient
 Based on: Observation
-Description: "CommunicationFromProviderToPatient"
+Description: "Communication represents the transmission, receipt, or acknowledgement of information sent from a source to a recipient, such as from one clinician to another regarding findings, assessments, plans of care, consultative advice, instructions, educational resources, etc. It also may include the receipt of response from a patient with respect to any aspect of the care provided. Furthermore, it may include the conveying of information from provider to patient (e.g., results, findings, plans for care, medical advice, instructions, educational resources, appointments). A time and date stamp is required.  To meet criteria using this datatype, the communication indicated by the Communication QDM category and its corresponding value set must be communicated from a provider to a patient."
     Subject value is type Patient
 
 EntryElement: CommunicationFromProviderToProvider
 Based on: Observation
-Description: "CommunicationFromProviderToProvider"
+Description: "Communication represents the transmission, receipt, or acknowledgement of information sent from a source to a recipient, such as from one clinician to another regarding findings, assessments, plans of care, consultative advice, instructions, educational resources, etc. It also may include the receipt of response from a patient with respect to any aspect of the care provided. Furthermore, it may include the conveying of information from provider to patient (e.g., results, findings, plans for care, medical advice, instructions, educational resources, appointments). A time and date stamp is required. To meet criteria using this datatype, the communication indicated by the Communication QDM category and its corresponding value set must be communicated from one provider to another."
     Subject value is type Patient
 
 EntryElement: Device
 Based on: ObjectPresentOrAbsent
-Description: "Device"
+Description: "Device represents an instrument, apparatus, implement, machine, contrivance, implant, in-vitro reagent, or other similar or related article, including a component part or accessory, intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease and not dependent on being metabolized to achieve any of its primary intended purposes."
     Subject value is type Patient
 
 EntryElement: DeviceApplied
 Based on: Activity
-Description: "DeviceApplied"
+Description: "Data elements that meet criteria using this datatype should document that the device indicated by the QDM category and its corresponding value set is in use, or impacts or alters the treatment, care plan, or encounter (e.g., an antithrombotic device has been placed on the patient's legs to prevent thromboembolism, or a cardiac pacemaker is in place)."
     Subject value is type Device
 
 EntryElement: DeviceOrder
 Based on: Activity
-Description: "DeviceOrder"
+Description: "Data elements that meet criteria using this datatype should document an order for the device indicated by the QDM category and its corresponding value set."
     Subject value is type Device
 
 EntryElement: Diagnosis
 Based on: Observation
-Description: "Diagnosis"
+Description: "Condition/Diagnosis/Problem represents a practitioner’s identification of a patient’s disease, illness, injury, or condition. This category contains a single datatype to represent all of these concepts: Diagnosis. A practitioner determines the diagnosis by means of examination, diagnostic test results, patient history, and/or family history. Diagnoses are usually considered unfavorable, but may also represent neutral or favorable conditions that affect a patient’s plan of care (e.g., pregnancy). The QDM does not prescribe the source of diagnosis data in the EHR. Diagnoses may be found in a patient’s problem list, encounter diagnosis list, claims data, or other sources within the EHR. The preferred terminology for diagnoses is SNOMED-CT, but diagnoses may also be encoded using ICD-9/10. The Diagnosis datatype should not be used for differential diagnoses or rule-out diagnoses (neither of which are currently supported by the QDM)."
     ObservableCode is SCT#282291009
     Subject value is type Patient
 
 EntryElement: DiagnosticStudy
 Based on: Observation
-Description: "DiagnosticStudy"
+Description: "Diagnostic Study represents any kind of medical test performed as a specific test or series of steps to aid in diagnosing or detecting disease (e.g., to establish a diagnosis, measure the progress or recovery from disease, confirm that a person is free from disease).12 The QDM defines diagnostic studies as those that are not performed in organizations that perform testing on samples of human blood, tissue, or other substance from the body. Diagnostic studies may make use of digital images and textual reports. Such studies include but are not limited to imaging studies, cardiology studies (electrocardiogram, treadmill stress testing), pulmonary-function testing, vascular laboratory testing, and others."
     Subject value is type Patient
 
 EntryElement: DiagnosticStudyOrder
 Based on: Activity
-Description: "DiagnosticStudyOrder"
+Description: "Data elements that meet criteria using this datatype should document a request by a clinician or appropriately licensed care provider to an appropriate provider or organization to perform the diagnostic study indicated by the QDM category and its corresponding value set. The request may be in the form of a consultation or a direct order to the organization that performs the diagnostic study. Diagnostic studies are those that are not performed in the clinical laboratory. Such studies include but are not limited to imaging studies, cardiology studies (electrocardiogram, treadmill stress testing), pulmonary function testing, vascular laboratory testing, and others."
     Subject value is type DiagnosticStudy
 
 EntryElement: DiagnosticStudyPerformed
 Based on: Activity
-Description: "DiagnosticStudyPerformed"
+Description: "Data elements that meet criteria using this datatype should document the completion of the diagnostic study indicated by the QDM category and its corresponding value set."
     Subject value is type DiagnosticStudy
 
 EntryElement: Encounter
 Based on: Activity
-Description: "Encounter"
+Description: "Encounter represents an identifiable grouping of healthcare-related activities characterized by the entity relationship between the subject of care and a healthcare provider; such a grouping is determined by the healthcare provider.13 A patient encounter represents interaction between a healthcare provider and a patient with a face-to-face patient visit to a clinician’s office, or any electronically remote interaction with a clinician for any form of diagnostic treatment or therapeutic event. Encounters can be billable events but are not limited to billable interactions. Each encounter has an associated location or modality within which it occurred (such as an office, home, electronic methods, phone encounter, or telemedicine methods). The encounter location is the patient’s location at the time of measurement. Different levels of interaction can be specified in the value associated with the element while modes of interaction (e.g., telephone) may be modeled using the data flow attribute."
     Subject value is type Patient
 
 EntryElement: EncounterOrder
 Based on: Activity
-Description: "EncounterOrder"
+Description: "Data elements that meet criteria using this datatype should document that an order for the encounter indicated by the QDM category and its corresponding value set has been recommended."
     Subject value is type Encounter
 
 EntryElement: EncounterPerformed
 Based on: Activity
-Description: "EncounterPerformed"
+Description: "Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed."
     Subject value is type Encounter
 
 EntryElement: Immunization
 Based on: ObjectPresentOrAbsent
-Description: "Immunization"
+Description: "Immunization represents vaccines administered to patients in healthcare settings but does not include non-vaccine agents."
     Subject value is type Patient
 
 EntryElement: ImmunizationAdministered
 Based on: Activity
-Description: "ImmunizationAdministered"
+Description: "Data elements that meet criteria using this datatype should document that the vaccine indicated by the QDM category and its corresponding value set was actually administered to the patient."
     Subject value is type Immunization
 
 EntryElement: Intervention
 Based on: Activity
-Description: "Intervention"
+Description: "Intervention represents a course of action intended to achieve a result in the care of persons with health problems that does not involve direct physical contact with a patient. Examples include patient education and therapeutic communication."
     Subject value is type Patient
 
 EntryElement: InterventionOrder
 Based on: Activity
-Description: "InterventionOrder"
+Description: "Data elements that meet criteria using this datatype should document a request to perform the intervention indicated by the QDM category and its corresponding value set."
     Subject value is type Intervention
 
 EntryElement: InterventionPerformed
 Based on: Activity
-Description: "InterventionPerformed"
+Description: "Data elements that meet criteria using this datatype should document the completion of the intervention indicated by the QDM category and its corresponding value set."
     Subject value is type Intervention
 
 EntryElement: LaboratoryTest
 Based on: Observation
-Description: "LaboratoryTest"
+Description: "Laboratory Test represents a medical procedure that involves testing a sample of blood, urine, or other substance from the body. Tests can help determine a diagnosis, plan treatment, check to see if treatment is working, or monitor the disease over time.14 This QDM data category for Laboratory Test is only used for information about the subject of record."
     Subject value is type Patient
 
 EntryElement: LaboratoryTestOrder
 Based on: Activity
-Description: "LaboratoryTestOrder"
+Description: "Data elements that meet criteria using this datatype should document a request for the laboratory test indicated by the QDM category and its corresponding value set."
     Subject value is type LaboratoryTest
 
 EntryElement: LaboratoryTestPerformed
 Based on: Activity
-Description: "LaboratoryTestPerformed"
+Description: "Data elements that meet criteria using this datatype should document the laboratory test indicated by the QDM category and its corresponding value set was performed."
     Subject value is type LaboratoryTest
 
 EntryElement: Medication
 Based on: ObjectPresentOrAbsent
-Description: "Medication"
+Description: "Medication represents clinical drugs or chemical substances intended for use in the medical diagnosis, cure, treatment, or prevention of disease. Medications are defined as direct referenced values or value sets containing values derived from code systems such as RxNorm."
     Subject value is type Patient
 
 EntryElement: MedicationActive
 Based on: Activity
-Description: "MedicationActive"
+Description: " Data elements that meet criteria using this datatype should document that the medication indicated by the QDM category and its corresponding value set is being taken by the patient. Keep in mind that when this datatype is used with timing relationships, the criterion is looking for a medication being taken for the time frame indicated by the timing relationships."
     Subject value is type Medication
 
 EntryElement: MedicationAdministered
 Based on: Activity
-Description: "MedicationAdministered"
+Description: "Data elements that meet criteria using this datatype should document that the medication indicated by the QDM category and its corresponding value set was actually administered to the patient."
     Subject value is type Medication
 
 EntryElement: MedicationDischarge
 Based on: Activity
-Description: "MedicationDischarge"
+Description: "Data elements that meet criteria using this datatype should document that the medications indicated by the QDM category and its corresponding value set should be taken by or given to the patient after being discharged from an inpatient encounter."
     Subject value is type Medication
 
 EntryElement: MedicationDispensed
 Based on: Activity
-Description: "MedicationDispensed"
+Description: "Data elements that meet criteria using this datatype should document that a prescription for the medication indicated by the QDM category and its corresponding value set has been dispensed and provided to the patient or patient proxy. In the ambulatory setting, medications are primarily taken directly by patients and not directly observed. Hence, dispensed, or fulfillment, information is the closest health provider documentation of medication compliance. In settings where patients attest to taking medications in electronic format (perhaps a Personal Health Record), patient attestation of medication taken may be available. The QDM datatype, Medication, Administered addresses medication taken; to address the source of the information, a measure addressing such patient attestation would require use of the dataflow attribute, source."
     Subject value is type Medication
 
 EntryElement: MedicationOrder
 Based on: Activity
-Description: "MedicationOrder"
+Description: "Data elements that meet criteria using this datatype should document a request to a pharmacy to provide the medication indicated by the QDM category and its corresponding value set."
     Subject value is type Medication
 
 EntryElement: PatientCharacteristicEthnicity
 Based on: Observation
-Description: "PatientCharacteristicEthnicity"
+Description: "Data elements that meet criteria using this datatype should document that the patient has one or more of the ethnicities indicated by the QDM category and its corresponding value set."
     ObservableCode is #TODO
     Subject value is type Patient
 
 EntryElement: PatientCharacteristicGender
 Based on: Observation
-Description: "PatientCharacteristicGender"
+Description: "Data elements that meet criteria using this datatype should document that the patient's sex matches the QDM category and its corresponding value set."
     ObservableCode is #TODO
     Subject value is type Patient
 
 EntryElement: PatientCharacteristicPayer
 Based on: Observation
-Description: "PatientCharacteristicPayer"
+Description: "Data elements that meet criteria using this datatype should document that the patient has one or more of the payers indicated by the QDM category and its corresponding value set."
     ObservableCode is #TODO
     Subject value is type Patient
 
 EntryElement: PatientCharacteristicRace
 Based on: Observation
-Description: "PatientCharacteristicRace"
+Description: "Data elements that meet criteria using this datatype should document the patient’s race."
     ObservableCode is #TODO
     Subject value is type Patient
 
 EntryElement: PhysicalExam
 Based on: Observation
-Description: "PhysicalExam"
+Description: "Physical Exam represents the evaluation of the patient's body and/or mental status exam to determine its state of health. The techniques of examination can include palpation (feeling with the hands or fingers), percussion (tapping with the fingers), auscultation (listening), visual inspection or observation, inquisition and smell. Measurements may include vital signs (blood pressure, pulse, respiration) as well as other clinical measures (such as expiratory flow rate and size of lesion). Physical exam includes psychiatric examinations."
     Subject value is type Patient
 
 EntryElement: PhysicalExamPerformed
 Based on: Activity
-Description: "PhysicalExamPerformed"
+Description: "Data elements that meet criteria using this datatype should document the completion of the physical exam indicated by the QDM category and its corresponding value set."
     Subject value is type PhysicalExam
 
 EntryElement: Procedure
 Based on: Observation
-Description: "Procedure"
+Description: "Procedure is derived directly from HL7 and Canada Health Infoway: “An Act whose immediate and primary outcome (post-condition) is the alteration of the physical condition of the subject. ... Procedure is but one among several types of clinical activities such as observation, substance- administrations, and communicative interactions ... Procedure does not comprise all acts of [sic] whose intent is intervention or treatment.”17 A procedure may be a surgery or other type of physical manipulation of a person’s body in whole or in part for purposes of making observations and diagnoses or providing treatment."
     Subject value is type Patient
 
 EntryElement: ProcedureOrder
 Based on: Activity
-Description: "ProcedureOrder"
+Description: "Data elements that meet criteria using this datatype should document a request for the procedure indicated by the QDM category and its corresponding value set."
     Subject value is type Procedure
 
 EntryElement: ProcedurePerformed
 Based on: Activity
-Description: "ProcedurePerformed"
+Description: "Data elements that meet criteria using this datatype should document the completion of the procedure indicated by the QDM category and its corresponding value set."
     Subject value is type Procedure
 
 EntryElement: Substance
 Based on: ObjectPresentOrAbsent
-Description: "Substance"
+Description: "Substance represents a homogeneous material with definite composition that includes allergens, biological materials, chemicals, foods, drugs and materials.19 QDM distinguishes between medications from non-medication substances by separately listing medication datatypes. Substance may or may not have a code or be classified by a code system such RxNorm. Examples of a substance may include environmental agents (e.g., pollen, dust) and food (e.g., vitamins)."
     Subject value is type Patient
 
 EntryElement: SubstanceAdministered
 Based on: Activity
-Description: "SubstanceAdministered"
+Description: "Data elements that meet criteria using this datatype should document that the substance indicated by the QDM category and its corresponding value set was actually given to the patient."
     Subject value is type Substance
