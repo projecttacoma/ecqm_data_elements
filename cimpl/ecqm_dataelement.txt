@@ -1,7 +1,7 @@
 Grammar: DataElement 5.0
 Namespace: ecqm.dataelement
 Description: "Insert Text Here"
-Uses: shr.core, shr.base, shr.entity, qdm.attribute, qdm.dataelement, qdm.dataelement.clusters
+Uses: shr.core, shr.base, shr.entity, qdm.attribute, qdm.dataelement
 
 EntryElement: ACEInhibitororARB
 Based on: Medication
