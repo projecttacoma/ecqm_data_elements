@@ -63,7 +63,13 @@ if (location.href.indexOf('is-external=true') == -1) {
           <dt>Description:</dt>
         
         <dd>
-          <div class="block"><p>(Clinical Focus: Initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that received prior outpatient professional services from the physician practice in the last 3 years.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Include only codes that indicate initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that received prior outpatient professional services from the physician practice in the last 3 years.),(Exclusion Criteria: Exclude codes that are not for comprehensive preventive medical evaluations and codes that are for patients who have not been seen in the last 3 years.) -- Subject constrained to the Preventive Care, Established Office Visit, 0 to 17</p></div>
+                      <div><b>Clinical Focus: </b> Initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that received prior outpatient professional services from the physician practice in the last 3 years.</div>
+                          <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+                          <div><b>Inclusion Criteria: </b> Include only codes that indicate initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that received prior outpatient professional services from the physician practice in the last 3 years.</div>
+                          <div><b>Exclusion Criteria: </b> Exclude codes that are not for comprehensive preventive medical evaluations and codes that are for patients who have not been seen in the last 3 years.</div>
+                          <div>Subject constrained to the Preventive Care, Established Office Visit, 0 to 17</div>
+          
+        
         </dd>
       </dl>
       <dl>
@@ -150,6 +156,153 @@ if (location.href.indexOf('is-external=true') == -1) {
   
       
                                                                                                                                                                             
+                                                                                        
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/AuthorDatetime.html">AuthorDatetime</a></strong></code>
+    
+    </div>
+    <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>                        
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/AdmissionSource.html">AdmissionSource</a></strong></code>
+    
+    </div>
+    <div class="block"><p>The location from which the patient was admitted (e.g., physician referral, facility from which the patient was transferred).</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>                        
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/RelevantPeriod.html">RelevantPeriod</a></strong></code>
+    
+    </div>
+    <div class="block"><p>Relevant Period addresses the time between the start of an action to the end of an action. Each datatype using relevant period defines specific definitions for the start and stop time for the action listed.</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>                        
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/DischargeDisposition.html">DischargeDisposition</a></strong></code>
+    
+    </div>
+    <div class="block"><p>The disposition, or location to which the patient is transferred at the time of hospital discharge.</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>                        
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/FacilityLocations.html">FacilityLocations</a></strong></code>
+    
+    </div>
+    <div class="block"><p>The particular locations in a facility in which the diagnostic study or encounter occurs or occurred. Examples include, but are not limited to, intensive care units (ICUs), non- ICUs, burn critical-care unit, neonatal ICU, and respiratory-care unit. Each Encounter, Performed may have 1 or more locations. For example, a patient treated in multiple locations during an individual encounter might be expressed as: Encounter, Performed: Inpatient Admission, ICU (location period), Non-ICU Admission (location period), Rehab (location period)</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>                        
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/Diagnoses.html">Diagnoses</a></strong></code>
+    
+    </div>
+    <div class="block"><p>Coded diagnoses/problems addressed during the encounter. The diagnoses attribute is intended to capture ALL diagnoses, including principal diagnosis. Use of the Encounter, Performed: diagnoses attribute and the Diagnosis datatype is redundant for relating the diagnosis to the Encounter, Performed. The Encounter, Performed: diagnoses syntax is preferred. Referencing the same diagnosis using Encounter, Performed (diagnoses attribute) and Diagnosis (datatype) should only occur if the measure must define a specified length of a prevalence period, e.g., The measure must assure that the diagnoseis have been present for at least some defined time period before the encounter, and were addressed during the Encounter</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>                        
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/PrincipalDiagnosis.html">PrincipalDiagnosis</a></strong></code>
+    
+    </div>
+    <div class="block"><p>The coded diagnosis/problem established after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care.</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>                        
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/NegationRationale.html">NegationRationale</a></strong></code>
+    
+    </div>
+    <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>                        
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/LengthOfStay.html">LengthOfStay</a></strong></code>
+    
+    </div>
+    <div class="block"><p>The difference of the admission date/time and the discharge date/time for the encounter. This attribute should not be used for outpatient encounters.</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>          
+
+                                                                                                                                                                        
                   
   <tr class="rowColor">
 
@@ -269,151 +422,7 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
   </td>
   <td class="colLast">
       </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/AuthorDatetime.html">AuthorDatetime</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/AdmissionSource.html">AdmissionSource</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The location from which the patient was admitted (e.g., physician referral, facility from which the patient was transferred).</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/RelevantPeriod.html">RelevantPeriod</a></strong></code>
-    
-    </div>
-    <div class="block"><p>Relevant Period addresses the time between the start of an action to the end of an action. Each datatype using relevant period defines specific definitions for the start and stop time for the action listed.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/DischargeDisposition.html">DischargeDisposition</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The disposition, or location to which the patient is transferred at the time of hospital discharge.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/FacilityLocations.html">FacilityLocations</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The particular locations in a facility in which the diagnostic study or encounter occurs or occurred. Examples include, but are not limited to, intensive care units (ICUs), non- ICUs, burn critical-care unit, neonatal ICU, and respiratory-care unit. Each Encounter, Performed may have 1 or more locations. For example, a patient treated in multiple locations during an individual encounter might be expressed as: Encounter, Performed: Inpatient Admission, ICU (location period), Non-ICU Admission (location period), Rehab (location period)</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/Diagnoses.html">Diagnoses</a></strong></code>
-    
-    </div>
-    <div class="block"><p>Coded diagnoses/problems addressed during the encounter. The diagnoses attribute is intended to capture ALL diagnoses, including principal diagnosis. Use of the Encounter, Performed: diagnoses attribute and the Diagnosis datatype is redundant for relating the diagnosis to the Encounter, Performed. The Encounter, Performed: diagnoses syntax is preferred. Referencing the same diagnosis using Encounter, Performed (diagnoses attribute) and Diagnosis (datatype) should only occur if the measure must define a specified length of a prevalence period, e.g., The measure must assure that the diagnoseis have been present for at least some defined time period before the encounter, and were addressed during the Encounter</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/PrincipalDiagnosis.html">PrincipalDiagnosis</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The coded diagnosis/problem established after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/NegationRationale.html">NegationRationale</a></strong></code>
-    
-    </div>
-    <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/LengthOfStay.html">LengthOfStay</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The difference of the admission date/time and the discharge date/time for the encounter. This attribute should not be used for outpatient encounters.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>            </table>            </li>
+</tr>                                                                                                      </table>            </li>
           </ul>
         </li>
       </ul>

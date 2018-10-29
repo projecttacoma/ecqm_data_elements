@@ -63,7 +63,13 @@ if (location.href.indexOf('is-external=true') == -1) {
           <dt>Description:</dt>
         
         <dd>
-          <div class="block"><p>(Clinical Focus: Patients receiving hospice care outside of hospital or long term care facility.),(Data Element Scope: The intent of this value set is to identify all patients receiving hospice care outside of hospital or long term care facility .  Using the quality data model this maps to 'Intervention, Order' and 'Procedure, Order'.),(Inclusion Criteria: All hospice care concepts should be included.),(Exclusion Criteria: Do not include concepts for palliative care or comfort measures.) -- Subject constrained to the Hospice care ambulatory</p></div>
+                      <div><b>Clinical Focus: </b> Patients receiving hospice care outside of hospital or long term care facility.</div>
+                          <div><b>Data Element Scope: </b> The intent of this value set is to identify all patients receiving hospice care outside of hospital or long term care facility .  Using the quality data model this maps to &#39;Intervention, Order&#39; and &#39;Procedure, Order&#39;.</div>
+                          <div><b>Inclusion Criteria: </b> All hospice care concepts should be included.</div>
+                          <div><b>Exclusion Criteria: </b> Do not include concepts for palliative care or comfort measures.</div>
+                          <div>Subject constrained to the Hospice care ambulatory</div>
+          
+        
         </dd>
       </dl>
       <dl>
@@ -141,6 +147,57 @@ if (location.href.indexOf('is-external=true') == -1) {
   
       
                                                                                                                 
+                                                                                        
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/AuthorDatetime.html">AuthorDatetime</a></strong></code>
+    
+    </div>
+    <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>                        
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/Reason.html">Reason</a></strong></code>
+    
+    </div>
+    <div class="block"><p>The thought process or justification for the datatype. In some measures, specific treatments are acceptable inclusion criteria only if a justified reason is present. Each of these measures uses a value set (often, but not exclusively, using SNOMED- CT®) to express acceptable justification reasons. Other measures specify reasons as justification for exclusions. Examples include patient, system, or medical-related reasons for declining to perform specific actions. Each of these measures also uses a value set to express acceptable justification reasons for declining to perform expected actions.</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>                        
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../qdm-attribute/NegationRationale.html">NegationRationale</a></strong></code>
+    
+    </div>
+    <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+  </td>
+  <td class="colMiddle">
+    
+  </td>
+  <td class="colLast">
+      </td>
+</tr>          
+
+                                                                                                            
                   
   <tr class="rowColor">
 
@@ -260,55 +317,7 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
   </td>
   <td class="colLast">
       </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/AuthorDatetime.html">AuthorDatetime</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/Reason.html">Reason</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The thought process or justification for the datatype. In some measures, specific treatments are acceptable inclusion criteria only if a justified reason is present. Each of these measures uses a value set (often, but not exclusively, using SNOMED- CT®) to express acceptable justification reasons. Other measures specify reasons as justification for exclusions. Examples include patient, system, or medical-related reasons for declining to perform specific actions. Each of these measures also uses a value set to express acceptable justification reasons for declining to perform expected actions.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/NegationRationale.html">NegationRationale</a></strong></code>
-    
-    </div>
-    <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>            </table>            </li>
+</tr>                                          </table>            </li>
           </ul>
         </li>
       </ul>
