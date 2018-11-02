@@ -77,7 +77,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
                 <!-- <dd>
           <ul class="tree"> -->
-                                                                                                                                <dt>Based On:
+                                                                                                                                
+                <dt>Based On:
+                
                   <a href="../qdm-attribute/NegationRationale.html">NegationRationale</a>
                 </dt>
                 <p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p>
@@ -107,10 +109,12 @@ if (location.href.indexOf('is-external=true') == -1) {
             <li class="blockList">
               <a name="method_summary">
               </a>
-              <h3>Field Summary</h3>
+               
+                <h3>QDM Attributes</h3>
+              
                               <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
   <tr>
-    <th class="colFirst" scope="col">Properties Constrained</th>
+    <th class="colFirst" scope="col">Definition</th>
     <th class="colMiddle">Constraint</th>
     <th class="colLast">Value</th>
     <!-- <th class="colLast" scope="col">Override Class</th> -->
@@ -165,7 +169,7 @@ if (location.href.indexOf('is-external=true') == -1) {
     </tr>
   </table>                            <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
   <tr>
-    <th class="colFirst" scope="col">Properties Defined</th>
+    <th class="colFirst" scope="col">Definition</th>
     <th class="colMiddle">Constraints</th>
     <th class="colLast" scope="col">Value</th>
   </tr>

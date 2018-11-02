@@ -77,7 +77,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
                 <!-- <dd>
           <ul class="tree"> -->
-                                                                                                                                <dt>Based On:
+                                                                                                                                 
+                <dt>QDM Datatype:
+                
                   <a href="../qdm-dataelement/MedicationOrder.html">MedicationOrder</a>
                 </dt>
                 <p>Data elements that meet criteria using this datatype should document a request to a pharmacy to provide the medication indicated by the QDM category and its corresponding value set. Timing: The Author dateTime is the time the order is signed. Timing: The Relevant Period addresses: startTime = when the first administration of the medication is expected. The first administration may be expected at the time of the order or at a specified future date (i.e., the active time for the order); such information should be identified in the medication order. If the startTime is not specified in the order, the startTime defaults to the Author dateTime (the time the order is signed). stopTime = when the medication supply provided by the medication order is expected to be completed, including all fulfillments covered by the number of refills. Note that when calculating cumulative medication duration, the stopTime may be present directly in the medication order. If the stopTime is not available, the duration in days is the difference between the Relevant Period start and stop times multiplied by (1 + the number of refills). Refer to Special Cases in Appendix A (Section A.3) for scenarios to consider in calculating cumulative medication duration.</p>
@@ -107,10 +109,12 @@ if (location.href.indexOf('is-external=true') == -1) {
             <li class="blockList">
               <a name="method_summary">
               </a>
-              <h3>Field Summary</h3>
+               
+                <h3>QDM Attributes</h3>
+              
                               <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
   <tr>
-    <th class="colFirst" scope="col">Properties Constrained</th>
+    <th class="colFirst" scope="col">Definition</th>
     <th class="colMiddle">Constraint</th>
     <th class="colLast">Value</th>
     <!-- <th class="colLast" scope="col">Override Class</th> -->
@@ -143,7 +147,7 @@ if (location.href.indexOf('is-external=true') == -1) {
     </tr>
   </table>                            <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
   <tr>
-    <th class="colFirst" scope="col">Properties Defined</th>
+    <th class="colFirst" scope="col">Definition</th>
     <th class="colMiddle">Constraints</th>
     <th class="colLast" scope="col">Value</th>
   </tr>

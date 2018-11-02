@@ -77,7 +77,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <dl>
                 <!-- <dd>
           <ul class="tree"> -->
-                                                                                                                                <dt>Based On:
+                                                                                                                                 
+                <dt>QDM Datatype:
+                
                   <a href="../qdm-dataelement/MedicationDispensed.html">MedicationDispensed</a>
                 </dt>
                 <p>Data elements that meet criteria using this datatype should document that a prescription for the medication indicated by the QDM category and its corresponding value set has been dispensed and provided to the patient or patient proxy. In the ambulatory setting, medications are primarily taken directly by patients and not directly observed. Hence, dispensed, or fulfillment, information is the closest health provider documentation of medication compliance. In settings where patients attest to taking medications in electronic format (perhaps a Personal Health Record), patient attestation of medication taken may be available. The QDM datatype, Medication, Administered addresses medication taken; to address the source of the information, a measure addressing such patient attestation would require use of the dataflow attribute, source. Timing: The time the medication dispensing event occurs; the Author dateTime. Timing: The Relevant Period addresses: startTime = when the first administration of the medication is expected. If not specified. the startTime defaults to the Author dateTime (the time the medication dispensing event occurs). stopTime = when the medication supply provided by the dispensing event is expected to be completed. Note that when calculating cumulative medication duration, the medication dispensed stopTime may be present directly in the fulfillment record. If the stopTime is not available, the duration in days is the difference between the Relevant Period start and stop times. The record may indicate which of the available refills the fulfillment represents but each dispensing event is unique. Therefore, the measure developer should use CQL logic to address multiple dispensing events over a period of time. Refer to Special Cases in Appendix A (Section A.3) for scenarios to consider in calculating cumulative medication duration.</p>
@@ -107,10 +109,12 @@ if (location.href.indexOf('is-external=true') == -1) {
             <li class="blockList">
               <a name="method_summary">
               </a>
-              <h3>Field Summary</h3>
+               
+                <h3>QDM Attributes</h3>
+              
                             <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
   <tr>
-    <th class="colFirst" scope="col">Properties Defined</th>
+    <th class="colFirst" scope="col">Definition</th>
     <th class="colMiddle">Constraints</th>
     <th class="colLast" scope="col">Value</th>
   </tr>
