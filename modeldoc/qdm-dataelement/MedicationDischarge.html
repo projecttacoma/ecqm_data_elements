@@ -66,23 +66,28 @@ if (location.href.indexOf('is-external=true') == -1) {
         
         <dd>
         
-          <div class="block"><p>Data elements that meet criteria using this datatype should document that the medications indicated by the QDM category and its corresponding value set should be taken by or given to the patient after being discharged from an inpatient encounter.</p></div>
+          <div class="block"><p>Data elements that meet criteria using this datatype should document that the medications indicated by the QDM category and its corresponding value set should be taken by or given to the patient after being discharged from an inpatient encounter. Timing: The time the discharge medication list on the discharge instruction form is authored.</p></div>
         
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                                                                                      <a href="../shr-base/Activity.html">Activity</a>
-                                                                  </dt>
-          <!-- </ul>
+                                                                                                    <dt>Based On:
+                  <a href="../shr-base/Activity.html">Activity</a>
+                </dt>
+                <p>A statement that asserts an action relating to the subject. The subject is often the patient, but may....</p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
             <dl>
         <dt>Direct Descendants:</dt>
         <dd>
           <ul class="class_list">
+                          <li>
+                <a href="../ecqm-dataelement/AnticoagulantTherapyDischarge.html">AnticoagulantTherapyDischarge</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/AntithromboticTherapyDischarge.html">AntithromboticTherapyDischarge</a>,&nbsp;              </li>
                           <li>
                 <a href="../ecqm-dataelement/StatinGrouperDischarge.html">StatinGrouperDischarge</a>              </li>
                       </ul>
@@ -144,6 +149,8 @@ if (location.href.indexOf('is-external=true') == -1) {
   
       
                                                                                             
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -152,7 +159,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/AuthorDatetime.html">AuthorDatetime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
+      <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -167,7 +176,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -176,7 +189,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Refills.html">Refills</a></strong></code>
     
     </div>
-    <div class="block"><p>The number of refills allowed by the prescription.</p></div>
+    
+      <div class="block"><p>The number of refills allowed by the prescription.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -191,7 +206,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -200,7 +219,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Dosage.html">Dosage</a></strong></code>
     
     </div>
-    <div class="block"><p>Details of how medication is taken or is to be taken, i.e., the quantity (mg, cc, tablets) to be taken at a single administration.</p></div>
+    
+      <div class="block"><p>Details of how medication is taken or is to be taken, i.e., the quantity (mg, cc, tablets) to be taken at a single administration.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -215,7 +236,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -224,7 +249,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Supply.html">Supply</a></strong></code>
     
     </div>
-    <div class="block"><p>The quantity (amount) of therapeutic agent that was provided to a patient (i.e., number of doses, number of tablets or pills, volume of medication). Indicated to be given during a procedure, diagnostic test, or medication or substance administration. Note: Prior versions of the QDM (4.3 and earlier) addressed “dose” with two potential interpretations – (1) the quantity to be taken or administered with each administration and (2) the quantity of medication supplied (i.e., number of doses). QDM 5.0 and subsequent versions clarify the difference by defining “dosage” and “supply,” respectively. Note: Medication, Discharge includes medications the provider has indicated the patient should take after dischange from the hospital. This medication list is part of the discharge instructions provided to a patient. The list may include medication supply if it incorporates medication orders written at discharge even though the supply will not be present for medications the patient already has at home or purchases over- the-counter (without a prescription).</p></div>
+    
+      <div class="block"><p>The quantity (amount) of therapeutic agent that was provided to a patient (i.e., number of doses, number of tablets or pills, volume of medication). Indicated to be given during a procedure, diagnostic test, or medication or substance administration. Note: Prior versions of the QDM (4.3 and earlier) addressed “dose” with two potential interpretations – (1) the quantity to be taken or administered with each administration and (2) the quantity of medication supplied (i.e., number of doses). QDM 5.0 and subsequent versions clarify the difference by defining “dosage” and “supply,” respectively. Note: Medication, Discharge includes medications the provider has indicated the patient should take after dischange from the hospital. This medication list is part of the discharge instructions provided to a patient. The list may include medication supply if it incorporates medication orders written at discharge even though the supply will not be present for medications the patient already has at home or purchases over- the-counter (without a prescription).</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -239,7 +266,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -248,7 +279,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Frequency.html">Frequency</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates how frequently the medication or substance, Is administered to a patient for an active medication (a), Was administered to the patient (b), Should be taken by the patient or administered to the patient (c), Is recommended to be given to the patient (d).</p></div>
+    
+      <div class="block"><p>Indicates how frequently the medication or substance, Is administered to a patient for an active medication (a), Was administered to the patient (b), Should be taken by the patient or administered to the patient (c), Is recommended to be given to the patient (d).</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -263,7 +296,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -272,7 +309,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Route.html">Route</a></strong></code>
     
     </div>
-    <div class="block"><p>Refers to the path by which the medication or substance should be taken into the body systems, such as intradermally, intrathecally, intramuscularly, intranasally, intravenously, orally, rectally, subcutaneously, sublingually, topically, or vaginally.</p></div>
+    
+      <div class="block"><p>Refers to the path by which the medication or substance should be taken into the body systems, such as intradermally, intrathecally, intramuscularly, intranasally, intravenously, orally, rectally, subcutaneously, sublingually, topically, or vaginally.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -287,7 +326,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -296,7 +339,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/NegationRationale.html">NegationRationale</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
+      <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -311,10 +356,12 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>              
+</tr>          
+        
+              
                                                                                                                                                 
 
-                                                                                                                                                    
+    <!--                                                                                                                                                 
                   
   <tr class="rowColor">
 
@@ -324,7 +371,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
+      <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -340,7 +389,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/RelevantTime.html">RelevantTime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
+      <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -356,7 +407,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block"><p>The method used to determine the finding.</p></div>
+    
+      <div class="block"><p>The method used to determine the finding.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -372,8 +425,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -395,7 +450,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Beneficiary.html">Beneficiary</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
+      <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -411,7 +468,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ActivityCode.html">ActivityCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
+      <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -427,14 +486,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Qualifier.html">Qualifier</a></strong></code>
     
     </div>
-    <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
+      <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>                                                                                  </table>            </li>
+</tr>                                                                                 -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

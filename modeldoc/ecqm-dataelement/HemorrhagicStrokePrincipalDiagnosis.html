@@ -65,31 +65,42 @@ if (location.href.indexOf('is-external=true') == -1) {
           <dt>Description:</dt>
         
         <dd>
-                      <div><b>Clinical Focus: </b> This grouping of value sets identifies patients who have had a hemorrhagic stroke, or stroke caused by hemorrhage.</div>
-                          <div><b>Data Element Scope: </b> The intent of this data element is to identify patients who have a diagnosis of hemorrhagic stroke, or stroke caused by a hemorrhage.  Using the Quality Data Model, this particular element would map to the Principal Diagnosis attribute for the Encounter category.</div>
-                          <div><b>Inclusion Criteria: </b> Only use codes which represent a diagnosis of hemorrhagic stroke, or stroke caused by hemorrhage.  This is a grouping of  ICD10CM and SNOMED-CT codes.</div>
-                          <div><b>Exclusion Criteria: </b> None.</div>
-                          <div></div>
-          
+        
+              <div><b>Clinical Focus: </b> This grouping of value sets identifies patients who have had a hemorrhagic stroke, or stroke caused by hemorrhage.</div>
+      <div><b>Data Element Scope: </b> The intent of this data element is to identify patients who have a diagnosis of hemorrhagic stroke, or stroke caused by a hemorrhage.  Using the Quality Data Model, this particular element would map to the Principal Diagnosis attribute for the Encounter category.</div>
+      <div><b>Inclusion Criteria: </b> Only use codes which represent a diagnosis of hemorrhagic stroke, or stroke caused by hemorrhage.  This is a grouping of  ICD10CM and SNOMED-CT codes.</div>
+      <div><b>Exclusion Criteria: </b> None.</div>
+      <div></div>
         
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                                                                                                                  <a href="../qdm-attribute/PrincipalDiagnosis.html">PrincipalDiagnosis</a>
-                                                                  </dt>
-          <!-- </ul>
+                                                                                                                                <dt>Based On:
+                  <a href="../qdm-attribute/PrincipalDiagnosis.html">PrincipalDiagnosis</a>
+                </dt>
+                <p>The coded diagnosis/problem established after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care.</p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
       
-                                        <dl>
+                                                                                                                                            <dl>
         <dt>Used By:</dt>
         <dd>
           <ul class="class_list">
                           <li>
-                <a href="../ecqm-measure/CMS105v7.html">CMS105v7</a>              </li>
+                <a href="../ecqm-measure/CMS102v7.html">CMS102v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS104v7.html">CMS104v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS105v7.html">CMS105v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS107v7.html">CMS107v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS71v8.html">CMS71v8</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS72v7.html">CMS72v7</a>              </li>
                       </ul>
         </dd>
       </dl>
@@ -173,7 +184,7 @@ if (location.href.indexOf('is-external=true') == -1) {
                                                                                   
                                                                           
 
-                                                                              
+    <!--                                                                           
                   
   <tr class="rowColor">
 
@@ -183,7 +194,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
+      <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -199,7 +212,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/RelevantTime.html">RelevantTime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
+      <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -215,7 +230,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block"><p>The method used to determine the finding.</p></div>
+    
+      <div class="block"><p>The method used to determine the finding.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -231,8 +248,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -248,7 +267,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ObservableCode.html">ObservableCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
+      <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -264,7 +285,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ResultValue.html">ResultValue</a></strong></code>
     
     </div>
-    <div class="block"><p>The finding itself, such as the blood pressure value recorded.</p></div>
+    
+      <div class="block"><p>The finding itself, such as the blood pressure value recorded.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -288,14 +311,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Qualifier.html">Qualifier</a></strong></code>
     
     </div>
-    <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
+      <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>            </table>            </li>
+</tr>           -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

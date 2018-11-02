@@ -66,23 +66,28 @@ if (location.href.indexOf('is-external=true') == -1) {
         
         <dd>
         
-          <div class="block"><p>Data elements that meet criteria using this datatype should document that the patient's sex matches the QDM category and its corresponding value set.</p></div>
+          <div class="block"><p>Data elements that meet criteria using this datatype should document that the patient's sex matches the QDM category and its corresponding value set. Timing: Birth (administrative) sex does not have a specific timing.</p></div>
         
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                                                                                      <a href="../shr-base/Observation.html">Observation</a>
-                                                                  </dt>
-          <!-- </ul>
+                                                                                                    <dt>Based On:
+                  <a href="../shr-base/Observation.html">Observation</a>
+                </dt>
+                <p>A statement that asserts the value of a property (observable) of the subject. The subject is often the patient, but may be a condition, a physical structure, or another clinical statement. For example, an interpretation is a finding about an observation.</p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
             <dl>
         <dt>Direct Descendants:</dt>
         <dd>
           <ul class="class_list">
+                          <li>
+                <a href="../ecqm-dataelement/FemalePatientCharacteristicGender.html">FemalePatientCharacteristicGender</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/MalePatientCharacteristicGender.html">MalePatientCharacteristicGender</a>,&nbsp;              </li>
                           <li>
                 <a href="../ecqm-dataelement/ONCAdministrativeSexPatientCharacteristicGender.html">ONCAdministrativeSexPatientCharacteristicGender</a>              </li>
                       </ul>
@@ -135,28 +140,6 @@ if (location.href.indexOf('is-external=true') == -1) {
         <div class="block">PatientCharacteristicGender</div>
       </td> -->
     </tr>
-      
-      <tr class="altColor">
-    
-      <td class="colFirst">
-        <code><strong>ObservableCode.CodeableConcept</strong></code>
-        
-          <div class="block">Defined in <a href="../shr-base/Observation.html">Observation</a></div>
-        
-      </td>
-      <td class="colMiddle">
-        <code><strong>Fixed Value</strong></code>
-        
-          <div class="block">Constrained in <a href="../qdm-dataelement/PatientCharacteristicGender.html">PatientCharacteristicGender</a></div>
-        
-      </td>
-      <td class="colLast">
-                  <div class="block">undefined (code: TODO)</div>
-              </td>
-      <!-- <td class="colLast">
-        <div class="block">PatientCharacteristicGender</div>
-      </td> -->
-    </tr>
   </table>                            <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
   <tr>
     <th class="colFirst" scope="col">Properties Defined</th>
@@ -168,7 +151,7 @@ if (location.href.indexOf('is-external=true') == -1) {
                                                                                   
                                                                           
 
-                                                                              
+    <!--                                                                           
                   
   <tr class="rowColor">
 
@@ -178,7 +161,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
+      <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -194,7 +179,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/RelevantTime.html">RelevantTime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
+      <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -210,7 +197,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block"><p>The method used to determine the finding.</p></div>
+    
+      <div class="block"><p>The method used to determine the finding.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -226,8 +215,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -249,15 +240,15 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ObservableCode.html">ObservableCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
+      <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
   </td>
   <td class="colMiddle">
-          <div class="block"><code><strong>Fixed Value</strong></code></div>
     
   </td>
   <td class="colLast">
-                  <div class="block">undefined (code: TODO)</div>
-            </td>
+      </td>
 </tr>                        
   <tr class="altColor">
 
@@ -267,7 +258,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ResultValue.html">ResultValue</a></strong></code>
     
     </div>
-    <div class="block"><p>The finding itself, such as the blood pressure value recorded.</p></div>
+    
+      <div class="block"><p>The finding itself, such as the blood pressure value recorded.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -283,14 +276,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Qualifier.html">Qualifier</a></strong></code>
     
     </div>
-    <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
+      <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>            </table>            </li>
+</tr>           -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

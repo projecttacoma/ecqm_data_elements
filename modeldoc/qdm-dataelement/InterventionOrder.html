@@ -66,17 +66,18 @@ if (location.href.indexOf('is-external=true') == -1) {
         
         <dd>
         
-          <div class="block"><p>Data elements that meet criteria using this datatype should document a request to perform the intervention indicated by the QDM category and its corresponding value set.</p></div>
+          <div class="block"><p>Data elements that meet criteria using this datatype should document a request to perform the intervention indicated by the QDM category and its corresponding value set. Timing: The time the order is signed; Author dateTime</p></div>
         
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                                                                                      <a href="../shr-base/Activity.html">Activity</a>
-                                                                  </dt>
-          <!-- </ul>
+                                                                                                    <dt>Based On:
+                  <a href="../shr-base/Activity.html">Activity</a>
+                </dt>
+                <p>A statement that asserts an action relating to the subject. The subject is often the patient, but may....</p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
             <dl>
@@ -84,9 +85,37 @@ if (location.href.indexOf('is-external=true') == -1) {
         <dd>
           <ul class="class_list">
                           <li>
+                <a href="../ecqm-dataelement/AboveNormalFollowupOrder.html">AboveNormalFollowupOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/BelowNormalFollowupOrder.html">BelowNormalFollowupOrder</a>,&nbsp;              </li>
+                          <li>
                 <a href="../ecqm-dataelement/ComfortMeasuresOrder.html">ComfortMeasuresOrder</a>,&nbsp;              </li>
                           <li>
-                <a href="../ecqm-dataelement/HospicecareambulatoryOrder.html">HospicecareambulatoryOrder</a>              </li>
+                <a href="../ecqm-dataelement/DietaryRecommendationsOrder.html">DietaryRecommendationsOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/Followupwithin4weeksOrder.html">Followupwithin4weeksOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/FollowupwithinoneyearOrder.html">FollowupwithinoneyearOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/HospicecareambulatoryOrder.html">HospicecareambulatoryOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/LifestyleRecommendationOrder.html">LifestyleRecommendationOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/ModerationofETOHConsumptionRecommendationOrder.html">ModerationofETOHConsumptionRecommendationOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/PalliativeCareOrder.html">PalliativeCareOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/PhysicalActivityRecommendationOrder.html">PhysicalActivityRecommendationOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/ReferralforDepressionAdolescentOrder.html">ReferralforDepressionAdolescentOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/ReferralforDepressionAdultOrder.html">ReferralforDepressionAdultOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/ReferralswhereweightassessmentmayoccurOrder.html">ReferralswhereweightassessmentmayoccurOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/ReferraltoAlternativeProviderPrimaryCareProviderOrder.html">ReferraltoAlternativeProviderPrimaryCareProviderOrder</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/WeightReductionRecommendedOrder.html">WeightReductionRecommendedOrder</a>              </li>
                       </ul>
         </dd>
       </dl>
@@ -146,6 +175,8 @@ if (location.href.indexOf('is-external=true') == -1) {
   
       
                                                                                             
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -154,7 +185,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/AuthorDatetime.html">AuthorDatetime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
+      <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -169,7 +202,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -178,7 +215,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Reason.html">Reason</a></strong></code>
     
     </div>
-    <div class="block"><p>The thought process or justification for the datatype. In some measures, specific treatments are acceptable inclusion criteria only if a justified reason is present. Each of these measures uses a value set (often, but not exclusively, using SNOMED- CT®) to express acceptable justification reasons. Other measures specify reasons as justification for exclusions. Examples include patient, system, or medical-related reasons for declining to perform specific actions. Each of these measures also uses a value set to express acceptable justification reasons for declining to perform expected actions.</p></div>
+    
+      <div class="block"><p>The thought process or justification for the datatype. In some measures, specific treatments are acceptable inclusion criteria only if a justified reason is present. Each of these measures uses a value set (often, but not exclusively, using SNOMED- CT®) to express acceptable justification reasons. Other measures specify reasons as justification for exclusions. Examples include patient, system, or medical-related reasons for declining to perform specific actions. Each of these measures also uses a value set to express acceptable justification reasons for declining to perform expected actions.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -193,7 +232,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -202,7 +245,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/NegationRationale.html">NegationRationale</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
+      <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -217,10 +262,12 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>              
+</tr>          
+        
+              
                                                                                                         
 
-                                                                                                            
+    <!--                                                                                                         
                   
   <tr class="rowColor">
 
@@ -230,7 +277,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
+      <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -246,7 +295,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/RelevantTime.html">RelevantTime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
+      <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -262,7 +313,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block"><p>The method used to determine the finding.</p></div>
+    
+      <div class="block"><p>The method used to determine the finding.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -278,8 +331,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -301,7 +356,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Beneficiary.html">Beneficiary</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
+      <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -317,7 +374,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ActivityCode.html">ActivityCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
+      <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -333,14 +392,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Qualifier.html">Qualifier</a></strong></code>
     
     </div>
-    <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
+      <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>                                          </table>            </li>
+</tr>                                         -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

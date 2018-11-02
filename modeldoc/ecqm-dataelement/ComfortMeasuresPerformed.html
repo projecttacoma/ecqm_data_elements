@@ -65,31 +65,46 @@ if (location.href.indexOf('is-external=true') == -1) {
           <dt>Description:</dt>
         
         <dd>
-                      <div><b>Clinical Focus: </b> This set of values contains care regimes used to define comfort measure care.</div>
-                          <div><b>Data Element Scope: </b> The intent of this data element is to identify patients receiving comfort measures care. Using the Quality Data Model, this particular element would map to the Intervention category.</div>
-                          <div><b>Inclusion Criteria: </b> Include SNOMEDCT regime and therapy codes for comfort measures, terminal care, dying care, and hospice care.</div>
-                          <div><b>Exclusion Criteria: </b> None.</div>
-                          <div>Subject constrained to the Comfort Measures</div>
-          
+        
+              <div><b>Clinical Focus: </b> This set of values contains care regimes used to define comfort measure care.</div>
+      <div><b>Data Element Scope: </b> The intent of this data element is to identify patients receiving comfort measures care. Using the Quality Data Model, this particular element would map to the Intervention category.</div>
+      <div><b>Inclusion Criteria: </b> Include SNOMEDCT regime and therapy codes for comfort measures, terminal care, dying care, and hospice care.</div>
+      <div><b>Exclusion Criteria: </b> None.</div>
+      <div>Subject constrained to the Comfort Measures</div>
         
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                                                                                                                  <a href="../qdm-dataelement/InterventionPerformed.html">InterventionPerformed</a>
-                                                                  </dt>
-          <!-- </ul>
+                                                                                                                                <dt>Based On:
+                  <a href="../qdm-dataelement/InterventionPerformed.html">InterventionPerformed</a>
+                </dt>
+                <p>Data elements that meet criteria using this datatype should document the completion of the intervention indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – The time the intervention begins stopTime – The time the intervention ends NOTE - timing refers to a single instance of an intervention. If a measure seeks to evaluate multiple interventions over a period of time, the measure developer should use CQL logic to represent the query request.</p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
       
-                                                            <dl>
+                                                                                                                                                                                                                            <dl>
         <dt>Used By:</dt>
         <dd>
           <ul class="class_list">
                           <li>
-                <a href="../ecqm-measure/CMS105v7.html">CMS105v7</a>              </li>
+                <a href="../ecqm-measure/CMS102v7.html">CMS102v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS104v7.html">CMS104v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS105v7.html">CMS105v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS107v7.html">CMS107v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS108v7.html">CMS108v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS190v7.html">CMS190v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS71v8.html">CMS71v8</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS72v7.html">CMS72v7</a>              </li>
                       </ul>
         </dd>
       </dl>
@@ -97,6 +112,8 @@ if (location.href.indexOf('is-external=true') == -1) {
           <dt>Included in Unions:</dt>
           <dd>
             <ul class="class_list">
+                              <li>
+                  <a href="../ecqm-unions/DenominatorExclusions3Union.html">DenominatorExclusions3Union</a>,&nbsp;                </li>
                               <li>
                   <a href="../ecqm-unions/InterventionComfortMeasuresUnion.html">InterventionComfortMeasuresUnion</a>                </li>
                           </ul>
@@ -159,6 +176,8 @@ if (location.href.indexOf('is-external=true') == -1) {
       
                                                                                                                                               
                                                                                         
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -167,14 +186,20 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/AuthorDatetime.html">AuthorDatetime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
+      <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -183,71 +208,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/RelevantPeriod.html">RelevantPeriod</a></strong></code>
     
     </div>
-    <div class="block"><p>Relevant Period addresses the time between the start of an action to the end of an action. Each datatype using relevant period defines specific definitions for the start and stop time for the action listed.</p></div>
-  </td>
-  <td class="colMiddle">
     
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
+      <div class="block"><p>Relevant Period addresses the time between the start of an action to the end of an action. Each datatype using relevant period defines specific definitions for the start and stop time for the action listed.</p></div>
     
-      <code><strong><a href="../qdm-attribute/Reason.html">Reason</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The thought process or justification for the datatype. In some measures, specific treatments are acceptable inclusion criteria only if a justified reason is present. Each of these measures uses a value set (often, but not exclusively, using SNOMED- CT®) to express acceptable justification reasons. Other measures specify reasons as justification for exclusions. Examples include patient, system, or medical-related reasons for declining to perform specific actions. Each of these measures also uses a value set to express acceptable justification reasons for declining to perform expected actions.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/Result.html">Result</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The final consequences or data collected from the datatype. Results can be used in five ways, to express: That a result is present in the electronic record but any entry is acceptable.  A numerical result is reported directly as a value. Values may be integers or decimal numbers without units, or as a quantity with a value and units – examples: 100 mg/dL for a lab test, 140 mmHg for blood pressure, as a percentage (actually a quantity with % as units), as a ratio (e.g., 1:4, 1:80). Beginning with QDM 5.3 measures use CQL logic to express the mathematical operators to constrain desired results to those above or below a certain threshold.  A result that matches one of a specific set of coded concepts in a value set or a code that matches a direct referenced code. A result as a dateTime (Assessment, Performed and components).</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/Status.html">Status</a></strong></code>
-    
-    </div>
-    <div class="block"><p>Indicates the particular stage of the action represented by the datatype.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/NegationRationale.html">NegationRationale</a></strong></code>
-    
-    </div>
-    <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
   </td>
   <td class="colMiddle">
     
@@ -255,8 +218,22 @@ if (location.href.indexOf('is-external=true') == -1) {
   <td class="colLast">
       </td>
 </tr>          
+        
+                        
+          
+        
+                        
+          
+        
+                        
+          
+        
+                        
+          
+        
+          
 
-                                                                                                                                          
+    <!--                                                                                                                                       
                   
   <tr class="rowColor">
 
@@ -266,7 +243,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
+      <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -282,7 +261,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/RelevantTime.html">RelevantTime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
+      <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -298,7 +279,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block"><p>The method used to determine the finding.</p></div>
+    
+      <div class="block"><p>The method used to determine the finding.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -314,8 +297,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -337,7 +322,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Beneficiary.html">Beneficiary</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
+      <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -353,7 +340,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ActivityCode.html">ActivityCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
+      <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -369,14 +358,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Qualifier.html">Qualifier</a></strong></code>
     
     </div>
-    <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
+      <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>                                                                        </table>            </li>
+</tr>                                                                       -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

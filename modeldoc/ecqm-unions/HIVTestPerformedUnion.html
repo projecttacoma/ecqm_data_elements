@@ -66,17 +66,18 @@ if (location.href.indexOf('is-external=true') == -1) {
         
         <dd>
         
-          <div class="block"><p>Union of data elements used to document the administration of the laboratory test present in the patient's medical record. On occasion, providers will view HIV screening results that were performed elsewhere and therefore the results are not present in the EHR in structured format. To allow such tests to be applied to this measure, they should be entered into the EHR as a laboratory test in a manner consistent with the EHR in use. If the specific Human Immunodeficiency Virus (HIV) Laboratory Test LOINC code of the test is not known, the entry should use the more generic code LOINC panel code [75622-1] which is present in the HIV test value set titled, 'HIV Test Documentation Reviewed.'</p></div>
+          <div class="block"></div>
         
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                              <a href="../ecqm-unions/Union4.html">Union4</a>
-                                                                  </dt>
-          <!-- </ul>
+                                            <dt>Based On:
+                  <a href="../ecqm-unions/Union43.html">Union43</a>
+                </dt>
+                <p></p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
       
@@ -111,10 +112,9 @@ if (location.href.indexOf('is-external=true') == -1) {
   </tr>
   
       
-                                
-                        
-
-                  
+                      
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -123,7 +123,16 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../ecqm-dataelement/HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed.html">HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed</a></strong></code>
     
     </div>
-    <div class="block"><p>(Clinical Focus: Screening for HIV infection),(Data Element Scope: Laboratory tests used for HIV screening. The scope of the value set is to include some secondary HIV tests that may be present in an EHR to assure a measure of screening does not miss patients who are tested and avoid unnecessary retesting to meet the expectations of a quality measure.),(Inclusion Criteria: Laboratory tests for HIV-1 and HIV-2 antibodies or antigens.),(Exclusion Criteria: Home HIV testing, HIV genotyping tests, HIV RNA tests, HIV cultures, clinical codes used to document care provided to HIV-infected patients.) -- Subject constrained to the Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> Screening for HIV infection</div>
+      <div><b>Data Element Scope: </b> Laboratory tests used for HIV screening. The scope of the value set is to include some secondary HIV tests that may be present in an EHR to assure a measure of screening does not miss patients who are tested and avoid unnecessary retesting to meet the expectations of a quality measure.</div>
+      <div><b>Inclusion Criteria: </b> Laboratory tests for HIV-1 and HIV-2 antibodies or antigens.</div>
+      <div><b>Exclusion Criteria: </b> Home HIV testing, HIV genotyping tests, HIV RNA tests, HIV cultures, clinical codes used to document care provided to HIV-infected patients.</div>
+      <div>Subject constrained to the Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)</div>
+</div>
+      
+      <div><b>LaboratoryTestPerformed:</b> Data elements that meet criteria using this datatype should document the laboratory test indicated by the QDM category and its corresponding value set was performed. Timing: The Relevant Period addresses: startTime – When the laboratory test is initiated (i.e., the time the specimen collection begins). stopTime – when the laboratory test is completed (i.e., the time the specimen collection ends). Examples: 1) Initiation of a venipuncture for a fasting blood glucose to the time venipuncture for the fasting blood glucose is completed – basically a single point in time for many specimen collections. 2) Initiation of a 24-hour urine collection for measured creatinine clearance until completion of the 24-hour urine collection Note – the time that the result report is available is a separate attribute than the time of the study (specimen collection)</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -138,16 +147,30 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..*</div>
             </td>
-</tr>                        
-  <tr class="altColor">
+</tr>          
+        
+              
+              
+
+    <!--               
+  <tr class="rowColor">
 
   <td class="colFirst">
     <div class="block">
     
-      <code><strong><a href="../ecqm-dataelement/HIV1and2testsMeaningfulUsesetPerformed.html">HIV1and2testsMeaningfulUsesetPerformed</a></strong></code>
+      <code><strong><a href="../ecqm-dataelement/HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed.html">HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed</a></strong></code>
     
     </div>
-    <div class="block"><p>-- Subject constrained to the HIV 1 and 2 tests - Meaningful Use set</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> Screening for HIV infection</div>
+      <div><b>Data Element Scope: </b> Laboratory tests used for HIV screening. The scope of the value set is to include some secondary HIV tests that may be present in an EHR to assure a measure of screening does not miss patients who are tested and avoid unnecessary retesting to meet the expectations of a quality measure.</div>
+      <div><b>Inclusion Criteria: </b> Laboratory tests for HIV-1 and HIV-2 antibodies or antigens.</div>
+      <div><b>Exclusion Criteria: </b> Home HIV testing, HIV genotyping tests, HIV RNA tests, HIV cultures, clinical codes used to document care provided to HIV-infected patients.</div>
+      <div>Subject constrained to the Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)</div>
+</div>
+      
+      <div><b>LaboratoryTestPerformed:</b> Data elements that meet criteria using this datatype should document the laboratory test indicated by the QDM category and its corresponding value set was performed. Timing: The Relevant Period addresses: startTime – When the laboratory test is initiated (i.e., the time the specimen collection begins). stopTime – when the laboratory test is completed (i.e., the time the specimen collection ends). Examples: 1) Initiation of a venipuncture for a fasting blood glucose to the time venipuncture for the fasting blood glucose is completed – basically a single point in time for many specimen collections. 2) Initiation of a 24-hour urine collection for measured creatinine clearance until completion of the 24-hour urine collection Note – the time that the result report is available is a separate attribute than the time of the study (specimen collection)</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -157,13 +180,14 @@ if (location.href.indexOf('is-external=true') == -1) {
   <td class="colLast">
                   <div class="block">
           
-                      <a href="../ecqm-dataelement/HIV1and2testsMeaningfulUsesetPerformed.html">HIV1and2testsMeaningfulUsesetPerformed</a>
+                      <a href="../ecqm-dataelement/HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed.html">HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed</a>
                     
         </div>
                         <div class="block">0..*</div>
             </td>
 </tr>              
-                          </table>            </li>
+               -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

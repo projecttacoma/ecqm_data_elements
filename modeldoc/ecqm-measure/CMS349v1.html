@@ -52,7 +52,7 @@ if (location.href.indexOf('is-external=true') == -1) {
   <!-- ======== START OF CLASS DATA ======== -->
   <div class="header">
     <div class="subTitle">ecqm.measure</div>
-          <h2 title="Element CMS349v1" class="title">CMS349v1 - HIV Screening</h2>
+          <h2 title="Element CMS349v1" class="title">CMS349v1 - CMS349v1</h2>
     
   </div>
   <div class="contentContainer">
@@ -62,7 +62,7 @@ if (location.href.indexOf('is-external=true') == -1) {
         
         <dd>
         
-          <div class="block"><p>HIV Screening. Human immunodeficiency virus (HIV) is a communicable infection that leads to a progressive disease with a long asymptomatic period. Approximately 50,000 persons in the United States are newly infected with HIV each year (Prejean 2011). Without treatment, most persons develop acquired immunodeficiency syndrome (AIDS) within 10 years of HIV infection. Antiretroviral therapy (ART) delays this progression and increases the length of survival, but it is most effective when initiated during the asymptomatic phase. It is estimated that on average an HIV-infected person aged 25 years who receives high quality health care will live an additional 39 years (Lohse 2007). DHHS Guidelines for the Use of Antiretroviral Agents in HIV-1-Infected Adults and Adolescents recommends antiretroviral therapy for all HIV-infected individuals to reduce the risk of disease progression (regardless of CD4 cell count at diagnosis) (Panel on Antiretroviral Guidelines for Adults and Adolescents, 2017). CDC estimates that almost 16% of the 1.1 million adults and adolescents living with HIV infection in the United States are unaware of their infection (Centers for Disease Control and Prevention 2013). Among persons diagnosed with HIV in 2011, one quarter were diagnosed with Stage 3 HIV (AIDS) at the time of HIV diagnosis (Centers for Disease Control and Prevention 2010). Median CD4 count at diagnosis is less than 350 cells/mm3 (Althoff 2010). HIV screening identifies infected persons who were previously unaware of their infection, which enables them to seek medical and social services that can improve their health and the quality and length of their lives. Additionally, using ART with high levels of medication adherence has been shown to substantially reduce risk for HIV transmission (Panel on Antiretroviral Guidelines for Adults and Adolescents, 2017). Based on the National Health Interview Survey, fewer than half of persons 18 and older reported ever having been tested for HIV as of 2010 (Centers for Disease Control and Prevention 2014).</p></div>
+          <div class="block"><p>CMS349v1</p></div>
         
         </dd>
       </dl>
@@ -90,10 +90,9 @@ if (location.href.indexOf('is-external=true') == -1) {
   </tr>
   
       
-                                                                                                                                                                                      
-                                                                                                                                                                              
-
-                                                
+                                                    
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -102,7 +101,456 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../ecqm-dataelement/ConditionsDueToHumanImmunodeficiencyVirusHIVDiagnosis.html">ConditionsDueToHumanImmunodeficiencyVirusHIVDiagnosis</a></strong></code>
     
     </div>
-    <div class="block"><p>(Clinical Focus: Infectious Conditions),(Data Element Scope: HIV infection as a condition),(Inclusion Criteria: HIV infection as a condition),(Exclusion Criteria: Conditions associated with HIV infection.) -- ResultValue constrained to codes in the Conditions Due To Human Immunodeficiency Virus (HIV) valueset (2.16.840.1.113762.1.4.1056.54)</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> Infectious Conditions</div>
+      <div><b>Data Element Scope: </b> HIV infection as a condition</div>
+      <div><b>Inclusion Criteria: </b> HIV infection as a condition</div>
+      <div><b>Exclusion Criteria: </b> Conditions associated with HIV infection.</div>
+      <div>ResultValue constrained to codes in the Conditions Due To Human Immunodeficiency Virus (HIV) valueset (2.16.840.1.113762.1.4.1056.54)</div>
+</div>
+      
+      <div><b>Diagnosis:</b> Condition/Diagnosis/Problem represents a practitioner’s identification of a patient’s disease, illness, injury, or condition. This category contains a single datatype to represent all of these concepts: Diagnosis. A practitioner determines the diagnosis by means of examination, diagnostic test results, patient history, and/or family history. Diagnoses are usually considered unfavorable, but may also represent neutral or favorable conditions that affect a patient’s plan of care (e.g., pregnancy). The QDM does not prescribe the source of diagnosis data in the EHR. Diagnoses may be found in a patient’s problem list, encounter diagnosis list, claims data, or other sources within the EHR. The preferred terminology for diagnoses is SNOMED-CT, but diagnoses may also be encoded using ICD-9/10. The Diagnosis datatype should not be used for differential diagnoses or rule-out diagnoses (neither of which are currently supported by the QDM).</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/ConditionsDueToHumanImmunodeficiencyVirusHIVDiagnosis.html">ConditionsDueToHumanImmunodeficiencyVirusHIVDiagnosis</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                        
+          
+            
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/OfficeVisit1Performed.html">OfficeVisit1Performed</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> This value set identifies patients who have had an office or other outpatient visit.</div>
+      <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+      <div><b>Inclusion Criteria: </b> Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.</div>
+      <div><b>Exclusion Criteria: </b> Excludes non-office visits, including telehealth services.</div>
+      <div>Subject constrained to the Office Visit1</div>
+</div>
+      
+      <div><b>EncounterPerformed:</b> Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/OfficeVisit1Performed.html">OfficeVisit1Performed</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                        
+          
+            
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/PreventiveCareServicesInitialOfficeVisit0to17Performed.html">PreventiveCareServicesInitialOfficeVisit0to17Performed</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> Initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that has no prior outpatient professional services from the physician practice in the last 3 years.</div>
+      <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+      <div><b>Inclusion Criteria: </b> Include only codes that indicate initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that has no prior outpatient professional services from the physician practice in the last 3 years.</div>
+      <div><b>Exclusion Criteria: </b> Exclude codes that are not for comprehensive preventive medical evaluations and codes that are for patients who have been seen in the last 3 years.</div>
+      <div>Subject constrained to the Preventive Care Services, Initial Office Visit, 0 to 17</div>
+</div>
+      
+      <div><b>EncounterPerformed:</b> Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/PreventiveCareServicesInitialOfficeVisit0to17Performed.html">PreventiveCareServicesInitialOfficeVisit0to17Performed</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                        
+          
+            
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/PreventiveCareServicesInitialOfficeVisit18andUp1Performed.html">PreventiveCareServicesInitialOfficeVisit18andUp1Performed</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> This value set identifies patients over the age of 18 who have had an initial preventive care office visit.</div>
+      <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+      <div><b>Inclusion Criteria: </b> Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.</div>
+      <div><b>Exclusion Criteria: </b> Excludes non-office visits, including telehealth services.</div>
+      <div>Subject constrained to the Preventive Care Services-Initial Office Visit, 18 and Up1</div>
+</div>
+      
+      <div><b>EncounterPerformed:</b> Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/PreventiveCareServicesInitialOfficeVisit18andUp1Performed.html">PreventiveCareServicesInitialOfficeVisit18andUp1Performed</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                        
+          
+            
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/PreventiveCareEstablishedOfficeVisit0to17Performed.html">PreventiveCareEstablishedOfficeVisit0to17Performed</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> Initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that received prior outpatient professional services from the physician practice in the last 3 years.</div>
+      <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+      <div><b>Inclusion Criteria: </b> Include only codes that indicate initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that received prior outpatient professional services from the physician practice in the last 3 years.</div>
+      <div><b>Exclusion Criteria: </b> Exclude codes that are not for comprehensive preventive medical evaluations and codes that are for patients who have not been seen in the last 3 years.</div>
+      <div>Subject constrained to the Preventive Care, Established Office Visit, 0 to 17</div>
+</div>
+      
+      <div><b>EncounterPerformed:</b> Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/PreventiveCareEstablishedOfficeVisit0to17Performed.html">PreventiveCareEstablishedOfficeVisit0to17Performed</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                        
+          
+            
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed.html">PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> This value set identifies patients over the age of 18 who have had an established preventive care office visit.</div>
+      <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+      <div><b>Inclusion Criteria: </b> Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.</div>
+      <div><b>Exclusion Criteria: </b> Excludes non-office visits, including telehealth services.</div>
+      <div>Subject constrained to the Preventive Care Services - Established Office Visit, 18 and Up1</div>
+</div>
+      
+      <div><b>EncounterPerformed:</b> Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed.html">PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                        
+          
+            
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/HIV1and2testsMeaningfulUsesetPerformed.html">HIV1and2testsMeaningfulUsesetPerformed</a></strong></code>
+    
+    </div>
+    
+      <div></div>
+      
+      <div><b>LaboratoryTestPerformed:</b> Data elements that meet criteria using this datatype should document the laboratory test indicated by the QDM category and its corresponding value set was performed. Timing: The Relevant Period addresses: startTime – When the laboratory test is initiated (i.e., the time the specimen collection begins). stopTime – when the laboratory test is completed (i.e., the time the specimen collection ends). Examples: 1) Initiation of a venipuncture for a fasting blood glucose to the time venipuncture for the fasting blood glucose is completed – basically a single point in time for many specimen collections. 2) Initiation of a 24-hour urine collection for measured creatinine clearance until completion of the 24-hour urine collection Note – the time that the result report is available is a separate attribute than the time of the study (specimen collection)</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/HIV1and2testsMeaningfulUsesetPerformed.html">HIV1and2testsMeaningfulUsesetPerformed</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                        
+          
+            
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed.html">HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> Screening for HIV infection</div>
+      <div><b>Data Element Scope: </b> Laboratory tests used for HIV screening. The scope of the value set is to include some secondary HIV tests that may be present in an EHR to assure a measure of screening does not miss patients who are tested and avoid unnecessary retesting to meet the expectations of a quality measure.</div>
+      <div><b>Inclusion Criteria: </b> Laboratory tests for HIV-1 and HIV-2 antibodies or antigens.</div>
+      <div><b>Exclusion Criteria: </b> Home HIV testing, HIV genotyping tests, HIV RNA tests, HIV cultures, clinical codes used to document care provided to HIV-infected patients.</div>
+      <div>Subject constrained to the Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)</div>
+</div>
+      
+      <div><b>LaboratoryTestPerformed:</b> Data elements that meet criteria using this datatype should document the laboratory test indicated by the QDM category and its corresponding value set was performed. Timing: The Relevant Period addresses: startTime – When the laboratory test is initiated (i.e., the time the specimen collection begins). stopTime – when the laboratory test is completed (i.e., the time the specimen collection ends). Examples: 1) Initiation of a venipuncture for a fasting blood glucose to the time venipuncture for the fasting blood glucose is completed – basically a single point in time for many specimen collections. 2) Initiation of a 24-hour urine collection for measured creatinine clearance until completion of the 24-hour urine collection Note – the time that the result report is available is a separate attribute than the time of the study (specimen collection)</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed.html">HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                        
+          
+            
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/EthnicityPatientCharacteristicEthnicity.html">EthnicityPatientCharacteristicEthnicity</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> </div>
+      <div><b>Data Element Scope: </b> </div>
+      <div><b>Inclusion Criteria: </b> </div>
+      <div><b>Exclusion Criteria: </b> </div>
+      <div>ResultValue constrained to codes in the Ethnicity valueset (2.16.840.1.114222.4.11.837)</div>
+</div>
+      
+      <div><b>PatientCharacteristicEthnicity:</b> Data elements that meet criteria using this datatype should document that the patient has one or more of the ethnicities indicated by the QDM category and its corresponding value set. Timing: Ethnicity does not have a specific timing. Measures using Patient Characteristic, Ethnicity should address the most recent entry in the clinical record.</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/EthnicityPatientCharacteristicEthnicity.html">EthnicityPatientCharacteristicEthnicity</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                        
+          
+            
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/ONCAdministrativeSexPatientCharacteristicGender.html">ONCAdministrativeSexPatientCharacteristicGender</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> Gender identity restricted to only Male and Female used in administrative situations requiring a restriction to these two categories.</div>
+      <div><b>Data Element Scope: </b> Gender</div>
+      <div><b>Inclusion Criteria: </b> Male and Female only.</div>
+      <div><b>Exclusion Criteria: </b> Any gender identity that is not male or female.</div>
+      <div>ResultValue constrained to codes in the ONC Administrative Sex valueset (2.16.840.1.113762.1.4.1)</div>
+</div>
+      
+      <div><b>PatientCharacteristicGender:</b> Data elements that meet criteria using this datatype should document that the patient&#39;s sex matches the QDM category and its corresponding value set. Timing: Birth (administrative) sex does not have a specific timing.</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/ONCAdministrativeSexPatientCharacteristicGender.html">ONCAdministrativeSexPatientCharacteristicGender</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                        
+          
+            
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/PayerPatientCharacteristicPayer.html">PayerPatientCharacteristicPayer</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> Categories of types of health care payor entities as defined by the US Public Health Data Consortium SOP code system</div>
+      <div><b>Data Element Scope: </b> @code in CCDA r2.1 template Planned Coverage [act: identifier urn:oid:2.16.840.1.113883.10.20.22.4.129 (open)] DYNAMIC</div>
+      <div><b>Inclusion Criteria: </b> All codes in the code system</div>
+      <div><b>Exclusion Criteria: </b> none</div>
+      <div>ResultValue constrained to codes in the Payer valueset (2.16.840.1.114222.4.11.3591)</div>
+</div>
+      
+      <div><b>PatientCharacteristicPayer:</b> Data elements that meet criteria using this datatype should document that the patient has one or more of the payers indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – The first day of insurance coverage with the referenced payer stopTime – The last day of insurance coverage with the referenced payer</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/PayerPatientCharacteristicPayer.html">PayerPatientCharacteristicPayer</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                        
+          
+            
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/RacePatientCharacteristicRace.html">RacePatientCharacteristicRace</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> </div>
+      <div><b>Data Element Scope: </b> </div>
+      <div><b>Inclusion Criteria: </b> </div>
+      <div><b>Exclusion Criteria: </b> </div>
+      <div>ResultValue constrained to codes in the Race valueset (2.16.840.1.114222.4.11.836)</div>
+</div>
+      
+      <div><b>PatientCharacteristicRace:</b> Data elements that meet criteria using this datatype should document the patient’s race. Timing: Race does not have a specific timing. Measures using Patient Characteristic, Race should address the most recent entry in the clinical record.</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/RacePatientCharacteristicRace.html">RacePatientCharacteristicRace</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>          
+        
+                                                      
+                                                                                                                                                                                                  
+
+    <!--                                             
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/ConditionsDueToHumanImmunodeficiencyVirusHIVDiagnosis.html">ConditionsDueToHumanImmunodeficiencyVirusHIVDiagnosis</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> Infectious Conditions</div>
+      <div><b>Data Element Scope: </b> HIV infection as a condition</div>
+      <div><b>Inclusion Criteria: </b> HIV infection as a condition</div>
+      <div><b>Exclusion Criteria: </b> Conditions associated with HIV infection.</div>
+      <div>ResultValue constrained to codes in the Conditions Due To Human Immunodeficiency Virus (HIV) valueset (2.16.840.1.113762.1.4.1056.54)</div>
+</div>
+      
+      <div><b>Diagnosis:</b> Condition/Diagnosis/Problem represents a practitioner’s identification of a patient’s disease, illness, injury, or condition. This category contains a single datatype to represent all of these concepts: Diagnosis. A practitioner determines the diagnosis by means of examination, diagnostic test results, patient history, and/or family history. Diagnoses are usually considered unfavorable, but may also represent neutral or favorable conditions that affect a patient’s plan of care (e.g., pregnancy). The QDM does not prescribe the source of diagnosis data in the EHR. Diagnoses may be found in a patient’s problem list, encounter diagnosis list, claims data, or other sources within the EHR. The preferred terminology for diagnoses is SNOMED-CT, but diagnoses may also be encoded using ICD-9/10. The Diagnosis datatype should not be used for differential diagnoses or rule-out diagnoses (neither of which are currently supported by the QDM).</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -123,10 +571,19 @@ if (location.href.indexOf('is-external=true') == -1) {
   <td class="colFirst">
     <div class="block">
     
-      <code><strong><a href="../ecqm-dataelement/OfficeVisitPerformed.html">OfficeVisitPerformed</a></strong></code>
+      <code><strong><a href="../ecqm-dataelement/OfficeVisit1Performed.html">OfficeVisit1Performed</a></strong></code>
     
     </div>
-    <div class="block"><p>(Clinical Focus: This value set identifies patients who have had an office or other outpatient visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Office Visit</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> This value set identifies patients who have had an office or other outpatient visit.</div>
+      <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+      <div><b>Inclusion Criteria: </b> Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.</div>
+      <div><b>Exclusion Criteria: </b> Excludes non-office visits, including telehealth services.</div>
+      <div>Subject constrained to the Office Visit1</div>
+</div>
+      
+      <div><b>EncounterPerformed:</b> Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -136,7 +593,7 @@ if (location.href.indexOf('is-external=true') == -1) {
   <td class="colLast">
                   <div class="block">
           
-                      <a href="../ecqm-dataelement/OfficeVisitPerformed.html">OfficeVisitPerformed</a>
+                      <a href="../ecqm-dataelement/OfficeVisit1Performed.html">OfficeVisit1Performed</a>
                     
         </div>
                         <div class="block">0..*</div>
@@ -147,34 +604,19 @@ if (location.href.indexOf('is-external=true') == -1) {
   <td class="colFirst">
     <div class="block">
     
-      <code><strong><a href="../ecqm-dataelement/PreventiveCareServicesEstablishedOfficeVisit18andUpPerformed.html">PreventiveCareServicesEstablishedOfficeVisit18andUpPerformed</a></strong></code>
-    
-    </div>
-    <div class="block"><p>(Clinical Focus: This value set identifies patients over the age of 18 who have had an established preventive care office visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Preventive Care Services - Established Office Visit, 18 and Up</p></div>
-  </td>
-  <td class="colMiddle">
-          <div class="block"><code><strong>DataType</strong></code></div>
-          <div class="block"><code><strong>Cardinality</strong></code></div>
-    
-  </td>
-  <td class="colLast">
-                  <div class="block">
-          
-                      <a href="../ecqm-dataelement/PreventiveCareServicesEstablishedOfficeVisit18andUpPerformed.html">PreventiveCareServicesEstablishedOfficeVisit18andUpPerformed</a>
-                    
-        </div>
-                        <div class="block">0..*</div>
-            </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
       <code><strong><a href="../ecqm-dataelement/PreventiveCareServicesInitialOfficeVisit0to17Performed.html">PreventiveCareServicesInitialOfficeVisit0to17Performed</a></strong></code>
     
     </div>
-    <div class="block"><p>(Clinical Focus: Initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that has no prior outpatient professional services from the physician practice in the last 3 years.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Include only codes that indicate initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that has no prior outpatient professional services from the physician practice in the last 3 years.),(Exclusion Criteria: Exclude codes that are not for comprehensive preventive medical evaluations and codes that are for patients who have been seen in the last 3 years.) -- Subject constrained to the Preventive Care Services, Initial Office Visit, 0 to 17</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> Initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that has no prior outpatient professional services from the physician practice in the last 3 years.</div>
+      <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+      <div><b>Inclusion Criteria: </b> Include only codes that indicate initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that has no prior outpatient professional services from the physician practice in the last 3 years.</div>
+      <div><b>Exclusion Criteria: </b> Exclude codes that are not for comprehensive preventive medical evaluations and codes that are for patients who have been seen in the last 3 years.</div>
+      <div>Subject constrained to the Preventive Care Services, Initial Office Visit, 0 to 17</div>
+</div>
+      
+      <div><b>EncounterPerformed:</b> Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -190,15 +632,24 @@ if (location.href.indexOf('is-external=true') == -1) {
                         <div class="block">0..*</div>
             </td>
 </tr>                        
-  <tr class="rowColor">
+  <tr class="altColor">
 
   <td class="colFirst">
     <div class="block">
     
-      <code><strong><a href="../ecqm-dataelement/PreventiveCareServicesInitialOfficeVisit18andUpPerformed.html">PreventiveCareServicesInitialOfficeVisit18andUpPerformed</a></strong></code>
+      <code><strong><a href="../ecqm-dataelement/PreventiveCareServicesInitialOfficeVisit18andUp1Performed.html">PreventiveCareServicesInitialOfficeVisit18andUp1Performed</a></strong></code>
     
     </div>
-    <div class="block"><p>(Clinical Focus: This value set identifies patients over the age of 18 who have had an initial preventive care office visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Preventive Care Services-Initial Office Visit, 18 and Up</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> This value set identifies patients over the age of 18 who have had an initial preventive care office visit.</div>
+      <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+      <div><b>Inclusion Criteria: </b> Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.</div>
+      <div><b>Exclusion Criteria: </b> Excludes non-office visits, including telehealth services.</div>
+      <div>Subject constrained to the Preventive Care Services-Initial Office Visit, 18 and Up1</div>
+</div>
+      
+      <div><b>EncounterPerformed:</b> Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -208,13 +659,13 @@ if (location.href.indexOf('is-external=true') == -1) {
   <td class="colLast">
                   <div class="block">
           
-                      <a href="../ecqm-dataelement/PreventiveCareServicesInitialOfficeVisit18andUpPerformed.html">PreventiveCareServicesInitialOfficeVisit18andUpPerformed</a>
+                      <a href="../ecqm-dataelement/PreventiveCareServicesInitialOfficeVisit18andUp1Performed.html">PreventiveCareServicesInitialOfficeVisit18andUp1Performed</a>
                     
         </div>
                         <div class="block">0..*</div>
             </td>
 </tr>                        
-  <tr class="altColor">
+  <tr class="rowColor">
 
   <td class="colFirst">
     <div class="block">
@@ -222,7 +673,16 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../ecqm-dataelement/PreventiveCareEstablishedOfficeVisit0to17Performed.html">PreventiveCareEstablishedOfficeVisit0to17Performed</a></strong></code>
     
     </div>
-    <div class="block"><p>(Clinical Focus: Initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that received prior outpatient professional services from the physician practice in the last 3 years.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Include only codes that indicate initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that received prior outpatient professional services from the physician practice in the last 3 years.),(Exclusion Criteria: Exclude codes that are not for comprehensive preventive medical evaluations and codes that are for patients who have not been seen in the last 3 years.) -- Subject constrained to the Preventive Care, Established Office Visit, 0 to 17</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> Initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that received prior outpatient professional services from the physician practice in the last 3 years.</div>
+      <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+      <div><b>Inclusion Criteria: </b> Include only codes that indicate initial comprehensive preventive medical evaluation, including regular preventive care or care of small problem or preexisting condition that requires no extra work, for a patient that received prior outpatient professional services from the physician practice in the last 3 years.</div>
+      <div><b>Exclusion Criteria: </b> Exclude codes that are not for comprehensive preventive medical evaluations and codes that are for patients who have not been seen in the last 3 years.</div>
+      <div>Subject constrained to the Preventive Care, Established Office Visit, 0 to 17</div>
+</div>
+      
+      <div><b>EncounterPerformed:</b> Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -238,6 +698,39 @@ if (location.href.indexOf('is-external=true') == -1) {
                         <div class="block">0..*</div>
             </td>
 </tr>                        
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-dataelement/PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed.html">PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed</a></strong></code>
+    
+    </div>
+    
+      <div>    <div><b>Clinical Focus: </b> This value set identifies patients over the age of 18 who have had an established preventive care office visit.</div>
+      <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+      <div><b>Inclusion Criteria: </b> Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.</div>
+      <div><b>Exclusion Criteria: </b> Excludes non-office visits, including telehealth services.</div>
+      <div>Subject constrained to the Preventive Care Services - Established Office Visit, 18 and Up1</div>
+</div>
+      
+      <div><b>EncounterPerformed:</b> Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location</div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-dataelement/PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed.html">PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>                        
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -246,7 +739,11 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../ecqm-dataelement/HIV1and2testsMeaningfulUsesetPerformed.html">HIV1and2testsMeaningfulUsesetPerformed</a></strong></code>
     
     </div>
-    <div class="block"><p>-- Subject constrained to the HIV 1 and 2 tests - Meaningful Use set</p></div>
+    
+      <div></div>
+      
+      <div><b>LaboratoryTestPerformed:</b> Data elements that meet criteria using this datatype should document the laboratory test indicated by the QDM category and its corresponding value set was performed. Timing: The Relevant Period addresses: startTime – When the laboratory test is initiated (i.e., the time the specimen collection begins). stopTime – when the laboratory test is completed (i.e., the time the specimen collection ends). Examples: 1) Initiation of a venipuncture for a fasting blood glucose to the time venipuncture for the fasting blood glucose is completed – basically a single point in time for many specimen collections. 2) Initiation of a 24-hour urine collection for measured creatinine clearance until completion of the 24-hour urine collection Note – the time that the result report is available is a separate attribute than the time of the study (specimen collection)</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -270,7 +767,16 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../ecqm-dataelement/HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed.html">HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbandAgPerformed</a></strong></code>
     
     </div>
-    <div class="block"><p>(Clinical Focus: Screening for HIV infection),(Data Element Scope: Laboratory tests used for HIV screening. The scope of the value set is to include some secondary HIV tests that may be present in an EHR to assure a measure of screening does not miss patients who are tested and avoid unnecessary retesting to meet the expectations of a quality measure.),(Inclusion Criteria: Laboratory tests for HIV-1 and HIV-2 antibodies or antigens.),(Exclusion Criteria: Home HIV testing, HIV genotyping tests, HIV RNA tests, HIV cultures, clinical codes used to document care provided to HIV-infected patients.) -- Subject constrained to the Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> Screening for HIV infection</div>
+      <div><b>Data Element Scope: </b> Laboratory tests used for HIV screening. The scope of the value set is to include some secondary HIV tests that may be present in an EHR to assure a measure of screening does not miss patients who are tested and avoid unnecessary retesting to meet the expectations of a quality measure.</div>
+      <div><b>Inclusion Criteria: </b> Laboratory tests for HIV-1 and HIV-2 antibodies or antigens.</div>
+      <div><b>Exclusion Criteria: </b> Home HIV testing, HIV genotyping tests, HIV RNA tests, HIV cultures, clinical codes used to document care provided to HIV-infected patients.</div>
+      <div>Subject constrained to the Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)</div>
+</div>
+      
+      <div><b>LaboratoryTestPerformed:</b> Data elements that meet criteria using this datatype should document the laboratory test indicated by the QDM category and its corresponding value set was performed. Timing: The Relevant Period addresses: startTime – When the laboratory test is initiated (i.e., the time the specimen collection begins). stopTime – when the laboratory test is completed (i.e., the time the specimen collection ends). Examples: 1) Initiation of a venipuncture for a fasting blood glucose to the time venipuncture for the fasting blood glucose is completed – basically a single point in time for many specimen collections. 2) Initiation of a 24-hour urine collection for measured creatinine clearance until completion of the 24-hour urine collection Note – the time that the result report is available is a separate attribute than the time of the study (specimen collection)</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -294,7 +800,16 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../ecqm-dataelement/EthnicityPatientCharacteristicEthnicity.html">EthnicityPatientCharacteristicEthnicity</a></strong></code>
     
     </div>
-    <div class="block"><p>(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ResultValue constrained to codes in the Ethnicity valueset (2.16.840.1.114222.4.11.837)</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> </div>
+      <div><b>Data Element Scope: </b> </div>
+      <div><b>Inclusion Criteria: </b> </div>
+      <div><b>Exclusion Criteria: </b> </div>
+      <div>ResultValue constrained to codes in the Ethnicity valueset (2.16.840.1.114222.4.11.837)</div>
+</div>
+      
+      <div><b>PatientCharacteristicEthnicity:</b> Data elements that meet criteria using this datatype should document that the patient has one or more of the ethnicities indicated by the QDM category and its corresponding value set. Timing: Ethnicity does not have a specific timing. Measures using Patient Characteristic, Ethnicity should address the most recent entry in the clinical record.</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -318,7 +833,16 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../ecqm-dataelement/ONCAdministrativeSexPatientCharacteristicGender.html">ONCAdministrativeSexPatientCharacteristicGender</a></strong></code>
     
     </div>
-    <div class="block"><p>(Clinical Focus: Gender identity restricted to only Male and Female used in administrative situations requiring a restriction to these two categories.),(Data Element Scope: Gender),(Inclusion Criteria: Male and Female only.),(Exclusion Criteria: Any gender identity that is not male or female.) -- ResultValue constrained to codes in the ONC Administrative Sex valueset (2.16.840.1.113762.1.4.1)</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> Gender identity restricted to only Male and Female used in administrative situations requiring a restriction to these two categories.</div>
+      <div><b>Data Element Scope: </b> Gender</div>
+      <div><b>Inclusion Criteria: </b> Male and Female only.</div>
+      <div><b>Exclusion Criteria: </b> Any gender identity that is not male or female.</div>
+      <div>ResultValue constrained to codes in the ONC Administrative Sex valueset (2.16.840.1.113762.1.4.1)</div>
+</div>
+      
+      <div><b>PatientCharacteristicGender:</b> Data elements that meet criteria using this datatype should document that the patient&#39;s sex matches the QDM category and its corresponding value set. Timing: Birth (administrative) sex does not have a specific timing.</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -342,7 +866,16 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../ecqm-dataelement/PayerPatientCharacteristicPayer.html">PayerPatientCharacteristicPayer</a></strong></code>
     
     </div>
-    <div class="block"><p>(Clinical Focus: Categories of types of health care payor entities as defined by the US Public Health Data Consortium SOP code system),(Data Element Scope: @code in CCDA r2.1 template Planned Coverage [act: identifier urn:oid:2.16.840.1.113883.10.20.22.4.129 (open)] DYNAMIC),(Inclusion Criteria: All codes in the code system),(Exclusion Criteria: none) -- ResultValue constrained to codes in the Payer valueset (2.16.840.1.114222.4.11.3591)</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> Categories of types of health care payor entities as defined by the US Public Health Data Consortium SOP code system</div>
+      <div><b>Data Element Scope: </b> @code in CCDA r2.1 template Planned Coverage [act: identifier urn:oid:2.16.840.1.113883.10.20.22.4.129 (open)] DYNAMIC</div>
+      <div><b>Inclusion Criteria: </b> All codes in the code system</div>
+      <div><b>Exclusion Criteria: </b> none</div>
+      <div>ResultValue constrained to codes in the Payer valueset (2.16.840.1.114222.4.11.3591)</div>
+</div>
+      
+      <div><b>PatientCharacteristicPayer:</b> Data elements that meet criteria using this datatype should document that the patient has one or more of the payers indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – The first day of insurance coverage with the referenced payer stopTime – The last day of insurance coverage with the referenced payer</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -366,7 +899,16 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../ecqm-dataelement/RacePatientCharacteristicRace.html">RacePatientCharacteristicRace</a></strong></code>
     
     </div>
-    <div class="block"><p>(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ResultValue constrained to codes in the Race valueset (2.16.840.1.114222.4.11.836)</p></div>
+    
+      <div>    <div><b>Clinical Focus: </b> </div>
+      <div><b>Data Element Scope: </b> </div>
+      <div><b>Inclusion Criteria: </b> </div>
+      <div><b>Exclusion Criteria: </b> </div>
+      <div>ResultValue constrained to codes in the Race valueset (2.16.840.1.114222.4.11.836)</div>
+</div>
+      
+      <div><b>PatientCharacteristicRace:</b> Data elements that meet criteria using this datatype should document the patient’s race. Timing: Race does not have a specific timing. Measures using Patient Characteristic, Race should address the most recent entry in the clinical record.</div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -387,10 +929,12 @@ if (location.href.indexOf('is-external=true') == -1) {
   <td class="colFirst">
     <div class="block">
     
-      <code><strong><a href="../ecqm-unions/OutpatientEncounterWhereHIVScreeningMayOccurUnion.html">OutpatientEncounterWhereHIVScreeningMayOccurUnion</a></strong></code>
+      <code><strong><a href="../ecqm-unions/EncounterUnion.html">EncounterUnion</a></strong></code>
     
     </div>
-    <div class="block"><p>Union of Encounter, Performed data elements where HIV screening may occur</p></div>
+    
+      <div class="block"></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -400,7 +944,59 @@ if (location.href.indexOf('is-external=true') == -1) {
   <td class="colLast">
                   <div class="block">
           
-                      <a href="../ecqm-unions/OutpatientEncounterWhereHIVScreeningMayOccurUnion.html">OutpatientEncounterWhereHIVScreeningMayOccurUnion</a>
+                      <a href="../ecqm-unions/EncounterUnion.html">EncounterUnion</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>                        
+  <tr class="altColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-unions/QualifyingEncounters9Union.html">QualifyingEncounters9Union</a></strong></code>
+    
+    </div>
+    
+      <div class="block"></div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-unions/QualifyingEncounters9Union.html">QualifyingEncounters9Union</a>
+                    
+        </div>
+                        <div class="block">0..*</div>
+            </td>
+</tr>                        
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../ecqm-unions/HIVTestUnion.html">HIVTestUnion</a></strong></code>
+    
+    </div>
+    
+      <div class="block"></div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../ecqm-unions/HIVTestUnion.html">HIVTestUnion</a>
                     
         </div>
                         <div class="block">0..*</div>
@@ -414,7 +1010,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../ecqm-unions/HIVTestPerformedUnion.html">HIVTestPerformedUnion</a></strong></code>
     
     </div>
-    <div class="block"><p>Union of data elements used to document the administration of the laboratory test present in the patient's medical record. On occasion, providers will view HIV screening results that were performed elsewhere and therefore the results are not present in the EHR in structured format. To allow such tests to be applied to this measure, they should be entered into the EHR as a laboratory test in a manner consistent with the EHR in use. If the specific Human Immunodeficiency Virus (HIV) Laboratory Test LOINC code of the test is not known, the entry should use the more generic code LOINC panel code [75622-1] which is present in the HIV test value set titled, 'HIV Test Documentation Reviewed.'</p></div>
+    
+      <div class="block"></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -439,8 +1037,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -462,7 +1062,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/TypeCode.html">TypeCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code that describes the type of composition or section, such as a section or document type identifier.</p></div>
+    
+      <div class="block"><p>A code that describes the type of composition or section, such as a section or document type identifier.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -478,14 +1080,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Statement.html">Statement</a></strong></code>
     
     </div>
-    <div class="block"><p>Base class for all types of clinical statements.</p></div>
+    
+      <div class="block"><p>Base class for all types of clinical statements.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>                                                                                                                                                        </table>            </li>
+</tr>                                                                                                                                                                           -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

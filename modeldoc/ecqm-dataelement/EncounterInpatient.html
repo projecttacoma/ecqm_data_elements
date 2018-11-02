@@ -65,22 +65,23 @@ if (location.href.indexOf('is-external=true') == -1) {
           <dt>Description:</dt>
         
         <dd>
-                      <div><b>Clinical Focus: </b> This set of values identify the most common inpatient encounter types.</div>
-                          <div><b>Data Element Scope: </b> The intent of this data element is to identify patients who have had an inpatient encounter. Using the Quality Data Model, this particular element will map to the &#39;encounter&#39; category.</div>
-                          <div><b>Inclusion Criteria: </b> Only SNOMED CT codes representing inpatient encounter should be included.</div>
-                          <div><b>Exclusion Criteria: </b> None.</div>
-                          <div>ActivityCode constrained to codes in the Encounter Inpatient valueset (2.16.840.1.113883.3.666.5.307).</div>
-          
+        
+              <div><b>Clinical Focus: </b> This set of values identify the most common inpatient encounter types.</div>
+      <div><b>Data Element Scope: </b> The intent of this data element is to identify patients who have had an inpatient encounter. Using the Quality Data Model, this particular element will map to the &#39;encounter&#39; category.</div>
+      <div><b>Inclusion Criteria: </b> Only SNOMED CT codes representing inpatient encounter should be included.</div>
+      <div><b>Exclusion Criteria: </b> None.</div>
+      <div>ActivityCode constrained to codes in the Encounter Inpatient valueset (2.16.840.1.113883.3.666.5.307).</div>
         
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                                                                                                                  <a href="../qdm-dataelement/Encounter.html">Encounter</a>
-                                                                  </dt>
-          <!-- </ul>
+                                                                                                                                <dt>Based On:
+                  <a href="../qdm-dataelement/Encounter.html">Encounter</a>
+                </dt>
+                <p>Encounter represents an identifiable grouping of healthcare-related activities characterized by the entity relationship between the subject of care and a healthcare provider; such a grouping is determined by the healthcare provider.13 A patient encounter represents interaction between a healthcare provider and a patient with a face-to-face patient visit to a clinician’s office, or any electronically remote interaction with a clinician for any form of diagnostic treatment or therapeutic event. Encounters can be billable events but are not limited to billable interactions. Each encounter has an associated location or modality within which it occurred (such as an office, home, electronic methods, phone encounter, or telemedicine methods). The encounter location is the patient’s location at the time of measurement. Different levels of interaction can be specified in the value associated with the element while modes of interaction (e.g., telephone) may be modeled using the data flow attribute.</p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
       
@@ -137,7 +138,7 @@ if (location.href.indexOf('is-external=true') == -1) {
                                                                                   
                                                                           
 
-                                                                              
+    <!--                                                                           
                   
   <tr class="rowColor">
 
@@ -147,7 +148,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
+      <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -163,7 +166,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/RelevantTime.html">RelevantTime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
+      <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -179,7 +184,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block"><p>The method used to determine the finding.</p></div>
+    
+      <div class="block"><p>The method used to determine the finding.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -195,8 +202,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -218,7 +227,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Beneficiary.html">Beneficiary</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
+      <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -234,7 +245,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ActivityCode.html">ActivityCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
+      <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>Value Set</strong></code></div>
@@ -252,14 +265,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Qualifier.html">Qualifier</a></strong></code>
     
     </div>
-    <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
+      <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>            </table>            </li>
+</tr>           -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

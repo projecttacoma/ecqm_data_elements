@@ -65,33 +65,32 @@ if (location.href.indexOf('is-external=true') == -1) {
           <dt>Description:</dt>
         
         <dd>
-                      <div><b>Clinical Focus: </b> This value set identifies patients who have had an office or other outpatient visit.</div>
-                          <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
-                          <div><b>Inclusion Criteria: </b> Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.</div>
-                          <div><b>Exclusion Criteria: </b> Excludes non-office visits, including telehealth services.</div>
-                          <div>Subject constrained to the Office Visit</div>
-          
+        
+              <div><b>Clinical Focus: </b> This value set indentifies patients who have had an office or other outpatient visit.</div>
+      <div><b>Data Element Scope: </b> This value set was intended to map to the QDM data type of encounter.</div>
+      <div><b>Inclusion Criteria: </b> Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.</div>
+      <div><b>Exclusion Criteria: </b> Excludes non-office visits, including telehealth services.</div>
+      <div>Subject constrained to the Office Visit</div>
         
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                                                                                                                  <a href="../qdm-dataelement/EncounterPerformed.html">EncounterPerformed</a>
-                                                                  </dt>
-          <!-- </ul>
+                                                                                                                                <dt>Based On:
+                  <a href="../qdm-dataelement/EncounterPerformed.html">EncounterPerformed</a>
+                </dt>
+                <p>Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location</p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
       
-                                                                                                    <dl>
+                                                            <dl>
         <dt>Used By:</dt>
         <dd>
           <ul class="class_list">
                           <li>
-                <a href="../ecqm-measure/CMS122v7.html">CMS122v7</a>,&nbsp;              </li>
-                          <li>
-                <a href="../ecqm-measure/CMS349v1.html">CMS349v1</a>              </li>
+                <a href="../ecqm-measure/CMS347v2.html">CMS347v2</a>              </li>
                       </ul>
         </dd>
       </dl>
@@ -100,9 +99,7 @@ if (location.href.indexOf('is-external=true') == -1) {
           <dd>
             <ul class="class_list">
                               <li>
-                  <a href="../ecqm-unions/OutpatientEncounterWhereHIVScreeningMayOccurUnion.html">OutpatientEncounterWhereHIVScreeningMayOccurUnion</a>,&nbsp;                </li>
-                              <li>
-                  <a href="../ecqm-unions/ValidEncounterUnion.html">ValidEncounterUnion</a>                </li>
+                  <a href="../ecqm-unions/QualifyingEncounters7Union.html">QualifyingEncounters7Union</a>                </li>
                           </ul>
           </dd>
         </dl>
@@ -163,38 +160,14 @@ if (location.href.indexOf('is-external=true') == -1) {
       
                                                                                                                                                                             
                                                                                         
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/AuthorDatetime.html">AuthorDatetime</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/AdmissionSource.html">AdmissionSource</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The location from which the patient was admitted (e.g., physician referral, facility from which the patient was transferred).</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
+          
+        
+                        
+          
+        
+                        
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -203,103 +176,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/RelevantPeriod.html">RelevantPeriod</a></strong></code>
     
     </div>
-    <div class="block"><p>Relevant Period addresses the time between the start of an action to the end of an action. Each datatype using relevant period defines specific definitions for the start and stop time for the action listed.</p></div>
-  </td>
-  <td class="colMiddle">
     
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
+      <div class="block"><p>Relevant Period addresses the time between the start of an action to the end of an action. Each datatype using relevant period defines specific definitions for the start and stop time for the action listed.</p></div>
     
-      <code><strong><a href="../qdm-attribute/DischargeDisposition.html">DischargeDisposition</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The disposition, or location to which the patient is transferred at the time of hospital discharge.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/FacilityLocations.html">FacilityLocations</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The particular locations in a facility in which the diagnostic study or encounter occurs or occurred. Examples include, but are not limited to, intensive care units (ICUs), non- ICUs, burn critical-care unit, neonatal ICU, and respiratory-care unit. Each Encounter, Performed may have 1 or more locations. For example, a patient treated in multiple locations during an individual encounter might be expressed as: Encounter, Performed: Inpatient Admission, ICU (location period), Non-ICU Admission (location period), Rehab (location period)</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/Diagnoses.html">Diagnoses</a></strong></code>
-    
-    </div>
-    <div class="block"><p>Coded diagnoses/problems addressed during the encounter. The diagnoses attribute is intended to capture ALL diagnoses, including principal diagnosis. Use of the Encounter, Performed: diagnoses attribute and the Diagnosis datatype is redundant for relating the diagnosis to the Encounter, Performed. The Encounter, Performed: diagnoses syntax is preferred. Referencing the same diagnosis using Encounter, Performed (diagnoses attribute) and Diagnosis (datatype) should only occur if the measure must define a specified length of a prevalence period, e.g., The measure must assure that the diagnoseis have been present for at least some defined time period before the encounter, and were addressed during the Encounter</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/PrincipalDiagnosis.html">PrincipalDiagnosis</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The coded diagnosis/problem established after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/NegationRationale.html">NegationRationale</a></strong></code>
-    
-    </div>
-    <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/LengthOfStay.html">LengthOfStay</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The difference of the admission date/time and the discharge date/time for the encounter. This attribute should not be used for outpatient encounters.</p></div>
   </td>
   <td class="colMiddle">
     
@@ -307,8 +186,28 @@ if (location.href.indexOf('is-external=true') == -1) {
   <td class="colLast">
       </td>
 </tr>          
+        
+                        
+          
+        
+                        
+          
+        
+                        
+          
+        
+                        
+          
+        
+                        
+          
+        
+                        
+          
+        
+          
 
-                                                                                                                                                                        
+    <!--                                                                                                                                                                     
                   
   <tr class="rowColor">
 
@@ -318,7 +217,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
+      <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -334,7 +235,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/RelevantTime.html">RelevantTime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
+      <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -350,7 +253,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block"><p>The method used to determine the finding.</p></div>
+    
+      <div class="block"><p>The method used to determine the finding.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -366,8 +271,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -389,7 +296,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Beneficiary.html">Beneficiary</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
+      <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -405,7 +314,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ActivityCode.html">ActivityCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
+      <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -421,14 +332,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Qualifier.html">Qualifier</a></strong></code>
     
     </div>
-    <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
+      <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>                                                                                                      </table>            </li>
+</tr>                                                                                                     -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

@@ -65,22 +65,23 @@ if (location.href.indexOf('is-external=true') == -1) {
           <dt>Description:</dt>
         
         <dd>
-                      <div><b>Clinical Focus: </b> This set of values contains statin medications that are prescribed for therapy at hospital discharge.</div>
-                          <div><b>Data Element Scope: </b> The intent of this data element is to identify patients who are prescribed statin medications at discharge. Using the Quality Data Model, this particular element would map to the Medication category.</div>
-                          <div><b>Inclusion Criteria: </b> Include single and multiple ingredient prescribable statin medications. Oral dose forms should be included. Generic only.</div>
-                          <div><b>Exclusion Criteria: </b> None.</div>
-                          <div>ObjectTypeCode constrained to codes in the Statin Grouper valueset (2.16.840.1.113762.1.4.1110.19).</div>
-          
+        
+              <div><b>Clinical Focus: </b> This set of values contains statin medications that are prescribed for therapy at hospital discharge.</div>
+      <div><b>Data Element Scope: </b> The intent of this data element is to identify patients who are prescribed statin medications at discharge. Using the Quality Data Model, this particular element would map to the Medication category.</div>
+      <div><b>Inclusion Criteria: </b> Include single and multiple ingredient prescribable statin medications. Oral dose forms should be included. Generic only.</div>
+      <div><b>Exclusion Criteria: </b> None.</div>
+      <div>ObjectTypeCode constrained to codes in the Statin Grouper valueset (2.16.840.1.113762.1.4.1110.19).</div>
         
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                                                                                                                                              <a href="../qdm-dataelement/Medication.html">Medication</a>
-                                                                  </dt>
-          <!-- </ul>
+                                                                                                                                                            <dt>Based On:
+                  <a href="../qdm-dataelement/Medication.html">Medication</a>
+                </dt>
+                <p>Medication represents clinical drugs or chemical substances intended for use in the medical diagnosis, cure, treatment, or prevention of disease. Medications are defined as direct referenced values or value sets containing values derived from code systems such as RxNorm.</p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
       
@@ -137,7 +138,7 @@ if (location.href.indexOf('is-external=true') == -1) {
                                                                                   
                                                                           
 
-                                                                              
+    <!--                                                                           
                   
   <tr class="rowColor">
 
@@ -147,7 +148,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
+      <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -163,7 +166,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/RelevantTime.html">RelevantTime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
+      <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -179,7 +184,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block"><p>The method used to determine the finding.</p></div>
+    
+      <div class="block"><p>The method used to determine the finding.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -195,7 +202,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/PresentOrAbsent.html">PresentOrAbsent</a></strong></code>
     
     </div>
-    <div class="block"><p>Whether the object is present or absent, exists or does not exist.</p></div>
+    
+      <div class="block"><p>Whether the object is present or absent, exists or does not exist.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -211,8 +220,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -234,7 +245,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ObjectTypeCode.html">ObjectTypeCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code representing the type of entity, person, role, condition, or phenomenon that is being asserted to exist or not exist.</p></div>
+    
+      <div class="block"><p>A code representing the type of entity, person, role, condition, or phenomenon that is being asserted to exist or not exist.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>Value Set</strong></code></div>
@@ -252,14 +265,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ObjectIdentifier.html">ObjectIdentifier</a></strong></code>
     
     </div>
-    <div class="block"><p>For later reference, an identifier for the object implied by the assertion, which allows the object to be tracked over time. For example, a wound number is used to track a specific wound's condition over time.</p></div>
+    
+      <div class="block"><p>For later reference, an identifier for the object implied by the assertion, which allows the object to be tracked over time. For example, a wound number is used to track a specific wound's condition over time.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>            </table>            </li>
+</tr>           -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

@@ -71,18 +71,29 @@ if (location.href.indexOf('is-external=true') == -1) {
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                                                                                      <a href="../shr-base/Observation.html">Observation</a>
-                                                                  </dt>
-          <!-- </ul>
+                                                                                                    <dt>Based On:
+                  <a href="../shr-base/Observation.html">Observation</a>
+                </dt>
+                <p>A statement that asserts the value of a property (observable) of the subject. The subject is often the patient, but may be a condition, a physical structure, or another clinical statement. For example, an interpretation is a finding about an observation.</p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
             <dl>
         <dt>Direct Descendants:</dt>
         <dd>
           <ul class="class_list">
+                          <li>
+                <a href="../ecqm-dataelement/ACEInhibitororARBIngredientAllergyIntolerance.html">ACEInhibitororARBIngredientAllergyIntolerance</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/BetaBlockerTherapyIngredientAllergyIntolerance.html">BetaBlockerTherapyIngredientAllergyIntolerance</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/EggSubstanceAllergyIntolerance.html">EggSubstanceAllergyIntolerance</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/InfluenzaVaccinationAllergyIntolerance.html">InfluenzaVaccinationAllergyIntolerance</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/InfluenzaVaccineAllergyIntolerance.html">InfluenzaVaccineAllergyIntolerance</a>,&nbsp;              </li>
                           <li>
                 <a href="../ecqm-dataelement/StatinAllergenAllergyIntolerance.html">StatinAllergenAllergyIntolerance</a>              </li>
                       </ul>
@@ -135,28 +146,6 @@ if (location.href.indexOf('is-external=true') == -1) {
         <div class="block">AllergyIntolerance</div>
       </td> -->
     </tr>
-      
-      <tr class="altColor">
-    
-      <td class="colFirst">
-        <code><strong>ObservableCode.CodeableConcept</strong></code>
-        
-          <div class="block">Defined in <a href="../shr-base/Observation.html">Observation</a></div>
-        
-      </td>
-      <td class="colMiddle">
-        <code><strong>Fixed Value</strong></code>
-        
-          <div class="block">Constrained in <a href="../qdm-dataelement/AllergyIntolerance.html">AllergyIntolerance</a></div>
-        
-      </td>
-      <td class="colLast">
-                  <div class="block">http://snomed.info/sct (code: 419199007)</div>
-              </td>
-      <!-- <td class="colLast">
-        <div class="block">AllergyIntolerance</div>
-      </td> -->
-    </tr>
   </table>                            <table class="overviewSummary" border="0" cellpadding="3" cellspacing="0">
   <tr>
     <th class="colFirst" scope="col">Properties Defined</th>
@@ -166,6 +155,8 @@ if (location.href.indexOf('is-external=true') == -1) {
   
       
                                                                                             
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -174,7 +165,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/AuthorDatetime.html">AuthorDatetime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
+      <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -189,7 +182,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -198,7 +195,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/PrevalencePeriod.html">PrevalencePeriod</a></strong></code>
     
     </div>
-    <div class="block"><p>Prevalance Period is the time from onset dateTime to abatement dateTime.</p></div>
+    
+      <div class="block"><p>Prevalance Period is the time from onset dateTime to abatement dateTime.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -213,32 +212,12 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/Type.html">Type</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The characterization of the reaction (e.g., hypersensitivity, rash, gastroenteric symptoms, etc.)</p></div>
-  </td>
-  <td class="colMiddle">
-          <div class="block"><code><strong>DataType</strong></code></div>
-          <div class="block"><code><strong>Cardinality</strong></code></div>
-    
-  </td>
-  <td class="colLast">
-                  <div class="block">
+</tr>          
+        
+                                  
           
-                      <a href="../qdm-attribute/Type.html">Type</a>
-                    
-        </div>
-                        <div class="block">0..1</div>
-            </td>
-</tr>                        
-  <tr class="altColor">
+            
+  <tr class="rowColor">
 
   <td class="colFirst">
     <div class="block">
@@ -246,7 +225,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Severity.html">Severity</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates the intensity of the specified datatype (e.g., persistent, moderate, or severe).</p></div>
+    
+      <div class="block"><p>Indicates the intensity of the specified datatype (e.g., persistent, moderate, or severe).</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -261,10 +242,38 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>              
+</tr>          
+        
+              
                                                                                                                   
 
-                                                                                                                      
+    <!--                                                                                                         
+  <tr class="rowColor">
+
+  <td class="colFirst">
+    <div class="block">
+    
+      <code><strong><a href="../shr-core/Type.html">Type</a></strong></code>
+    
+    </div>
+    
+      <div class="block"><p>The most specific code (lowest level term) describing the kind or sort of thing being represented.</p></div>
+    
+  </td>
+  <td class="colMiddle">
+          <div class="block"><code><strong>DataType</strong></code></div>
+          <div class="block"><code><strong>Cardinality</strong></code></div>
+    
+  </td>
+  <td class="colLast">
+                  <div class="block">
+          
+                      <a href="../shr-core/Type.html">Type</a>
+                    
+        </div>
+                        <div class="block">0..1</div>
+            </td>
+</tr>                        
                   
   <tr class="rowColor">
 
@@ -274,7 +283,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
+      <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -290,7 +301,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/RelevantTime.html">RelevantTime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
+      <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -306,7 +319,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block"><p>The method used to determine the finding.</p></div>
+    
+      <div class="block"><p>The method used to determine the finding.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -322,8 +337,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -345,15 +362,15 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ObservableCode.html">ObservableCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
+      <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
   </td>
   <td class="colMiddle">
-          <div class="block"><code><strong>Fixed Value</strong></code></div>
     
   </td>
   <td class="colLast">
-                  <div class="block">http://snomed.info/sct (code: 419199007)</div>
-            </td>
+      </td>
 </tr>                        
   <tr class="altColor">
 
@@ -363,7 +380,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ResultValue.html">ResultValue</a></strong></code>
     
     </div>
-    <div class="block"><p>The finding itself, such as the blood pressure value recorded.</p></div>
+    
+      <div class="block"><p>The finding itself, such as the blood pressure value recorded.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -379,14 +398,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Qualifier.html">Qualifier</a></strong></code>
     
     </div>
-    <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
+      <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>                                                    </table>            </li>
+</tr>                                                   -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

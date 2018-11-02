@@ -65,31 +65,40 @@ if (location.href.indexOf('is-external=true') == -1) {
           <dt>Description:</dt>
         
         <dd>
-                      <div><b>Clinical Focus: </b> Under Development</div>
-                          <div><b>Data Element Scope: </b> Under Development</div>
-                          <div><b>Inclusion Criteria: </b> Under Development</div>
-                          <div><b>Exclusion Criteria: </b> Under Development</div>
-                          <div>ResultValue constrained to codes in the Diabetes valueset (2.16.840.1.113883.3.464.1003.103.12.1001)</div>
-          
+        
+              <div><b>Clinical Focus: </b> Under Development</div>
+      <div><b>Data Element Scope: </b> Under Development</div>
+      <div><b>Inclusion Criteria: </b> Under Development</div>
+      <div><b>Exclusion Criteria: </b> Under Development</div>
+      <div>ResultValue constrained to codes in the Diabetes valueset (2.16.840.1.113883.3.464.1003.103.12.1001)</div>
         
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                                                                                                                  <a href="../qdm-dataelement/Diagnosis.html">Diagnosis</a>
-                                                                  </dt>
-          <!-- </ul>
+                                                                                                                                <dt>Based On:
+                  <a href="../qdm-dataelement/Diagnosis.html">Diagnosis</a>
+                </dt>
+                <p>Condition/Diagnosis/Problem represents a practitioner’s identification of a patient’s disease, illness, injury, or condition. This category contains a single datatype to represent all of these concepts: Diagnosis. A practitioner determines the diagnosis by means of examination, diagnostic test results, patient history, and/or family history. Diagnoses are usually considered unfavorable, but may also represent neutral or favorable conditions that affect a patient’s plan of care (e.g., pregnancy). The QDM does not prescribe the source of diagnosis data in the EHR. Diagnoses may be found in a patient’s problem list, encounter diagnosis list, claims data, or other sources within the EHR. The preferred terminology for diagnoses is SNOMED-CT, but diagnoses may also be encoded using ICD-9/10. The Diagnosis datatype should not be used for differential diagnoses or rule-out diagnoses (neither of which are currently supported by the QDM).</p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
       
-                                        <dl>
+                                                                                                                        <dl>
         <dt>Used By:</dt>
         <dd>
           <ul class="class_list">
                           <li>
-                <a href="../ecqm-measure/CMS122v7.html">CMS122v7</a>              </li>
+                <a href="../ecqm-measure/CMS122v7.html">CMS122v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS123v7.html">CMS123v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS131v7.html">CMS131v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS134v7.html">CMS134v7</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-measure/CMS347v2.html">CMS347v2</a>              </li>
                       </ul>
         </dd>
       </dl>
@@ -146,22 +155,11 @@ if (location.href.indexOf('is-external=true') == -1) {
       
                                                                                                                           
                                                                                         
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/AuthorDatetime.html">AuthorDatetime</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
+          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -170,39 +168,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/PrevalencePeriod.html">PrevalencePeriod</a></strong></code>
     
     </div>
-    <div class="block"><p>Prevalance Period is the time from onset dateTime to abatement dateTime.</p></div>
-  </td>
-  <td class="colMiddle">
     
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="rowColor">
-
-  <td class="colFirst">
-    <div class="block">
+      <div class="block"><p>Prevalance Period is the time from onset dateTime to abatement dateTime.</p></div>
     
-      <code><strong><a href="../qdm-attribute/AnatomicalLocationSite.html">AnatomicalLocationSite</a></strong></code>
-    
-    </div>
-    <div class="block"><p>The anatomical site or structure where the diagnosis/problem manifests itself (a). The anatomical site or structure where that is the focus of the action represented by the datatype (b).</p></div>
-  </td>
-  <td class="colMiddle">
-    
-  </td>
-  <td class="colLast">
-      </td>
-</tr>                        
-  <tr class="altColor">
-
-  <td class="colFirst">
-    <div class="block">
-    
-      <code><strong><a href="../qdm-attribute/Severity.html">Severity</a></strong></code>
-    
-    </div>
-    <div class="block"><p>Indicates the intensity of the specified datatype (e.g., persistent, moderate, or severe).</p></div>
   </td>
   <td class="colMiddle">
     
@@ -210,8 +178,16 @@ if (location.href.indexOf('is-external=true') == -1) {
   <td class="colLast">
       </td>
 </tr>          
+        
+                        
+          
+        
+                        
+          
+        
+          
 
-                                                                                                                      
+    <!--                                                                                                                   
                   
   <tr class="rowColor">
 
@@ -221,7 +197,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
+      <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -237,7 +215,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/RelevantTime.html">RelevantTime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
+      <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -253,7 +233,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block"><p>The method used to determine the finding.</p></div>
+    
+      <div class="block"><p>The method used to determine the finding.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -269,8 +251,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -292,15 +276,15 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ObservableCode.html">ObservableCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
+      <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
   </td>
   <td class="colMiddle">
-          <div class="block"><code><strong>Fixed Value</strong></code></div>
     
   </td>
   <td class="colLast">
-                  <div class="block">http://snomed.info/sct (code: 282291009)</div>
-            </td>
+      </td>
 </tr>                        
   <tr class="altColor">
 
@@ -310,7 +294,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ResultValue.html">ResultValue</a></strong></code>
     
     </div>
-    <div class="block"><p>The finding itself, such as the blood pressure value recorded.</p></div>
+    
+      <div class="block"><p>The finding itself, such as the blood pressure value recorded.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>Value Set</strong></code></div>
@@ -328,14 +314,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Qualifier.html">Qualifier</a></strong></code>
     
     </div>
-    <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
+      <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>                                                    </table>            </li>
+</tr>                                                   -->
+  </table>            </li>
           </ul>
         </li>
       </ul>

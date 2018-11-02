@@ -66,19 +66,47 @@ if (location.href.indexOf('is-external=true') == -1) {
         
         <dd>
         
-          <div class="block"><p>Data elements that meet criteria using this datatype should document the completion of the diagnostic study indicated by the QDM category and its corresponding value set.</p></div>
+          <div class="block"><p>Data elements that meet criteria using this datatype should document the completion of the diagnostic study indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – when the diagnostic study is initiated stopTime – when the diagnostic study is completed Examples: 1) Initiation of a treadmill stress test to the time the treadmill stress test has completed. 2) Initiation of the ultrasound study until completion of the ultrasound study</p></div>
         
         </dd>
       </dl>
       <dl>
-                <dt>Based On:
-        <!-- <dd>
+                <!-- <dd>
           <ul class="tree"> -->
-                                                                                                      <a href="../shr-base/Activity.html">Activity</a>
-                                                                  </dt>
-          <!-- </ul>
+                                                                                                    <dt>Based On:
+                  <a href="../shr-base/Activity.html">Activity</a>
+                </dt>
+                <p>A statement that asserts an action relating to the subject. The subject is often the patient, but may....</p>
+                                                                  <!-- </ul>
         </dd> -->
               </dl>
+            <dl>
+        <dt>Direct Descendants:</dt>
+        <dd>
+          <ul class="class_list">
+                          <li>
+                <a href="../ecqm-dataelement/BoneScanPerformed.html">BoneScanPerformed</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/CuptoDiscRatioPerformed.html">CuptoDiscRatioPerformed</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/DEXADualEnergyXrayAbsorptiometryBoneDensityforUrologyCarePerformed.html">DEXADualEnergyXrayAbsorptiometryBoneDensityforUrologyCarePerformed</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/EjectionFractionPerformed.html">EjectionFractionPerformed</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/ElectrocardiogramECGPerformed.html">ElectrocardiogramECGPerformed</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/MacularExamPerformed.html">MacularExamPerformed</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/MammographyPerformed.html">MammographyPerformed</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/NewbornHearingScreenLeftPerformed.html">NewbornHearingScreenLeftPerformed</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/NewbornHearingScreenRightPerformed.html">NewbornHearingScreenRightPerformed</a>,&nbsp;              </li>
+                          <li>
+                <a href="../ecqm-dataelement/OpticDiscExamforStructuralAbnormalitiesPerformed.html">OpticDiscExamforStructuralAbnormalitiesPerformed</a>              </li>
+                      </ul>
+        </dd>
+      </dl>
       
       
     </div>
@@ -135,6 +163,8 @@ if (location.href.indexOf('is-external=true') == -1) {
   
       
                                                                                             
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -143,7 +173,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/AuthorDatetime.html">AuthorDatetime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
+      <div class="block"><p>The time the data element was entered into the clinical software. Note, some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -158,7 +190,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -167,7 +203,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/RelevantPeriod.html">RelevantPeriod</a></strong></code>
     
     </div>
-    <div class="block"><p>Relevant Period addresses the time between the start of an action to the end of an action. Each datatype using relevant period defines specific definitions for the start and stop time for the action listed.</p></div>
+    
+      <div class="block"><p>Relevant Period addresses the time between the start of an action to the end of an action. Each datatype using relevant period defines specific definitions for the start and stop time for the action listed.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -182,7 +220,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -191,7 +233,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Reason.html">Reason</a></strong></code>
     
     </div>
-    <div class="block"><p>The thought process or justification for the datatype. In some measures, specific treatments are acceptable inclusion criteria only if a justified reason is present. Each of these measures uses a value set (often, but not exclusively, using SNOMED- CT®) to express acceptable justification reasons. Other measures specify reasons as justification for exclusions. Examples include patient, system, or medical-related reasons for declining to perform specific actions. Each of these measures also uses a value set to express acceptable justification reasons for declining to perform expected actions.</p></div>
+    
+      <div class="block"><p>The thought process or justification for the datatype. In some measures, specific treatments are acceptable inclusion criteria only if a justified reason is present. Each of these measures uses a value set (often, but not exclusively, using SNOMED- CT®) to express acceptable justification reasons. Other measures specify reasons as justification for exclusions. Examples include patient, system, or medical-related reasons for declining to perform specific actions. Each of these measures also uses a value set to express acceptable justification reasons for declining to perform expected actions.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -206,7 +250,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -215,7 +263,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Result.html">Result</a></strong></code>
     
     </div>
-    <div class="block"><p>The final consequences or data collected from the datatype. Results can be used in five ways, to express: That a result is present in the electronic record but any entry is acceptable.  A numerical result is reported directly as a value. Values may be integers or decimal numbers without units, or as a quantity with a value and units – examples: 100 mg/dL for a lab test, 140 mmHg for blood pressure, as a percentage (actually a quantity with % as units), as a ratio (e.g., 1:4, 1:80). Beginning with QDM 5.3 measures use CQL logic to express the mathematical operators to constrain desired results to those above or below a certain threshold.  A result that matches one of a specific set of coded concepts in a value set or a code that matches a direct referenced code. A result as a dateTime (Assessment, Performed and components).</p></div>
+    
+      <div class="block"><p>The final consequences or data collected from the datatype. Results can be used in five ways, to express: That a result is present in the electronic record but any entry is acceptable.  A numerical result is reported directly as a value. Values may be integers or decimal numbers without units, or as a quantity with a value and units – examples: 100 mg/dL for a lab test, 140 mmHg for blood pressure, as a percentage (actually a quantity with % as units), as a ratio (e.g., 1:4, 1:80). Beginning with QDM 5.3 measures use CQL logic to express the mathematical operators to constrain desired results to those above or below a certain threshold.  A result that matches one of a specific set of coded concepts in a value set or a code that matches a direct referenced code. A result as a dateTime (Assessment, Performed and components).</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -230,7 +280,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -239,7 +293,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/ResultDatetime.html">ResultDatetime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time the result report is generated and saved in the database.</p></div>
+    
+      <div class="block"><p>The time the result report is generated and saved in the database.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -254,7 +310,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -263,7 +323,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Status.html">Status</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates the particular stage of the action represented by the datatype.</p></div>
+    
+      <div class="block"><p>Indicates the particular stage of the action represented by the datatype.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -278,7 +340,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -287,7 +353,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Method.html">Method</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates the procedure or technique used in its performance.</p></div>
+    
+      <div class="block"><p>Indicates the procedure or technique used in its performance.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -302,7 +370,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -311,7 +383,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/FacilityLocation.html">FacilityLocation</a></strong></code>
     
     </div>
-    <div class="block"><p>The particular locations in a facility in which the diagnostic study or encounter occurs or occurred. Examples include, but are not limited to, intensive care units (ICUs), non- ICUs, burn critical-care unit, neonatal ICU, and respiratory-care unit. Each Encounter, Performed may have 1 or more locations. For example, a patient treated in multiple locations during an individual encounter might be expressed as: Encounter, Performed: Inpatient Admission, ICU (location period), Non-ICU Admission (location period), Rehab (location period)</p></div>
+    
+      <div class="block"><p>The particular locations in a facility in which the diagnostic study or encounter occurs or occurred. Examples include, but are not limited to, intensive care units (ICUs), non- ICUs, burn critical-care unit, neonatal ICU, and respiratory-care unit. Each Encounter, Performed may have 1 or more locations. For example, a patient treated in multiple locations during an individual encounter might be expressed as: Encounter, Performed: Inpatient Admission, ICU (location period), Non-ICU Admission (location period), Rehab (location period)</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -326,7 +400,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="rowColor">
 
   <td class="colFirst">
@@ -335,7 +413,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/NegationRationale.html">NegationRationale</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
+      <div class="block"><p>Indicates the reason that an action was not performed. Only QDM datatypes that represent actions (e.g., performed, recommended, communication, order, dispensed) allow the “negation rationale” attribute. The intent is to indicate a justification that such action did not happen as expected. This attribute specifically does not address the presence or absence of information in a clinical record (e.g., documented absence of allergies Vs lack of documentation about allergies). The syntax in the human readable HQMF is address in CQL examples and in the MAT User Guide. Prior versions of QDM used the syntax, “Procedure, Performed not done.” QDM 5.0 DRAFT uses the syntax, “Procedure, not Performed.” Note: Some datatypes include both Relevant Time and Author dateTime attributes. The purpose is to accommodate Author dateTime if the actual start and stop times are not available when evaluating for feasibility, and also to allow specification of a time for Negation Rationale.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -350,7 +430,11 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>                        
+</tr>          
+        
+                        
+          
+            
   <tr class="altColor">
 
   <td class="colFirst">
@@ -359,7 +443,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../qdm-attribute/Components.html">Components</a></strong></code>
     
     </div>
-    <div class="block"><p>Elements included or documented as part of evaluations or test panels. Examples include: specific questions included in assesments, tests included in a laboratory test panel, observations included in a cardiac exam during a physical examination. Each assessment, diagnostic study, laboratory test, physical exam or procedure may have one or more components.</p></div>
+    
+      <div class="block"><p>Elements included or documented as part of evaluations or test panels. Examples include: specific questions included in assesments, tests included in a laboratory test panel, observations included in a cardiac exam during a physical examination. Each assessment, diagnostic study, laboratory test, physical exam or procedure may have one or more components.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -374,10 +460,12 @@ if (location.href.indexOf('is-external=true') == -1) {
         </div>
                         <div class="block">0..1</div>
             </td>
-</tr>              
+</tr>          
+        
+              
                                                                                                                                                                               
 
-                                                                                                                                                                                  
+    <!--                                                                                                                                                                               
                   
   <tr class="rowColor">
 
@@ -387,7 +475,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingStatus.html">FindingStatus</a></strong></code>
     
     </div>
-    <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
+      <div class="block"><p>Indicates whether the finding is preliminary, amended, final, etc.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -403,7 +493,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/RelevantTime.html">RelevantTime</a></strong></code>
     
     </div>
-    <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
+      <div class="block"><p>The time or time period that the statement addresses.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -419,7 +511,9 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/FindingMethod.html">FindingMethod</a></strong></code>
     
     </div>
-    <div class="block"><p>The method used to determine the finding.</p></div>
+    
+      <div class="block"><p>The method used to determine the finding.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -435,8 +529,10 @@ if (location.href.indexOf('is-external=true') == -1) {
       <code><strong><a href="../shr-base/Subject.html">Subject</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
+    
+      <div class="block"><p>The person, place, event, condition, other statement that this statement addresses or belongs to.
 For an existential finding, the Subject is the 'owner' of the object said to exist or not exist. For example, the subject for a condition is a patient; the subject for wound size is a wound. Subjects are themselves statements.</p></div>
+    
   </td>
   <td class="colMiddle">
           <div class="block"><code><strong>DataType</strong></code></div>
@@ -458,7 +554,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Beneficiary.html">Beneficiary</a></strong></code>
     
     </div>
-    <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
+      <div class="block"><p>The person, place, event, condition, other statement that derives advantage from something/</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -474,7 +572,9 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/ActivityCode.html">ActivityCode</a></strong></code>
     
     </div>
-    <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
+      <div class="block"><p>A code describing the aspect or property of the subject being observed or measured. The ObservableCode is the 'question code' that pairs to the 'answer' contained in the ResultValue.</p></div>
+    
   </td>
   <td class="colMiddle">
     
@@ -490,14 +590,17 @@ For an existential finding, the Subject is the 'owner' of the object said to exi
       <code><strong><a href="../shr-base/Qualifier.html">Qualifier</a></strong></code>
     
     </div>
-    <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
+      <div class="block"><p>A condition or circumstance associated with an observation that affects the interpretation of the result value.</p></div>
+    
   </td>
   <td class="colMiddle">
     
   </td>
   <td class="colLast">
       </td>
-</tr>                                                                                                                </table>            </li>
+</tr>                                                                                                               -->
+  </table>            </li>
           </ul>
         </li>
       </ul>
