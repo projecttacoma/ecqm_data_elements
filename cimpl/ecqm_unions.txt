@@ -112,8 +112,8 @@ EntryElement: Union9
 
 EntryElement: CD4CountUnder500orCD4PercentageLessThan15Union
 Based on: Union9
-    0..* CDCountPerformed
-    0..* CDPercentagePerformed
+    0..* CD4CountPerformed
+    0..* CD4PercentagePerformed
 
 EntryElement: Union10
 
@@ -150,25 +150,25 @@ EntryElement: Union12
 EntryElement: CompleteAssessmentUnion
 Based on: Union12
     0..* HipDysfunctionandOsteoarthritisOutcomeScoreforJointReplacementHOOSJRPerformed
-    0..* PROMISGlobalMentalHealthScorePerformed
-    0..* VRMentalComponentTScorePerformed
+    0..* PROMIS10GlobalMentalHealthScorePerformed
+    0..* VR12MentalComponentTScorePerformed
 
 EntryElement: Union13
 
 EntryElement: CompleteAssessment0Union
 Based on: Union13
-    0..* PROMISGlobalMentalHealthScorePerformed
-    0..* PROMISSleepDisturbanceScorePerformed
-    0..* VRMentalComponentTScorePerformed
-    0..* VRMentalComponentSummaryMCSScorePerformed
+    0..* PROMIS10GlobalMentalHealthScorePerformed
+    0..* PROMIS29SleepDisturbanceScorePerformed
+    0..* VR12MentalComponentTScorePerformed
+    0..* VR36MentalComponentSummaryMCSScorePerformed
 
 EntryElement: Union14
 
 EntryElement: CompletedAssessmentUnion
 Based on: Union14
     0..* KneeInjuryandOsteoarthritisOutcomeScoreforJointReplacementKOOSJRPerformed
-    0..* PROMISGlobalMentalHealthScorePerformed
-    0..* VRMentalComponentTScorePerformed
+    0..* PROMIS10GlobalMentalHealthScorePerformed
+    0..* VR12MentalComponentTScorePerformed
 
 EntryElement: Union15
 
@@ -198,7 +198,7 @@ EntryElement: Union17
 
 EntryElement: DeliveryEncounterwithJustifyingConditionsUnion
 Based on: Union17
-    0..* ConditionsPossiblyJustifyingElectiveDeliveryPriortoWeeksGestationDiagnosis
+    0..* ConditionsPossiblyJustifyingElectiveDeliveryPriorto39WeeksGestationDiagnosis
     0..* EncounterInpatientPerformed
 
 EntryElement: Union18
@@ -401,39 +401,39 @@ EntryElement: Union33
 
 EntryElement: EncounterUnion
 Based on: Union33
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
 
 EntryElement: QualifyingEncounters9Union
 Based on: Union33
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
 
 EntryElement: Union34
 
 EntryElement: Encounter0Union
 Based on: Union34
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: QualifyingEncounters10Union
 Based on: Union34
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: Union35
 
@@ -477,7 +477,7 @@ Based on: Union39
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
 
 EntryElement: FacetoFaceEncounterDuringMeasurementPeriodUnion
@@ -485,7 +485,7 @@ Based on: Union39
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
 
 EntryElement: Union40
@@ -494,7 +494,7 @@ EntryElement: FaceToFaceEncounter0Union
 Based on: Union40
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
     0..* OutpatientConsultationPerformed
 
@@ -502,7 +502,7 @@ EntryElement: FacetoFaceEncounterDuringMeasurementPeriod0Union
 Based on: Union40
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
     0..* OutpatientConsultationPerformed
 
@@ -510,21 +510,21 @@ EntryElement: Union41
 
 EntryElement: FaceToFaceEncounter1Union
 Based on: Union41
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
 
 EntryElement: FacetoFaceEncounterDuringMeasurementPeriod1Union
 Based on: Union41
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
 
 EntryElement: Union42
 
@@ -535,7 +535,7 @@ Based on: Union42
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
     0..* OccupationalTherapyEvaluationPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitPsychotherapyPerformed
@@ -547,7 +547,7 @@ Based on: Union42
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
     0..* OccupationalTherapyEvaluationPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitPsychotherapyPerformed
@@ -736,7 +736,7 @@ Based on: Union58
     0..* MarfansSyndromeDiagnosis
     0..* OsteogenesisImperfectaDiagnosis
     0..* PsoriaticArthritisDiagnosis
-    0..* TypeDiabetesDiagnosis
+    0..* Type1DiabetesDiagnosis
 
 EntryElement: IndependentRiskFactorsApplicableAnyTimeUnion
 Based on: Union58
@@ -749,7 +749,7 @@ Based on: Union58
     0..* MarfansSyndromeDiagnosis
     0..* OsteogenesisImperfectaDiagnosis
     0..* PsoriaticArthritisDiagnosis
-    0..* TypeDiabetesDiagnosis
+    0..* Type1DiabetesDiagnosis
 
 EntryElement: Union59
 
@@ -821,51 +821,51 @@ EntryElement: Union63
 
 EntryElement: InfluenzaImmunizationsorProceduresUnion
 Based on: Union63
-    0..* InfluenzaVaccineAdministered
+    0..* InfluenzaVaccine1Administered
     0..* InfluenzaVaccineAdministeredPerformed
 
 EntryElement: InfluenzaVaccinationUnion
 Based on: Union63
-    0..* InfluenzaVaccineAdministered
+    0..* InfluenzaVaccine1Administered
     0..* InfluenzaVaccineAdministeredPerformed
 
 EntryElement: Union64
 
 EntryElement: InitialQualifyingEncounterDuringMeasurementPeriodUnion
 Based on: Union64
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PatientProviderInteractionPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
     0..* PreventiveCareServicesGroupCounselingPerformed
     0..* PreventiveCareServicesOtherPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
     0..* PreventiveCareServicesIndividualCounselingPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
 
 EntryElement: QualifyingEncounter5Union
 Based on: Union64
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PatientProviderInteractionPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
     0..* PreventiveCareServicesGroupCounselingPerformed
     0..* PreventiveCareServicesOtherPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
     0..* PreventiveCareServicesIndividualCounselingPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
 
 EntryElement: Union65
 
@@ -962,7 +962,7 @@ EntryElement: Union73
 EntryElement: MajorDepressiveDisorderEncounterUnion
 Based on: Union73
     0..* GroupPsychotherapyPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitFamilyPsychotherapyPerformed
@@ -972,7 +972,7 @@ Based on: Union73
 EntryElement: ValidEncounter0Union
 Based on: Union73
     0..* GroupPsychotherapyPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitFamilyPsychotherapyPerformed
@@ -984,7 +984,7 @@ EntryElement: Union74
 EntryElement: MajorDepressiveDisorderEncounter0Union
 Based on: Union74
     0..* EmergencyDepartmentVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitPsychotherapyPerformed
@@ -993,7 +993,7 @@ Based on: Union74
 EntryElement: ValidEncounter9Union
 Based on: Union74
     0..* EmergencyDepartmentVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitPsychotherapyPerformed
@@ -1430,7 +1430,7 @@ Based on: Union100
     0..* HealthandBehavioralAssessmentReassessmentPerformed
     0..* HomeHealthcareServicesPerformed
     0..* OccupationalTherapyEvaluationPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitPsychotherapyPerformed
@@ -1444,7 +1444,7 @@ Based on: Union100
     0..* HealthandBehavioralAssessmentReassessmentPerformed
     0..* HomeHealthcareServicesPerformed
     0..* OccupationalTherapyEvaluationPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitPsychotherapyPerformed
@@ -1494,14 +1494,14 @@ EntryElement: Union105
 
 EntryElement: PregnancyESRDDiagnosisUnion
 Based on: Union105
-    0..* ChronicKidneyDiseaseStageDiagnosis
+    0..* ChronicKidneyDiseaseStage5Diagnosis
     0..* EndStageRenalDiseaseDiagnosis
     0..* KidneyTransplantRecipientDiagnosis
     0..* PregnancyDiagnosis
 
 EntryElement: PregnancyOrRenalDiagnosisExclusionsUnion
 Based on: Union105
-    0..* ChronicKidneyDiseaseStageDiagnosis
+    0..* ChronicKidneyDiseaseStage5Diagnosis
     0..* EndStageRenalDiseaseDiagnosis
     0..* KidneyTransplantRecipientDiagnosis
     0..* PregnancyDiagnosis
@@ -1518,21 +1518,21 @@ EntryElement: Union107
 
 EntryElement: PreventiveEncounterUnion
 Based on: Union107
-    0..* AnnualWellnessVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
+    0..* AnnualWellnessVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
     0..* PreventiveCareServicesGroupCounselingPerformed
     0..* PreventiveCareServicesOtherPerformed
     0..* PreventiveCareServicesIndividualCounselingPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: PreventiveVisitDuringMeasurementPeriodUnion
 Based on: Union107
-    0..* AnnualWellnessVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
+    0..* AnnualWellnessVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
     0..* PreventiveCareServicesGroupCounselingPerformed
     0..* PreventiveCareServicesOtherPerformed
     0..* PreventiveCareServicesIndividualCounselingPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: Union108
 
@@ -1552,7 +1552,7 @@ EntryElement: Union109
 
 EntryElement: QualifyingCADEncounterUnion
 Based on: Union109
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
@@ -1565,7 +1565,7 @@ Based on: Union110
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PatientProviderInteractionPerformed
 
@@ -1574,7 +1574,7 @@ Based on: Union110
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PatientProviderInteractionPerformed
 
@@ -1583,31 +1583,31 @@ EntryElement: Union111
 EntryElement: QualifyingEncounter0Union
 Based on: Union111
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
     0..* PreventiveCareServicesGroupCounselingPerformed
     0..* PreventiveCareServicesIndividualCounselingPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
 
 EntryElement: ValidEncounter2Union
 Based on: Union111
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
     0..* PreventiveCareServicesGroupCounselingPerformed
     0..* PreventiveCareServicesIndividualCounselingPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
 
 EntryElement: Union112
 
 EntryElement: QualifyingEncounter1Union
 Based on: Union112
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
 
 EntryElement: QualifyingEncounters8Union
 Based on: Union112
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
 
 EntryElement: Union113
@@ -1615,16 +1615,16 @@ EntryElement: Union113
 EntryElement: QualifyingEncounter2Union
 Based on: Union113
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
 
 EntryElement: ValidEncounter10Union
 Based on: Union113
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
 
 EntryElement: Union114
 
@@ -1635,7 +1635,7 @@ Based on: Union114
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
     0..* OccupationalTherapyEvaluationPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PatientProviderInteractionPerformed
     0..* PsychVisitDiagnosticEvaluationPerformed
@@ -1648,7 +1648,7 @@ Based on: Union114
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
     0..* OccupationalTherapyEvaluationPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PatientProviderInteractionPerformed
     0..* PsychVisitDiagnosticEvaluationPerformed
@@ -1658,19 +1658,19 @@ EntryElement: Union115
 
 EntryElement: QualifyingEncounter4Union
 Based on: Union115
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
     0..* PreventiveCareServicesOtherPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: ValidEncounter12Union
 Based on: Union115
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
     0..* PreventiveCareServicesOtherPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: Union116
 
@@ -1678,65 +1678,65 @@ EntryElement: QualifyingEncounter6Union
 Based on: Union116
     0..* EmergencyDepartmentVisitPerformed
     0..* HospitalObservationCareInitialPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
 
 EntryElement: ValidEncounter13Union
 Based on: Union116
     0..* EmergencyDepartmentVisitPerformed
     0..* HospitalObservationCareInitialPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
 
 EntryElement: Union117
 
 EntryElement: QualifyingEncounter7Union
 Based on: Union117
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* AudiologyVisitPerformed
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
     0..* PreventiveCareServicesIndividualCounselingPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: ValidEncounter15Union
 Based on: Union117
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* AudiologyVisitPerformed
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
     0..* PreventiveCareServicesIndividualCounselingPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: Union118
 
 EntryElement: QualifyingEncountersUnion
 Based on: Union118
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: ValidEncounterUnion
 Based on: Union118
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: Union119
 
@@ -1748,7 +1748,7 @@ Based on: Union119
     0..* EmergencyDepartmentVisitPerformed
     0..* HospitalInpatientVisitInitialPerformed
     0..* HospitalObservationCareInitialPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
 
 EntryElement: ValidEncountersUnion
 Based on: Union119
@@ -1758,151 +1758,151 @@ Based on: Union119
     0..* EmergencyDepartmentVisitPerformed
     0..* HospitalInpatientVisitInitialPerformed
     0..* HospitalObservationCareInitialPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
 
 EntryElement: Union120
 
 EntryElement: QualifyingEncounters1Union
 Based on: Union120
     0..* ClinicalOralEvaluationPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
 
 EntryElement: ValidEncounter3Union
 Based on: Union120
     0..* ClinicalOralEvaluationPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
 
 EntryElement: Union121
 
 EntryElement: QualifyingEncounters11Union
 Based on: Union121
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
-    0..* PreventiveCareInitialOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
+    0..* PreventiveCareInitialOfficeVisit0to17Performed
 
 EntryElement: Union122
 
 EntryElement: QualifyingEncounters12Union
 Based on: Union122
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* CareServicesinLongTermResidentialFacilityPerformed
-    0..* DischargeServicesNursingFacilityPerformed
+    0..* DischargeServicesNursingFacility1Performed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: ValidEncounter14Union
 Based on: Union122
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* CareServicesinLongTermResidentialFacilityPerformed
-    0..* DischargeServicesNursingFacilityPerformed
+    0..* DischargeServicesNursingFacility1Performed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: Union123
 
 EntryElement: QualifyingEncounters2Union
 Based on: Union123
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
 
 EntryElement: ValidEncounter4Union
 Based on: Union123
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
 
 EntryElement: Union124
 
 EntryElement: QualifyingEncounters3Union
 Based on: Union124
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicOutpatientVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: ValidEncounter5Union
 Based on: Union124
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* CareServicesinLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OphthalmologicOutpatientVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: Union125
 
 EntryElement: QualifyingEncounters4Union
 Based on: Union125
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
 
 EntryElement: ValidEncounter6Union
 Based on: Union125
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
 
 EntryElement: Union126
 
 EntryElement: QualifyingEncounters5Union
 Based on: Union126
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: ValidEncounter7Union
 Based on: Union126
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
 
 EntryElement: Union127
 
 EntryElement: QualifyingEncounters6Union
 Based on: Union127
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitPsychotherapyPerformed
     0..* TelephoneEvaluationPerformed
@@ -1910,11 +1910,11 @@ Based on: Union127
 
 EntryElement: ValidEncounter8Union
 Based on: Union127
-    0..* AnnualWellnessVisitPerformed
+    0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
-    0..* OfficeVisitPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* OfficeVisit1Performed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUp1Performed
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitPsychotherapyPerformed
     0..* TelephoneEvaluationPerformed
@@ -1926,12 +1926,12 @@ EntryElement: QualifyingEncounters7Union
 Based on: Union128
     0..* AnnualWellnessVisitPerformed
     0..* OfficeVisitPerformed
-    0..* OutpatientConsultationPerformed
+    0..* OutpatientConsultation1Performed
     0..* OutpatientEncountersforPreventiveCarePerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18andUpPerformed
     0..* PreventiveCareServicesOtherPerformed
     0..* PreventiveCareServicesIndividualCounselingPerformed
-    0..* PreventiveCareServicesInitialOfficeVisitandUpPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit18andUpPerformed
 
 EntryElement: Union129
 
@@ -1941,12 +1941,12 @@ Based on: Union129
     0..* DischargeServicesObservationCarePerformed
     0..* HomeHealthcareServicesPerformed
     0..* HospitalObservationCareInitialPerformed
-    0..* OfficeVisitPerformed
+    0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PreventiveCareServicesGroupCounselingPerformed
-    0..* PreventiveCareServicesInitialOfficeVisittoPerformed
+    0..* PreventiveCareServicesInitialOfficeVisit0to17Performed
     0..* PreventiveCareServicesIndividualCounselingPerformed
-    0..* PreventiveCareEstablishedOfficeVisittoPerformed
+    0..* PreventiveCareEstablishedOfficeVisit0to17Performed
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitPsychotherapyPerformed
     0..* PsychotherapyandPharmacologicManagementPerformed
@@ -1993,17 +1993,17 @@ EntryElement: Union134
 
 EntryElement: Rotavirus2or3DoseVaccinationsUnion
 Based on: Union134
-    0..* RotavirusVaccinedosescheduleAdministered
+    0..* RotavirusVaccine3dosescheduleAdministered
 
 EntryElement: Union135
 
 EntryElement: Rotavirus3DoseImmunizationsorProceduresUnion
 Based on: Union135
-    0..* RotavirusVaccinedosescheduleAdministered
+    0..* RotavirusVaccine3dosescheduleAdministered
 
 EntryElement: ThreeDoseRotavirusUnion
 Based on: Union135
-    0..* RotavirusVaccinedosescheduleAdministered
+    0..* RotavirusVaccine3dosescheduleAdministered
 
 EntryElement: Union136
 
@@ -2152,3 +2152,4 @@ Based on: Union147
     0..* VaricellaZosterDiagnosis
     0..* VaricellaZosterAntibodyTestIgGAntibodyPresencePerformed
     0..* VaricellaZosterAntibodyTestIgGAntibodyTiterPerformed
+
