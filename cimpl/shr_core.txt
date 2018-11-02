@@ -202,7 +202,7 @@ Element:   		ContactPoint
 Concept:		MTH#C2986441
 Description:	"An electronic means of contacting an organization or individual."		
 1..1			TelecomNumberOrAddress
-1..1			Type from http://hl7.org/fhir/ValueSet/contact-point-system
+//1..1			Type from http://hl7.org/fhir/ValueSet/contact-point-system
 0..1			Purpose from http://hl7.org/fhir/ValueSet/contact-point-use
 0..1			PriorityRank
 0..1			EffectiveTimePeriod
@@ -212,10 +212,10 @@ Description:	"An electronic means of contacting an organization or individual."
 		Description:	"A user name or other identifier on a telecommunication network, such as a telephone number (including country code and extension, if necessary), email address, or SkypeID."
 		Value:			string	
 		
-		Element:		Type
-		Concept:		MTH#C0332307
-		Description:	"The most specific code (lowest level term) describing the kind or sort of thing being represented." 
-		Value:			CodeableConcept
+		// Element:		Type
+		// Concept:		MTH#C0332307
+		// Description:	"The most specific code (lowest level term) describing the kind or sort of thing being represented." 
+		// Value:			CodeableConcept
 		
 		Element:		Purpose
 		Description:	"Why the item is used."
@@ -405,7 +405,7 @@ Element:   		Address
 Concept:		MTH#C0682130
 Description:    "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR)."
 0..1			Purpose from http://hl7.org/fhir/ValueSet/address-use
-0..1			Type from http://hl7.org/fhir/ValueSet/address-type
+//0..1			Type from http://hl7.org/fhir/ValueSet/address-type
 0..1			DisplayText
 0..2    		AddressLine
 0..1    		City

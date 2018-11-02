@@ -32,7 +32,7 @@ Money maps to Money:
 
 Address maps to Address:
 	Purpose maps to use
-	Type maps to type
+	//Type maps to type
 	DisplayText maps to text
 	AddressLine maps to line
 	City maps to city
@@ -67,7 +67,7 @@ Geoposition maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-loca
 	
 ContactPoint maps to ContactPoint:
 	TelecomNumberOrAddress maps to value
-	Type maps to system
+	//Type maps to system
 	Purpose maps to use
 	PriorityRank maps to rank
 	EffectiveTimePeriod maps to period	
