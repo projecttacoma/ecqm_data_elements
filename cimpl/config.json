@@ -1,6 +1,6 @@
 {
-    "projectName": "Example Project",
-    "projectShorthand": "EXAMPLE",
+    "projectName": "Data Element Repository",
+    "projectShorthand": "DER",
     "projectURL": "http://example.com",
     "fhirURL": "http://example.com/fhir",
     "implementationGuide": {
