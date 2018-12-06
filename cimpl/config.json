@@ -1,6 +1,6 @@
 {
     "projectName": "Data Element Repository",
-    "projectShorthand": "DER",
+    "projectShorthand": "DERep",
     "projectURL": "http://example.com",
     "fhirURL": "http://example.com/fhir",
     "implementationGuide": {
