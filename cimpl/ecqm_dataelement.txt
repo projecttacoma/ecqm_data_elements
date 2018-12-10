@@ -3590,7 +3590,9 @@ ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version
 
 EntryElement: GleasonScoreInSpecimenQualitativePerformed
 Based on: LaboratoryTestPerformed
-Description: " -- Subject constrained to the Gleason score in Specimen Qualitative"
+Description: "(Clinical Focus: This direct reference code captures a qualitative Gleason score.),(Data Element Scope: This code may use QDM category Laboratory Test.),(Inclusion Criteria:  Includes 
+'Gleason score in Specimen Qualitative' LOINC code.
+),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Gleason score in Specimen Qualitative"
 Subject value is type GleasonScoreInSpecimenQualitative
 
 EntryElement: GlomerulonephritisAndNephroticSyndromeDiagnosis
@@ -7962,7 +7964,7 @@ ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/versio
 
 EntryElement: SuicideRiskAssessmentProcedurePerformed
 Based on: InterventionPerformed
-Description: " -- Subject constrained to the Suicide risk assessment (procedure)"
+Description: "(Clinical Focus: This direct reference code captures the completion of a suicide risk assessment.),(Data Element Scope: This code may use QDM category Intervention.),(Inclusion Criteria: Includes 'Suicide risk assessment (procedure)' SNOMED CT code.),(Exclusion Criteria: Does not include concepts for completing a suicide risk assessment using standardized tools.) -- Subject constrained to the Suicide risk assessment (procedure)"
 Subject value is type SuicideRiskAssessmentProcedure
 
 EntryElement: SymptomsScoreHoos
