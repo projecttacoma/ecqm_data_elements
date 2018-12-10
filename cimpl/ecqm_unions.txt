@@ -5,35 +5,8 @@ Uses: shr.core, shr.base, shr.entity, ecqm.dataelement, ecqm.measure
 
 EntryElement: Union1
 
-EntryElement: ActiveAntidepressantorMoodStabilizerUnion
-Based on: Union1
-    0..* BhAntidepressantMedicationActive
-    0..* BhAntidepressantMedicationOrder
-    0..* BhMoodStabilizerMedicationActive
-    0..* BhMoodStabilizerMedicationOrder
-
-EntryElement: AntidepressantorMoodStabilizerOrderedUnion
-Based on: Union1
-    0..* BhAntidepressantMedicationActive
-    0..* BhAntidepressantMedicationOrder
-    0..* BhMoodStabilizerMedicationActive
-    0..* BhMoodStabilizerMedicationOrder
-
-EntryElement: Union2
-
-EntryElement: ActiveBehavioralHealthMedicationsorDiagnosisUnion
-Based on: Union2
-    0..* BhAntidepressantMedicationActive
-    0..* BhAntidepressantMedicationOrder
-    0..* BhMoodStabilizerMedicationActive
-    0..* BhMoodStabilizerMedicationOrder
-    0..* BhConditionInvolvingBipolarDisorderDiagnosis
-    0..* BhConditionInvolvingUnipolarDepressionDiagnosis
-
-EntryElement: Union3
-
 EntryElement: ActiveStatinUseUnion
-Based on: Union3
+Based on: Union1
     0..* HighIntensityStatinTherapyActive
     0..* HighIntensityStatinTherapyOrder
     0..* LowIntensityStatinTherapyActive
@@ -42,7 +15,7 @@ Based on: Union3
     0..* ModerateIntensityStatinTherapyOrder
 
 EntryElement: StatinOrderedUnion
-Based on: Union3
+Based on: Union1
     0..* HighIntensityStatinTherapyActive
     0..* HighIntensityStatinTherapyOrder
     0..* LowIntensityStatinTherapyActive
@@ -50,10 +23,10 @@ Based on: Union3
     0..* ModerateIntensityStatinTherapyActive
     0..* ModerateIntensityStatinTherapyOrder
 
-EntryElement: Union4
+EntryElement: Union2
 
 EntryElement: AgeDependentCombinationRiskFactorsUnion
-Based on: Union4
+Based on: Union2
     0..* RheumatoidArthritisDiagnosis
     0..* HyperthyroidismDiagnosis
     0..* MalabsorptionSyndromesDiagnosis
@@ -64,10 +37,10 @@ Based on: Union4
     0..* HistoryOfHipFractureInParentPerformed
     0..* WhitePatientCharacteristicRace
 
-EntryElement: Union5
+EntryElement: Union3
 
 EntryElement: AllLabOrdersUnion
-Based on: Union5
+Based on: Union3
     0..* PapTestOrder
     0..* PapTestPerformed
     0..* LabTestsDuringPregnancyOrder
@@ -75,62 +48,48 @@ Based on: Union5
     0..* PregnancyTestOrder
 
 EntryElement: LaboratoryTestsIdentifyingSexualActivityUnion
-Based on: Union5
+Based on: Union3
     0..* PapTestOrder
     0..* PapTestPerformed
     0..* LabTestsDuringPregnancyOrder
     0..* LabTestsForSexuallyTransmittedInfectionsOrder
     0..* PregnancyTestOrder
 
-EntryElement: Union6
-
-EntryElement: BehavioralHealthOutpatientEncounterUnion
-Based on: Union6
-    0..* BhOutpatientPsychotherapyPerformed
-    0..* BhOutpatientEncounterPerformed
-
-EntryElement: Union7
-
-EntryElement: BipolarDisorderOrUnipolarDepressionUnion
-Based on: Union7
-    0..* BhConditionInvolvingBipolarDisorderDiagnosis
-    0..* BhConditionInvolvingUnipolarDepressionDiagnosis
-
-EntryElement: Union8
+EntryElement: Union4
 
 EntryElement: BoneDensityScanOrderedorPerformedUnion
-Based on: Union8
+Based on: Union4
     0..* DexaDualEnergyXrayAbsorptiometryBoneDensityForUrologyCareOrder
     0..* DexaDualEnergyXrayAbsorptiometryBoneDensityForUrologyCarePerformed
 
 EntryElement: NoBoneDensityScanOrderedDuetoPatientRefusalUnion
-Based on: Union8
+Based on: Union4
     0..* DexaDualEnergyXrayAbsorptiometryBoneDensityForUrologyCareOrder
     0..* DexaDualEnergyXrayAbsorptiometryBoneDensityForUrologyCarePerformed
 
-EntryElement: Union9
+EntryElement: Union5
 
 EntryElement: Cd4CountUnder500orCd4PercentageLessThan15Union
-Based on: Union9
+Based on: Union5
     0..* Cd4CountPerformed
     0..* Cd4PercentagePerformed
 
-EntryElement: Union10
+EntryElement: Union6
 
 EntryElement: ChickenPoxVaccinationUnion
-Based on: Union10
+Based on: Union6
     0..* VaricellaZosterVaccineVzvAdministered
     0..* VaricellaZosterVaccineVzvAdministeredPerformed
 
 EntryElement: OneChickenPoxVaccinationUnion
-Based on: Union10
+Based on: Union6
     0..* VaricellaZosterVaccineVzvAdministered
     0..* VaricellaZosterVaccineVzvAdministeredPerformed
 
-EntryElement: Union11
+EntryElement: Union7
 
 EntryElement: CombinationRiskDiagnosisUnion
-Based on: Union11
+Based on: Union7
     0..* ChronicLiverDiseaseDiagnosis
     0..* ChronicMalnutritionDiagnosis
     0..* HyperthyroidismDiagnosis
@@ -138,165 +97,149 @@ Based on: Union11
     0..* RheumatoidArthritisDiagnosis
 
 EntryElement: CombinationRiskFactorsApplicableAnyTimeUnion
-Based on: Union11
+Based on: Union7
     0..* ChronicLiverDiseaseDiagnosis
     0..* ChronicMalnutritionDiagnosis
     0..* HyperthyroidismDiagnosis
     0..* MalabsorptionSyndromesDiagnosis
     0..* RheumatoidArthritisDiagnosis
 
-EntryElement: Union12
+EntryElement: Union8
 
 EntryElement: CompleteAssessmentUnion
-Based on: Union12
+Based on: Union8
     0..* HipDysfunctionAndOsteoarthritisOutcomeScoreForJointReplacementHoosjrPerformed
     0..* Promis10GlobalMentalHealthScorePerformed
     0..* Vr12MentalComponentTScorePerformed
 
-EntryElement: Union13
+EntryElement: Union9
 
 EntryElement: CompleteAssessment0Union
-Based on: Union13
+Based on: Union9
     0..* Promis10GlobalMentalHealthScorePerformed
     0..* Promis29SleepDisturbanceScorePerformed
     0..* Vr12MentalComponentTScorePerformed
     0..* Vr36MentalComponentSummaryMcsScorePerformed
 
-EntryElement: Union14
+EntryElement: Union10
 
 EntryElement: CompletedAssessmentUnion
-Based on: Union14
+Based on: Union10
     0..* KneeInjuryAndOsteoarthritisOutcomeScoreForJointReplacementKoosjrPerformed
     0..* Promis10GlobalMentalHealthScorePerformed
     0..* Vr12MentalComponentTScorePerformed
 
-EntryElement: Union15
+EntryElement: Union11
 
 EntryElement: DTaPConditionsUnion
-Based on: Union15
+Based on: Union11
     0..* AnaphylacticReactionToDTaPVaccineDiagnosis
     0..* EncephalopathyDueToChildhoodVaccinationDiagnosis
 
 EntryElement: DTaPNumeratorInclusionConditionsUnion
-Based on: Union15
+Based on: Union11
     0..* AnaphylacticReactionToDTaPVaccineDiagnosis
     0..* EncephalopathyDueToChildhoodVaccinationDiagnosis
 
-EntryElement: Union16
+EntryElement: Union12
 
 EntryElement: DTaPImmunizationsorProceduresUnion
-Based on: Union16
+Based on: Union12
     0..* DTaPVaccineAdministered
     0..* DTaPVaccineAdministeredPerformed
 
 EntryElement: DTaPVaccinationUnion
-Based on: Union16
+Based on: Union12
     0..* DTaPVaccineAdministered
     0..* DTaPVaccineAdministeredPerformed
 
-EntryElement: Union17
+EntryElement: Union13
 
 EntryElement: DeliveryEncounterwithJustifyingConditionsUnion
-Based on: Union17
+Based on: Union13
     0..* ConditionsPossiblyJustifyingElectiveDeliveryPriorTo39WeeksGestationDiagnosis
     0..* EncounterInpatientPerformed
 
-EntryElement: Union18
+EntryElement: Union14
 
 EntryElement: DenominatorUnion
-Based on: Union18
+Based on: Union14
     0..* NonElectiveInpatientEncounterPerformed
 
 EntryElement: DenominatorExclusions2Union
-Based on: Union18
+Based on: Union14
     0..* NonElectiveInpatientEncounterPerformed
 
-EntryElement: Union19
+EntryElement: Union15
 
 EntryElement: DenominatorExceptionsUnion
-Based on: Union19
+Based on: Union15
     0..* NonElectiveInpatientEncounterPerformed
     0..* StatinAllergenAdverseEvent
     0..* StatinAllergenAllergyIntolerance
     0..* StatinGrouperDischarge
 
-EntryElement: Union20
+EntryElement: Union16
 
 EntryElement: DenominatorExceptions0Union
-Based on: Union20
+Based on: Union16
     0..* EncounterInpatientPerformed
 
 EntryElement: InitialPopulationUnion
-Based on: Union20
+Based on: Union16
     0..* EncounterInpatientPerformed
 
-EntryElement: NumeratorUnion
-Based on: Union20
+EntryElement: Numerator1Union
+Based on: Union16
     0..* EncounterInpatientPerformed
 
-EntryElement: Union21
+EntryElement: Union17
 
 EntryElement: DenominatorExclusionsUnion
-Based on: Union21
+Based on: Union17
     0..* CataractSurgeryPerformed
 
-EntryElement: Union22
+EntryElement: Union18
 
 EntryElement: DenominatorExclusions0Union
-Based on: Union22
+Based on: Union18
     0..* UpperRespiratoryInfectionDiagnosis
 
-EntryElement: Union23
+EntryElement: Union19
 
 EntryElement: DenominatorExclusions1Union
-Based on: Union23
+Based on: Union19
     0..* AcutePharyngitisDiagnosis
     0..* AcuteTonsillitisDiagnosis
 
 EntryElement: PharyngitisorTonsillitisUnion
-Based on: Union23
+Based on: Union19
     0..* AcutePharyngitisDiagnosis
     0..* AcuteTonsillitisDiagnosis
 
-EntryElement: Union24
+EntryElement: Union20
 
 EntryElement: DenominatorExclusions3Union
-Based on: Union24
+Based on: Union20
     0..* ComfortMeasuresOrder
     0..* ComfortMeasuresPerformed
 
 EntryElement: InterventionComfortMeasuresUnion
-Based on: Union24
+Based on: Union20
     0..* ComfortMeasuresOrder
     0..* ComfortMeasuresPerformed
 
-EntryElement: Union25
+EntryElement: Union21
 
 EntryElement: DepressionDiagnosesUnion
-Based on: Union25
+Based on: Union21
     0..* DysthymiaDiagnosis
     0..* MajorDepressionIncludingRemissionDiagnosis
 
-EntryElement: Union26
-
-EntryElement: DepressionTreatmentProcedureOrderedUnion
-Based on: Union26
-    0..* BhCounselingForDepressionOrder
-    0..* BhCounselingForDepressionPerformed
-    0..* BhElectroconvulsiveTherapyOrder
-    0..* BhElectroconvulsiveTherapyPerformed
-
-EntryElement: DepressionTreatmentProcedurePerformedUnion
-Based on: Union26
-    0..* BhCounselingForDepressionOrder
-    0..* BhCounselingForDepressionPerformed
-    0..* BhElectroconvulsiveTherapyOrder
-    0..* BhElectroconvulsiveTherapyPerformed
-
-EntryElement: Union27
+EntryElement: Union22
 
 EntryElement: DiagnosesIdentifyingSexualActivityUnion
-Based on: Union27
+Based on: Union22
     0..* CarrierOfPredominantlySexuallyTransmittedInfectionDiagnosis
     0..* ChlamydiaDiagnosis
     0..* ComplicationsOfPregnancyChildbirthAndThePuerperiumDiagnosis
@@ -308,7 +251,7 @@ Based on: Union27
     0..* SyphilisDiagnosis
 
 EntryElement: SexualActivityDiagnosisUnion
-Based on: Union27
+Based on: Union22
     0..* CarrierOfPredominantlySexuallyTransmittedInfectionDiagnosis
     0..* ChlamydiaDiagnosis
     0..* ComplicationsOfPregnancyChildbirthAndThePuerperiumDiagnosis
@@ -319,28 +262,28 @@ Based on: Union27
     0..* OtherFemaleReproductiveConditionsDiagnosis
     0..* SyphilisDiagnosis
 
-EntryElement: Union28
+EntryElement: Union23
 
 EntryElement: DisorderDiagnosesUnion
-Based on: Union28
+Based on: Union23
     0..* BipolarDisorderDiagnosis
     0..* PersonalityDisorderDiagnosis
     0..* PervasiveDevelopmentalDisorderDiagnosis
     0..* SchizophreniaOrPsychoticDisorderDiagnosis
 
-EntryElement: Union29
+EntryElement: Union24
 
 EntryElement: DisorderDiagnoses0Union
-Based on: Union29
+Based on: Union24
     0..* BipolarDisorderDiagnosis
     0..* PersonalityDisorderDiagnosis
     0..* PervasiveDevelopmentalDisorderDiagnosis
     0..* SchizophreniaOrPsychoticDisorderDiagnosis
 
-EntryElement: Union30
+EntryElement: Union25
 
 EntryElement: DisorderDiagnosesOverlapsDepressionEncounterinJanuarythroughAprilUnion
-Based on: Union30
+Based on: Union25
     0..* BipolarDisorderDiagnosis
     0..* ContactOrOfficeVisitPerformed
     0..* PersonalityDisorderDiagnosis
@@ -348,7 +291,7 @@ Based on: Union30
     0..* SchizophreniaOrPsychoticDisorderDiagnosis
 
 EntryElement: DisorderDiagnosesOverlapsDepressionEncounterinMaythroughAugustUnion
-Based on: Union30
+Based on: Union25
     0..* BipolarDisorderDiagnosis
     0..* ContactOrOfficeVisitPerformed
     0..* PersonalityDisorderDiagnosis
@@ -356,51 +299,37 @@ Based on: Union30
     0..* SchizophreniaOrPsychoticDisorderDiagnosis
 
 EntryElement: DisorderDiagnosesOverlapsDepressionEncounterinSeptemberthroughDecemberUnion
-Based on: Union30
+Based on: Union25
     0..* BipolarDisorderDiagnosis
     0..* ContactOrOfficeVisitPerformed
     0..* PersonalityDisorderDiagnosis
     0..* PervasiveDevelopmentalDisorderDiagnosis
     0..* SchizophreniaOrPsychoticDisorderDiagnosis
 
-EntryElement: Union31
+EntryElement: Union26
 
 EntryElement: EsrdProcedureUnion
-Based on: Union31
+Based on: Union26
     0..* DialysisServicesPerformed
     0..* KidneyTransplantPerformed
     0..* VascularAccessForDialysisPerformed
 
 EntryElement: EndStageRenalDiseaseProceduresUnion
-Based on: Union31
+Based on: Union26
     0..* DialysisServicesPerformed
     0..* KidneyTransplantPerformed
     0..* VascularAccessForDialysisPerformed
 
 EntryElement: RenalProceduresUnion
-Based on: Union31
+Based on: Union26
     0..* DialysisServicesPerformed
     0..* KidneyTransplantPerformed
     0..* VascularAccessForDialysisPerformed
 
-EntryElement: Union32
-
-EntryElement: EsrdProceduresUnion
-Based on: Union32
-    0..* HemodialysisPerformed
-    0..* KidneyTransplantPerformed
-    0..* PeritonealDialysisPerformed
-
-EntryElement: EndStageRenalDiseaseProcedures0Union
-Based on: Union32
-    0..* HemodialysisPerformed
-    0..* KidneyTransplantPerformed
-    0..* PeritonealDialysisPerformed
-
-EntryElement: Union33
+EntryElement: Union27
 
 EntryElement: EncounterUnion
-Based on: Union33
+Based on: Union27
     0..* OfficeVisit1Performed
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
@@ -408,17 +337,17 @@ Based on: Union33
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
 
 EntryElement: QualifyingEncounters9Union
-Based on: Union33
+Based on: Union27
     0..* OfficeVisit1Performed
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
 
-EntryElement: Union34
+EntryElement: Union28
 
 EntryElement: Encounter0Union
-Based on: Union34
+Based on: Union28
     0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
@@ -427,7 +356,7 @@ Based on: Union34
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
 EntryElement: QualifyingEncounters10Union
-Based on: Union34
+Based on: Union28
     0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
@@ -435,45 +364,31 @@ Based on: Union34
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
-EntryElement: Union35
+EntryElement: Union29
 
 EntryElement: EncounterWithPriororPresentDiagnosisofAtrialFibrillationorVteUnion
-Based on: Union35
+Based on: Union29
     0..* AtrialFibrillationFlutterDiagnosis
 
-EntryElement: Union36
+EntryElement: Union30
 
 EntryElement: EncounterWithPriororPresentDiagnosisofAtrialFibrillationorVte0Union
-Based on: Union36
+Based on: Union30
     0..* AtrialFibrillationFlutterDiagnosis
     0..* VenousThromboembolismDiagnosis
 
-EntryElement: Union37
+EntryElement: Union31
 
 EntryElement: ExceptionProceduresUnion
-Based on: Union37
+Based on: Union31
     0..* AorticBalloonPumpInsertionPerformed
     0..* EndotrachealIntubationPerformed
     0..* VentricularAssistDevicePlacementPerformed
 
-EntryElement: Union38
-
-EntryElement: ExclusionDiagnosisUnion
-Based on: Union38
-    0..* EndStageRenalDiseaseDiagnosis
-    0..* KidneyTransplantRecipientDiagnosis
-    0..* PregnancyDiagnosis
-
-EntryElement: PregnancyOrEndStageRenalDiseaseDiagnosesExclusionUnion
-Based on: Union38
-    0..* EndStageRenalDiseaseDiagnosis
-    0..* KidneyTransplantRecipientDiagnosis
-    0..* PregnancyDiagnosis
-
-EntryElement: Union39
+EntryElement: Union32
 
 EntryElement: FaceToFaceEncounterUnion
-Based on: Union39
+Based on: Union32
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
@@ -481,17 +396,17 @@ Based on: Union39
     0..* OutpatientConsultationPerformed
 
 EntryElement: FacetoFaceEncounterDuringMeasurementPeriodUnion
-Based on: Union39
+Based on: Union32
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
 
-EntryElement: Union40
+EntryElement: Union33
 
 EntryElement: FaceToFaceEncounter0Union
-Based on: Union40
+Based on: Union33
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* NursingFacilityVisitPerformed
     0..* OfficeVisit1Performed
@@ -499,26 +414,43 @@ Based on: Union40
     0..* OutpatientConsultationPerformed
 
 EntryElement: FacetoFaceEncounterDuringMeasurementPeriod0Union
-Based on: Union40
+Based on: Union33
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* NursingFacilityVisitPerformed
     0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
     0..* OutpatientConsultationPerformed
 
-EntryElement: Union41
+EntryElement: Union34
 
 EntryElement: FaceToFaceEncounter1Union
-Based on: Union41
+Based on: Union34
+    0..* BehavioralNeuropsychAssessmentPerformed
+    0..* CareServicesInLongTermResidentialFacilityPerformed
+    0..* HomeHealthcareServicesPerformed
+    0..* NursingFacilityVisitPerformed
+    0..* OccupationalTherapyEvaluationPerformed
     0..* OfficeVisit1Performed
-    0..* OphthalmologicalServicesPerformed
-    0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
-    0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
-    0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
-    0..* PreventiveCareEstablishedOfficeVisit0To17Performed
+    0..* OutpatientConsultationPerformed
+    0..* PsychVisitDiagnosticEvaluationPerformed
+    0..* PsychVisitPsychotherapyPerformed
 
 EntryElement: FacetoFaceEncounterDuringMeasurementPeriod1Union
-Based on: Union41
+Based on: Union34
+    0..* BehavioralNeuropsychAssessmentPerformed
+    0..* CareServicesInLongTermResidentialFacilityPerformed
+    0..* HomeHealthcareServicesPerformed
+    0..* NursingFacilityVisitPerformed
+    0..* OccupationalTherapyEvaluationPerformed
+    0..* OfficeVisit1Performed
+    0..* OutpatientConsultationPerformed
+    0..* PsychVisitDiagnosticEvaluationPerformed
+    0..* PsychVisitPsychotherapyPerformed
+
+EntryElement: Union35
+
+EntryElement: FaceToFaceEncounter2Union
+Based on: Union35
     0..* OfficeVisit1Performed
     0..* OphthalmologicalServicesPerformed
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
@@ -526,122 +458,93 @@ Based on: Union41
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
 
-EntryElement: Union42
-
-EntryElement: FaceToFaceEncounter2Union
-Based on: Union42
-    0..* BehavioralNeuropsychAssessmentPerformed
-    0..* CareServicesInLongTermResidentialFacilityPerformed
-    0..* HomeHealthcareServicesPerformed
-    0..* NursingFacilityVisitPerformed
-    0..* OccupationalTherapyEvaluationPerformed
-    0..* OfficeVisit1Performed
-    0..* OutpatientConsultationPerformed
-    0..* PsychVisitDiagnosticEvaluationPerformed
-    0..* PsychVisitPsychotherapyPerformed
-
 EntryElement: FacetoFaceEncounterDuringMeasurementPeriod2Union
-Based on: Union42
-    0..* BehavioralNeuropsychAssessmentPerformed
-    0..* CareServicesInLongTermResidentialFacilityPerformed
-    0..* HomeHealthcareServicesPerformed
-    0..* NursingFacilityVisitPerformed
-    0..* OccupationalTherapyEvaluationPerformed
+Based on: Union35
     0..* OfficeVisit1Performed
-    0..* OutpatientConsultationPerformed
-    0..* PsychVisitDiagnosticEvaluationPerformed
-    0..* PsychVisitPsychotherapyPerformed
+    0..* OphthalmologicalServicesPerformed
+    0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
+    0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
+    0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
+    0..* PreventiveCareEstablishedOfficeVisit0To17Performed
 
-EntryElement: Union43
+EntryElement: Union36
 
 EntryElement: HivTestUnion
-Based on: Union43
+Based on: Union36
     0..* HumanImmunodeficiencyVirusHivLaboratoryTestCodesAbAndAgPerformed
 
 EntryElement: HivTestPerformedUnion
-Based on: Union43
+Based on: Union36
     0..* HumanImmunodeficiencyVirusHivLaboratoryTestCodesAbAndAgPerformed
 
-EntryElement: Union44
-
-EntryElement: HeartProcedureUnion
-Based on: Union44
-    0..* CoronaryArteryBypassGraftPerformed
-    0..* PercutaneousCoronaryInterventionsPerformed
-
-EntryElement: HeartProceduresUnion
-Based on: Union44
-    0..* CoronaryArteryBypassGraftPerformed
-    0..* PercutaneousCoronaryInterventionsPerformed
-
-EntryElement: Union45
+EntryElement: Union37
 
 EntryElement: HepBConditionsUnion
-Based on: Union45
+Based on: Union37
     0..* AnaphylacticReactionToCommonBakersYeastDiagnosis
     0..* AntiHepatitisBVirusSurfaceAbPerformed
     0..* HepatitisBDiagnosis
 
 EntryElement: HepatitisBNumeratorInclusionConditionsUnion
-Based on: Union45
+Based on: Union37
     0..* AnaphylacticReactionToCommonBakersYeastDiagnosis
     0..* AntiHepatitisBVirusSurfaceAbPerformed
     0..* HepatitisBDiagnosis
 
-EntryElement: Union46
+EntryElement: Union38
 
 EntryElement: HepatitisAConditionsUnion
-Based on: Union46
+Based on: Union38
     0..* AnaphylacticReactionToHepatitisAVaccineDiagnosis
     0..* AntiHepatitisAIgGAntigenTestPerformed
     0..* HepatitisADiagnosis
 
 EntryElement: HepatitisANumeratorInclusionConditionsUnion
-Based on: Union46
+Based on: Union38
     0..* AnaphylacticReactionToHepatitisAVaccineDiagnosis
     0..* AntiHepatitisAIgGAntigenTestPerformed
     0..* HepatitisADiagnosis
 
-EntryElement: Union47
+EntryElement: Union39
 
 EntryElement: HepatitisAVaccinationUnion
-Based on: Union47
+Based on: Union39
     0..* HepatitisAVaccineAdministered
     0..* HepatitisAVaccineAdministeredPerformed
 
 EntryElement: OneHepatitisAVaccinationsUnion
-Based on: Union47
+Based on: Union39
     0..* HepatitisAVaccineAdministered
     0..* HepatitisAVaccineAdministeredPerformed
 
-EntryElement: Union48
+EntryElement: Union40
 
 EntryElement: HepatitisBImmunizationsorProceduresUnion
-Based on: Union48
+Based on: Union40
     0..* HepatitisBVaccineAdministered
     0..* HepatitisBVaccineAdministeredPerformed
 
 EntryElement: HepatitisBVaccinationUnion
-Based on: Union48
+Based on: Union40
     0..* HepatitisBVaccineAdministered
     0..* HepatitisBVaccineAdministeredPerformed
 
-EntryElement: Union49
+EntryElement: Union41
 
 EntryElement: HibImmunizationsorProceduresUnion
-Based on: Union49
+Based on: Union41
     0..* HaemophilusInfluenzaeTypeBHiBVaccineAdministered
     0..* HaemophilusInfluenzaeTypeBHiBVaccineAdministeredPerformed
 
 EntryElement: HibVaccinationUnion
-Based on: Union49
+Based on: Union41
     0..* HaemophilusInfluenzaeTypeBHiBVaccineAdministered
     0..* HaemophilusInfluenzaeTypeBHiBVaccineAdministeredPerformed
 
-EntryElement: Union50
+EntryElement: Union42
 
 EntryElement: HistoryofAscvdDiagnosisorProcedureUnion
-Based on: Union50
+Based on: Union42
     0..* MyocardialInfarctionDiagnosis
     0..* CerebrovascularDiseaseStrokeTiaDiagnosis
     0..* AtherosclerosisAndPeripheralArterialDiseaseDiagnosis
@@ -651,47 +554,47 @@ Based on: Union50
     0..* CabgSurgeriesPerformed
     0..* CarotidInterventionPerformed
 
-EntryElement: Union51
+EntryElement: Union43
 
 EntryElement: HistoryofClinicalAscvdDiagnosesUnion
-Based on: Union51
+Based on: Union43
     0..* AtherosclerosisAndPeripheralArterialDiseaseDiagnosis
     0..* CerebrovascularDiseaseStrokeTiaDiagnosis
     0..* IschemicHeartDiseaseOrCoronaryOcclusionRuptureOrThrombosisDiagnosis
     0..* MyocardialInfarctionDiagnosis
     0..* StableAndUnstableAnginaDiagnosis
 
-EntryElement: Union52
+EntryElement: Union44
 
 EntryElement: HistoryofClinicalAscvdProceduresUnion
-Based on: Union52
+Based on: Union44
     0..* CabgSurgeriesPerformed
     0..* CarotidInterventionPerformed
     0..* PciPerformed
 
-EntryElement: Union53
+EntryElement: Union45
 
 EntryElement: HistoryofUterineSurgeryDiagnosisUnion
-Based on: Union53
+Based on: Union45
     0..* CornualEctopicPregnancyDiagnosis
     0..* PerforationOfUterusDiagnosis
     0..* UterineRuptureDiagnosis
     0..* UterineWindowDiagnosis
 
-EntryElement: Union54
+EntryElement: Union46
 
 EntryElement: HistoryofUterineSurgeryProcedureUnion
-Based on: Union54
+Based on: Union46
     0..* ClassicalCesareanBirthPerformed
     0..* MetroplastyPerformed
     0..* MyomectomyPerformed
     0..* TransabdominalCerclagePerformed
     0..* UterineHornPerformed
 
-EntryElement: Union55
+EntryElement: Union47
 
 EntryElement: HypertensiveFollowupInterventionsNotOrderedUnion
-Based on: Union55
+Based on: Union47
     0..* DietaryRecommendationsOrder
     0..* LifestyleRecommendationOrder
     0..* ModerationOfEtohConsumptionRecommendationOrder
@@ -699,34 +602,20 @@ Based on: Union55
     0..* ReferralToAlternativeProviderPrimaryCareProviderOrder
     0..* WeightReductionRecommendedOrder
 
-EntryElement: Union56
+EntryElement: Union48
 
 EntryElement: HypertensiveInterventionsUnion
-Based on: Union56
+Based on: Union48
     0..* DietaryRecommendationsOrder
     0..* LifestyleRecommendationOrder
     0..* ModerationOfEtohConsumptionRecommendationOrder
     0..* PhysicalActivityRecommendationOrder
     0..* WeightReductionRecommendedOrder
 
-EntryElement: Union57
-
-EntryElement: InclusiveTreatmentsUnion
-Based on: Union57
-    0..* BhOutpatientPsychotherapyPerformed
-    0..* BhElectroconvulsiveTherapyOrder
-    0..* BhElectroconvulsiveTherapyPerformed
-    0..* BhCounselingForDepressionOrder
-    0..* BhCounselingForDepressionPerformed
-    0..* BhAntidepressantMedicationActive
-    0..* BhAntidepressantMedicationOrder
-    0..* BhMoodStabilizerMedicationActive
-    0..* BhMoodStabilizerMedicationOrder
-
-EntryElement: Union58
+EntryElement: Union49
 
 EntryElement: IndependentRiskDiagnosisUnion
-Based on: Union58
+Based on: Union49
     0..* AnkylosingSpondylitisDiagnosis
     0..* CushingsSyndromeDiagnosis
     0..* EhlersDanlosSyndromeDiagnosis
@@ -739,7 +628,7 @@ Based on: Union58
     0..* Type1DiabetesDiagnosis
 
 EntryElement: IndependentRiskFactorsApplicableAnyTimeUnion
-Based on: Union58
+Based on: Union49
     0..* AnkylosingSpondylitisDiagnosis
     0..* CushingsSyndromeDiagnosis
     0..* EhlersDanlosSyndromeDiagnosis
@@ -751,88 +640,45 @@ Based on: Union58
     0..* PsoriaticArthritisDiagnosis
     0..* Type1DiabetesDiagnosis
 
-EntryElement: Union59
+EntryElement: Union50
 
 EntryElement: IndependentRiskFactorsBeforeMeasurementPeriodUnion
-Based on: Union59
+Based on: Union50
     0..* AromataseInhibitorsActive
     0..* AromataseInhibitorsOrder
     0..* GastricBypassSurgeryPerformed
     0..* TenYearProbabilityOfAllMajorOsteoporosisRelatedFracturePerformed
 
-EntryElement: Union60
-
-EntryElement: IndexBehavioralHealthOutpatientEncounterBeforeTreatmentorPsychotherapyUnion
-Based on: Union60
-    0..* BhOutpatientPsychotherapyPerformed
-    0..* BhOutpatientEncounterPerformed
-    0..* BhElectroconvulsiveTherapyOrder
-    0..* BhElectroconvulsiveTherapyPerformed
-    0..* BhCounselingForDepressionOrder
-    0..* BhCounselingForDepressionPerformed
-    0..* BhAntidepressantMedicationActive
-    0..* BhAntidepressantMedicationOrder
-    0..* BhMoodStabilizerMedicationActive
-    0..* BhMoodStabilizerMedicationOrder
-
-EntryElement: QualifyingTreatmentsUnion
-Based on: Union60
-    0..* BhOutpatientPsychotherapyPerformed
-    0..* BhOutpatientEncounterPerformed
-    0..* BhElectroconvulsiveTherapyOrder
-    0..* BhElectroconvulsiveTherapyPerformed
-    0..* BhCounselingForDepressionOrder
-    0..* BhCounselingForDepressionPerformed
-    0..* BhAntidepressantMedicationActive
-    0..* BhAntidepressantMedicationOrder
-    0..* BhMoodStabilizerMedicationActive
-    0..* BhMoodStabilizerMedicationOrder
-
-EntryElement: Union61
-
-EntryElement: IndexOutpatientEncounterwithin180daysafterPriorEncounterDiagnosisorTreatmentUnion
-Based on: Union61
-    0..* BhOutpatientEncounterPerformed
-    0..* BhOutpatientPsychotherapyPerformed
-    0..* BhElectroconvulsiveTherapyOrder
-    0..* BhElectroconvulsiveTherapyPerformed
-    0..* BhCounselingForDepressionOrder
-    0..* BhCounselingForDepressionPerformed
-    0..* BhAntidepressantMedicationActive
-    0..* BhAntidepressantMedicationOrder
-    0..* BhMoodStabilizerMedicationActive
-    0..* BhMoodStabilizerMedicationOrder
-
-EntryElement: Union62
+EntryElement: Union51
 
 EntryElement: InfluenzaConditionsUnion
-Based on: Union62
+Based on: Union51
     0..* DisordersOfTheImmuneSystemDiagnosis
     0..* HivDiagnosis
     0..* MalignantNeoplasmOfLymphaticAndHematopoieticTissueDiagnosis
 
 EntryElement: InfluenzaNumeratorInclusionConditionsUnion
-Based on: Union62
+Based on: Union51
     0..* DisordersOfTheImmuneSystemDiagnosis
     0..* HivDiagnosis
     0..* MalignantNeoplasmOfLymphaticAndHematopoieticTissueDiagnosis
 
-EntryElement: Union63
+EntryElement: Union52
 
 EntryElement: InfluenzaImmunizationsorProceduresUnion
-Based on: Union63
+Based on: Union52
     0..* InfluenzaVaccine1Administered
     0..* InfluenzaVaccineAdministeredPerformed
 
 EntryElement: InfluenzaVaccinationUnion
-Based on: Union63
+Based on: Union52
     0..* InfluenzaVaccine1Administered
     0..* InfluenzaVaccineAdministeredPerformed
 
-EntryElement: Union64
+EntryElement: Union53
 
 EntryElement: InitialQualifyingEncounterDuringMeasurementPeriodUnion
-Based on: Union64
+Based on: Union53
     0..* AnnualWellnessVisit1Performed
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacilityPerformed
@@ -850,7 +696,7 @@ Based on: Union64
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
 
 EntryElement: QualifyingEncounter5Union
-Based on: Union64
+Based on: Union53
     0..* AnnualWellnessVisit1Performed
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacilityPerformed
@@ -867,100 +713,84 @@ Based on: Union64
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
 
-EntryElement: Union65
+EntryElement: Union54
 
 EntryElement: InitiatedTreatmentUnion
-Based on: Union65
+Based on: Union54
     0..* AlcoholAndDrugDependenceTreatmentPerformed
     0..* PsychVisitPsychotherapyPerformed
 
-EntryElement: Union66
+EntryElement: Union55
 
 EntryElement: IsInLowRiskforVtEorOnAnticoagulantUnion
-Based on: Union66
+Based on: Union55
     0..* DirectThrombinInhibitorAdministered
     0..* GlycoproteinIIbIiIaInhibitorsAdministered
     0..* InrPerformed
     0..* UnfractionatedHeparinAdministered
 
-EntryElement: Union67
+EntryElement: Union56
 
 EntryElement: LabOrdersUnion
-Based on: Union67
+Based on: Union56
     0..* LabTestsDuringPregnancyOrder
     0..* LabTestsForSexuallyTransmittedInfectionsOrder
     0..* PapTestOrder
     0..* PapTestPerformed
 
 EntryElement: LaboratoryTestsIdentifyingSexualActivityButNotPregnancyUnion
-Based on: Union67
+Based on: Union56
     0..* LabTestsDuringPregnancyOrder
     0..* LabTestsForSexuallyTransmittedInfectionsOrder
     0..* PapTestOrder
     0..* PapTestPerformed
 
-EntryElement: Union68
-
-EntryElement: LeftLowerAmputationUnion
-Based on: Union68
-    0..* LeftUnilateralAmputationAboveOrBelowKneeDiagnosis
-    0..* LeftUnilateralAmputationProcedureAboveOrBelowKneePerformed
-    0..* UnilateralAmputationBelowOrAboveKneeUnspecifiedLateralityDiagnosis
-    0..* UnilateralAmputationProcedureBelowOrAboveKneeUnspecifiedLateralityPerformed
-
-EntryElement: LeftLowerExtremityAmputationUnion
-Based on: Union68
-    0..* LeftUnilateralAmputationAboveOrBelowKneeDiagnosis
-    0..* LeftUnilateralAmputationProcedureAboveOrBelowKneePerformed
-    0..* UnilateralAmputationBelowOrAboveKneeUnspecifiedLateralityDiagnosis
-    0..* UnilateralAmputationProcedureBelowOrAboveKneeUnspecifiedLateralityPerformed
-
-EntryElement: Union69
+EntryElement: Union57
 
 EntryElement: LeftMastectomyUnion
-Based on: Union69
+Based on: Union57
     0..* StatusPostLeftMastectomyDiagnosis
     0..* UnilateralMastectomyUnspecifiedLateralityDiagnosis
 
-EntryElement: Union70
+EntryElement: Union58
 
 EntryElement: LowRiskforVtEorAnticoagulantAdministeredUnion
-Based on: Union70
+Based on: Union58
     0..* InrPerformed
     0..* UnfractionatedHeparinAdministered
     0..* DirectThrombinInhibitorAdministered
     0..* GlycoproteinIIbIiIaInhibitorsAdministered
 
-EntryElement: Union71
+EntryElement: Union59
 
 EntryElement: MmrConditionsUnion
-Based on: Union71
+Based on: Union59
     0..* DisordersOfTheImmuneSystemDiagnosis
     0..* HivDiagnosis
     0..* MalignantNeoplasmOfLymphaticAndHematopoieticTissueDiagnosis
 
 EntryElement: MmrNumeratorInclusionConditionsUnion
-Based on: Union71
+Based on: Union59
     0..* DisordersOfTheImmuneSystemDiagnosis
     0..* HivDiagnosis
     0..* MalignantNeoplasmOfLymphaticAndHematopoieticTissueDiagnosis
 
-EntryElement: Union72
+EntryElement: Union60
 
 EntryElement: MmrVaccinationUnion
-Based on: Union72
+Based on: Union60
     0..* MeaslesMumpsAndRubellaMmrVaccineAdministered
     0..* MeaslesMumpsAndRubellaMmrVaccineAdministeredPerformed
 
 EntryElement: OneMmrVaccinationUnion
-Based on: Union72
+Based on: Union60
     0..* MeaslesMumpsAndRubellaMmrVaccineAdministered
     0..* MeaslesMumpsAndRubellaMmrVaccineAdministeredPerformed
 
-EntryElement: Union73
+EntryElement: Union61
 
 EntryElement: MajorDepressiveDisorderEncounterUnion
-Based on: Union73
+Based on: Union61
     0..* GroupPsychotherapyPerformed
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
@@ -970,7 +800,7 @@ Based on: Union73
     0..* PsychoanalysisPerformed
 
 EntryElement: ValidEncounter0Union
-Based on: Union73
+Based on: Union61
     0..* GroupPsychotherapyPerformed
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
@@ -979,10 +809,10 @@ Based on: Union73
     0..* PsychVisitPsychotherapyPerformed
     0..* PsychoanalysisPerformed
 
-EntryElement: Union74
+EntryElement: Union62
 
 EntryElement: MajorDepressiveDisorderEncounter0Union
-Based on: Union74
+Based on: Union62
     0..* EmergencyDepartmentVisitPerformed
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
@@ -991,7 +821,7 @@ Based on: Union74
     0..* PsychoanalysisPerformed
 
 EntryElement: ValidEncounter9Union
-Based on: Union74
+Based on: Union62
     0..* EmergencyDepartmentVisitPerformed
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
@@ -999,51 +829,51 @@ Based on: Union74
     0..* PsychVisitPsychotherapyPerformed
     0..* PsychoanalysisPerformed
 
-EntryElement: Union75
+EntryElement: Union63
 
 EntryElement: MeaslesUnion
-Based on: Union75
+Based on: Union63
     0..* MeaslesDiagnosis
     0..* MeaslesAntibodyTestIgGAntibodyTiterPerformed
     0..* MeaslesAntibodyTestIgGAntibodyPresencePerformed
 
 EntryElement: MeaslesIndicatorsUnion
-Based on: Union75
+Based on: Union63
     0..* MeaslesDiagnosis
     0..* MeaslesAntibodyTestIgGAntibodyTiterPerformed
     0..* MeaslesAntibodyTestIgGAntibodyPresencePerformed
 
-EntryElement: Union76
+EntryElement: Union64
 
 EntryElement: MeasurePopulationExclusionsUnion
-Based on: Union76
+Based on: Union64
     0..* EmergencyDepartmentVisitPerformed
     0..* EncounterInpatientPerformed
 
-EntryElement: Union77
+EntryElement: Union65
 
 EntryElement: MedicalInductionMedicationUnion
-Based on: Union77
+Based on: Union65
     0..* DinoprostoneAdministered
     0..* OxytocinAdministered
 
-EntryElement: Union78
+EntryElement: Union66
 
 EntryElement: MedicalInductionProcedureUnion
-Based on: Union78
+Based on: Union66
     0..* ArtificialRuptureOfMembranesPerformed
     0..* MedicalInductionOfLaborPerformed
 
-EntryElement: Union79
+EntryElement: Union67
 
 EntryElement: MedicalInductionWhileNotInLaborUnion
-Based on: Union79
+Based on: Union67
     0..* LaborPerformed
 
-EntryElement: Union80
+EntryElement: Union68
 
 EntryElement: MedicationListUnion
-Based on: Union80
+Based on: Union68
     0..* AcetaminophenButalbitalOrder
     0..* AcetaminophenButalbitalCaffeineOrder
     0..* AcetaminophenButalbitalCaffeineCodeineOrder
@@ -1153,57 +983,57 @@ Based on: Union80
     0..* TrimipramineOrder
     0..* TriprolidineOrder
 
-EntryElement: Union81
+EntryElement: Union69
 
 EntryElement: MedicationOralFactorXaInhibitorAdministeredonDayoforDayAfterAdmissionorProcedureUnion
-Based on: Union81
+Based on: Union69
 
 EntryElement: VteProphylaxisReceivedonDayoforDayAfterAdmissionorProcedureUnion
-Based on: Union81
+Based on: Union69
 
-EntryElement: Union82
+EntryElement: Union70
 
 EntryElement: MedicationOralFactorXaInhibitorAdministeredonDayoforDayAfterFirstIcuStayorProcedureUnion
-Based on: Union82
+Based on: Union70
     0..* GeneralOrNeuraxialAnesthesiaPerformed
     0..* OralFactorXaInhibitorForVteProphylaxisOrVteTreatmentAdministered
 
-EntryElement: Union83
+EntryElement: Union71
 
 EntryElement: ModerateorSevereLvsdFindingsUnion
-Based on: Union83
+Based on: Union71
     0..* EjectionFractionPerformed
     0..* LeftVentricularSystolicDysfunctionDiagnosis
     0..* ModerateOrSevereLvsdDiagnosis
 
-EntryElement: Union84
+EntryElement: Union72
 
 EntryElement: MumpsUnion
-Based on: Union84
+Based on: Union72
     0..* MumpsDiagnosis
     0..* MumpsAntibodyTestIgGAntibodyTiterPerformed
     0..* MumpsAntibodyTestIgGAntibodyPresencePerformed
 
 EntryElement: MumpsIndicatorsUnion
-Based on: Union84
+Based on: Union72
     0..* MumpsDiagnosis
     0..* MumpsAntibodyTestIgGAntibodyTiterPerformed
     0..* MumpsAntibodyTestIgGAntibodyPresencePerformed
 
-EntryElement: Union85
+EntryElement: Union73
 
 EntryElement: NephropathyDiagnosesUnion
-Based on: Union85
+Based on: Union73
     0..* DiabeticNephropathyDiagnosis
     0..* GlomerulonephritisAndNephroticSyndromeDiagnosis
     0..* HypertensiveChronicKidneyDiseaseDiagnosis
     0..* KidneyFailureDiagnosis
     0..* ProteinuriaDiagnosis
 
-EntryElement: Union86
+EntryElement: Union74
 
 EntryElement: NephropathyScreeningsUnion
-Based on: Union86
+Based on: Union74
     0..* EsrdMonthlyOutpatientServicesPerformed
     0..* UrineProteinTestsPerformed
     0..* OtherServicesRelatedToDialysisPerformed
@@ -1212,40 +1042,40 @@ Based on: Union86
     0..* VascularAccessForDialysisPerformed
     0..* DialysisServicesPerformed
 
-EntryElement: Union87
+EntryElement: Union75
 
 EntryElement: NoAntithromboticOrderedUnion
-Based on: Union87
+Based on: Union75
     0..* AntithromboticTherapyAdministered
     0..* AntithromboticTherapyDischarge
     0..* AntithromboticTherapyOrder
 
-EntryElement: Union88
+EntryElement: Union76
 
 EntryElement: NoBloodPressureScreenUnion
-Based on: Union88
+Based on: Union76
 
-EntryElement: Union89
+EntryElement: Union77
 
 EntryElement: NoRehabProcedureUnion
-Based on: Union89
+Based on: Union77
     0..* RehabilitationAssessmentPerformed
     0..* RehabilitationTherapyPerformed
 
 EntryElement: NoRehabilitationAssessmentorTherapyUnion
-Based on: Union89
+Based on: Union77
     0..* RehabilitationAssessmentPerformed
     0..* RehabilitationTherapyPerformed
 
 EntryElement: RehabilitationAssessmentorTherapyUnion
-Based on: Union89
+Based on: Union77
     0..* RehabilitationAssessmentPerformed
     0..* RehabilitationTherapyPerformed
 
-EntryElement: Union90
+EntryElement: Union78
 
 EntryElement: NoVteProphylaxisUnion
-Based on: Union90
+Based on: Union78
     0..* IntermittentPneumaticCompressionDevicesIpcApplied
     0..* IntermittentPneumaticCompressionDevicesIpcOrder
     0..* VenousFootPumpsVfpApplied
@@ -1262,7 +1092,7 @@ Based on: Union90
     0..* WarfarinOrder
 
 EntryElement: NoVteProphylaxisDuetoMedicalReasonUnion
-Based on: Union90
+Based on: Union78
     0..* IntermittentPneumaticCompressionDevicesIpcApplied
     0..* IntermittentPneumaticCompressionDevicesIpcOrder
     0..* VenousFootPumpsVfpApplied
@@ -1279,7 +1109,7 @@ Based on: Union90
     0..* WarfarinOrder
 
 EntryElement: NoVteProphylaxisMedicationorDeviceDuetoPatientRefusalUnion
-Based on: Union90
+Based on: Union78
     0..* IntermittentPneumaticCompressionDevicesIpcApplied
     0..* IntermittentPneumaticCompressionDevicesIpcOrder
     0..* VenousFootPumpsVfpApplied
@@ -1295,10 +1125,10 @@ Based on: Union90
     0..* WarfarinAdministered
     0..* WarfarinOrder
 
-EntryElement: Union91
+EntryElement: Union79
 
 EntryElement: NoVteProphylaxisDeviceAppliedorOrderedUnion
-Based on: Union91
+Based on: Union79
     0..* GraduatedCompressionStockingsGcsApplied
     0..* GraduatedCompressionStockingsGcsOrder
     0..* IntermittentPneumaticCompressionDevicesIpcApplied
@@ -1306,10 +1136,10 @@ Based on: Union91
     0..* VenousFootPumpsVfpApplied
     0..* VenousFootPumpsVfpOrder
 
-EntryElement: Union92
+EntryElement: Union80
 
 EntryElement: NoVteProphylaxisDuetoPatientRefusalUnion
-Based on: Union92
+Based on: Union80
     0..* LowDoseUnfractionatedHeparinForVteProphylaxisAdministered
     0..* LowDoseUnfractionatedHeparinForVteProphylaxisOrder
     0..* LowMolecularWeightHeparinForVteProphylaxisAdministered
@@ -1325,10 +1155,10 @@ Based on: Union92
     0..* GraduatedCompressionStockingsGcsApplied
     0..* GraduatedCompressionStockingsGcsOrder
 
-EntryElement: Union93
+EntryElement: Union81
 
 EntryElement: NoVteProphylaxisMedicationAdministeredorOrderedUnion
-Based on: Union93
+Based on: Union81
     0..* InjectableFactorXaInhibitorForVteProphylaxisAdministered
     0..* InjectableFactorXaInhibitorForVteProphylaxisOrder
     0..* LowDoseUnfractionatedHeparinForVteProphylaxisAdministered
@@ -1338,18 +1168,10 @@ Based on: Union93
     0..* WarfarinAdministered
     0..* WarfarinOrder
 
-EntryElement: Union94
+EntryElement: Union82
 
-EntryElement: Numerator0Union
-Based on: Union94
-    0..* NonElectiveInpatientEncounterPerformed
-    0..* RehabilitationAssessmentPerformed
-    0..* RehabilitationTherapyPerformed
-
-EntryElement: Union95
-
-EntryElement: Numerator1Union
-Based on: Union95
+EntryElement: NumeratorUnion
+Based on: Union82
     0..* InrPerformed
     0..* UnfractionatedHeparinAdministered
     0..* DirectThrombinInhibitorAdministered
@@ -1369,10 +1191,10 @@ Based on: Union95
     0..* GraduatedCompressionStockingsGcsApplied
     0..* GraduatedCompressionStockingsGcsOrder
 
-EntryElement: Union96
+EntryElement: Union83
 
-EntryElement: Numerator2Union
-Based on: Union96
+EntryElement: Numerator0Union
+Based on: Union83
     0..* AtrialFibrillationFlutterDiagnosis
     0..* VenousThromboembolismDiagnosis
     0..* InrPerformed
@@ -1396,16 +1218,24 @@ Based on: Union96
     0..* GraduatedCompressionStockingsGcsApplied
     0..* GraduatedCompressionStockingsGcsOrder
 
-EntryElement: Union97
+EntryElement: Union84
+
+EntryElement: Numerator2Union
+Based on: Union84
+    0..* NonElectiveInpatientEncounterPerformed
+    0..* RehabilitationAssessmentPerformed
+    0..* RehabilitationTherapyPerformed
+
+EntryElement: Union85
 
 EntryElement: Numerator3Union
-Based on: Union97
+Based on: Union85
     0..* EncounterInpatientPerformed
 
-EntryElement: Union98
+EntryElement: Union86
 
 EntryElement: Numerator4Union
-Based on: Union98
+Based on: Union86
     0..* ActivationOfEmergencyMedicalSystemEducationCommunicationFromProviderToPatient
     0..* NonElectiveInpatientEncounterPerformed
     0..* InstructionsForFollowUpAfterDischargeCommunicationFromProviderToPatient
@@ -1414,17 +1244,17 @@ Based on: Union98
     0..* WarningSignsAndSymptomsEducationCommunicationFromProviderToPatient
     0..* WrittenInformationGivenCommunicationFromProviderToPatient
 
-EntryElement: Union99
+EntryElement: Union87
 
 EntryElement: Numerator5Union
-Based on: Union99
+Based on: Union87
     0..* EncounterInpatientPerformed
     0..* LaborPerformed
 
-EntryElement: Union100
+EntryElement: Union88
 
 EntryElement: OfficeBasedEncounterUnion
-Based on: Union100
+Based on: Union88
     0..* HealthBehavioralAssessmentIndividualPerformed
     0..* HealthAndBehavioralAssessmentInitialPerformed
     0..* HealthAndBehavioralAssessmentReassessmentPerformed
@@ -1438,7 +1268,7 @@ Based on: Union100
     0..* SpeechAndHearingEvaluationPerformed
 
 EntryElement: OfficeBasedVisitDuringMeasurementPeriodUnion
-Based on: Union100
+Based on: Union88
     0..* HealthBehavioralAssessmentIndividualPerformed
     0..* HealthAndBehavioralAssessmentInitialPerformed
     0..* HealthAndBehavioralAssessmentReassessmentPerformed
@@ -1451,73 +1281,73 @@ Based on: Union100
     0..* PsychoanalysisPerformed
     0..* SpeechAndHearingEvaluationPerformed
 
-EntryElement: Union101
+EntryElement: Union89
 
 EntryElement: PalliativeCareOrderorEncounterUnion
-Based on: Union101
+Based on: Union89
     0..* PalliativeCareEncounterPerformed
     0..* PalliativeCareOrder
 
-EntryElement: Union102
+EntryElement: Union90
 
 EntryElement: PneumococcalConjugateImmunizationsorProceduresUnion
-Based on: Union102
+Based on: Union90
     0..* PneumococcalConjugateVaccineAdministered
     0..* PneumococcalConjugateVaccineAdministeredPerformed
 
 EntryElement: PneumococcalVaccinationUnion
-Based on: Union102
+Based on: Union90
     0..* PneumococcalConjugateVaccineAdministered
     0..* PneumococcalConjugateVaccineAdministeredPerformed
 
-EntryElement: Union103
+EntryElement: Union91
 
 EntryElement: PolioConditionsUnion
-Based on: Union103
+Based on: Union91
 
 EntryElement: PolioNumeratorInclusionConditionsUnion
-Based on: Union103
+Based on: Union91
 
-EntryElement: Union104
+EntryElement: Union92
 
 EntryElement: PolioImmunizationsorProceduresUnion
-Based on: Union104
+Based on: Union92
     0..* InactivatedPolioVaccineIpvAdministered
     0..* InactivatedPolioVaccineIpvAdministeredPerformed
 
 EntryElement: PolioVaccinationUnion
-Based on: Union104
+Based on: Union92
     0..* InactivatedPolioVaccineIpvAdministered
     0..* InactivatedPolioVaccineIpvAdministeredPerformed
 
-EntryElement: Union105
+EntryElement: Union93
 
 EntryElement: PregnancyEsrdDiagnosisUnion
-Based on: Union105
+Based on: Union93
     0..* ChronicKidneyDiseaseStage5Diagnosis
     0..* EndStageRenalDiseaseDiagnosis
     0..* KidneyTransplantRecipientDiagnosis
     0..* PregnancyDiagnosis
 
 EntryElement: PregnancyOrRenalDiagnosisExclusionsUnion
-Based on: Union105
+Based on: Union93
     0..* ChronicKidneyDiseaseStage5Diagnosis
     0..* EndStageRenalDiseaseDiagnosis
     0..* KidneyTransplantRecipientDiagnosis
     0..* PregnancyDiagnosis
 
-EntryElement: Union106
+EntryElement: Union94
 
 EntryElement: PregnancyTestExclusionUnion
-Based on: Union106
+Based on: Union94
     0..* IsotretinoinOrder
     0..* PregnancyTestOrder
     0..* XRayStudyAllInclusiveOrder
 
-EntryElement: Union107
+EntryElement: Union95
 
 EntryElement: PreventiveEncounterUnion
-Based on: Union107
+Based on: Union95
     0..* AnnualWellnessVisit1Performed
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesGroupCounselingPerformed
@@ -1526,7 +1356,7 @@ Based on: Union107
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
 EntryElement: PreventiveVisitDuringMeasurementPeriodUnion
-Based on: Union107
+Based on: Union95
     0..* AnnualWellnessVisit1Performed
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesGroupCounselingPerformed
@@ -1534,34 +1364,34 @@ Based on: Union107
     0..* PreventiveCareServicesIndividualCounselingPerformed
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
-EntryElement: Union108
+EntryElement: Union96
 
 EntryElement: ProceduresForSexualActivityUnion
-Based on: Union108
+Based on: Union96
     0..* DeliveryLiveBirthsPerformed
     0..* ProceduresDuringPregnancyPerformed
     0..* ProceduresInvolvingContraceptiveDevicesPerformed
 
 EntryElement: ProceduresIdentifyingSexualActivityUnion
-Based on: Union108
+Based on: Union96
     0..* DeliveryLiveBirthsPerformed
     0..* ProceduresDuringPregnancyPerformed
     0..* ProceduresInvolvingContraceptiveDevicesPerformed
 
-EntryElement: Union109
+EntryElement: Union97
 
 EntryElement: QualifyingCadEncounterUnion
-Based on: Union109
+Based on: Union97
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
 
-EntryElement: Union110
+EntryElement: Union98
 
 EntryElement: QualifyingEncounterUnion
-Based on: Union110
+Based on: Union98
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
@@ -1570,7 +1400,7 @@ Based on: Union110
     0..* PatientProviderInteractionPerformed
 
 EntryElement: ValidEncounter1Union
-Based on: Union110
+Based on: Union98
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
     0..* NursingFacilityVisitPerformed
@@ -1578,10 +1408,10 @@ Based on: Union110
     0..* OutpatientConsultationPerformed
     0..* PatientProviderInteractionPerformed
 
-EntryElement: Union111
+EntryElement: Union99
 
 EntryElement: QualifyingEncounter0Union
-Based on: Union111
+Based on: Union99
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
@@ -1590,7 +1420,7 @@ Based on: Union111
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
 
 EntryElement: ValidEncounter2Union
-Based on: Union111
+Based on: Union99
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
@@ -1598,38 +1428,38 @@ Based on: Union111
     0..* PreventiveCareServicesIndividualCounselingPerformed
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
 
-EntryElement: Union112
+EntryElement: Union100
 
 EntryElement: QualifyingEncounter1Union
-Based on: Union112
+Based on: Union100
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
 
 EntryElement: QualifyingEncounters8Union
-Based on: Union112
+Based on: Union100
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
 
-EntryElement: Union113
+EntryElement: Union101
 
 EntryElement: QualifyingEncounter2Union
-Based on: Union113
+Based on: Union101
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
 
 EntryElement: ValidEncounter10Union
-Based on: Union113
+Based on: Union101
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
 
-EntryElement: Union114
+EntryElement: Union102
 
 EntryElement: QualifyingEncounter3Union
-Based on: Union114
+Based on: Union102
     0..* BehavioralNeuropsychAssessmentPerformed
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
@@ -1642,7 +1472,7 @@ Based on: Union114
     0..* PsychVisitPsychotherapyPerformed
 
 EntryElement: ValidEncounter11Union
-Based on: Union114
+Based on: Union102
     0..* BehavioralNeuropsychAssessmentPerformed
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* HomeHealthcareServicesPerformed
@@ -1654,10 +1484,10 @@ Based on: Union114
     0..* PsychVisitDiagnosticEvaluationPerformed
     0..* PsychVisitPsychotherapyPerformed
 
-EntryElement: Union115
+EntryElement: Union103
 
 EntryElement: QualifyingEncounter4Union
-Based on: Union115
+Based on: Union103
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
@@ -1665,17 +1495,17 @@ Based on: Union115
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
 EntryElement: ValidEncounter12Union
-Based on: Union115
+Based on: Union103
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesOtherPerformed
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
-EntryElement: Union116
+EntryElement: Union104
 
 EntryElement: QualifyingEncounter6Union
-Based on: Union116
+Based on: Union104
     0..* EmergencyDepartmentVisitPerformed
     0..* HospitalObservationCareInitialPerformed
     0..* OfficeVisit1Performed
@@ -1683,17 +1513,17 @@ Based on: Union116
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
 
 EntryElement: ValidEncounter13Union
-Based on: Union116
+Based on: Union104
     0..* EmergencyDepartmentVisitPerformed
     0..* HospitalObservationCareInitialPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
 
-EntryElement: Union117
+EntryElement: Union105
 
 EntryElement: QualifyingEncounter7Union
-Based on: Union117
+Based on: Union105
     0..* AnnualWellnessVisit1Performed
     0..* AudiologyVisitPerformed
     0..* CareServicesInLongTermResidentialFacilityPerformed
@@ -1707,7 +1537,7 @@ Based on: Union117
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
 EntryElement: ValidEncounter15Union
-Based on: Union117
+Based on: Union105
     0..* AnnualWellnessVisit1Performed
     0..* AudiologyVisitPerformed
     0..* CareServicesInLongTermResidentialFacilityPerformed
@@ -1720,10 +1550,10 @@ Based on: Union117
     0..* PreventiveCareServicesIndividualCounselingPerformed
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
-EntryElement: Union118
+EntryElement: Union106
 
 EntryElement: QualifyingEncountersUnion
-Based on: Union118
+Based on: Union106
     0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
@@ -1731,17 +1561,17 @@ Based on: Union118
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
 EntryElement: ValidEncounterUnion
-Based on: Union118
+Based on: Union106
     0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
-EntryElement: Union119
+EntryElement: Union107
 
 EntryElement: QualifyingEncounters0Union
-Based on: Union119
+Based on: Union107
     0..* DetoxificationVisitPerformed
     0..* DischargeServicesHospitalInpatientPerformed
     0..* DischargeServicesHospitalInpatientSameDayDischargePerformed
@@ -1751,7 +1581,7 @@ Based on: Union119
     0..* OfficeVisit1Performed
 
 EntryElement: ValidEncountersUnion
-Based on: Union119
+Based on: Union107
     0..* DetoxificationVisitPerformed
     0..* DischargeServicesHospitalInpatientPerformed
     0..* DischargeServicesHospitalInpatientSameDayDischargePerformed
@@ -1760,10 +1590,10 @@ Based on: Union119
     0..* HospitalObservationCareInitialPerformed
     0..* OfficeVisit1Performed
 
-EntryElement: Union120
+EntryElement: Union108
 
 EntryElement: QualifyingEncounters1Union
-Based on: Union120
+Based on: Union108
     0..* ClinicalOralEvaluationPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
@@ -1772,7 +1602,7 @@ Based on: Union120
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
 
 EntryElement: ValidEncounter3Union
-Based on: Union120
+Based on: Union108
     0..* ClinicalOralEvaluationPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
@@ -1780,18 +1610,18 @@ Based on: Union120
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
 
-EntryElement: Union121
+EntryElement: Union109
 
 EntryElement: QualifyingEncounters11Union
-Based on: Union121
+Based on: Union109
     0..* OfficeVisit1Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
     0..* PreventiveCareInitialOfficeVisit0To17Performed
 
-EntryElement: Union122
+EntryElement: Union110
 
 EntryElement: QualifyingEncounters12Union
-Based on: Union122
+Based on: Union110
     0..* AnnualWellnessVisit1Performed
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacility1Performed
@@ -1802,7 +1632,7 @@ Based on: Union122
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
 EntryElement: ValidEncounter14Union
-Based on: Union122
+Based on: Union110
     0..* AnnualWellnessVisit1Performed
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacility1Performed
@@ -1812,10 +1642,10 @@ Based on: Union122
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
-EntryElement: Union123
+EntryElement: Union111
 
 EntryElement: QualifyingEncounters2Union
-Based on: Union123
+Based on: Union111
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
@@ -1824,7 +1654,7 @@ Based on: Union123
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
 
 EntryElement: ValidEncounter4Union
-Based on: Union123
+Based on: Union111
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
@@ -1832,10 +1662,10 @@ Based on: Union123
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
 
-EntryElement: Union124
+EntryElement: Union112
 
 EntryElement: QualifyingEncounters3Union
-Based on: Union124
+Based on: Union112
     0..* AnnualWellnessVisit1Performed
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacilityPerformed
@@ -1847,7 +1677,7 @@ Based on: Union124
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
 EntryElement: ValidEncounter5Union
-Based on: Union124
+Based on: Union112
     0..* AnnualWellnessVisit1Performed
     0..* CareServicesInLongTermResidentialFacilityPerformed
     0..* DischargeServicesNursingFacilityPerformed
@@ -1858,10 +1688,10 @@ Based on: Union124
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
-EntryElement: Union125
+EntryElement: Union113
 
 EntryElement: QualifyingEncounters4Union
-Based on: Union125
+Based on: Union113
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
@@ -1870,7 +1700,7 @@ Based on: Union125
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
 
 EntryElement: ValidEncounter6Union
-Based on: Union125
+Based on: Union113
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareEstablishedOfficeVisit0To17Performed
@@ -1878,26 +1708,26 @@ Based on: Union125
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesInitialOfficeVisit0To17Performed
 
-EntryElement: Union126
+EntryElement: Union114
 
 EntryElement: QualifyingEncounters5Union
-Based on: Union126
+Based on: Union114
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
 EntryElement: ValidEncounter7Union
-Based on: Union126
+Based on: Union114
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
     0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
     0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
 
-EntryElement: Union127
+EntryElement: Union115
 
 EntryElement: QualifyingEncounters6Union
-Based on: Union127
+Based on: Union115
     0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
@@ -1909,7 +1739,7 @@ Based on: Union127
     0..* TelephoneManagementPerformed
 
 EntryElement: ValidEncounter8Union
-Based on: Union127
+Based on: Union115
     0..* AnnualWellnessVisit1Performed
     0..* HomeHealthcareServicesPerformed
     0..* OfficeVisit1Performed
@@ -1920,10 +1750,10 @@ Based on: Union127
     0..* TelephoneEvaluationPerformed
     0..* TelephoneManagementPerformed
 
-EntryElement: Union128
+EntryElement: Union116
 
 EntryElement: QualifyingEncounters7Union
-Based on: Union128
+Based on: Union116
     0..* AnnualWellnessVisitPerformed
     0..* OfficeVisitPerformed
     0..* OutpatientConsultation1Performed
@@ -1933,10 +1763,10 @@ Based on: Union128
     0..* PreventiveCareServicesIndividualCounselingPerformed
     0..* PreventiveCareServicesInitialOfficeVisit18AndUpPerformed
 
-EntryElement: Union129
+EntryElement: Union117
 
 EntryElement: QualifyingNumeratorEncounterUnion
-Based on: Union129
+Based on: Union117
     0..* BehavioralHealthFollowUpVisitPerformed
     0..* DischargeServicesObservationCarePerformed
     0..* HomeHealthcareServicesPerformed
@@ -1951,90 +1781,74 @@ Based on: Union129
     0..* PsychVisitPsychotherapyPerformed
     0..* PsychotherapyAndPharmacologicManagementPerformed
 
-EntryElement: Union130
+EntryElement: Union118
 
 EntryElement: RenalInterventionsUnion
-Based on: Union130
+Based on: Union118
     0..* DialysisEducationPerformed
     0..* OtherServicesRelatedToDialysisPerformed
 
-EntryElement: Union131
-
-EntryElement: RightLowerAmputationUnion
-Based on: Union131
-    0..* RightUnilateralAmputationAboveOrBelowKneeDiagnosis
-    0..* RightUnilateralAmputationProcedureAboveOrBelowKneePerformed
-    0..* UnilateralAmputationBelowOrAboveKneeUnspecifiedLateralityDiagnosis
-    0..* UnilateralAmputationProcedureBelowOrAboveKneeUnspecifiedLateralityPerformed
-
-EntryElement: RightLowerExtremityAmputationUnion
-Based on: Union131
-    0..* RightUnilateralAmputationAboveOrBelowKneeDiagnosis
-    0..* RightUnilateralAmputationProcedureAboveOrBelowKneePerformed
-    0..* UnilateralAmputationBelowOrAboveKneeUnspecifiedLateralityDiagnosis
-    0..* UnilateralAmputationProcedureBelowOrAboveKneeUnspecifiedLateralityPerformed
-
-EntryElement: Union132
+EntryElement: Union119
 
 EntryElement: RightMastectomyUnion
-Based on: Union132
+Based on: Union119
     0..* StatusPostRightMastectomyDiagnosis
     0..* UnilateralMastectomyUnspecifiedLateralityDiagnosis
 
-EntryElement: Union133
+EntryElement: Union120
 
 EntryElement: Rotavirus2DoseImmunizationsorProceduresUnion
-Based on: Union133
+Based on: Union120
 
 EntryElement: TwoDoseRotavirusUnion
-Based on: Union133
+Based on: Union120
 
-EntryElement: Union134
+EntryElement: Union121
 
 EntryElement: Rotavirus2or3DoseVaccinationsUnion
-Based on: Union134
+Based on: Union121
     0..* RotavirusVaccine3DoseScheduleAdministered
 
-EntryElement: Union135
+EntryElement: Union122
 
 EntryElement: Rotavirus3DoseImmunizationsorProceduresUnion
-Based on: Union135
+Based on: Union122
     0..* RotavirusVaccine3DoseScheduleAdministered
 
 EntryElement: ThreeDoseRotavirusUnion
-Based on: Union135
+Based on: Union122
     0..* RotavirusVaccine3DoseScheduleAdministered
 
-EntryElement: Union136
+EntryElement: Union123
 
 EntryElement: RotavirusConditionsUnion
-Based on: Union136
+Based on: Union123
     0..* IntussusceptionDiagnosis
     0..* SevereCombinedImmunodeficiencyDiagnosis
 
 EntryElement: RotavirusNumeratorInclusionConditionsUnion
-Based on: Union136
+Based on: Union123
     0..* IntussusceptionDiagnosis
     0..* SevereCombinedImmunodeficiencyDiagnosis
 
-EntryElement: Union137
+EntryElement: Union124
 
 EntryElement: RubellaUnion
-Based on: Union137
+Based on: Union124
     0..* RubellaDiagnosis
     0..* RubellaAntibodyTestIgGAntibodyTiterPerformed
     0..* RubellaAntibodyTestIgGAntibodyPresencePerformed
 
 EntryElement: RubellaIndicatorsUnion
-Based on: Union137
+Based on: Union124
     0..* RubellaDiagnosis
     0..* RubellaAntibodyTestIgGAntibodyTiterPerformed
     0..* RubellaAntibodyTestIgGAntibodyPresencePerformed
 
-EntryElement: Union138
+EntryElement: Union125
 
 EntryElement: ScipvteSelectedSurgeryUnion
-Based on: Union138
+Based on: Union125
     0..* GeneralSurgeryPerformed
     0..* GynecologicalSurgeryPerformed
     0..* HipFractureSurgeryPerformed
@@ -2043,61 +1857,48 @@ Based on: Union138
     0..* KneeReplacementSurgeryPerformed
     0..* UrologicalSurgeryPerformed
 
-EntryElement: Union139
+EntryElement: Union126
 
 EntryElement: SingleLiveBirthEncounterUnion
-Based on: Union139
+Based on: Union126
     0..* EncounterInpatientPerformed
     0..* SingleLiveBornNewbornBornInHospitalDiagnosis
 
-EntryElement: Union140
+EntryElement: Union127
 
 EntryElement: TelehealthEncounterUnion
-Based on: Union140
+Based on: Union127
     0..* TelehealthServicesPerformed
     0..* TelephoneManagementPerformed
 
-EntryElement: Union141
+EntryElement: Union128
 
 EntryElement: TelehealthServicesorTelephoneManagementUnion
-Based on: Union141
+Based on: Union128
     0..* AdhdMedicationsActive
     0..* AdhdMedicationsDispensed
     0..* TelehealthServicesPerformed
     0..* TelephoneManagementPerformed
 
-EntryElement: Union142
+EntryElement: Union129
 
 EntryElement: ThrombolyticTherapyMedicationorProceduresUnion
-Based on: Union142
+Based on: Union129
     0..* IntravenousOrIntraArterialThrombolyticTPaTherapyPerformed
     0..* ThrombolyticTPaTherapyAdministered
 
-EntryElement: Union143
+EntryElement: Union130
 
 EntryElement: TreatmentInitiationUnion
-Based on: Union143
+Based on: Union130
     0..* AlcoholAndDrugDependenceTreatmentPerformed
     0..* AlcoholAndDrugDependenceDiagnosis
     0..* PsychVisitPsychotherapyPerformed
 
-EntryElement: Union144
-
-EntryElement: TreatmentsUnion
-Based on: Union144
-    0..* BhAntidepressantMedicationActive
-    0..* BhAntidepressantMedicationOrder
-    0..* BhMoodStabilizerMedicationActive
-    0..* BhMoodStabilizerMedicationOrder
-    0..* BhElectroconvulsiveTherapyOrder
-    0..* BhElectroconvulsiveTherapyPerformed
-    0..* BhCounselingForDepressionOrder
-    0..* BhCounselingForDepressionPerformed
-
-EntryElement: Union145
+EntryElement: Union131
 
 EntryElement: VteProphylaxisReceivedonDayoforDayAfterFirstIcuStayorProcedureUnion
-Based on: Union145
+Based on: Union131
     0..* GeneralOrNeuraxialAnesthesiaPerformed
     0..* LowDoseUnfractionatedHeparinForVteProphylaxisAdministered
     0..* LowDoseUnfractionatedHeparinForVteProphylaxisOrder
@@ -2114,10 +1915,10 @@ Based on: Union145
     0..* GraduatedCompressionStockingsGcsApplied
     0..* GraduatedCompressionStockingsGcsOrder
 
-EntryElement: Union146
+EntryElement: Union132
 
 EntryElement: VteProphylaxisbyMedicationAdministeredorDeviceAppliedUnion
-Based on: Union146
+Based on: Union132
     0..* GraduatedCompressionStockingsGcsApplied
     0..* GraduatedCompressionStockingsGcsOrder
     0..* InjectableFactorXaInhibitorForVteProphylaxisAdministered
@@ -2133,10 +1934,10 @@ Based on: Union146
     0..* WarfarinAdministered
     0..* WarfarinOrder
 
-EntryElement: Union147
+EntryElement: Union133
 
 EntryElement: VaricellaZosterConditionsUnion
-Based on: Union147
+Based on: Union133
     0..* DisordersOfTheImmuneSystemDiagnosis
     0..* HivDiagnosis
     0..* MalignantNeoplasmOfLymphaticAndHematopoieticTissueDiagnosis
@@ -2145,7 +1946,7 @@ Based on: Union147
     0..* VaricellaZosterAntibodyTestIgGAntibodyTiterPerformed
 
 EntryElement: VaricellaZosterNumeratorInclusionConditionsUnion
-Based on: Union147
+Based on: Union133
     0..* DisordersOfTheImmuneSystemDiagnosis
     0..* HivDiagnosis
     0..* MalignantNeoplasmOfLymphaticAndHematopoieticTissueDiagnosis

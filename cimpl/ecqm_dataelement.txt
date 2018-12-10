@@ -250,14 +250,6 @@ Based on: AssessmentPerformed
 Description: " -- Subject constrained to the Activities of daily living score [HOOS]"
 Subject value is type ActivitiesOfDailyLivingScoreHoos
 
-EntryElement: AcuteMyocardialInfarctionDiagnosis
-Based on: Diagnosis
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Acute Myocardial Infarction valueset `(2.16.840.1.113883.3.464.1003.104.12.1001)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.104.12.1001/expansion
-    0..0   AuthorDatetime
-    0..0   AnatomicalLocationSite
-    0..0   Severity
-
 EntryElement: AcutePharyngitisDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ResultValue constrained to codes in the Acute Pharyngitis valueset `(2.16.840.1.113883.3.464.1003.102.12.1011)`"
@@ -701,20 +693,6 @@ Subject value is type AntibioticMedicationsForPharyngitis
     0..0   Reason
     0..0   NegationRationale
 
-EntryElement: AnticoagulantMedications
-Based on: Medication
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObjectTypeCode constrained to codes in the Anticoagulant Medications valueset `(2.16.840.1.113883.3.464.1003.196.12.1283)`. "
-ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.196.12.1283/expansion
-
-EntryElement: AnticoagulantMedicationsActive
-Based on: MedicationActive
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Anticoagulant Medications"
-Subject value is type AnticoagulantMedications
-    0..0   Dosage
-    0..0   Supply
-    0..0   Frequency
-    0..0   Route
-
 EntryElement: AnticoagulantTherapy
 Based on: Medication
 Description: "(Clinical Focus: This set of values contains medications that are prescribed for anticoagulant therapy at hospital discharge for patients following acute ischemic stroke.),(Data Element Scope: The intent of this data element is to identify patients who are prescribed anticoagulant therapy at discharge following acute ischemic stroke. Using the Quality Data Model, this particular element would map to the Medication category.),(Inclusion Criteria: Include oral and injectable drug forms. Include Warfarin, heparins and direct thrombin inhibitors.),(Exclusion Criteria: Exclude enoxaparin and heparin codes generally given for VTE prophylaxis.) -- ObjectTypeCode constrained to codes in the Anticoagulant Therapy valueset `(2.16.840.1.113883.3.117.1.7.1.200)`. "
@@ -893,20 +871,6 @@ Based on: MedicationOrder
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Aspirin / Caffeine / Orphenadrine"
 Subject value is type AspirinCaffeineOrphenadrine
 
-EntryElement: AspirinAndOtherAntiplatelets
-Based on: Medication
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObjectTypeCode constrained to codes in the Aspirin and Other Antiplatelets valueset `(2.16.840.1.113883.3.464.1003.196.12.1211)`. "
-ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.196.12.1211/expansion
-
-EntryElement: AspirinAndOtherAntiplateletsActive
-Based on: MedicationActive
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Aspirin and Other Antiplatelets"
-Subject value is type AspirinAndOtherAntiplatelets
-    0..0   Dosage
-    0..0   Supply
-    0..0   Frequency
-    0..0   Route
-
 EntryElement: AsthmaDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Asthma valueset `(2.16.840.1.113883.3.526.3.362)`"
@@ -1027,195 +991,6 @@ Subject value is type AverageNumberOfDrinksPerDrinkingDay
     0..0   Method
     0..0   Components
     0..0   RelatedTo
-
-EntryElement: BhAntidepressantMedication
-Based on: Medication
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- ObjectTypeCode constrained to codes in the BH Antidepressant Medication valueset `(2.16.840.1.113883.3.1257.1.972)`. "
-ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.1257.1.972/expansion
-
-EntryElement: BhAntidepressantMedicationActive
-Based on: MedicationActive
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- Subject constrained to the BH Antidepressant Medication"
-Subject value is type BhAntidepressantMedication
-    0..0   Dosage
-    0..0   Supply
-    0..0   Frequency
-    0..0   Route
-
-EntryElement: BhAntidepressantMedicationOrder
-Based on: MedicationOrder
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- Subject constrained to the BH Antidepressant Medication"
-Subject value is type BhAntidepressantMedication
-    0..0   ActiveDatetime
-    0..0   Refills
-    0..0   Dosage
-    0..0   Supply
-    0..0   Frequency
-    0..0   Route
-    0..0   Method
-    0..0   Reason
-    0..0   NegationRationale
-
-EntryElement: BhAssessmentForAlcoholOrOtherDrugs
-Based on: Procedure
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- ObservableCode constrained to codes in the BH Assessment for Alcohol or Other Drugs valueset `(2.16.840.1.113883.3.1257.1.1604)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.1257.1.1604/expansion
-
-EntryElement: BhAssessmentForAlcoholOrOtherDrugsPerformed
-Based on: ProcedurePerformed
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- Subject constrained to the BH Assessment for Alcohol or Other Drugs"
-Subject value is type BhAssessmentForAlcoholOrOtherDrugs
-    0..0   AuthorDatetime
-    0..0   Reason
-    0..0   Method
-    0..0   Result
-    0..0   Status
-    0..0   AnatomicalApproachSite
-    0..0   AnatomicalLocationSite
-    0..0   Ordinality
-    0..0   IncisionDatetime
-    0..0   NegationRationale
-    0..0   Components
-
-EntryElement: BhConditionInvolvingBipolarDisorderDiagnosis
-Based on: Diagnosis
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- ResultValue constrained to codes in the BH Condition Involving Bipolar Disorder valueset `(2.16.840.1.113883.3.1257.1.1504)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.1257.1.1504/expansion
-    0..0   AuthorDatetime
-    0..0   AnatomicalLocationSite
-    0..0   Severity
-
-EntryElement: BhConditionInvolvingUnipolarDepressionDiagnosis
-Based on: Diagnosis
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- ResultValue constrained to codes in the BH Condition Involving Unipolar Depression valueset `(2.16.840.1.113883.3.1257.1.1505)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.1257.1.1505/expansion
-    0..0   AuthorDatetime
-    0..0   AnatomicalLocationSite
-    0..0   Severity
-
-EntryElement: BhCounselingForDepression
-Based on: Procedure
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- ObservableCode constrained to codes in the BH Counseling for Depression valueset `(2.16.840.1.113883.3.1257.1.1616)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.1257.1.1616/expansion
-
-EntryElement: BhCounselingForDepressionOrder
-Based on: ProcedureOrder
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- Subject constrained to the BH Counseling for Depression"
-Subject value is type BhCounselingForDepression
-    0..0   Reason
-    0..0   Method
-    0..0   AnatomicalApproachSite
-    0..0   AnatomicalLocationSite
-    0..0   Ordinality
-    0..0   NegationRationale
-
-EntryElement: BhCounselingForDepressionPerformed
-Based on: ProcedurePerformed
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- Subject constrained to the BH Counseling for Depression"
-Subject value is type BhCounselingForDepression
-    0..0   Reason
-    0..0   Method
-    0..0   Result
-    0..0   Status
-    0..0   AnatomicalApproachSite
-    0..0   AnatomicalLocationSite
-    0..0   Ordinality
-    0..0   IncisionDatetime
-    0..0   NegationRationale
-    0..0   Components
-
-EntryElement: BhElectroconvulsiveTherapy
-Based on: Procedure
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- ObservableCode constrained to codes in the BH Electroconvulsive Therapy valueset `(2.16.840.1.113883.3.1257.1.1533)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.1257.1.1533/expansion
-
-EntryElement: BhElectroconvulsiveTherapyOrder
-Based on: ProcedureOrder
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- Subject constrained to the BH Electroconvulsive Therapy"
-Subject value is type BhElectroconvulsiveTherapy
-    0..0   Reason
-    0..0   Method
-    0..0   AnatomicalApproachSite
-    0..0   AnatomicalLocationSite
-    0..0   Ordinality
-    0..0   NegationRationale
-
-EntryElement: BhElectroconvulsiveTherapyPerformed
-Based on: ProcedurePerformed
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- Subject constrained to the BH Electroconvulsive Therapy"
-Subject value is type BhElectroconvulsiveTherapy
-    0..0   Reason
-    0..0   Method
-    0..0   Result
-    0..0   Status
-    0..0   AnatomicalApproachSite
-    0..0   AnatomicalLocationSite
-    0..0   Ordinality
-    0..0   IncisionDatetime
-    0..0   NegationRationale
-    0..0   Components
-
-EntryElement: BhMoodStabilizerMedication
-Based on: Medication
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- ObjectTypeCode constrained to codes in the BH Mood Stabilizer Medication valueset `(2.16.840.1.113883.3.1257.1.950)`. "
-ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.1257.1.950/expansion
-
-EntryElement: BhMoodStabilizerMedicationActive
-Based on: MedicationActive
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- Subject constrained to the BH Mood Stabilizer Medication"
-Subject value is type BhMoodStabilizerMedication
-    0..0   Dosage
-    0..0   Supply
-    0..0   Frequency
-    0..0   Route
-
-EntryElement: BhMoodStabilizerMedicationOrder
-Based on: MedicationOrder
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- Subject constrained to the BH Mood Stabilizer Medication"
-Subject value is type BhMoodStabilizerMedication
-    0..0   ActiveDatetime
-    0..0   Refills
-    0..0   Dosage
-    0..0   Supply
-    0..0   Frequency
-    0..0   Route
-    0..0   Method
-    0..0   Reason
-    0..0   NegationRationale
-
-EntryElement: BhOutpatientPsychotherapy
-Based on: Encounter
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- ActivityCode constrained to codes in the BH Outpatient Psychotherapy valueset `(2.16.840.1.113883.3.1257.1.973)`. "
-ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.1257.1.973/expansion
-
-EntryElement: BhOutpatientPsychotherapyPerformed
-Based on: EncounterPerformed
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- Subject constrained to the BH Outpatient Psychotherapy"
-Subject value is type BhOutpatientPsychotherapy
-    0..0   AdmissionSource
-    0..0   DischargeDisposition
-    0..0   FacilityLocations
-    0..0   Diagnoses
-    0..0   PrincipalDiagnosis
-    0..0   NegationRationale
-    0..0   LengthOfStay
-
-EntryElement: BhOutpatientEncounter
-Based on: Encounter
-Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ActivityCode constrained to codes in the BH Outpatient encounter valueset `(2.16.840.1.113883.3.464.1.49)`. "
-ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1.49/expansion
-
-EntryElement: BhOutpatientEncounterPerformed
-Based on: EncounterPerformed
-Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the BH Outpatient encounter"
-Subject value is type BhOutpatientEncounter
-    0..0   AdmissionSource
-    0..0   DischargeDisposition
-    0..0   FacilityLocations
-    0..0   Diagnoses
-    0..0   PrincipalDiagnosis
-    0..0   NegationRationale
-    0..0   LengthOfStay
 
 EntryElement: BmiEncounterCodeSet
 Based on: Encounter
@@ -1454,14 +1229,6 @@ Subject value is type BilateralMastectomy
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: BilateralAmputationOfLegBelowOrAboveKneeDiagnosis
-Based on: Diagnosis
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Bilateral amputation of leg below or above knee valueset `(2.16.840.1.113883.3.464.1003.113.12.1056)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.113.12.1056/expansion
-    0..0   AuthorDatetime
-    0..0   AnatomicalLocationSite
-    0..0   Severity
-
 EntryElement: BipolarDiagnosisDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: This set of values includes various diagnoses of Bipolar disorder that could be documented in the medical record by a health care provider.),(Data Element Scope: ),(Inclusion Criteria: Includes mild to severe cases, brief episodes, or chronic disorders, which would indicate that there is a current diagnosis of bipolar disorder documented by the healthcare provider.),(Exclusion Criteria: Excludes all other depression diagnoses that do not relate to a bipolar diagnosis.) -- ResultValue constrained to codes in the Bipolar Diagnosis valueset `(2.16.840.1.113883.3.600.450)`"
@@ -1477,24 +1244,6 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.67.1.101.
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
     0..0   Severity
-
-EntryElement: BloodPressureVisit
-Based on: Encounter
-Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ActivityCode constrained to codes in the Blood Pressure Visit valueset `(2.16.840.1.113883.3.464.1003.101.12.1056)`. "
-ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.101.12.1056/expansion
-
-EntryElement: BloodPressureVisitPerformed
-Based on: EncounterPerformed
-Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Blood Pressure Visit"
-Subject value is type BloodPressureVisit
-    0..0   AuthorDatetime
-    0..0   AdmissionSource
-    0..0   DischargeDisposition
-    0..0   FacilityLocations
-    0..0   Diagnoses
-    0..0   PrincipalDiagnosis
-    0..0   NegationRationale
-    0..0   LengthOfStay
 
 EntryElement: BodyMassIndexBmiRatio
 Based on: PhysicalExam
@@ -2442,27 +2191,6 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1110.12
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: CoronaryArteryBypassGraft
-Based on: Procedure
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObservableCode constrained to codes in the Coronary Artery Bypass Graft valueset `(2.16.840.1.113883.3.464.1003.104.12.1002)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.104.12.1002/expansion
-
-EntryElement: CoronaryArteryBypassGraftPerformed
-Based on: ProcedurePerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Coronary Artery Bypass Graft"
-Subject value is type CoronaryArteryBypassGraft
-    0..0   AuthorDatetime
-    0..0   Reason
-    0..0   Method
-    0..0   Result
-    0..0   Status
-    0..0   AnatomicalApproachSite
-    0..0   AnatomicalLocationSite
-    0..0   Ordinality
-    0..0   IncisionDatetime
-    0..0   NegationRationale
-    0..0   Components
-
 EntryElement: CoronaryArteryDiseaseNoMiDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Coronary Artery Disease No MI valueset `(2.16.840.1.113883.3.526.3.369)`"
@@ -2659,35 +2387,6 @@ EntryElement: DegenerativeDisordersOfGlobeDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Degenerative Disorders of Globe valueset `(2.16.840.1.113883.3.526.3.1454)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1454/expansion
-
-EntryElement: DeliveryDiagnosisDiagnosis
-Based on: Diagnosis
-Description: "(Clinical Focus: This set of values contain codes commonly used in the outpatient setting to identify patients who had a live birth or delivery.),(Data Element Scope: The intent of this data element is identify patients who had a live birth or delivery.  Using the Quality Data Model, this particular element would map to the 'Procedure, Performed' element.),(Inclusion Criteria: The codes used in this value set can be reasonably used to identify patients who had a live birth or delivery.),(Exclusion Criteria: None) -- ResultValue constrained to codes in the Delivery - Diagnosis valueset `(2.16.840.1.113883.3.67.1.101.1.278)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.67.1.101.1.278/expansion
-    0..0   AuthorDatetime
-    0..0   AnatomicalLocationSite
-    0..0   Severity
-
-EntryElement: DeliveryProcedure
-Based on: Procedure
-Description: "(Clinical Focus: This set of values contain codes commonly used in the outpatient setting to identify patients who had a live birth or delivery.),(Data Element Scope: The intent of this data element is identify patients who had a live birth or delivery.  Using the Quality Data Model, this particular element would map to the 'Procedure, Performed' element.),(Inclusion Criteria: The codes used in this value set can be reasonably used to identify patients who had a live birth or delivery.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the Delivery - Procedure valueset `(2.16.840.1.113762.1.4.1078.5)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1078.5/expansion
-
-EntryElement: DeliveryProcedurePerformed
-Based on: ProcedurePerformed
-Description: "(Clinical Focus: This set of values contain codes commonly used in the outpatient setting to identify patients who had a live birth or delivery.),(Data Element Scope: The intent of this data element is identify patients who had a live birth or delivery.  Using the Quality Data Model, this particular element would map to the 'Procedure, Performed' element.),(Inclusion Criteria: The codes used in this value set can be reasonably used to identify patients who had a live birth or delivery.),(Exclusion Criteria: None) -- Subject constrained to the Delivery - Procedure"
-Subject value is type DeliveryProcedure
-    0..0   AuthorDatetime
-    0..0   Reason
-    0..0   Method
-    0..0   Result
-    0..0   Status
-    0..0   AnatomicalApproachSite
-    0..0   AnatomicalLocationSite
-    0..0   Ordinality
-    0..0   IncisionDatetime
-    0..0   NegationRationale
-    0..0   Components
 
 EntryElement: DeliveryLiveBirths
 Based on: Procedure
@@ -2959,16 +2658,6 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.327
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
     0..0   Severity
-
-EntryElement: DiabeticFootExaminationRegimeTherapy
-Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Diabetic foot examination (regime/therapy) valueset `(drc-529dc4d622e3c7acea52e699b35e8154cd879f8e64e48c790de34a6585ea4ba4)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-529dc4d622e3c7acea52e699b35e8154cd879f8e64e48c790de34a6585ea4ba4/expansion
-
-EntryElement: DiabeticFootExaminationRegimeTherapyPerformed
-Based on: AssessmentPerformed
-Description: " -- Subject constrained to the Diabetic foot examination (regime/therapy)"
-Subject value is type DiabeticFootExaminationRegimeTherapy
 
 EntryElement: DiagnosisOfHypertensionDiagnosis
 Based on: Diagnosis
@@ -4055,25 +3744,6 @@ Subject value is type GynecologicalSurgery
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: HBsAg
-Based on: LaboratoryTest
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- ObservableCode constrained to codes in the HBsAg valueset `(2.16.840.1.113883.3.67.1.101.1.279)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.67.1.101.1.279/expansion
-
-EntryElement: HBsAgPerformed
-Based on: LaboratoryTestPerformed
-Description: "(Clinical Focus: Under development),(Data Element Scope: Under development),(Inclusion Criteria: Under development),(Exclusion Criteria: Under development) -- Subject constrained to the HBsAg"
-Subject value is type HBsAg
-    0..0   AuthorDatetime
-    0..0   Status
-    0..0   Method
-    0..0   Result
-    0..0   ResultDatetime
-    0..0   Reason
-    0..0   ReferenceRange
-    0..0   NegationRationale
-    0..0   Components
-
 EntryElement: HivDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ResultValue constrained to codes in the HIV valueset `(2.16.840.1.113883.3.464.1003.120.12.1003)`"
@@ -5120,14 +4790,6 @@ Based on: PrincipalDiagnosis
 Description: "(Clinical Focus: This grouping of value sets identifies patients who have had a stroke caused by ischemia, where the blood supply is restricted to an area of the brain by something like thrombosis or an embolism.),(Data Element Scope: The intent of this data element is to identify patients who have a diagnosis of ischemic stroke, or stroke caused by ischemia.  Using the Quality Data Model, this particular element would map to the Principal Diagnosis attribute for the Encounter category or to the Diagnosis Category.),(Inclusion Criteria: Only use codes which represent a diagnosis of ischemic stroke, or stroke caused by ischemia.  This is a grouping of ICD10CM and SNOMED-CT codes and concepts.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.247/expansion
 
-EntryElement: IschemicVascularDiseaseDiagnosis
-Based on: Diagnosis
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Ischemic Vascular Disease valueset `(2.16.840.1.113883.3.464.1003.104.12.1003)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.104.12.1003/expansion
-    0..0   AuthorDatetime
-    0..0   AnatomicalLocationSite
-    0..0   Severity
-
 EntryElement: IschemicHeartDiseaseOrCoronaryOcclusionRuptureOrThrombosisDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: The intent of this set of values is to capture ischemic heart disease and  associated diagnoses as related to Atherosclerotic Cardiovascular Disease (ASCVD).),(Data Element Scope: Appropriate for use with data elements in QDM Categories or Attributes represented by diagnosis codes.),(Inclusion Criteria: Included are acute and chronic forms of ischemic heart disease as well as coronary occlusion, thrombosis, or rupture that can be related to ASCVD.),(Exclusion Criteria: Excluded are acute coronary occlusion related directly to myocardial infarction and myocardial ischemia.) -- ResultValue constrained to codes in the Ischemic heart disease or coronary occlusion, rupture, or thrombosis valueset `(2.16.840.1.113762.1.4.1047.46)`"
@@ -5469,35 +5131,6 @@ Based on: DischargeDisposition
 Description: "(Clinical Focus: This set of values represents a patient leaving against medical advice.),(Data Element Scope: The intent of this data element is to identify the final place or setting to which the patient was discharged on the day of discharge from a particular  inpatient encounter. This particular value set intends to identify patients who left against medical advice. Using the Quality Data Model, this particular value set is used with the Attribute of 'Discharge status' used with the 'Encounter' category.),(Inclusion Criteria: Only SNOMED CT codes representing  leaving against medical advice should be included.),(Exclusion Criteria: None)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.308/expansion
 
-EntryElement: LeftUnilateralAmputationAboveOrBelowKneeDiagnosis
-Based on: Diagnosis
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Left Unilateral Amputation Above or Below Knee valueset `(2.16.840.1.113883.3.464.1003.113.12.1058)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.113.12.1058/expansion
-    0..0   AuthorDatetime
-    0..0   AnatomicalLocationSite
-    0..0   Severity
-
-EntryElement: LeftUnilateralAmputationProcedureAboveOrBelowKnee
-Based on: Procedure
-Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the Left Unilateral Amputation Procedure Above or Below Knee valueset `(2.16.840.1.113883.3.464.1003.113.12.1072)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.113.12.1072/expansion
-
-EntryElement: LeftUnilateralAmputationProcedureAboveOrBelowKneePerformed
-Based on: ProcedurePerformed
-Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Left Unilateral Amputation Procedure Above or Below Knee"
-Subject value is type LeftUnilateralAmputationProcedureAboveOrBelowKnee
-    0..0   AuthorDatetime
-    0..0   Reason
-    0..0   Method
-    0..0   Result
-    0..0   Status
-    0..0   AnatomicalApproachSite
-    0..0   AnatomicalLocationSite
-    0..0   Ordinality
-    0..0   IncisionDatetime
-    0..0   NegationRationale
-    0..0   Components
-
 EntryElement: LeftVentricularSystolicDysfunctionDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Left Ventricular Systolic Dysfunction valueset `(2.16.840.1.113883.3.526.3.1091)`"
@@ -5540,11 +5173,6 @@ Based on: CommunicationFromProviderToProvider
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObservableCode constrained to codes in the Level of Severity of Retinopathy Findings valueset `(2.16.840.1.113883.3.526.3.1283)`"
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1283/expansion
     0..0   RelatedTo
-
-EntryElement: LevelOfSeverityOfRetinopathyFindingsComponents
-Based on: Components
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development)"
-ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1283/expansion
 
 EntryElement: LifestyleRecommendation
 Based on: Intervention
@@ -5717,11 +5345,14 @@ EntryElement: MacularExamPerformed
 Based on: DiagnosticStudyPerformed
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Macular Exam"
 Subject value is type MacularExam
+    0..0   AuthorDatetime
     0..0   Reason
     0..0   ResultDatetime
     0..0   Status
     0..0   Method
     0..0   FacilityLocation
+    0..0   NegationRationale
+    0..0   Components
 
 EntryElement: MajorDepressionDiagnosis
 Based on: Diagnosis
@@ -6105,16 +5736,6 @@ Based on: InterventionOrder
 Description: "(Clinical Focus: This set of values contains lifestyle modification issues in relation to alcohol consumption; that alcoholism was addressed through education, counseling, or referral.),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Moderation of ETOH Consumption Recommendation"
 Subject value is type ModerationOfEtohConsumptionRecommendation
     0..0   Reason
-
-EntryElement: MonofilamentFootSensationTestProcedure
-Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Monofilament foot sensation test (procedure) valueset `(drc-37129ce483571cc63df7966e306dcddb2c35dd3bf3aa768a1ce357089d34706b)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-37129ce483571cc63df7966e306dcddb2c35dd3bf3aa768a1ce357089d34706b/expansion
-
-EntryElement: MonofilamentFootSensationTestProcedurePerformed
-Based on: AssessmentPerformed
-Description: " -- Subject constrained to the Monofilament foot sensation test (procedure)"
-Subject value is type MonofilamentFootSensationTestProcedure
 
 EntryElement: MorgagnianCataractDiagnosis
 Based on: Diagnosis
@@ -7000,37 +6621,6 @@ EntryElement: PayerPatientCharacteristicPayer
 Based on: PatientCharacteristicPayer
 Description: "(Clinical Focus: Categories of types of health care payor entities as defined by the US Public Health Data Consortium SOP code system),(Data Element Scope: @code in CCDA r2.1 template Planned Coverage [act: identifier urn:oid:2.16.840.1.113883.10.20.22.4.129 (open)] DYNAMIC),(Inclusion Criteria: All codes in the code system),(Exclusion Criteria: none) -- ResultValue constrained to codes in the Payer valueset `(2.16.840.1.114222.4.11.3591)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.3591/expansion
-
-EntryElement: PedalPulseTakingProcedure
-Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Pedal pulse taking (procedure) valueset `(drc-33211b1978e0fee5a3a65e4ecd35fe3f70cd065128690cbc4530e298f87c742c)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-33211b1978e0fee5a3a65e4ecd35fe3f70cd065128690cbc4530e298f87c742c/expansion
-
-EntryElement: PedalPulseTakingProcedurePerformed
-Based on: AssessmentPerformed
-Description: " -- Subject constrained to the Pedal pulse taking (procedure)"
-Subject value is type PedalPulseTakingProcedure
-
-EntryElement: PercutaneousCoronaryInterventions
-Based on: Procedure
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObservableCode constrained to codes in the Percutaneous Coronary Interventions valueset `(2.16.840.1.113883.3.464.1003.104.12.1010)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.104.12.1010/expansion
-
-EntryElement: PercutaneousCoronaryInterventionsPerformed
-Based on: ProcedurePerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Percutaneous Coronary Interventions"
-Subject value is type PercutaneousCoronaryInterventions
-    0..0   AuthorDatetime
-    0..0   Reason
-    0..0   Method
-    0..0   Result
-    0..0   Status
-    0..0   AnatomicalApproachSite
-    0..0   AnatomicalLocationSite
-    0..0   Ordinality
-    0..0   IncisionDatetime
-    0..0   NegationRationale
-    0..0   Components
 
 EntryElement: PerforationOfUterusDiagnosis
 Based on: Diagnosis
@@ -8027,35 +7617,6 @@ Based on: AnatomicalLocationSite
 Description: "(Clinical Focus: Concepts that represent the right side),(Data Element Scope: Right),(Inclusion Criteria: Appropriate right concepts),(Exclusion Criteria: Concepts representing left)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.122.12.1035/expansion
 
-EntryElement: RightUnilateralAmputationAboveOrBelowKneeDiagnosis
-Based on: Diagnosis
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Right Unilateral Amputation Above or Below Knee valueset `(2.16.840.1.113883.3.464.1003.113.12.1057)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.113.12.1057/expansion
-    0..0   AuthorDatetime
-    0..0   AnatomicalLocationSite
-    0..0   Severity
-
-EntryElement: RightUnilateralAmputationProcedureAboveOrBelowKnee
-Based on: Procedure
-Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the Right Unilateral Amputation Procedure Above or Below Knee valueset `(2.16.840.1.113883.3.464.1003.113.12.1073)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.113.12.1073/expansion
-
-EntryElement: RightUnilateralAmputationProcedureAboveOrBelowKneePerformed
-Based on: ProcedurePerformed
-Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Right Unilateral Amputation Procedure Above or Below Knee"
-Subject value is type RightUnilateralAmputationProcedureAboveOrBelowKnee
-    0..0   AuthorDatetime
-    0..0   Reason
-    0..0   Method
-    0..0   Result
-    0..0   Status
-    0..0   AnatomicalApproachSite
-    0..0   AnatomicalLocationSite
-    0..0   Ordinality
-    0..0   IncisionDatetime
-    0..0   NegationRationale
-    0..0   Components
-
 EntryElement: RiskFactorsEducationCommunicationFromProviderToPatient
 Based on: CommunicationFromProviderToPatient
 Description: "(Clinical Focus: This set of values contains procedures used to represent patients who receive risk factor education.),(Data Element Scope: The intent of this data element is to identify patients who receive education on risk factors. Using the Quality Data Model, this particular element will map to the 'Communication' category.),(Inclusion Criteria: Only SNOMED CT codes representing risk factor education should be included.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the Risk Factors Education valueset `(2.16.840.1.113883.3.117.1.7.1.380)`"
@@ -8698,35 +8259,6 @@ Subject value is type UnfractionatedHeparin
     0..0   Frequency
     0..0   Reason
     0..0   NegationRationale
-
-EntryElement: UnilateralAmputationBelowOrAboveKneeUnspecifiedLateralityDiagnosis
-Based on: Diagnosis
-Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ResultValue constrained to codes in the Unilateral Amputation Below or Above Knee, Unspecified Laterality valueset `(2.16.840.1.113883.3.464.1003.113.12.1059)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.113.12.1059/expansion
-    0..0   AuthorDatetime
-    0..0   AnatomicalLocationSite
-    0..0   Severity
-
-EntryElement: UnilateralAmputationProcedureBelowOrAboveKneeUnspecifiedLaterality
-Based on: Procedure
-Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the Unilateral Amputation Procedure Below or Above Knee, Unspecified Laterality valueset `(2.16.840.1.113883.3.464.1003.103.12.1022)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.103.12.1022/expansion
-
-EntryElement: UnilateralAmputationProcedureBelowOrAboveKneeUnspecifiedLateralityPerformed
-Based on: ProcedurePerformed
-Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Unilateral Amputation Procedure Below or Above Knee, Unspecified Laterality"
-Subject value is type UnilateralAmputationProcedureBelowOrAboveKneeUnspecifiedLaterality
-    0..0   AuthorDatetime
-    0..0   Reason
-    0..0   Method
-    0..0   Result
-    0..0   Status
-    0..0   AnatomicalApproachSite
-    0..0   AnatomicalLocationSite
-    0..0   Ordinality
-    0..0   IncisionDatetime
-    0..0   NegationRationale
-    0..0   Components
 
 EntryElement: UnilateralMastectomy
 Based on: Procedure

@@ -349,39 +349,6 @@ Description: "Diabetes: Hemoglobin A1c (HbA1c) Poor Control (> 9%). As the seven
     0..* ValidEncounterUnion
     0..* QualifyingEncountersUnion
 
-EntryElement: CMS123v7
-Based on: CmsEcqmComposition
-Description: "Diabetes: Foot Exam. As the seventh leading cause of death in the U.S., diabetes kills approximately 79,500 people a year (CDC Health 2017). Diabetes is a long lasting disease marked by high blood glucose levels, resulting from the body's inability to produce or use insulin properly (CDC About Diabetes 2017). People with diabetes are at increased risk of serious health complications including vision loss, heart disease, stroke, kidney failure, amputation of toes, feet or legs, and premature death. (CDC At a Glance 2016). In 2012, diabetes cost the U.S. an estimated $245 billion: $176 billion in direct medical costs and $69 billion in reduced productivity. This is a 41 percent increase from the estimated $174 billion spent on diabetes in 2007 (ADA Economic 2013). Diabetes reduces the blood flow to the extremities of the body such as the legs and feet, which make it harder for the body to heal from injuries to those parts of the body. Patients with diabetes are at higher risks of developing serious problems with their feet, toes, and legs which can lead to difficulty walking or even amputation (CDC Living with Diabetes, 2015). According to research from the Centers for Disease Control and Prevention (CDC), in 2010 approximately 73,000 adults with diabetes had a leg or foot amputated. Furthermore, amputations in adults with diabetes accounts for 60 percent of amputation of legs and feet, not related to an injury (CDC Living with Diabetes, 2015). Adults 45 years and older with diabetes are 10 times more likely to have an amputation of their leg or foot compared to adults without diabetes (CDC Living with Diabetes, 2015)."
-    0..* PedalPulseTakingProcedurePerformed
-    0..* MonofilamentFootSensationTestProcedurePerformed
-    0..* DiabeticFootExaminationRegimeTherapyPerformed
-    0..* DiabetesDiagnosis
-    0..* BilateralAmputationOfLegBelowOrAboveKneeDiagnosis
-    0..* RightUnilateralAmputationAboveOrBelowKneeDiagnosis
-    0..* LeftUnilateralAmputationAboveOrBelowKneeDiagnosis
-    0..* UnilateralAmputationBelowOrAboveKneeUnspecifiedLateralityDiagnosis
-    0..* EncounterInpatientPerformed
-    0..* OfficeVisit1Performed
-    0..* HomeHealthcareServicesPerformed
-    0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
-    0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
-    0..* AnnualWellnessVisit1Performed
-    0..* HospiceCareAmbulatoryOrder
-    0..* HospiceCareAmbulatoryPerformed
-    0..* EthnicityPatientCharacteristicEthnicity
-    0..* OncAdministrativeSexPatientCharacteristicGender
-    0..* PayerPatientCharacteristicPayer
-    0..* RacePatientCharacteristicRace
-    0..* UnilateralAmputationProcedureBelowOrAboveKneeUnspecifiedLateralityPerformed
-    0..* LeftUnilateralAmputationProcedureAboveOrBelowKneePerformed
-    0..* RightUnilateralAmputationProcedureAboveOrBelowKneePerformed
-    0..* ValidEncounterUnion
-    0..* QualifyingEncountersUnion
-    0..* LeftLowerAmputationUnion
-    0..* LeftLowerExtremityAmputationUnion
-    0..* RightLowerAmputationUnion
-    0..* RightLowerExtremityAmputationUnion
-
 EntryElement: CMS124v7
 Based on: CmsEcqmComposition
 Description: "Cervical Cancer Screening. All women are at risk for cervical cancer, but it occurs most often in women over the age of 30. In 2017, approximately 12,820 women were diagnosed with cervical cancer in the U.S., resulting in an estimated 4,210 deaths (Howlader et al. 2017). If pre-cancerous lesions are detected early by Pap tests and treated, the likelihood of survival is nearly 100 percent (American Cancer Society 2017). In 2015, women with no health insurance and recent immigrants were least likely to have a Pap test (American Cancer Society 2017)."
@@ -1298,19 +1265,6 @@ Description: "Oncology: Medical and Radiation - Pain Intensity Quantified. Initi
     0..* RadiationTreatmentManagementPerformed
     0..* ChemotherapyAdministrationPerformed
 
-EntryElement: CMS158v7
-Based on: CmsEcqmComposition
-Description: "Pregnant women that had HBsAg testing. The U.S. Preventive Services Task Force (USPSTF) found good evidence that universal prenatal screening for hepatitis B virus (HBV) infection using hepatitis B surface antigen (HBsAg) substantially reduces prenatal transmission of HBV and the subsequent development of chronic HBV infection (USPSTF 2009). The current practice of vaccinating all infants against HBV infection and post-exposure prophylaxis with hepatitis B immune globulin administered at birth to infants of HBV-infected mothers substantially reduces the risk for acquiring HBV infection."
-    0..* HepatitisB1Diagnosis
-    0..* DeliveryDiagnosisDiagnosis
-    0..* HBsAgPerformed
-    0..* EthnicityPatientCharacteristicEthnicity
-    0..* OncAdministrativeSexPatientCharacteristicGender
-    0..* FemalePatientCharacteristicGender
-    0..* PayerPatientCharacteristicPayer
-    0..* RacePatientCharacteristicRace
-    0..* DeliveryProcedurePerformed
-
 EntryElement: CMS159v7
 Based on: CmsEcqmComposition
 Description: "Depression Remission at Twelve Months. Adults: Depression is a common and treatable mental disorder. The Centers for Disease Control and Prevention states that an estimated 6.6% of the U.S. adult population (14.8 million people) experiences a major depressive disorder during any given 12-month period. Additionally, dysthymia accounts for an additional 3.3 million Americans. In 2006 and 2008, an estimated 9.1% of U.S. adults reported symptoms for current depression (Centers for Disease Control and Prevention, 2010). Persons with a current diagnosis of depression and a lifetime diagnosis of depression or anxiety were significantly more likely than persons without these conditions to have cardiovascular disease, diabetes, asthma and obesity and to be a current smoker, to be physically inactive and to drink heavily (Strine, 2008). People who suffer from depression have lower incomes, lower educational attainment and fewer days working each year, leading to seven fewer weeks of work per year, a loss of 20% in potential income and a lifetime loss for each family who has a depressed family member of $300,000 (Smith, 2010).  The cost of depression (lost productivity and increased medical expense) in the United States is $83 billion each year (Greenberg, 2003). Adolescents and Adults: The Centers for Disease Control and Prevention states that during 2009-2012 an estimated 7.6% of the U.S. population aged 12 and over had depression, including 3% of Americans with severe depressive symptoms. Almost 43% of persons with severe depressive symptoms reported serious difficulties in work, home and social activities, yet only 35% reported having contact with a mental health professional in the past year. Depression is associated with higher mortality rates in all age groups. People who are depressed are 30 times more likely to take their own lives than people who are not depressed and five times more likely to abuse drugs. Depression is the leading cause of medical disability for people aged 14 - 44. Depressed people lose 5.6 hours of productive work every week when they are depressed, fifty percent of which is due to absenteeism and short-term disability. Adolescents: In 2014, an estimated 2.8 million adolescents age 12 to 17 in the United States had at least one major depressive episode in the past year. This represented 11.4% of the U.S. population. The same survey found that only 41.2 percent of those who had a Major Depressive Episode received treatment in the past year. The 2013 Youth Risk Behavior Survey of students grades 9 to 12 indicated that during the past 12 months 39.1% (F) and 20.8% (M) indicated feeling sad or hopeless almost every day for at least 2 weeks, planned suicide attempt 16.9% (F) and 10.3% (M), with attempted suicide 10.6% (F) and 5.4% (M). Adolescent-onset depression is associated with chronic depression in adulthood. Many mental health conditions (anxiety, bipolar, depression, eating disorders, and substance abuse) are evident by age 14. The 12-month prevalence of MDEs increased from 8.7% in 2005 to 11.3% in 2014 in adolescents and from 8.8% to 9.6% in young adults (both P < .001). The increase was larger and statistically significant only in the age range of 12 to 20 years. The trends remained significant after adjustment for substance use disorders and sociodemographic factors. Mental health care contacts overall did not change over time; however, the use of specialty mental health providers increased in adolescents and young adults, and the use of prescription medications and inpatient hospitalizations increased in adolescents. In 2015, 9.7% of adolescents in MN who were screened for depression or other mental health conditions, screened positively."
@@ -1375,32 +1329,6 @@ Description: "Adult Major Depressive Disorder (MDD): Suicide Risk Assessment. Re
     0..* ValidEncounter9Union
     0..* MajorDepressiveDisorderEncounter0Union
 
-EntryElement: CMS164v7
-Based on: CmsEcqmComposition
-Description: "Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet. Cardiovascular disease, including stroke, is the leading cause of death in the United States. More than 92.1 million American adults have one or more types of cardiovascular disease. Specifically, more than 16 million adults (20 years and older) have coronary heart disease (CHD), over 8 million adults have angina, more than 7 million adults have had a myocardial infarction (MI), over 7 million adults have had a stroke, and nearly 7 million adults 40 years of age and older have peripheral artery disease (Benjamin et al., 2017). It is estimated that by 2030 more than 44 percent of Americans will have a form of cardiovascular disease (Heidenreich et al., 2011). In 2011, the total cost of cardiovascular disease and stroke in the United States was estimated to be $320 billion. This total includes direct costs such as the cost of physicians and other health professionals, hospital services, prescribed medications and home health care, as well as indirect costs due to loss of productivity from premature mortality (Benjamin et al., 2017). By 2030, direct medical costs for cardiovascular disease are projected to increase to nearly $918 billion (Heidenreich, 2011). Antiplatelet medications, such as aspirin and clopidogrel, are drugs that inhibit platelets from clumping together and forming clots. Their use in the secondary prevention of cardiovascular events is well established.  In patients who are at high risk because they already have occlusive cardiovascular disease, long-term antiplatelet therapy reduces the yearly risk of serious vascular events (MI, stroke, death) by about twenty-five percent (Antiplatelet Trialists' Collaboration, 1994; 2002; 2009). A more recent systematic review of the literature confirmed the benefits of antiplatelet therapy in reducing death from cardiovascular causes, MI, or stroke (Cheng, 2013). Antiplatelet agents also have a beneficial effect in reducing all-cause mortality and fatal cardiovascular events in patients with peripheral arterial disease (Wong et al., 2011)."
-    0..* AcuteMyocardialInfarctionDiagnosis
-    0..* IschemicVascularDiseaseDiagnosis
-    0..* EncounterInpatientPerformed
-    0..* OfficeVisit1Performed
-    0..* HomeHealthcareServicesPerformed
-    0..* PreventiveCareServicesInitialOfficeVisit18AndUp1Performed
-    0..* PreventiveCareServicesEstablishedOfficeVisit18AndUp1Performed
-    0..* AnnualWellnessVisit1Performed
-    0..* HospiceCareAmbulatoryOrder
-    0..* HospiceCareAmbulatoryPerformed
-    0..* AspirinAndOtherAntiplateletsActive
-    0..* AnticoagulantMedicationsActive
-    0..* EthnicityPatientCharacteristicEthnicity
-    0..* OncAdministrativeSexPatientCharacteristicGender
-    0..* PayerPatientCharacteristicPayer
-    0..* RacePatientCharacteristicRace
-    0..* CoronaryArteryBypassGraftPerformed
-    0..* PercutaneousCoronaryInterventionsPerformed
-    0..* ValidEncounterUnion
-    0..* QualifyingEncountersUnion
-    0..* HeartProcedureUnion
-    0..* HeartProceduresUnion
-
 EntryElement: CMS165v7
 Based on: CmsEcqmComposition
 Description: "Controlling High Blood Pressure. Hypertension, or high blood pressure, is a very common and dangerous condition that increases risk for heart disease and stroke, two of the leading causes of death for Americans (Farley et al., 2010). Compared with other dietary, lifestyle, and metabolic risk factors, high blood pressure is the leading cause of death in women and the second-leading cause of death in men, behind smoking (Danaei et al., 2011). Approximately 1 in 3 U.S. adults, or about 70 million people, have high blood pressure but only about half (52%) of these people have their high blood pressure under control. Additionally, data from NHANES 2011 to 2012 found that 17.2% of U.S. adults are not aware they have hypertension (Nwankwo et al., 2013). Projections show that by 2030, approximately 41.4% of US adults will have hypertension, an increase of 8.4% from 2012 estimates (Heidenreich et al., 2011). The estimated direct and indirect cost of high blood pressure for 2011 is $46.4 billion. This total includes direct costs such as the cost of physicians and other health professionals, hospital services, prescribed medications and home health care, as well as indirect costs due to loss of productivity from premature mortality (Mozaffarian et al., 2015). Projections show that by 2030, the total cost of high blood pressure could increase to an estimated $274 billion (Heidenreich et al., 2011). Better control of blood pressure has been shown to significantly reduce the probability that undesirable and costly outcomes will occur. In clinical trials, antihypertensive therapy has been associated with reductions in stroke incidence (35-40%), myocardial infarction (20-25%) and heart failure (>50%) (Chobanian et al., 2003). Thus, the relationship between the measure (control of hypertension) and the long-term clinical outcomes listed is well established."
@@ -1434,54 +1362,6 @@ Description: "Controlling High Blood Pressure. Hypertension, or high blood press
     0..* EndStageRenalDiseaseProceduresUnion
     0..* PregnancyEsrdDiagnosisUnion
     0..* PregnancyOrRenalDiagnosisExclusionsUnion
-
-EntryElement: CMS167v7
-Based on: CmsEcqmComposition
-Description: "Diabetic Retinopathy: Documentation of Presence or Absence of Macular Edema and Level of Severity of Retinopathy. Diabetic retinopathy is a leading cause of new cases of legal blindness among working-age Americans and represents a leading cause of blindness in this age group worldwide. (Klein, 2007). In 2005-2008, the estimated prevalence of diabetic retinopathy and vision-threatening diabetic retinopathy was 28.5 percent among persons with diabetes aged 40 years and older (Zhang, 2010). Approximately 1.5% of adults with diabetes had proliferative diabetic retinopathy and 2.7% had clinically significant macular edema (Zhang, 2010). Several level 1 RCT studies demonstrate the ability of timely treatment to reduce the rate and severity of vision loss from diabetes (Diabetic Retinopathy Study -- DRS, Early Treatment Diabetic Retinopathy Study -- ETDRS). Necessary examination prerequisites to applying the study results are that the presence and severity of both peripheral diabetic retinopathy and macular edema be accurately documented. In the RAND chronic disease quality project, while administrative data indicated that roughly half of the patients had an eye exam in the recommended time period, chart review data indicated that only 19% had documented evidence of a dilated examination (McGlynn, 2003). Thus, ensuring timely treatment that could prevent 95% of the blindness due to diabetes requires the performance and documentation of key examination parameters. The documented level of severity of retinopathy and the documented presence or absence of macular edema assists with the on-going plan of care for the patient with diabetic retinopathy."
-    0..* DiabeticRetinopathyDiagnosis
-    0..* LevelOfSeverityOfRetinopathyFindingsComponents
-    0..* OfficeVisit1Performed
-    0..* OutpatientConsultationPerformed
-    0..* NursingFacilityVisitPerformed
-    0..* CareServicesInLongTermResidentialFacilityPerformed
-    0..* OphthalmologicalServicesPerformed
-    0..* EthnicityPatientCharacteristicEthnicity
-    0..* OncAdministrativeSexPatientCharacteristicGender
-    0..* PayerPatientCharacteristicPayer
-    0..* RacePatientCharacteristicRace
-
-EntryElement: CMS169v7
-Based on: CmsEcqmComposition
-Description: "Bipolar Disorder and Major Depression: Appraisal for alcohol or chemical substance use. Individuals with bipolar disorder or major depression have high rates of co-morbid substance abuse and should be screened for substance use disorders. Between 40-70% of people with bipolar disorder have a history of substance use disorder. A current or past co-morbid substance use disorder may lead to worse outcomes for bipolar disorders, including more symptoms, more suicide attempts, longer episodes and lower quality of life. Substance abuse may obscure or exacerbate mood swings that have no other apparent external cause. Substance abuse may also precipitate mood episodes or be used by patients to self-treat in an attempt to improve the symptoms of episodes. Patients suffering from major depressive disorder with co-morbid addiction are more likely to require hospitalization, more likely to attempt suicide and less likely to comply with treatment than are patients with these disorders of similar severity not complicated by these factors."
-    0..* BhConditionInvolvingBipolarDisorderDiagnosis
-    0..* BhConditionInvolvingUnipolarDepressionDiagnosis
-    0..* BhOutpatientPsychotherapyPerformed
-    0..* BhOutpatientEncounterPerformed
-    0..* BhMoodStabilizerMedicationActive
-    0..* BhMoodStabilizerMedicationOrder
-    0..* BhAntidepressantMedicationActive
-    0..* BhAntidepressantMedicationOrder
-    0..* EthnicityPatientCharacteristicEthnicity
-    0..* OncAdministrativeSexPatientCharacteristicGender
-    0..* PayerPatientCharacteristicPayer
-    0..* RacePatientCharacteristicRace
-    0..* BhElectroconvulsiveTherapyOrder
-    0..* BhElectroconvulsiveTherapyPerformed
-    0..* BhCounselingForDepressionOrder
-    0..* BhCounselingForDepressionPerformed
-    0..* BhAssessmentForAlcoholOrOtherDrugsPerformed
-    0..* BipolarDisorderOrUnipolarDepressionUnion
-    0..* BehavioralHealthOutpatientEncounterUnion
-    0..* DepressionTreatmentProcedureOrderedUnion
-    0..* DepressionTreatmentProcedurePerformedUnion
-    0..* AntidepressantorMoodStabilizerOrderedUnion
-    0..* TreatmentsUnion
-    0..* IndexBehavioralHealthOutpatientEncounterBeforeTreatmentorPsychotherapyUnion
-    0..* ActiveAntidepressantorMoodStabilizerUnion
-    0..* ActiveBehavioralHealthMedicationsorDiagnosisUnion
-    0..* IndexOutpatientEncounterwithin180daysafterPriorEncounterDiagnosisorTreatmentUnion
-    0..* InclusiveTreatmentsUnion
-    0..* QualifyingTreatmentsUnion
 
 EntryElement: CMS177v7
 Based on: CmsEcqmComposition
@@ -1898,30 +1778,6 @@ Description: "Bone density evaluation for patients with prostate cancer and rece
     0..* InjectionLeuprolideAcetateOrder
     0..* BoneDensityScanOrderedorPerformedUnion
     0..* NoBoneDensityScanOrderedDuetoPatientRefusalUnion
-
-EntryElement: CMS65v8
-Based on: CmsEcqmComposition
-Description: "Hypertension: Improvement in Blood Pressure. Hypertension, or high blood pressure, is a very common and dangerous condition that increases risk for heart disease and stroke, two of the leading causes of death for Americans (Farley et al., 2010). Compared with other dietary, lifestyle, and metabolic risk factors, high blood pressure is the leading cause of death in women and the second-leading cause of death in men, behind smoking (Danaei et al., 2011). Approximately 1 in 3 U.S. adults, or about 70 million people, have high blood pressure but only about half (52%) of these people have their high blood pressure under control. Additionally, data from NHANES 2011 to 2012 found that 17.2% of U.S. adults are not aware they have hypertension (Nwankwo et al., 2013). Projections show that by 2030, approximately 41.4% of US adults will have hypertension, an increase of 8.4% from 2012 estimates (Heidenreich et al., 2011). The estimated direct and indirect cost of high blood pressure for 2011 is $46.4 billion. This total includes direct costs such as the cost of physicians and other health professionals, hospital services, prescribed medications and home health care, as well as indirect costs due to loss of productivity from premature mortality (Mozaffarian et al., 2015). Projections show that by 2030, the total cost of high blood pressure could increase to an estimated $274 billion (Heidenreich et al., 2011). Better control of blood pressure has been shown to significantly reduce the probability that undesirable and costly outcomes will occur. In clinical trials, antihypertensive therapy has been associated with reductions in stroke incidence (35-40%), myocardial infarction (20-25%) and heart failure (>50%) (Chobanian et al., 2003). Thus, the relationship between the measure (control of hypertension) and the long-term clinical outcomes listed is well established."
-    0..* EssentialHypertensionDiagnosis
-    0..* KidneyTransplantRecipientDiagnosis
-    0..* EndStageRenalDiseaseDiagnosis
-    0..* PregnancyDiagnosis
-    0..* EncounterInpatientPerformed
-    0..* BloodPressureVisitPerformed
-    0..* HospiceCareAmbulatoryOrder
-    0..* HospiceCareAmbulatoryPerformed
-    0..* EthnicityPatientCharacteristicEthnicity
-    0..* OncAdministrativeSexPatientCharacteristicGender
-    0..* PayerPatientCharacteristicPayer
-    0..* RacePatientCharacteristicRace
-    0..* SystolicBloodPressurePerformed
-    0..* KidneyTransplantPerformed
-    0..* HemodialysisPerformed
-    0..* PeritonealDialysisPerformed
-    0..* EsrdProceduresUnion
-    0..* EndStageRenalDiseaseProcedures0Union
-    0..* ExclusionDiagnosisUnion
-    0..* PregnancyOrEndStageRenalDiseaseDiagnosesExclusionUnion
 
 EntryElement: CMS66v7
 Based on: CmsEcqmComposition
