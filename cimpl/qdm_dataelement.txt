@@ -195,7 +195,7 @@ Description: "Data elements that meet criteria using this datatype should docume
 
 EntryElement: LaboratoryTest
 Based on: Observation
-Description: "LaboratoryTLaboratory Test represents a medical procedure that involves testing a sample of blood, urine, or other substance from the body. Tests can help determine a diagnosis, plan treatment, check to see if treatment is working, or monitor the disease over time.14 This QDM data category for Laboratory Test is only used for information about the subject of record.est"
+Description: "Laboratory Test represents a medical procedure that involves testing a sample of blood, urine, or other substance from the body. Tests can help determine a diagnosis, plan treatment, check to see if treatment is working, or monitor the disease over time.14 This QDM data category for Laboratory Test is only used for information about the subject of record."
     Subject value is type Patient
 
 EntryElement: LaboratoryTestOrder
