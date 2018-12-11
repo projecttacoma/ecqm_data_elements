@@ -242,8 +242,8 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.
 
 EntryElement: ActivitiesOfDailyLivingScoreHoos
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Activities of daily living score [HOOS] valueset `(drc-d3a1c3c2991cb637ba39a39544acd32d472260d8a6be6baa895ba5b30b06da25)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-d3a1c3c2991cb637ba39a39544acd32d472260d8a6be6baa895ba5b30b06da25/expansion
+Description: " -- ObservableCode constrained to 'Activities of daily living score [HOOS]' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72095-3/info
 
 EntryElement: ActivitiesOfDailyLivingScoreHoosPerformed
 Based on: AssessmentPerformed
@@ -313,8 +313,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.140
 
 EntryElement: AdolescentDepressionScreeningAssessment
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Adolescent depression screening assessment valueset `(drc-fec6b5f1ff0f36c2e1c6be90526b2d05b731d9a14790b7f6edbc5c530289c823)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-fec6b5f1ff0f36c2e1c6be90526b2d05b731d9a14790b7f6edbc5c530289c823/expansion
+Description: " -- ObservableCode constrained to 'Adolescent depression screening assessment' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/73831-0/info
 
 EntryElement: AdolescentDepressionScreeningAssessmentPerformed
 Based on: AssessmentPerformed
@@ -341,8 +341,8 @@ Subject value is type AdultOutpatientVisit
 
 EntryElement: AdultDepressionScreeningAssessment
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Adult depression screening assessment valueset `(drc-314b12a3535a78752f5a6a7ed3301608579e3caf3cf723284d20594a01b0011b)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-314b12a3535a78752f5a6a7ed3301608579e3caf3cf723284d20594a01b0011b/expansion
+Description: " -- ObservableCode constrained to 'Adult depression screening assessment' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/73832-8/info
 
 EntryElement: AdultDepressionScreeningAssessmentPerformed
 Based on: AssessmentPerformed
@@ -514,18 +514,18 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: AnaphylaxisDueToHaemophilusInfluenzaeTypeBVaccineDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to codes in the Anaphylaxis due to Haemophilus influenzae type b vaccine (disorder) valueset `(drc-b41ab1424e0ae3530a3994371ce756dd057208ea91c2718500a0e0ae61be5d04)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/drc-b41ab1424e0ae3530a3994371ce756dd057208ea91c2718500a0e0ae61be5d04/expansion
+Description: " -- ResultValue constrained to 'Anaphylaxis due to Haemophilus influenzae type b vaccine (disorder)' SNOMEDCT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/433621000124101/info
 
 EntryElement: AnaphylaxisDueToHepatitisBVaccineDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to codes in the Anaphylaxis due to Hepatitis B vaccine (disorder) valueset `(drc-6f0c918ce56bb7d3b6754dcd76c5a278811761fb92069dc23f648e7ae120deb4)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/drc-6f0c918ce56bb7d3b6754dcd76c5a278811761fb92069dc23f648e7ae120deb4/expansion
+Description: " -- ResultValue constrained to 'Anaphylaxis due to Hepatitis B vaccine (disorder)' SNOMEDCT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428321000124101/info
 
 EntryElement: AnaphylaxisDueToRotavirusVaccineDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to codes in the Anaphylaxis due to rotavirus vaccine (disorder) valueset `(drc-1dab6ca050d2860f753c6859a09cf2dbadca63aef96f10f912101205be31f62a)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/drc-1dab6ca050d2860f753c6859a09cf2dbadca63aef96f10f912101205be31f62a/expansion
+Description: " -- ResultValue constrained to 'Anaphylaxis due to rotavirus vaccine (disorder)' SNOMEDCT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428331000124103/info
 
 EntryElement: AndrogenDeprivationTherapyForUrologyCare
 Based on: Medication
@@ -881,8 +881,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.362
 
 EntryElement: AsthmaActionPlanCommunicationFromProviderToPatient
 Based on: CommunicationFromProviderToPatient
-Description: " -- ObservableCode constrained to codes in the Asthma action plan valueset `(drc-0b4e501256dea10e614683faecb602ae078e6d7aec8d85908d2c4fcce0613359)`"
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-0b4e501256dea10e614683faecb602ae078e6d7aec8d85908d2c4fcce0613359/expansion
+Description: " -- ObservableCode constrained to 'Asthma action plan' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/69981-9/info
 
 EntryElement: Asthma1PrincipalDiagnosis
 Based on: PrincipalDiagnosis
@@ -1138,8 +1138,8 @@ Subject value is type Benztropine
 
 EntryElement: BestCorrectedVisualAcuityObservableEntity
 Based on: PhysicalExam
-Description: " -- ObservableCode constrained to codes in the Best corrected visual acuity (observable entity) valueset `(drc-c165b007cbd4a8cf3bf4068e36fa9ff12f59281f8e23276d271c64dc8da701c9)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-c165b007cbd4a8cf3bf4068e36fa9ff12f59281f8e23276d271c64dc8da701c9/expansion
+Description: " -- ObservableCode constrained to 'Best corrected visual acuity (observable entity)' SNOMEDCT code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/419775003/info
 
 EntryElement: BestCorrectedVisualAcuityObservableEntityPerformed
 Based on: PhysicalExamPerformed
@@ -1247,8 +1247,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.67.1.101.
 
 EntryElement: BodyMassIndexBmiRatio
 Based on: PhysicalExam
-Description: " -- ObservableCode constrained to codes in the Body mass index (BMI) [Ratio] valueset `(drc-b1db35b04284126f3ab8045b4488e5d0a498b5c000798b42a8df87340bd99e88)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-b1db35b04284126f3ab8045b4488e5d0a498b5c000798b42a8df87340bd99e88/expansion
+Description: " -- ObservableCode constrained to 'Body mass index (BMI) [Ratio]' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/39156-5/info
 
 EntryElement: BodyMassIndexBmiRatioPerformed
 Based on: PhysicalExamPerformed
@@ -1981,8 +1981,8 @@ Subject value is type ClinicalOralEvaluation
 
 EntryElement: ClinicalSummaryScoreKccq
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Clinical summary score [KCCQ] valueset `(drc-5cd1c18b818269b520a5d664286b5c747b09a32d1f8c28bb112e658ece7a17c0)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-5cd1c18b818269b520a5d664286b5c747b09a32d1f8c28bb112e658ece7a17c0/expansion
+Description: " -- ObservableCode constrained to 'Clinical summary score [KCCQ]' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72188-6/info
 
 EntryElement: ClinicalSummaryScoreKccqPerformed
 Based on: AssessmentPerformed
@@ -2098,8 +2098,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1
 
 EntryElement: CongenitalAbsenceOfCervixDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to codes in the Congenital absence of cervix (disorder) valueset `(drc-2aee01847828ef298f92805dcf74e47c73f590a1ce12a00cedb235f1e691e47e)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/drc-2aee01847828ef298f92805dcf74e47c73f590a1ce12a00cedb235f1e691e47e/expansion
+Description: " -- ResultValue constrained to 'Congenital absence of cervix (disorder)' SNOMEDCT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/37687000/info
 
 EntryElement: ConjugatedEstrogens
 Based on: Medication
@@ -2357,8 +2357,8 @@ Subject value is type DxaDualEnergyXrayAbsorptiometryScan
 
 EntryElement: Dapsone100MgPyrimethamine125MgOralTablet
 Based on: Medication
-Description: " -- ObjectTypeCode constrained to codes in the Dapsone 100 MG / Pyrimethamine 12.5 MG Oral Tablet valueset `(drc-e7bcd5fe05acffa0b0210240916ebdd5cb263ec9e30c7f943a055e4f406b38c4)`. "
-ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/drc-e7bcd5fe05acffa0b0210240916ebdd5cb263ec9e30c7f943a055e4f406b38c4/expansion
+Description: " -- ObjectTypeCode constrained to 'Dapsone 100 MG / Pyrimethamine 12.5 MG Oral Tablet' RXNORM code"
+ObjectTypeCode from https://vsac.nlm.nih.gov/context/cs/codesystem/RXNORM/version/2018-01/code/105337/info
 
 EntryElement: Dapsone100MgPyrimethamine125MgOralTabletOrder
 Based on: MedicationOrder
@@ -2718,8 +2718,8 @@ Subject value is type DialysisServices
 
 EntryElement: DiastolicBloodPressure
 Based on: PhysicalExam
-Description: " -- ObservableCode constrained to codes in the Diastolic blood pressure valueset `(drc-b4bdff81834575092e7f8d5dea158c56df03b046f06adfb7ce4cf4741507294a)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-b4bdff81834575092e7f8d5dea158c56df03b046f06adfb7ce4cf4741507294a/expansion
+Description: " -- ObservableCode constrained to 'Diastolic blood pressure' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/8462-4/info
 
 EntryElement: DiastolicBloodPressurePerformed
 Based on: PhysicalExamPerformed
@@ -3006,8 +3006,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.145
 
 EntryElement: DocumentationOfCurrentMedicationsProcedure
 Based on: Procedure
-Description: " -- ObservableCode constrained to codes in the Documentation of current medications (procedure) valueset `(drc-7542bdf7898575dd5dbcc0ef15228f64d5b7e42c83a9ccf6cc8e7085eeb2361e)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-7542bdf7898575dd5dbcc0ef15228f64d5b7e42c83a9ccf6cc8e7085eeb2361e/expansion
+Description: " -- ObservableCode constrained to 'Documentation of current medications (procedure)' SNOMEDCT code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428191000124101/info
 
 EntryElement: DocumentationOfCurrentMedicationsProcedurePerformed
 Based on: ProcedurePerformed
@@ -3585,8 +3585,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.146
 
 EntryElement: GleasonScoreInSpecimenQualitative
 Based on: LaboratoryTest
-Description: " -- ObservableCode constrained to codes in the Gleason score in Specimen Qualitative valueset `(drc-1aece65e61ef30cd4c367b07fd4dc6158cfb1bdd4dbcf914fcfb2d89abdb6794)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-1aece65e61ef30cd4c367b07fd4dc6158cfb1bdd4dbcf914fcfb2d89abdb6794/expansion
+Description: " -- ObservableCode constrained to 'Gleason score in Specimen Qualitative' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/35266-6/info
 
 EntryElement: GleasonScoreInSpecimenQualitativePerformed
 Based on: LaboratoryTestPerformed
@@ -3761,8 +3761,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: Hiv1And2TestsMeaningfulUseSet
 Based on: LaboratoryTest
-Description: " -- ObservableCode constrained to codes in the HIV 1 and 2 tests - Meaningful Use set valueset `(drc-ed81586a626bc2b5d9f3dcda0c8c45ed7fa999f7951e24d5883a5585bbe0ad98)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-ed81586a626bc2b5d9f3dcda0c8c45ed7fa999f7951e24d5883a5585bbe0ad98/expansion
+Description: " -- ObservableCode constrained to 'HIV 1 and 2 tests - Meaningful Use set' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/75622-1/info
 
 EntryElement: Hiv1And2TestsMeaningfulUseSetPerformed
 Based on: LaboratoryTestPerformed
@@ -3904,8 +3904,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.376
 
 EntryElement: HeartRate
 Based on: PhysicalExam
-Description: " -- ObservableCode constrained to codes in the Heart rate valueset `(drc-6815def8ee9fb6107af4a29a9d28a09d954d2b03eade747240bdcce562809ccb)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-6815def8ee9fb6107af4a29a9d28a09d954d2b03eade747240bdcce562809ccb/expansion
+Description: " -- ObservableCode constrained to 'Heart rate' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/8867-4/info
 
 EntryElement: HeartRatePerformed
 Based on: PhysicalExamPerformed
@@ -4611,8 +4611,8 @@ Subject value is type InfluenzaVaccine1
 
 EntryElement: InfluenzaVirusVaccineAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to codes in the Influenza virus vaccine adverse reaction (disorder) valueset `(drc-7a824e1f480b8851627a8aedc92f10de7c6164f0138d54bc0d9eda454d711a78)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/drc-7a824e1f480b8851627a8aedc92f10de7c6164f0138d54bc0d9eda454d711a78/expansion
+Description: " -- ResultValue constrained to 'Influenza virus vaccine adverse reaction (disorder)' SNOMEDCT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/420113004/info
 
 EntryElement: InjectableFactorXaInhibitorForVteProphylaxis
 Based on: Medication
@@ -5432,8 +5432,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: MaternalPostpartumDepressionCareRegimeTherapy
 Based on: Intervention
-Description: " -- ActivityCode constrained to codes in the Maternal postpartum depression care (regime/therapy) valueset `(drc-8f89ba1789e82b1865ea7952ebb8114cb7b569eb7a63c89889db7eed55d789f5)`. "
-ActivityCode from https://vsac.nlm.nih.gov/valueset/drc-8f89ba1789e82b1865ea7952ebb8114cb7b569eb7a63c89889db7eed55d789f5/expansion
+Description: " -- ActivityCode constrained to 'Maternal postpartum depression care (regime/therapy)' SNOMEDCT code"
+ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428231000124106/info
 
 EntryElement: MaternalPostpartumDepressionCareRegimeTherapyPerformed
 Based on: InterventionPerformed
@@ -5442,8 +5442,8 @@ Subject value is type MaternalPostpartumDepressionCareRegimeTherapy
 
 EntryElement: MaternalPostpartumDepressionScreeningProcedure
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Maternal postpartum depression screening (procedure) valueset `(drc-e64de69923f30351dcf463016bdd5d965bb040a20e2112670a50d33a5a0ccc8c)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-e64de69923f30351dcf463016bdd5d965bb040a20e2112670a50d33a5a0ccc8c/expansion
+Description: " -- ObservableCode constrained to 'Maternal postpartum depression screening (procedure)' SNOMEDCT code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428221000124108/info
 
 EntryElement: MaternalPostpartumDepressionScreeningProcedurePerformed
 Based on: AssessmentPerformed
@@ -5831,8 +5831,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: NeomycinAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to codes in the Neomycin adverse reaction (disorder) valueset `(drc-4dac8fcacd00b2a701c8cf840724d1b5dcfea3b31a507b04fe72bb8c4d38f810)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/drc-4dac8fcacd00b2a701c8cf840724d1b5dcfea3b31a507b04fe72bb8c4d38f810/expansion
+Description: " -- ResultValue constrained to 'Neomycin adverse reaction (disorder)' SNOMEDCT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/292927007/info
 
 EntryElement: NeonatalIntensiveCareUnitNicuFacilityLocations
 Based on: FacilityLocations
@@ -6452,8 +6452,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.451
 
 EntryElement: PainScoreHoos
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Pain score [HOOS] valueset `(drc-a0c6d71e74ffe9153ddeedcb7e0b8aafadf18b96d8f87a952805837293192662)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-a0c6d71e74ffe9153ddeedcb7e0b8aafadf18b96d8f87a952805837293192662/expansion
+Description: " -- ObservableCode constrained to 'Pain score [HOOS]' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72097-9/info
 
 EntryElement: PainScoreHoosPerformed
 Based on: AssessmentPerformed
@@ -6564,8 +6564,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1
 
 EntryElement: PatientHealthQuestionnaire9ItemPhq9TotalScoreReported
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Patient Health Questionnaire 9 item (PHQ-9) total score [Reported] valueset `(drc-da9071720e893683cdde0cc3aaa1bc49e05e169bdeda96800c723f8563830965)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-da9071720e893683cdde0cc3aaa1bc49e05e169bdeda96800c723f8563830965/expansion
+Description: " -- ObservableCode constrained to 'Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/44261-6/info
 
 EntryElement: PatientHealthQuestionnaire9ItemPhq9TotalScoreReportedPerformed
 Based on: AssessmentPerformed
@@ -6761,8 +6761,8 @@ Subject value is type PneumococcalVaccineAdministered
 
 EntryElement: PneumococcalVaccineAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to codes in the Pneumococcal vaccine adverse reaction (disorder) valueset `(drc-6621a2eaea7ce3cd48eb4ab9ebb0e88ace7b0dc68e7013b434af66263eee4dcd)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/drc-6621a2eaea7ce3cd48eb4ab9ebb0e88ace7b0dc68e7013b434af66263eee4dcd/expansion
+Description: " -- ResultValue constrained to 'Pneumococcal vaccine adverse reaction (disorder)' SNOMEDCT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/293116002/info
 
 EntryElement: PneumocystisJiroveciPneumoniaPcpProphylaxis
 Based on: Medication
@@ -6786,13 +6786,13 @@ Subject value is type PneumocystisJiroveciPneumoniaPcpProphylaxis
 
 EntryElement: PoliomyelitisVaccineAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to codes in the Poliomyelitis vaccine adverse reaction (disorder) valueset `(drc-be3e22fef9c7ce13a776d2225e933c1f650348e17dbd8bac6c67d53fc8c57013)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/drc-be3e22fef9c7ce13a776d2225e933c1f650348e17dbd8bac6c67d53fc8c57013/expansion
+Description: " -- ResultValue constrained to 'Poliomyelitis vaccine adverse reaction (disorder)' SNOMEDCT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/293117006/info
 
 EntryElement: PolymyxinBAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to codes in the Polymyxin B adverse reaction (disorder) valueset `(drc-6a2083e13d02b9cc9c0828593a237d34e2b893ae206b9774aeaa242312d25785)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/drc-6a2083e13d02b9cc9c0828593a237d34e2b893ae206b9774aeaa242312d25785/expansion
+Description: " -- ResultValue constrained to 'Polymyxin B adverse reaction (disorder)' SNOMEDCT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/292992006/info
 
 EntryElement: PositiveFindingResult
 Based on: Result
@@ -6806,8 +6806,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.143
 
 EntryElement: PostoperativeFollowUpVisitNormallyIncludedInTheSurgicalPackageToIndicateThatAnEvaluationAndManagementServiceWasPerformedDuringAPostoperativePeriodForAReasonSRelatedToTheOriginalProcedure
 Based on: Encounter
-Description: " -- ActivityCode constrained to codes in the Postoperative follow-up visit, normally included in the surgical package, to indicate that an evaluation and management service was performed during a postoperative period for a reason(s) related to the original procedure valueset `(drc-bc08643b62dc8c9ef50b5a8ab5595190086b5f7be562a4effa14f405461c1271)`. "
-ActivityCode from https://vsac.nlm.nih.gov/valueset/drc-bc08643b62dc8c9ef50b5a8ab5595190086b5f7be562a4effa14f405461c1271/expansion
+Description: " -- ActivityCode constrained to 'Postoperative follow-up visit, normally included in the surgical package, to indicate that an evaluation and management service was performed during a postoperative period for a reason(s) related to the original procedure' CPT code"
+ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/CPT/version/2018/code/99024/info
 
 EntryElement: PostoperativeFollowUpVisitNormallyIncludedInTheSurgicalPackageToIndicateThatAnEvaluationAndManagementServiceWasPerformedDuringAPostoperativePeriodForAReasonSRelatedToTheOriginalProcedurePerformed
 Based on: EncounterPerformed
@@ -7375,8 +7375,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.147
 
 EntryElement: QualityOfLifeScoreHoos
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Quality of life score [HOOS] valueset `(drc-70e795b1fe63f1b98ac0eedc0e03f9b5a8746cdca458608ba4465dc459be59b3)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-70e795b1fe63f1b98ac0eedc0e03f9b5a8746cdca458608ba4465dc459be59b3/expansion
+Description: " -- ObservableCode constrained to 'Quality of life score [HOOS]' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72093-8/info
 
 EntryElement: QualityOfLifeScoreHoosPerformed
 Based on: AssessmentPerformed
@@ -7385,8 +7385,8 @@ Subject value is type QualityOfLifeScoreHoos
 
 EntryElement: QualityOfLifeScoreKccq
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Quality of life score [KCCQ] valueset `(drc-af9a6724ea262b5d0f9c1e53e721b496d8e43f325139bdb5a0efeb684ae69683)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-af9a6724ea262b5d0f9c1e53e721b496d8e43f325139bdb5a0efeb684ae69683/expansion
+Description: " -- ObservableCode constrained to 'Quality of life score [KCCQ]' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72189-4/info
 
 EntryElement: QualityOfLifeScoreKccqPerformed
 Based on: AssessmentPerformed
@@ -7395,8 +7395,8 @@ Subject value is type QualityOfLifeScoreKccq
 
 EntryElement: QualityOfLifeScoreKoos
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Quality of life score [KOOS] valueset `(drc-6bacb446c606b92de72b0c89b7d886b0e5679e2886df1750f4de4cffafd649c2)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-6bacb446c606b92de72b0c89b7d886b0e5679e2886df1750f4de4cffafd649c2/expansion
+Description: " -- ObservableCode constrained to 'Quality of life score [KOOS]' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72098-7/info
 
 EntryElement: QualityOfLifeScoreKoosPerformed
 Based on: AssessmentPerformed
@@ -7626,8 +7626,8 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.
 
 EntryElement: RiskForVenousThromboembolism
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Risk for venous thromboembolism valueset `(drc-522a38859e8337cb6214742610b449c149172dccc97f176b0b580b4d3f975004)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-522a38859e8337cb6214742610b449c149172dccc97f176b0b580b4d3f975004/expansion
+Description: " -- ObservableCode constrained to 'Risk for venous thromboembolism' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72136-5/info
 
 EntryElement: RiskForVenousThromboembolismPerformed
 Based on: AssessmentPerformed
@@ -7651,8 +7651,8 @@ Subject value is type RotavirusVaccine3DoseSchedule
 
 EntryElement: RotavirusVaccineHumanAttenuatedRv12DoseScheduleLiveForOralUse
 Based on: Procedure
-Description: " -- ObservableCode constrained to codes in the Rotavirus vaccine, human, attenuated (RV1), 2 dose schedule, live, for oral use valueset `(drc-e0349078490b253b08a9a6c03e15592ebae60849fc26c6ca0874d6b6fe0403c1)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-e0349078490b253b08a9a6c03e15592ebae60849fc26c6ca0874d6b6fe0403c1/expansion
+Description: " -- ObservableCode constrained to 'Rotavirus vaccine, human, attenuated (RV1), 2 dose schedule, live, for oral use' CPT code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/CPT/version/2018/code/90681/info
 
 EntryElement: RotavirusVaccineHumanAttenuatedRv12DoseScheduleLiveForOralUsePerformed
 Based on: ProcedurePerformed
@@ -7661,8 +7661,8 @@ Subject value is type RotavirusVaccineHumanAttenuatedRv12DoseScheduleLiveForOral
 
 EntryElement: RotavirusVaccinePentavalentRv53DoseScheduleLiveForOralUse
 Based on: Procedure
-Description: " -- ObservableCode constrained to codes in the Rotavirus vaccine, pentavalent (RV5), 3 dose schedule, live, for oral use valueset `(drc-da0526efb838d456869a95aeb48c08b75f3c3085226eb236b6584feb0b80023d)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-da0526efb838d456869a95aeb48c08b75f3c3085226eb236b6584feb0b80023d/expansion
+Description: " -- ObservableCode constrained to 'Rotavirus vaccine, pentavalent (RV5), 3 dose schedule, live, for oral use' CPT code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/CPT/version/2018/code/90680/info
 
 EntryElement: RotavirusVaccinePentavalentRv53DoseScheduleLiveForOralUsePerformed
 Based on: ProcedurePerformed
@@ -7781,8 +7781,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.102
 
 EntryElement: SevereDementiaDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to codes in the Severe dementia (disorder) valueset `(drc-4bbf4abed15122216ab9eb4448a76aac2a50a6eb3589f945bf561286c6788354)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/drc-4bbf4abed15122216ab9eb4448a76aac2a50a6eb3589f945bf561286c6788354/expansion
+Description: " -- ResultValue constrained to 'Severe dementia (disorder)' SNOMEDCT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428351000124105/info
 
 EntryElement: SexuallyActive
 Based on: Assessment
@@ -7832,8 +7832,8 @@ Subject value is type SpeechAndHearingEvaluation
 
 EntryElement: SportRecreationScoreHoos
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Sport-recreation score [HOOS] valueset `(drc-a83df97a3d21028aa87ecefaf03f250f42886831114995d0df0fe0adc31bd74e)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-a83df97a3d21028aa87ecefaf03f250f42886831114995d0df0fe0adc31bd74e/expansion
+Description: " -- ObservableCode constrained to 'Sport-recreation score [HOOS]' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72094-6/info
 
 EntryElement: SportRecreationScoreHoosPerformed
 Based on: AssessmentPerformed
@@ -7927,8 +7927,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: StreptomycinAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to codes in the Streptomycin adverse reaction (disorder) valueset `(drc-bf49ef626cbfd7fd417720fcd9ca97199a85ec02467842b246e643556aecad6b)`"
-ResultValue from https://vsac.nlm.nih.gov/valueset/drc-bf49ef626cbfd7fd417720fcd9ca97199a85ec02467842b246e643556aecad6b/expansion
+Description: " -- ResultValue constrained to 'Streptomycin adverse reaction (disorder)' SNOMEDCT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/292925004/info
 
 EntryElement: SubcutaneousRouteRoute
 Based on: Route
@@ -7957,8 +7957,8 @@ Subject value is type SuicideRiskAssessment
 
 EntryElement: SuicideRiskAssessmentProcedure
 Based on: Intervention
-Description: " -- ActivityCode constrained to codes in the Suicide risk assessment (procedure) valueset `(drc-c81885cf80013c9f1448d7aa50939c05011af25021a47bb98df44ec175ebe707)`. "
-ActivityCode from https://vsac.nlm.nih.gov/valueset/drc-c81885cf80013c9f1448d7aa50939c05011af25021a47bb98df44ec175ebe707/expansion
+Description: " -- ActivityCode constrained to 'Suicide risk assessment (procedure)' SNOMEDCT code"
+ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/225337009/info
 
 EntryElement: SuicideRiskAssessmentProcedurePerformed
 Based on: InterventionPerformed
@@ -7967,8 +7967,8 @@ Subject value is type SuicideRiskAssessmentProcedure
 
 EntryElement: SymptomsScoreHoos
 Based on: Assessment
-Description: " -- ObservableCode constrained to codes in the Symptoms score [HOOS] valueset `(drc-b5dd36a85d7719e9a76c842dfe7566230ceb1cb218634b62b4f26ec02772d0e6)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-b5dd36a85d7719e9a76c842dfe7566230ceb1cb218634b62b4f26ec02772d0e6/expansion
+Description: " -- ObservableCode constrained to 'Symptoms score [HOOS]' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72096-1/info
 
 EntryElement: SymptomsScoreHoosPerformed
 Based on: AssessmentPerformed
@@ -7990,8 +7990,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.100
 
 EntryElement: SystolicBloodPressure
 Based on: PhysicalExam
-Description: " -- ObservableCode constrained to codes in the Systolic blood pressure valueset `(drc-f6a92d7503c3bf27d99920eb885363b716972c2aeeac8a6e69d4d8682291e7f4)`. "
-ObservableCode from https://vsac.nlm.nih.gov/valueset/drc-f6a92d7503c3bf27d99920eb885363b716972c2aeeac8a6e69d4d8682291e7f4/expansion
+Description: " -- ObservableCode constrained to 'Systolic blood pressure' LOINC code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/8480-6/info
 
 EntryElement: SystolicBloodPressurePerformed
 Based on: PhysicalExamPerformed
@@ -8706,8 +8706,8 @@ Subject value is type XRayStudyAllInclusive
 
 EntryElement: RotavirusLiveMonovalentVaccine
 Based on: Immunization
-Description: " -- ObjectTypeCode constrained to codes in the rotavirus, live, monovalent vaccine valueset `(drc-a4fce6c07a6e4e9917fadf92ae9ed22c66d9e0efc5fef78f02d17bb776b888f2)`. "
-ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/drc-a4fce6c07a6e4e9917fadf92ae9ed22c66d9e0efc5fef78f02d17bb776b888f2/expansion
+Description: " -- ObjectTypeCode constrained to 'rotavirus, live, monovalent vaccine' CVX code"
+ObjectTypeCode from https://vsac.nlm.nih.gov/context/cs/codesystem/CVX/version/2017-11/code/119/info
 
 EntryElement: RotavirusLiveMonovalentVaccineAdministered
 Based on: ImmunizationAdministered
