@@ -1085,7 +1085,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.10
 
 EntryElement: BehavioralNeuropsychAssessmentPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus:  This value set contains concepts related to visits for assessments for neuropsychological assessments.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes applicable neuropsychological assessments for behavioral health.),(Exclusion Criteria:  No exclusions.) Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time) The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location -- Subject constrained to the Behavioral/Neuropsych Assessment"
+Description: "(Clinical Focus:  This value set contains concepts related to visits for assessments for neuropsychological assessments.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes applicable neuropsychological assessments for behavioral health.),(Exclusion Criteria:  No exclusions.) -- Subject constrained to the Behavioral/Neuropsych Assessment"
 Subject value is type BehavioralNeuropsychAssessment
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -1262,7 +1262,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: BoneScanPerformed
 Based on: DiagnosticStudyPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Bone Scan"
+Description: "(Clinical Focus: This value set contains concepts related to bone scan diagnostic imaging.),(Data Element Scope: This value set may use QDM category Diagnostic Study.),(Inclusion Criteria: Includes  conventional technetium-99m-MDP bone scan as well as 18F-NaF PET (or PET/CT) scan.),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Bone Scan"
 Subject value is type BoneScan
     0..0   AuthorDatetime
     0..0   Result
@@ -1468,7 +1468,7 @@ Subject value is type CtColonography
 
 EntryElement: CancerDiagnosis
 Based on: Diagnosis
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Cancer valueset `(2.16.840.1.113883.3.526.3.1010)`"
+Description: "(Clinical Focus: This value set contains concepts related to cancer diagnosis.),(Data Element Scope: This value set may use QDM category Diagnosis.),(Inclusion Criteria: Includes all relevant concepts associated with cancer diagnoses.),(Exclusion Criteria: No exclusions.) -- ResultValue constrained to codes in the Cancer valueset `(2.16.840.1.113883.3.526.3.1010)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1010/expansion
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
@@ -1481,7 +1481,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: CancerStagingPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Cancer Staging"
+Description: "(Clinical Focus: This value set contains concepts related to cancer staging with the intent to obtain information such as the tumor size.),(Data Element Scope: This value set may use QDM category Procedure. ),(Inclusion Criteria: Includes all relevant concepts associated with cancer staging.),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Cancer Staging"
 Subject value is type CancerStaging
     0..0   AuthorDatetime
     0..0   Reason
@@ -1701,7 +1701,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: ChemotherapyAdministrationPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Chemotherapy Administration"
+Description: "(Clinical Focus: This value set contains concepts related to chemotherapy administration.),(Data Element Scope: This value set may use QDM category Procedure.),(Inclusion Criteria: Includes all relevant concepts related to chemotherapy administration.),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Chemotherapy Administration"
 Subject value is type ChemotherapyAdministration
     0..0   AuthorDatetime
     0..0   Reason
@@ -2231,7 +2231,7 @@ Subject value is type CounselingForPhysicalActivity
 
 EntryElement: CupToDiscRatio
 Based on: DiagnosticStudy
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObservableCode constrained to codes in the Cup to Disc Ratio valueset `(2.16.840.1.113883.3.526.3.1333)`. "
+Description: "(Clinical Focus: This value set contains concepts for studies specific to obtaining cup to disc ratio by ophthalmoscopy.),(Data Element Scope: This value set may use QDM category Diagnostic Study.),(Inclusion Criteria:  Includes studies using ophthalmoscopy.),(Exclusion Criteria: No exclusions.) -- ObservableCode constrained to codes in the Cup to Disc Ratio valueset `(2.16.840.1.113883.3.526.3.1333)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1333/expansion
 
 EntryElement: CupToDiscRatioPerformed
@@ -3705,7 +3705,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.11
 
 EntryElement: GroupPsychotherapyPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Group Psychotherapy"
+Description: "(Clinical Focus: This value set contains concepts related to visits during which group psychotherapy is performed.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes concepts related to group psychotherapy.),(Exclusion Criteria: Does not include family psychotherapy or individual psychotherapy.) -- Subject constrained to the Group Psychotherapy"
 Subject value is type GroupPsychotherapy
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -5374,7 +5374,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.113883.3.67.1.101.3.
 
 EntryElement: MajorDepressiveDisorderActiveDiagnoses
 Based on: Diagnoses
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development)"
+Description: "(Clinical Focus: This value set contains concepts related major depressive disorders that are active.),(Data Element Scope: This value set may use QDM category Diagnosis.),(Inclusion Criteria: Includes all relevant concepts for major depressive disorder diagnoses.),(Exclusion Criteria: Does not include major depressive disorders in remission.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1491/expansion
 
 EntryElement: MalabsorptionSyndromesDiagnosis
@@ -5991,7 +5991,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.10
 
 EntryElement: OccupationalTherapyEvaluationPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set contains concepts related to visits for evaluations for occupational therapy services.),(Data Element Scope:  This value set may use QDM category Encounter.),(Inclusion Criteria: Includes all applicable codes for Occupational Therapy evaluations.),(Exclusion Criteria: No exclusions.), Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time) The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location -- Subject constrained to the Occupational Therapy Evaluation"
+Description: "(Clinical Focus: This value set contains concepts related to visits for evaluations for occupational therapy services.),(Data Element Scope:  This value set may use QDM category Encounter.),(Inclusion Criteria: Includes all applicable codes for Occupational Therapy evaluations.),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Occupational Therapy Evaluation"
 Subject value is type OccupationalTherapyEvaluation
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -6066,7 +6066,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.12
 
 EntryElement: OphthalmologicalServicesPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set contains concepts related to ophthalmological visits.),(Data Element Scope:  This value set may use QDM category Encounter.),(Inclusion Criteria: Includes relevant encounters during which the patient sees an eye care professional.),(Exclusion Criteria: No exclusions.) -- Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. (Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time)),(The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained.),(The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location")
+Description: "(Clinical Focus: This value set contains concepts related to ophthalmological visits.),(Data Element Scope:  This value set may use QDM category Encounter.),(Inclusion Criteria: Includes relevant encounters during which the patient sees an eye care professional.),(Exclusion Criteria: No exclusions.)")
 Subject value is type OphthalmologicalServices
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -6089,7 +6089,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: OpticDiscExamForStructuralAbnormalitiesPerformed
 Based on: DiagnosticStudyPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Optic Disc Exam for Structural Abnormalities"
+Description: "(Clinical Focus: This value set contains concepts for studies specific to looking for structural abnormalities of the optic disc by ophthalmoscopy.),(Data Element Scope: This value set may use QDM category Diagnostic Study.),(Inclusion Criteria: Includes studies using ophthalmoscopy.),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Optic Disc Exam for Structural Abnormalities"
 Subject value is type OpticDiscExamForStructuralAbnormalities
     0..0   Reason
     0..0   ResultDatetime
@@ -6447,7 +6447,7 @@ Subject value is type Promis29SocialRolesScore
 
 EntryElement: PainRelatedToProstateCancerDiagnosis
 Based on: Diagnosis
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Pain Related to Prostate Cancer valueset `(2.16.840.1.113883.3.526.3.451)`"
+Description: "(Clinical Focus: This value set contains concepts related to pain associated with prostate cancer.),(Data Element Scope: This value set may use QDM category Diagnosis.),(Inclusion Criteria: Includes all relevant concepts associated with pain related to prostate cancer.),(Exclusion Criteria: No Exclusions.) -- ResultValue constrained to codes in the Pain Related to Prostate Cancer valueset `(2.16.840.1.113883.3.526.3.451)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.451/expansion
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
@@ -6582,7 +6582,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.10
 
 EntryElement: PatientProviderInteractionPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set contains concepts related to provider interactions with patients that include both face-to-face and virtual types of encounters.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria:  Includes provider interactions with patients that are conducted in an office or care setting, as well as interactions which may occur via virtual methods, such as telephone calls, emails, and letters.),(Exclusion Criteria: Under  No exclusions.) Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time) The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location -- Subject constrained to the Patient Provider Interaction"
+Description: "(Clinical Focus: This value set contains concepts related to provider interactions with patients that include both face-to-face and virtual types of encounters.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria:  Includes provider interactions with patients that are conducted in an office or care setting, as well as interactions which may occur via virtual methods, such as telephone calls, emails, and letters.),(Exclusion Criteria: Under  No exclusions.) -- Subject constrained to the Patient Provider Interaction"
 Subject value is type PatientProviderInteraction
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -6595,7 +6595,7 @@ Subject value is type PatientProviderInteraction
 
 EntryElement: PatientReasonNegationRationale
 Based on: NegationRationale
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development)"
+Description: "(Clinical Focus: This value set contains concepts related to patient-specific reasons for when a patient does not receive a therapy or service.),(Data Element Scope: This value set may be used as an attribute.),(Inclusion Criteria: Includes concepts related to patient-specific reasons for not receiving a therapy or service.),(Exclusion Criteria: No exclusions.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1008/expansion
 
 EntryElement: PatientReasonForAceInhibitorOrArbDeclineCommunicationFromPatientToProvider
@@ -7194,7 +7194,7 @@ Subject value is type PromethazineHydrochloride
 
 EntryElement: ProstateCancerDiagnosis
 Based on: Diagnosis
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Prostate Cancer valueset `(2.16.840.1.113883.3.526.3.319)`"
+Description: "(Clinical Focus: This value set contains concepts related to prostate cancer diagnosis.),(Data Element Scope: This value set may use QDM category Diagnosis.),(Inclusion Criteria: Includes all relevant concepts associated with prostate cancer diagnoses.),(Exclusion Criteria: No exclusions.) -- ResultValue constrained to codes in the Prostate Cancer valueset `(2.16.840.1.113883.3.526.3.319)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.319/expansion
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
@@ -7207,7 +7207,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: ProstateCancerTreatmentPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Prostate Cancer Treatment"
+Description: "(Clinical Focus: This value set contains concepts related to prostate cancer treatments.),(Data Element Scope: This value set would use QDM category Procedure.),(Inclusion Criteria: Includes all relevant concepts related to interstitial prostate brachytherapy,  external beam radiotherapy to the prostate,  and radical prostatectomy.),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Prostate Cancer Treatment"
 Subject value is type ProstateCancerTreatment
     0..0   AuthorDatetime
     0..0   Reason
@@ -7228,7 +7228,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: ProstateSpecificAntigenTestPerformed
 Based on: LaboratoryTestPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Prostate Specific Antigen Test"
+Description: "(Clinical Focus: This value set contains concepts related to prostate specific antigen (PSA) test.),(Data Element Scope: This value set may use QDM category Laboratory Test.),(Inclusion Criteria: Includes all relevant concepts associated with prostate specific antigen (PSA) tests.),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Prostate Specific Antigen Test"
 Subject value is type ProstateSpecificAntigenTest
     0..0   AuthorDatetime
     0..0   Status
@@ -7288,7 +7288,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.14
 
 EntryElement: PsychVisitDiagnosticEvaluationPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set contains concepts related to visits during which a psychiatric diagnostic evaluation is completed.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes applicable concepts for visits with the completion of psychiatric diagnostic evaluations.),(Exclusion Criteria: No exclusions.) Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time) The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location -- Subject constrained to the Psych Visit - Diagnostic Evaluation"
+Description: "(Clinical Focus: This value set contains concepts related to visits during which a psychiatric diagnostic evaluation is completed.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes applicable concepts for visits with the completion of psychiatric diagnostic evaluations.),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Psych Visit - Diagnostic Evaluation"
 Subject value is type PsychVisitDiagnosticEvaluation
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -7305,7 +7305,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.10
 
 EntryElement: PsychVisitFamilyPsychotherapyPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Psych Visit - Family Psychotherapy"
+Description: "(Clinical Focus:This value set contains concepts related to visits during which family psychotherapy is performed.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes concepts related to family psychotherapy.),(Exclusion Criteria: Does not include group psychotherapy or individual psychotherapy visits.) -- Subject constrained to the Psych Visit - Family Psychotherapy"
 Subject value is type PsychVisitFamilyPsychotherapy
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -7322,7 +7322,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.14
 
 EntryElement: PsychVisitPsychotherapyPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set contains concepts related to visits for psychotherapy.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes visits for individual psychotherapy services.),(Exclusion Criteria: Does not include group psychotherapy or family psychotherapy.) Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time) The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location -- Subject constrained to the Psych Visit - Psychotherapy"
+Description: "(Clinical Focus: This value set contains concepts related to visits for psychotherapy.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes visits for individual psychotherapy services.),(Exclusion Criteria: Does not include group psychotherapy or family psychotherapy.) -- Subject constrained to the Psych Visit - Psychotherapy"
 Subject value is type PsychVisitPsychotherapy
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -7344,7 +7344,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.11
 
 EntryElement: PsychoanalysisPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Psychoanalysis"
+Description: "(Clinical Focus: This value set contains concepts related to visits for psychoanalysis.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes concepts related to psychoanalysis.),(Exclusion Criteria: No exclusions) -- Subject constrained to the Psychoanalysis"
 Subject value is type Psychoanalysis
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -7418,7 +7418,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: RadiationTreatmentManagementPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Radiation Treatment Management"
+Description: "(Clinical Focus: This value set contains concepts related to radiation treatment management.),(Data Element Scope: This value set may use QDM category Procedure.),(Inclusion Criteria: Includes all relevant concepts related to radiation treatment management.),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Radiation Treatment Management"
 Subject value is type RadiationTreatmentManagement
     0..0   AuthorDatetime
     0..0   Reason
@@ -7724,7 +7724,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: SalvageTherapyPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Salvage Therapy"
+Description: "(Clinical Focus: This value set contains concepts related to salvage therapy procedures.),(Data Element Scope: This value set may use QDM category Procedure.),(Inclusion Criteria: Includes all relevant concepts associated with salvage therapy procedures.),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Salvage Therapy"
 Subject value is type SalvageTherapy
     0..0   AuthorDatetime
     0..0   Reason
@@ -7858,7 +7858,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: StandardizedPainAssessmentToolPerformed
 Based on: AssessmentPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Standardized Pain Assessment Tool"
+Description: "(Clinical Focus: This value set contains concepts related to pain assessment tools or instruments used to quantify pain intensity.),(Data Element Scope: This value set may use QDM category Assessment.),(Inclusion Criteria: Includes all relevant concepts associated with pain assessment tools or instruments used to quantify pain intensity such as 0-10 numerical rating scale, visual analog scale, a categorical scale, pictorial scale, faces pain rating scale, or  the Brief Pain Inventory (BPI).),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Standardized Pain Assessment Tool"
 Subject value is type StandardizedPainAssessmentTool
     0..0   NegationRationale
     0..0   Reason
