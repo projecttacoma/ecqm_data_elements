@@ -1085,7 +1085,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.10
 
 EntryElement: BehavioralNeuropsychAssessmentPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Behavioral/Neuropsych Assessment"
+Description: "(Clinical Focus:  This value set contains concepts related to visits for assessments for neuropsychological assessments.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes applicable neuropsychological assessments for behavioral health.),(Exclusion Criteria:  No exclusions.) Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time) The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location -- Subject constrained to the Behavioral/Neuropsych Assessment"
 Subject value is type BehavioralNeuropsychAssessment
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -1564,7 +1564,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003
 
 EntryElement: CareServicesInLongTermResidentialFacilityPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Care Services in Long-Term Residential Facility"
+Description: "(Clinical Focus: This value set identifies patients living in assisted living, domicilliary care or rest homes who have had an interaction with a member of their medical team.),(Data Element Scope: This value set is developed for the encounter QDM datatype. It can potentially be used for other datatypes as well.),(Inclusion Criteria: Includes services provided to new and established patients living in assisted living, domicilliary care or rest home.),(Exclusion Criteria: Excludes visits in settings other than assisted living, domicilliary care or rest homes) -- Subject constrained to the Care Services in Long-Term Residential Facility"
 Subject value is type CareServicesInLongTermResidentialFacility
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -2011,7 +2011,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.13
 
 EntryElement: CognitiveAssessmentPerformed
 Based on: InterventionPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Cognitive Assessment"
+Description: "(Clinical Focus: This value set contains concepts related to assessments performed for the evaluation of cognition.),(Data Element Scope: This value set may use QDM category Intervention.),(Inclusion Criteria: Includes general concepts for assessments used to evaluate cognition.),(Exclusion Criteria: Does not include standardized tools used to evaluate cognition.) -- Subject constrained to the Cognitive Assessment"
 Subject value is type CognitiveAssessment
     0..0   Reason
     0..0   Result
@@ -2432,7 +2432,7 @@ Subject value is type DeliveryProcedures
 
 EntryElement: DementiaMentalDegenerationsDiagnosis
 Based on: Diagnosis
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Dementia & Mental Degenerations valueset `(2.16.840.1.113883.3.526.3.1005)`"
+Description: "(Clinical Focus: This value set contains concepts related to dementia diagnoses and mental degenerations diagnoses.),(Data Element Scope: This value set may use QDM category Diagnosis.),(Inclusion Criteria: Includes all relevant concepts related to dementia diagnoses and mental degeneration diagnoses.),(Exclusion Criteria: Does not include dementia and mental degeneration diagnoses in remission.) -- ResultValue constrained to codes in the Dementia & Mental Degenerations valueset `(2.16.840.1.113883.3.526.3.1005)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1005/expansion
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
@@ -2653,7 +2653,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: DiabeticRetinopathyDiagnosis
 Based on: Diagnosis
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Diabetic Retinopathy valueset `(2.16.840.1.113883.3.526.3.327)`"
+Description: "(Clinical Focus: This value set contains concepts related to a diagnosis of diabetic retinopathy.),(Data Element Scope: This value set may use QDM category Diagnosis.),(Inclusion Criteria:  Includes all relevant concepts associated with diabetic retinopathy diagnoses.),(Exclusion Criteria: Concepts that pertain to 'unspecified eye' are excluded from this value set.) -- ResultValue constrained to codes in the Diabetic Retinopathy valueset `(2.16.840.1.113883.3.526.3.327)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.327/expansion
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
@@ -5172,7 +5172,7 @@ Subject value is type Leucovorin
 
 EntryElement: LevelOfSeverityOfRetinopathyFindingsCommunicationFromProviderToProvider
 Based on: CommunicationFromProviderToProvider
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObservableCode constrained to codes in the Level of Severity of Retinopathy Findings valueset `(2.16.840.1.113883.3.526.3.1283)`"
+Description: "(Clinical Focus: This value set contains concepts that indicate the level of severity of retinopathy.),(Data Element Scope: This value set may use QDM category Communication, or could be used as a Diagnosis, or as an attribute to represent exam findings.),(Inclusion Criteria: This value set contains concepts including mild non-proliferative, moderate non-proliferative, severe non-proliferative, very severe non-proliferative, and proliferative diabetic retinopathy.),(Exclusion Criteria: No exclusions.) -- ObservableCode constrained to codes in the Level of Severity of Retinopathy Findings valueset `(2.16.840.1.113883.3.526.3.1283)`"
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1283/expansion
     0..0   RelatedTo
 
@@ -5328,13 +5328,13 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: MacularEdemaFindingsAbsentCommunicationFromProviderToProvider
 Based on: CommunicationFromProviderToProvider
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObservableCode constrained to codes in the Macular Edema Findings Absent valueset `(2.16.840.1.113883.3.526.3.1284)`"
+Description: "(Clinical Focus: This value set contains concepts that indicate macular edema is absent.),(Data Element Scope: This value set may use QDM category Communication, or could be used as a Diagnosis, or as an attribute to represent exam findings.),(Inclusion Criteria: This value set contains concepts which indicate the absence of macular edema. ),(Exclusion Criteria: Concepts that indicate macular edema are excluded from this value set.) -- ObservableCode constrained to codes in the Macular Edema Findings Absent valueset `(2.16.840.1.113883.3.526.3.1284)`"
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1284/expansion
     0..0   RelatedTo
 
 EntryElement: MacularEdemaFindingsPresentCommunicationFromProviderToProvider
 Based on: CommunicationFromProviderToProvider
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObservableCode constrained to codes in the Macular Edema Findings Present valueset `(2.16.840.1.113883.3.526.3.1320)`"
+Description: "(Clinical Focus: This value set contains concepts that indicate the presence of macular edema.),(Data Element Scope: This value set may use QDM category Communication, or could be used as a Diagnosis, or as an attribute to represent exam findings.),(Inclusion Criteria: This value set contains concepts which indicate the presence of macular edema.),(Exclusion Criteria: Concepts that do not indicate macular edema are excluded from this value set.) -- ObservableCode constrained to codes in the Macular Edema Findings Present valueset `(2.16.840.1.113883.3.526.3.1320)`"
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1320/expansion
     0..0   RelatedTo
 
@@ -5345,7 +5345,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: MacularExamPerformed
 Based on: DiagnosticStudyPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Macular Exam"
+Description: "(Clinical Focus: This value set contains concepts related to macular exam of the eye.),(Data Element Scope: This value set may use QDM category Diagnostic Study.),(Inclusion Criteria: Includes all relevant concepts associated with macular exams, where laterality is specified or not.),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Macular Exam"
 Subject value is type MacularExam
     0..0   AuthorDatetime
     0..0   Reason
@@ -5939,7 +5939,8 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003
 
 EntryElement: NursingFacilityVisitPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Nursing Facility Visit"
+Description: "(Clinical Focus: This value set identifies patients who have had an interaction with a member of their medical team on admission to a nursing facility.),(Data Element Scope: This value set is developed for the encounter QDM datatype. It can potentially be used for other datatypes as well.),(Inclusion Criteria: Includes services provided to new and established patients in a nursing facility (skilled, intermediate and long-term care facilities).
+),(Exclusion Criteria: Excludes visits in settings other than a nursing facility.) -- Subject constrained to the Nursing Facility Visit"
 Subject value is type NursingFacilityVisit
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -5990,7 +5991,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.10
 
 EntryElement: OccupationalTherapyEvaluationPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Occupational Therapy Evaluation"
+Description: "(Clinical Focus: This value set contains concepts related to visits for evaluations for occupational therapy services.),(Data Element Scope:  This value set may use QDM category Encounter.),(Inclusion Criteria: Includes all applicable codes for Occupational Therapy evaluations.),(Exclusion Criteria: No exclusions.), Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time) The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location -- Subject constrained to the Occupational Therapy Evaluation"
 Subject value is type OccupationalTherapyEvaluation
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -6581,7 +6582,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.10
 
 EntryElement: PatientProviderInteractionPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Patient Provider Interaction"
+Description: "(Clinical Focus: This value set contains concepts related to provider interactions with patients that include both face-to-face and virtual types of encounters.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria:  Includes provider interactions with patients that are conducted in an office or care setting, as well as interactions which may occur via virtual methods, such as telephone calls, emails, and letters.),(Exclusion Criteria: Under  No exclusions.) Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time) The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location -- Subject constrained to the Patient Provider Interaction"
 Subject value is type PatientProviderInteraction
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -7055,7 +7056,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: PrimaryOpenAngleGlaucomaDiagnosis
 Based on: Diagnosis
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Primary Open-Angle Glaucoma valueset `(2.16.840.1.113883.3.526.3.326)`"
+Description: "(Clinical Focus: This value set contains concepts related to a diagnosis of primary open-angle glaucoma (POAG).),(Data Element Scope: This value set may use QDM category Diagnosis.),(Inclusion Criteria: Includes all relevant concepts associated with a diagnosis of primary open-angle glaucoma (POAG).),(Exclusion Criteria:  Concepts that pertain to 'unspecified eye' are excluded from this value set.) -- ResultValue constrained to codes in the Primary Open-Angle Glaucoma valueset `(2.16.840.1.113883.3.526.3.326)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.326/expansion
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
@@ -7287,7 +7288,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.14
 
 EntryElement: PsychVisitDiagnosticEvaluationPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Psych Visit - Diagnostic Evaluation"
+Description: "(Clinical Focus: This value set contains concepts related to visits during which a psychiatric diagnostic evaluation is completed.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes applicable concepts for visits with the completion of psychiatric diagnostic evaluations.),(Exclusion Criteria: No exclusions.) Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time) The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location -- Subject constrained to the Psych Visit - Diagnostic Evaluation"
 Subject value is type PsychVisitDiagnosticEvaluation
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -7321,7 +7322,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.14
 
 EntryElement: PsychVisitPsychotherapyPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Psych Visit - Psychotherapy"
+Description: "(Clinical Focus: This value set contains concepts related to visits for psychotherapy.),(Data Element Scope: This value set may use QDM category Encounter.),(Inclusion Criteria: Includes visits for individual psychotherapy services.),(Exclusion Criteria: Does not include group psychotherapy or family psychotherapy.) Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time) The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location -- Subject constrained to the Psych Visit - Psychotherapy"
 Subject value is type PsychVisitPsychotherapy
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -7872,7 +7873,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.
 
 EntryElement: StandardizedToolsForAssessmentOfCognitionPerformed
 Based on: AssessmentPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Standardized Tools for Assessment of Cognition"
+Description: "(Clinical Focus: This value set contains concepts related to the total score results for the standardized tools used for the assessment of cognition.),(Data Element Scope: This value set may use QDM category Assessment),(Inclusion Criteria:  Includes total score results for the following standardized tools: -Blessed Orientation-Memory-Concentration Test (BOMC) -Montreal Cognitive Assessment (MoCA) -St. Louis University Mental Status Examination (SLUMS) -Mini-Mental State Examination (MMSE) [Note: The MMSE has not been well validated for non-Alzheimer's dementias] -Short Informant Questionnaire on Cognitive Decline in the Elderly (IQCODE) -Ascertain Dementia 8 (AD8) Questionnaire -Minimum Data Set (MDS) Brief Interview of Mental Status (BIMS) [Note: Validated for use with nursing home patients only] -Formal neuropsychological evaluation -Mini-Cog),(Exclusion Criteria: No exclusions.) -- Subject constrained to the Standardized Tools for Assessment of Cognition"
 Subject value is type StandardizedToolsForAssessmentOfCognition
     0..0   Reason
     0..0   Method
