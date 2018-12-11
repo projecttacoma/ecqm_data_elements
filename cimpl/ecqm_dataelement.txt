@@ -2372,7 +2372,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.
 
 EntryElement: DecisionToAdmitToHospitalInpatientOrder
 Based on: EncounterOrder
-Description: "(Clinical Focus: This grouping of value sets identifies procedures that are commonly used for capturing an emergency decision to admit a patient to an inpatient hospital setting.),(Data Element Scope: The intent of this data element is to identify an emergency decision to admit a patient to an inpatient hospital setting. Using the Quality Data Model, this particular element will map to the 'Encounter' category.),(Inclusion Criteria: Include codes representing an emergency decision to admit a patient to an inpatient hospital setting utilizing the SNOMED CT system.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.) -- Subject constrained to the Decision to Admit to Hospital Inpatient"
+Description: "(Clinical Focus: This grouping of value sets identifies procedures that are commonly used for capturing an emergency decision to admit a patient to an inpatient hospital setting.),(Data Element Scope: The intent of this data element is to identify an emergency decision to admit a patient to an inpatient hospital setting. Using the Quality Data Model, this particular element will map to the 'Encounter' category.),(Inclusion Criteria: Include codes representing an emergency decision to admit a patient to an inpatient hospital setting utilizing the SNOMED CT system.),(Exclusion Criteria: None.) -- Subject constrained to the Decision to Admit to Hospital Inpatient"
 Subject value is type DecisionToAdmitToHospitalInpatient
     0..0   Reason
     0..0   FacilityLocation
@@ -3155,7 +3155,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.30
 
 EntryElement: EncounterInpatientPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This set of values identify the most common inpatient encounter types.),(Data Element Scope: The intent of this data element is to identify patients who have had an inpatient encounter. Using the Quality Data Model, this particular element will map to the 'encounter' category.),(Inclusion Criteria: Only SNOMED CT codes representing inpatient encounter should be included.),(Exclusion Criteria: None.) -- Subject constrained to the Encounter Inpatient"
+Description: "(Clinical Focus: This set of values identify the most common inpatient encounter types.),(Data Element Scope: The intent of this data element is to identify patients who have had an inpatient encounter. Using the Quality Data Model, this value set will map to the 'Encounter' category.),(Inclusion Criteria: Only SNOMED CT codes representing inpatient encounter should be included.),(Exclusion Criteria: None.) -- Subject constrained to the Encounter Inpatient"
 Subject value is type EncounterInpatient
     0..0   AuthorDatetime
     0..0   AdmissionSource
