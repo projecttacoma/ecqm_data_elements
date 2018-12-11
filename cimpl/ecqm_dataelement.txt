@@ -2123,7 +2123,7 @@ Subject value is type ConjugatedEstrogensMedroxyprogesterone
 
 EntryElement: ConsultantReportCommunicationFromProviderToProvider
 Based on: CommunicationFromProviderToProvider
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObservableCode constrained to codes in the Consultant Report valueset `(2.16.840.1.113883.3.464.1003.121.12.1006)`"
+Description: "(Clinical Focus: This value set contains concepts related to consultant reports.),(Data Element Scope:  This value set may use QDM category Communication.),(Inclusion Criteria: Includes written consultant reports.),(Exclusion Criteria: Does not include reports that are conducted via telephone calls or verbal communication.) -- ObservableCode constrained to codes in the Consultant Report valueset `(2.16.840.1.113883.3.464.1003.121.12.1006)`"
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.121.12.1006/expansion
     0..0   NegationRationale
 
@@ -6065,7 +6065,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.12
 
 EntryElement: OphthalmologicalServicesPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Ophthalmological Services"
+Description: "(Clinical Focus: This value set contains concepts related to ophthalmological visits.),(Data Element Scope:  This value set may use QDM category Encounter.),(Inclusion Criteria: Includes relevant encounters during which the patient sees an eye care professional.),(Exclusion Criteria: No exclusions.) -- Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. (Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time)),(The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained.),(The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location")
 Subject value is type OphthalmologicalServices
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -7438,7 +7438,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003
 
 EntryElement: ReferralPerformed
 Based on: InterventionPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Referral"
+Description: "(Clinical Focus:  This value set contains concepts related to a referral for a patient to a practitioner for evaluation, treatment, or co-management of a patient's condition.),(Data Element Scope: This value set may use QDM category Intervention.),(Inclusion Criteria: Includes referrals and consultations.),(Exclusion Criteria: Does not include self referrals.),(Intervention, Performed: Data elements that meet criteria using this datatype should document the completion of the intervention indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – The time the intervention begins stopTime – The time the intervention ends NOTE - timing refers to a single instance of an intervention. If a measure seeks to evaluate multiple interventions over a period of time, the measure developer should use CQL logic to represent the query request.)"
 Subject value is type Referral
     0..0   AuthorDatetime
     0..0   Reason
