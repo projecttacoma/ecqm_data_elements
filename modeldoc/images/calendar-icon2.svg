@@ -1,0 +1,17 @@
+<svg width="61px" height="65px" viewBox="0 0 61 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Artboard-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Fill-1" fill="#EFEFEF" points="0 65 61 65 61 27 0 27"></polygon>
+        <polygon id="Fill-2" fill="#043464" points="0 27 61 27 61 6 0 6"></polygon>
+        <text id="25" font-family="Rubik-Bold, Rubik" font-size="26" font-weight="bold" letter-spacing="-0.2496" fill="#004577">
+            <tspan x="13.6006" y="54.1900635">2</tspan>
+            <tspan x="30.667" y="54.1900635" letter-spacing="-17.004">5</tspan>
+        </text>
+        <text id="SEP" font-family="Rubik-Bold, Rubik" font-size="12" font-weight="bold" letter-spacing="-0.0996" fill="#FFFFFF">
+            <tspan x="18.7881" y="21.7800293">SEP</tspan>
+        </text>
+        <path d="M55.815,12 C55.815,14.209 54.024,16 51.815,16 C49.606,16 47.815,14.209 47.815,12 C47.815,9.791 49.606,8 51.815,8 C54.024,8 55.815,9.791 55.815,12" id="Fill-3" fill="#FFFFFF"></path>
+        <path d="M12.815,12 C12.815,14.209 11.024,16 8.815,16 C6.606,16 4.815,14.209 4.815,12 C4.815,9.791 6.606,8 8.815,8 C11.024,8 12.815,9.791 12.815,12" id="Fill-4" fill="#FFFFFF"></path>
+        <path d="M51.815,14 C50.711,14 49.815,13.104 49.815,12 L49.815,2 C49.815,0.896 50.711,0 51.815,0 C52.919,0 53.815,0.896 53.815,2 L53.815,12 C53.815,13.104 52.919,14 51.815,14" id="Fill-5" fill="#043464"></path>
+        <path d="M8.815,14 C7.711,14 6.815,13.104 6.815,12 L6.815,2 C6.815,0.896 7.711,0 8.815,0 C9.919,0 10.815,0.896 10.815,2 L10.815,12 C10.815,13.104 9.919,14 8.815,14" id="Fill-6" fill="#043464"></path>
+    </g>
+</svg>

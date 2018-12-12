@@ -16,5 +16,27 @@
                 }
             ]
         }
-    ]
+    ],
+    "filterStrategy": {
+        "filter": true,
+        "strategy": "element",
+        "target": [
+            "CMS50v7",
+            "CMS149v7",
+            "CMS142v7",
+            "CMS143v7",
+            "CMS161v7",
+            "CMS129v8",
+            "CMS177v7",
+            "CMS157v7",
+            "CMS104v7",
+            "CMS71v8",
+            "CMS105v7",
+            "CMS72v7",
+            "CMS111v7",
+            "CMS108v7",
+            "CMS190v7",
+            "CMS9v7"
+        ]
+    }
 }
