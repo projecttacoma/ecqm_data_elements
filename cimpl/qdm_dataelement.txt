@@ -98,7 +98,7 @@ Description: "Condition/Diagnosis/Problem represents a practitioner’s identifi
 
 EntryElement: DiagnosticStudy
 Based on: Observation
-Description: "Diagnostic Study represents any kind of medical test performed as a specific test or series of steps to aid in diagnosing or detecting disease (e.g., to establish a diagnosis, measure the progress or recovery from disease, confirm that a person is free from disease).12 The QDM defines diagnostic studies as those that are not performed in organizations that perform testing on samples of human blood, tissue, or other substance from the body. Diagnostic studies may make use of digital images and textual reports. Such studies include but are not limited to imaging studies, cardiology studies (electrocardiogram, treadmill stress testing), pulmonary-function testing, vascular laboratory testing, and others."
+Description: "Diagnostic Study represents any kind of medical test performed as a specific test or series of steps to aid in diagnosing or detecting disease (e.g., to establish a diagnosis, measure the progress or recovery from disease, confirm that a person is free from disease). The QDM defines diagnostic studies as those that are not performed in organizations that perform testing on samples of human blood, tissue, or other substance from the body. Diagnostic studies may make use of digital images and textual reports. Such studies include but are not limited to imaging studies, cardiology studies (electrocardiogram, treadmill stress testing), pulmonary-function testing, vascular laboratory testing, and others."
     Subject value is type Patient
 
 EntryElement: DiagnosticStudyOrder
@@ -127,7 +127,7 @@ Description: "Data elements that meet criteria using this datatype should docume
 
 EntryElement: Encounter
 Based on: Activity
-Description: "Encounter represents an identifiable grouping of healthcare-related activities characterized by the entity relationship between the subject of care and a healthcare provider; such a grouping is determined by the healthcare provider.13 A patient encounter represents interaction between a healthcare provider and a patient with a face-to-face patient visit to a clinician’s office, or any electronically remote interaction with a clinician for any form of diagnostic treatment or therapeutic event. Encounters can be billable events but are not limited to billable interactions. Each encounter has an associated location or modality within which it occurred (such as an office, home, electronic methods, phone encounter, or telemedicine methods). The encounter location is the patient’s location at the time of measurement. Different levels of interaction can be specified in the value associated with the element while modes of interaction (e.g., telephone) may be modeled using the data flow attribute."
+Description: "Encounter represents an identifiable grouping of healthcare-related activities characterized by the entity relationship between the subject of care and a healthcare provider; such a grouping is determined by the healthcare provider. A patient encounter represents interaction between a healthcare provider and a patient with a face-to-face patient visit to a clinician’s office, or any electronically remote interaction with a clinician for any form of diagnostic treatment or therapeutic event. Encounters can be billable events but are not limited to billable interactions. Each encounter has an associated location or modality within which it occurred (such as an office, home, electronic methods, phone encounter, or telemedicine methods). The encounter location is the patient’s location at the time of measurement. Different levels of interaction can be specified in the value associated with the element while modes of interaction (e.g., telephone) may be modeled using the data flow attribute."
     Subject value is type Patient
 
 EntryElement: EncounterOrder
@@ -332,7 +332,7 @@ Description: "Data elements that meet criteria using this datatype should docume
 
 EntryElement: Procedure
 Based on: Observation
-Description: "Procedure is derived directly from HL7 and Canada Health Infoway: “An Act whose immediate and primary outcome (post-condition) is the alteration of the physical condition of the subject. ... Procedure is but one among several types of clinical activities such as observation, substance- administrations, and communicative interactions ... Procedure does not comprise all acts of [sic] whose intent is intervention or treatment.”17 A procedure may be a surgery or other type of physical manipulation of a person’s body in whole or in part for purposes of making observations and diagnoses or providing treatment"
+Description: "Procedure is derived directly from HL7 and Canada Health Infoway: “An Act whose immediate and primary outcome (post-condition) is the alteration of the physical condition of the subject. ... Procedure is but one among several types of clinical activities such as observation, substance- administrations, and communicative interactions ... Procedure does not comprise all acts of [sic] whose intent is intervention or treatment.” A procedure may be a surgery or other type of physical manipulation of a person’s body in whole or in part for purposes of making observations and diagnoses or providing treatment"
     Subject value is type Patient
 
 EntryElement: ProcedureOrder
@@ -367,7 +367,7 @@ Description: "Data elements that meet criteria using this datatype should docume
 EntryElement: Substance
 Based on: ObjectPresentOrAbsent
 Description: "
-Substance represents a homogeneous material with definite composition that includes allergens, biological materials, chemicals, foods, drugs and materials.19 QDM distinguishes between medications from non-medication substances by separately listing medication datatypes. Substance may or may not have a code or be classified by a code system such RxNorm. Examples of a substance may include environmental agents (e.g., pollen, dust) and food (e.g., vitamins)."
+Substance represents a homogeneous material with definite composition that includes allergens, biological materials, chemicals, foods, drugs and materials. QDM distinguishes between medications from non-medication substances by separately listing medication datatypes. Substance may or may not have a code or be classified by a code system such RxNorm. Examples of a substance may include environmental agents (e.g., pollen, dust) and food (e.g., vitamins)."
     Subject value is type Patient
 
 EntryElement: SubstanceAdministered
