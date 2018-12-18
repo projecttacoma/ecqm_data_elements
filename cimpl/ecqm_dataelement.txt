@@ -3,24 +3,24 @@ Namespace: ecqm.dataelement
 Description: "Insert Text Here"
 Uses: shr.core, shr.base, shr.entity, qdm.attribute, qdm.dataelement
 
-EntryElement: AceInhibitorOrArb
+EntryElement: ACEInhibitorOrARB
 Based on: Medication
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObjectTypeCode constrained to codes in the ACE Inhibitor or ARB valueset `(2.16.840.1.113883.3.526.3.1139)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1139/expansion
 
-EntryElement: AceInhibitorOrArbActive
+EntryElement: ACEInhibitorOrARBActive
 Based on: MedicationActive
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the ACE Inhibitor or ARB"
-Subject value is type AceInhibitorOrArb
+Subject value is type ACEInhibitorOrARB
     0..0   Dosage
     0..0   Supply
     0..0   Frequency
     0..0   Route
 
-EntryElement: AceInhibitorOrArbOrder
+EntryElement: ACEInhibitorOrARBOrder
 Based on: MedicationOrder
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the ACE Inhibitor or ARB"
-Subject value is type AceInhibitorOrArb
+Subject value is type ACEInhibitorOrARB
     0..0   ActiveDatetime
     0..0   Refills
     0..0   Dosage
@@ -30,7 +30,7 @@ Subject value is type AceInhibitorOrArb
     0..0   Method
     0..0   Reason
 
-EntryElement: AceInhibitorOrArbIngredientAllergyIntolerance
+EntryElement: ACEInhibitorOrARBIngredientAllergyIntolerance
 Based on: AllergyIntolerance
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the ACE Inhibitor or ARB Ingredient valueset `(2.16.840.1.113883.3.526.3.1489)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1489/expansion
@@ -38,24 +38,24 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.148
     0..0   Type
     0..0   Severity
 
-EntryElement: AdhdMedications
+EntryElement: ADHDMedications
 Based on: Medication
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObjectTypeCode constrained to codes in the ADHD Medications valueset `(2.16.840.1.113883.3.464.1003.196.12.1171)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.196.12.1171/expansion
 
-EntryElement: AdhdMedicationsActive
+EntryElement: ADHDMedicationsActive
 Based on: MedicationActive
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the ADHD Medications"
-Subject value is type AdhdMedications
+Subject value is type ADHDMedications
     0..0   Dosage
     0..0   Supply
     0..0   Frequency
     0..0   Route
 
-EntryElement: AdhdMedicationsDispensed
+EntryElement: ADHDMedicationsDispensed
 Based on: MedicationDispensed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the ADHD Medications"
-Subject value is type AdhdMedications
+Subject value is type ADHDMedications
     0..0   Refills
     0..0   Dosage
     0..0   Supply
@@ -240,15 +240,15 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.
     0..0   RelatedTo
     0..0   NegationRationale
 
-EntryElement: ActivitiesOfDailyLivingScoreHoos
+EntryElement: ActivitiesOfDailyLivingScoreHOOS
 Based on: Assessment
 Description: " -- ObservableCode constrained to 'Activities of daily living score [HOOS]' LOINC code"
 ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72095-3/info
 
-EntryElement: ActivitiesOfDailyLivingScoreHoosPerformed
+EntryElement: ActivitiesOfDailyLivingScoreHOOSPerformed
 Based on: AssessmentPerformed
 Description: " -- Subject constrained to the Activities of daily living score [HOOS]"
-Subject value is type ActivitiesOfDailyLivingScoreHoos
+Subject value is type ActivitiesOfDailyLivingScoreHOOS
 
 EntryElement: AcutePharyngitisDiagnosis
 Based on: Diagnosis
@@ -271,7 +271,7 @@ Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Acute and Subacute Iridocyclitis valueset `(2.16.840.1.113883.3.526.3.1241)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1241/expansion
 
-EntryElement: AcuteOrEvolvingMiPrincipalDiagnosis
+EntryElement: AcuteOrEvolvingMIPrincipalDiagnosis
 Based on: PrincipalDiagnosis
 Description: "(Clinical Focus: This grouping value set contains diagnoses used to identify patients with an acute or evolving myocardial infarction.),(Data Element Scope: The intent of this data element is to identify patients with an acute or evolving myocardial infarction. Using the Quality Data Model, this particular element would map to the Result attribute.),(Inclusion Criteria: Include codes that identify patients with an acute myocardial infarction. This is a grouping of ICD10CM and SNOMEDCT codes.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.3022/expansion
@@ -375,7 +375,7 @@ Subject value is type AlcoholAndDrugDependenceTreatment
     0..0   NegationRationale
     0..0   LengthOfStay
 
-EntryElement: AllergyToAceInhibitorOrArbDiagnosis
+EntryElement: AllergyToACEInhibitorOrARBDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Allergy to ACE Inhibitor or ARB valueset `(2.16.840.1.113883.3.526.3.1211)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1211/expansion
@@ -432,15 +432,15 @@ Subject value is type AmbulatoryStatus
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: AmbulatoryEdVisit
+EntryElement: AmbulatoryEDVisit
 Based on: Encounter
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ActivityCode constrained to codes in the Ambulatory/ED Visit valueset `(2.16.840.1.113883.3.464.1003.101.12.1061)`. "
 ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.101.12.1061/expansion
 
-EntryElement: AmbulatoryEdVisitPerformed
+EntryElement: AmbulatoryEDVisitPerformed
 Based on: EncounterPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Ambulatory/ED Visit"
-Subject value is type AmbulatoryEdVisit
+Subject value is type AmbulatoryEDVisit
     0..0   AuthorDatetime
     0..0   AdmissionSource
     0..0   DischargeDisposition
@@ -992,15 +992,15 @@ Subject value is type AverageNumberOfDrinksPerDrinkingDay
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: BmiEncounterCodeSet
+EntryElement: BMIEncounterCodeSet
 Based on: Encounter
 Description: "(Clinical Focus: This value set is intended to capture any encounter where BMI could be documented encompassing various examinations or assessments where BMI could be collected and documented by a health care provider.),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ActivityCode constrained to codes in the BMI Encounter Code Set valueset `(2.16.840.1.113883.3.600.1.1751)`. "
 ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.600.1.1751/expansion
 
-EntryElement: BmiEncounterCodeSetPerformed
+EntryElement: BMIEncounterCodeSetPerformed
 Based on: EncounterPerformed
 Description: "(Clinical Focus: This value set is intended to capture any encounter where BMI could be documented encompassing various examinations or assessments where BMI could be collected and documented by a health care provider.),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the BMI Encounter Code Set"
-Subject value is type BmiEncounterCodeSet
+Subject value is type BMIEncounterCodeSet
     0..0   AuthorDatetime
     0..0   AdmissionSource
     0..0   DischargeDisposition
@@ -1010,15 +1010,15 @@ Subject value is type BmiEncounterCodeSet
     0..0   NegationRationale
     0..0   LengthOfStay
 
-EntryElement: BmiRatio
+EntryElement: BMIRatio
 Based on: PhysicalExam
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the BMI Ratio valueset `(2.16.840.1.113883.3.600.1.1490)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.600.1.1490/expansion
 
-EntryElement: BmiRatioPerformed
+EntryElement: BMIRatioPerformed
 Based on: PhysicalExamPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the BMI Ratio"
-Subject value is type BmiRatio
+Subject value is type BMIRatio
     0..0   AuthorDatetime
     0..0   Reason
     0..0   Method
@@ -1026,15 +1026,15 @@ Subject value is type BmiRatio
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: BmiPercentile
+EntryElement: BMIPercentile
 Based on: PhysicalExam
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the BMI percentile valueset `(2.16.840.1.113883.3.464.1003.121.12.1012)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.121.12.1012/expansion
 
-EntryElement: BmiPercentilePerformed
+EntryElement: BMIPercentilePerformed
 Based on: PhysicalExamPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the BMI percentile"
-Subject value is type BmiPercentile
+Subject value is type BMIPercentile
     0..0   AuthorDatetime
     0..0   Reason
     0..0   Method
@@ -1042,15 +1042,15 @@ Subject value is type BmiPercentile
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: BpScreeningEncounterCodes
+EntryElement: BPScreeningEncounterCodes
 Based on: Encounter
 Description: "(Clinical Focus: This set of values contains encounters where a blood pressure could be performed and documented.),(Data Element Scope: ),(Inclusion Criteria: Includes examinations, assessments, evaluations, or procedure encounters where the actual procedure of taking a blood pressure is performed.),(Exclusion Criteria: ) -- ActivityCode constrained to codes in the BP Screening Encounter Codes valueset `(2.16.840.1.113883.3.600.1920)`. "
 ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.600.1920/expansion
 
-EntryElement: BpScreeningEncounterCodesPerformed
+EntryElement: BPScreeningEncounterCodesPerformed
 Based on: EncounterPerformed
 Description: "(Clinical Focus: This set of values contains encounters where a blood pressure could be performed and documented.),(Data Element Scope: ),(Inclusion Criteria: Includes examinations, assessments, evaluations, or procedure encounters where the actual procedure of taking a blood pressure is performed.),(Exclusion Criteria: ) -- Subject constrained to the BP Screening Encounter Codes"
-Subject value is type BpScreeningEncounterCodes
+Subject value is type BPScreeningEncounterCodes
     0..0   AuthorDatetime
     0..0   AdmissionSource
     0..0   DischargeDisposition
@@ -1181,24 +1181,24 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.149
     0..0   Type
     0..0   Severity
 
-EntryElement: BetaBlockerTherapyForLvsd
+EntryElement: BetaBlockerTherapyForLVSD
 Based on: Medication
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObjectTypeCode constrained to codes in the Beta Blocker Therapy for LVSD valueset `(2.16.840.1.113883.3.526.3.1184)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1184/expansion
 
-EntryElement: BetaBlockerTherapyForLvsdActive
+EntryElement: BetaBlockerTherapyForLVSDActive
 Based on: MedicationActive
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Beta Blocker Therapy for LVSD"
-Subject value is type BetaBlockerTherapyForLvsd
+Subject value is type BetaBlockerTherapyForLVSD
     0..0   Dosage
     0..0   Supply
     0..0   Frequency
     0..0   Route
 
-EntryElement: BetaBlockerTherapyForLvsdOrder
+EntryElement: BetaBlockerTherapyForLVSDOrder
 Based on: MedicationOrder
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Beta Blocker Therapy for LVSD"
-Subject value is type BetaBlockerTherapyForLvsd
+Subject value is type BetaBlockerTherapyForLVSD
     0..0   ActiveDatetime
     0..0   Refills
     0..0   Dosage
@@ -1245,15 +1245,15 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.67.1.101.
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: BodyMassIndexBmiRatio
+EntryElement: BodyMassIndexBMIRatio
 Based on: PhysicalExam
 Description: " -- ObservableCode constrained to 'Body mass index (BMI) [Ratio]' LOINC code"
 ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/39156-5/info
 
-EntryElement: BodyMassIndexBmiRatioPerformed
+EntryElement: BodyMassIndexBMIRatioPerformed
 Based on: PhysicalExamPerformed
 Description: " -- Subject constrained to the Body mass index (BMI) [Ratio]"
-Subject value is type BodyMassIndexBmiRatio
+Subject value is type BodyMassIndexBMIRatio
 
 EntryElement: BoneScan
 Based on: DiagnosticStudy
@@ -1390,15 +1390,15 @@ Based on: MedicationOrder
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Butabarbital"
 Subject value is type Butabarbital
 
-EntryElement: CabgSurgeries
+EntryElement: CABGSurgeries
 Based on: Procedure
 Description: "(Clinical Focus: This grouping of value sets identifies patients who have a CABG surgical procedure.),(Data Element Scope: The intent of this data element is to identify patients who have a CABG surgical procedure.  Using the Quality Data Model, this particular element will map to the Procedure category.),(Inclusion Criteria: Only use codes which represent CABG surgical procedures.  Codes used are to be ICD10PCS, ICD9 or SNOMED-CT codes only.),(Exclusion Criteria: Exclude codes that represent a CABG performed using a scope.) -- ObservableCode constrained to codes in the CABG Surgeries valueset `(2.16.840.1.113883.3.666.5.694)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.694/expansion
 
-EntryElement: CabgSurgeriesPerformed
+EntryElement: CABGSurgeriesPerformed
 Based on: ProcedurePerformed
 Description: "(Clinical Focus: This grouping of value sets identifies patients who have a CABG surgical procedure.),(Data Element Scope: The intent of this data element is to identify patients who have a CABG surgical procedure.  Using the Quality Data Model, this particular element will map to the Procedure category.),(Inclusion Criteria: Only use codes which represent CABG surgical procedures.  Codes used are to be ICD10PCS, ICD9 or SNOMED-CT codes only.),(Exclusion Criteria: Exclude codes that represent a CABG performed using a scope.) -- Subject constrained to the CABG Surgeries"
-Subject value is type CabgSurgeries
+Subject value is type CABGSurgeries
     0..0   AuthorDatetime
     0..0   Reason
     0..0   Method
@@ -1411,15 +1411,15 @@ Subject value is type CabgSurgeries
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: Cd4Count
+EntryElement: CD4Count
 Based on: LaboratoryTest
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObservableCode constrained to codes in the CD4+ Count valueset `(2.16.840.1.113883.3.464.1003.121.12.1004)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.121.12.1004/expansion
 
-EntryElement: Cd4CountPerformed
+EntryElement: CD4CountPerformed
 Based on: LaboratoryTestPerformed
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the CD4+ Count"
-Subject value is type Cd4Count
+Subject value is type CD4Count
     0..0   Status
     0..0   Method
     0..0   ResultDatetime
@@ -1428,15 +1428,15 @@ Subject value is type Cd4Count
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: Cd4Percentage
+EntryElement: CD4Percentage
 Based on: LaboratoryTest
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObservableCode constrained to codes in the CD4+ Percentage valueset `(2.16.840.1.113883.3.464.1003.121.12.1005)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.121.12.1005/expansion
 
-EntryElement: Cd4PercentagePerformed
+EntryElement: CD4PercentagePerformed
 Based on: LaboratoryTestPerformed
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the CD4+ Percentage"
-Subject value is type Cd4Percentage
+Subject value is type CD4Percentage
     0..0   Status
     0..0   Method
     0..0   ResultDatetime
@@ -2075,7 +2075,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: ConditionsDueToHumanImmunodeficiencyVirusHivDiagnosis
+EntryElement: ConditionsDueToHumanImmunodeficiencyVirusHIVDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: Infectious Conditions),(Data Element Scope: HIV infection as a condition),(Inclusion Criteria: HIV infection as a condition),(Exclusion Criteria: Conditions associated with HIV infection.) -- ResultValue constrained to codes in the Conditions Due To Human Immunodeficiency Virus (HIV) valueset `(2.16.840.1.113762.1.4.1056.54)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1056.54/expansion
@@ -2191,7 +2191,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1110.12
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: CoronaryArteryDiseaseNoMiDiagnosis
+EntryElement: CoronaryArteryDiseaseNoMIDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Coronary Artery Disease No MI valueset `(2.16.840.1.113883.3.526.3.369)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.369/expansion
@@ -2283,22 +2283,22 @@ Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Cysts of Iris, Ciliary Body, and Anterior Chamber valueset `(2.16.840.1.113883.3.526.3.1420)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1420/expansion
 
-EntryElement: DexaDualEnergyXrayAbsorptiometryBoneDensityForUrologyCare
+EntryElement: DEXADualEnergyXrayAbsorptiometryBoneDensityForUrologyCare
 Based on: DiagnosticStudy
 Description: "(Clinical Focus: Xray studies to determine bone density.),(Data Element Scope: The intent of this data element is to identify patients with low bone mineral density),(Inclusion Criteria: 1 or more axial sites, axial skeleton (hips, pelvis, spine) or 1 or more appendicular skeleton sites (radius, wrist, heel)),(Exclusion Criteria: Study other than DEXA) -- ObservableCode constrained to codes in the DEXA Dual Energy Xray Absorptiometry, Bone Density for Urology Care valueset `(2.16.840.1.113762.1.4.1151.38)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1151.38/expansion
 
-EntryElement: DexaDualEnergyXrayAbsorptiometryBoneDensityForUrologyCareOrder
+EntryElement: DEXADualEnergyXrayAbsorptiometryBoneDensityForUrologyCareOrder
 Based on: DiagnosticStudyOrder
 Description: "(Clinical Focus: Xray studies to determine bone density.),(Data Element Scope: The intent of this data element is to identify patients with low bone mineral density),(Inclusion Criteria: 1 or more axial sites, axial skeleton (hips, pelvis, spine) or 1 or more appendicular skeleton sites (radius, wrist, heel)),(Exclusion Criteria: Study other than DEXA) -- Subject constrained to the DEXA Dual Energy Xray Absorptiometry, Bone Density for Urology Care"
-Subject value is type DexaDualEnergyXrayAbsorptiometryBoneDensityForUrologyCare
+Subject value is type DEXADualEnergyXrayAbsorptiometryBoneDensityForUrologyCare
     0..0   Reason
     0..0   Method
 
-EntryElement: DexaDualEnergyXrayAbsorptiometryBoneDensityForUrologyCarePerformed
+EntryElement: DEXADualEnergyXrayAbsorptiometryBoneDensityForUrologyCarePerformed
 Based on: DiagnosticStudyPerformed
 Description: "(Clinical Focus: Xray studies to determine bone density.),(Data Element Scope: The intent of this data element is to identify patients with low bone mineral density),(Inclusion Criteria: 1 or more axial sites, axial skeleton (hips, pelvis, spine) or 1 or more appendicular skeleton sites (radius, wrist, heel)),(Exclusion Criteria: Study other than DEXA) -- Subject constrained to the DEXA Dual Energy Xray Absorptiometry, Bone Density for Urology Care"
-Subject value is type DexaDualEnergyXrayAbsorptiometryBoneDensityForUrologyCare
+Subject value is type DEXADualEnergyXrayAbsorptiometryBoneDensityForUrologyCare
     0..0   Reason
     0..0   Result
     0..0   ResultDatetime
@@ -3032,27 +3032,27 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.67.1.101.
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: Ecg12LeadOrStudyOrder
+EntryElement: ECG12LeadOrStudyOrder
 Based on: DiagnosticStudy
 Description: "(Clinical Focus: The primary purpose of this value set is capture that a 12 lead EKG was ordered by the health care provider.),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the ECG 12 lead or study order valueset `(2.16.840.1.113883.3.600.2448)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.600.2448/expansion
 
-EntryElement: Ecg12LeadOrStudyOrderOrder
+EntryElement: ECG12LeadOrStudyOrderOrder
 Based on: DiagnosticStudyOrder
 Description: "(Clinical Focus: The primary purpose of this value set is capture that a 12 lead EKG was ordered by the health care provider.),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the ECG 12 lead or study order"
-Subject value is type Ecg12LeadOrStudyOrder
+Subject value is type ECG12LeadOrStudyOrder
     0..0   Reason
     0..0   Method
 
-EntryElement: EsrdMonthlyOutpatientServices
+EntryElement: ESRDMonthlyOutpatientServices
 Based on: Encounter
 Description: "(Clinical Focus: Under  Development),(Data Element Scope: Under  Development),(Inclusion Criteria: Under  Development),(Exclusion Criteria: Under  Development) -- ActivityCode constrained to codes in the ESRD Monthly Outpatient Services valueset `(2.16.840.1.113883.3.464.1003.109.12.1014)`. "
 ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.109.12.1014/expansion
 
-EntryElement: EsrdMonthlyOutpatientServicesPerformed
+EntryElement: ESRDMonthlyOutpatientServicesPerformed
 Based on: EncounterPerformed
 Description: "(Clinical Focus: Under  Development),(Data Element Scope: Under  Development),(Inclusion Criteria: Under  Development),(Exclusion Criteria: Under  Development) -- Subject constrained to the ESRD Monthly Outpatient Services"
-Subject value is type EsrdMonthlyOutpatientServices
+Subject value is type ESRDMonthlyOutpatientServices
     0..0   AuthorDatetime
     0..0   AdmissionSource
     0..0   DischargeDisposition
@@ -3096,15 +3096,15 @@ Subject value is type EjectionFraction
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: ElectrocardiogramEcg
+EntryElement: ElectrocardiogramECG
 Based on: DiagnosticStudy
 Description: "(Clinical Focus: This value set contains diagnoses and procedures used to define electrocardiogram (ECG).),(Data Element Scope: The intent of this data element is to identify patients who receive the diagnostic test electrocardiogram (ECG). Using the Quality Data Model, this particular element would map to the Diagnostic Study category.),(Inclusion Criteria: Include codes that identify patients receiving an electrocardiogram (ECG).),(Exclusion Criteria: None.) -- ObservableCode constrained to codes in the Electrocardiogram (ECG) valueset `(2.16.840.1.113883.3.666.5.735)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.735/expansion
 
-EntryElement: ElectrocardiogramEcgPerformed
+EntryElement: ElectrocardiogramECGPerformed
 Based on: DiagnosticStudyPerformed
 Description: "(Clinical Focus: This value set contains diagnoses and procedures used to define electrocardiogram (ECG).),(Data Element Scope: The intent of this data element is to identify patients who receive the diagnostic test electrocardiogram (ECG). Using the Quality Data Model, this particular element would map to the Diagnostic Study category.),(Inclusion Criteria: Include codes that identify patients receiving an electrocardiogram (ECG).),(Exclusion Criteria: None.) -- Subject constrained to the Electrocardiogram (ECG)"
-Subject value is type ElectrocardiogramEcg
+Subject value is type ElectrocardiogramECG
     0..0   AuthorDatetime
     0..0   Reason
     0..0   Result
@@ -3351,15 +3351,15 @@ Subject value is type FallsScreening
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: FecalOccultBloodTestFobt
+EntryElement: FecalOccultBloodTestFOBT
 Based on: LaboratoryTest
 Description: "(Clinical Focus: This value set contains codes to identify a fecal occult blood test.),(Data Element Scope: This value set was intended to identify patients who had a fecal occult blood test.),(Inclusion Criteria: Includes codes that tests for occult blood in stool.),(Exclusion Criteria: Exclude tests for occult blood in other parts of the body. Exclude order only codes and code that indicate narrative reports.) -- ObservableCode constrained to codes in the Fecal Occult Blood Test (FOBT) valueset `(2.16.840.1.113883.3.464.1003.198.12.1011)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.198.12.1011/expansion
 
-EntryElement: FecalOccultBloodTestFobtPerformed
+EntryElement: FecalOccultBloodTestFOBTPerformed
 Based on: LaboratoryTestPerformed
 Description: "(Clinical Focus: This value set contains codes to identify a fecal occult blood test.),(Data Element Scope: This value set was intended to identify patients who had a fecal occult blood test.),(Inclusion Criteria: Includes codes that tests for occult blood in stool.),(Exclusion Criteria: Exclude tests for occult blood in other parts of the body. Exclude order only codes and code that indicate narrative reports.) -- Subject constrained to the Fecal Occult Blood Test (FOBT)"
-Subject value is type FecalOccultBloodTestFobt
+Subject value is type FecalOccultBloodTestFOBT
     0..0   RelevantPeriod
     0..0   Status
     0..0   Method
@@ -3637,15 +3637,15 @@ Based on: MedicationOrder
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Glyburide / Metformin"
 Subject value is type GlyburideMetformin
 
-EntryElement: GlycoproteinIIbIiIaInhibitors
+EntryElement: GlycoproteinIIbIIIaInhibitors
 Based on: Medication
 Description: "(Clinical Focus: This set of values contains codes which identify a select medication-a Glycoprotein Iib/IIIa inhibitor.),(Data Element Scope: The intent of this data element is to identify patients who are on a Glycoprotein Iib/IIIa inhibitor.  Using the Quality Data Model, this data element maps to the Medication category.),(Inclusion Criteria: Only include codes which represent a Glycoprotein Iib/IIIa inhibitor.  These are RxNorm codes.),(Exclusion Criteria: None) -- ObjectTypeCode constrained to codes in the Glycoprotein IIb/IIIa Inhibitors valueset `(2.16.840.1.113762.1.4.1045.41)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1045.41/expansion
 
-EntryElement: GlycoproteinIIbIiIaInhibitorsAdministered
+EntryElement: GlycoproteinIIbIIIaInhibitorsAdministered
 Based on: MedicationAdministered
 Description: "(Clinical Focus: This set of values contains codes which identify a select medication-a Glycoprotein Iib/IIIa inhibitor.),(Data Element Scope: The intent of this data element is to identify patients who are on a Glycoprotein Iib/IIIa inhibitor.  Using the Quality Data Model, this data element maps to the Medication category.),(Inclusion Criteria: Only include codes which represent a Glycoprotein Iib/IIIa inhibitor.  These are RxNorm codes.),(Exclusion Criteria: None) -- Subject constrained to the Glycoprotein IIb/IIIa Inhibitors"
-Subject value is type GlycoproteinIIbIiIaInhibitors
+Subject value is type GlycoproteinIIbIIIaInhibitors
     0..0   Dosage
     0..0   Supply
     0..0   Frequency
@@ -3661,23 +3661,23 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: GraduatedCompressionStockingsGcs
+EntryElement: GraduatedCompressionStockingsGCS
 Based on: Device
 Description: "(Clinical Focus: This set of values contains codes and concepts for graduated compression stocking devices which are used to prevent VTEs in patients.),(Data Element Scope: The intent of this data element is to identify patients who have a graduated compression stocking device applied.  It may also be used to identify patients who did not have a graduated compression stocking device applied for VTE prophylaxis for an allowable reason when used with a negation rationale attribute. Using the Quality Data Model, this data element maps to the Device category.),(Inclusion Criteria: Only include codes which represent graduated compression stockings.),(Exclusion Criteria: None) -- ObjectTypeCode constrained to codes in the Graduated compression stockings (GCS) valueset `(2.16.840.1.113883.3.117.1.7.1.256)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.256/expansion
 
-EntryElement: GraduatedCompressionStockingsGcsApplied
+EntryElement: GraduatedCompressionStockingsGCSApplied
 Based on: DeviceApplied
 Description: "(Clinical Focus: This set of values contains codes and concepts for graduated compression stocking devices which are used to prevent VTEs in patients.),(Data Element Scope: The intent of this data element is to identify patients who have a graduated compression stocking device applied.  It may also be used to identify patients who did not have a graduated compression stocking device applied for VTE prophylaxis for an allowable reason when used with a negation rationale attribute. Using the Quality Data Model, this data element maps to the Device category.),(Inclusion Criteria: Only include codes which represent graduated compression stockings.),(Exclusion Criteria: None) -- Subject constrained to the Graduated compression stockings (GCS)"
-Subject value is type GraduatedCompressionStockingsGcs
+Subject value is type GraduatedCompressionStockingsGCS
     0..0   Reason
     0..0   AnatomicalLocationSite
     0..0   AnatomicalApproachSite
 
-EntryElement: GraduatedCompressionStockingsGcsOrder
+EntryElement: GraduatedCompressionStockingsGCSOrder
 Based on: DeviceOrder
 Description: "(Clinical Focus: This set of values contains codes and concepts for graduated compression stocking devices which are used to prevent VTEs in patients.),(Data Element Scope: The intent of this data element is to identify patients who have a graduated compression stocking device applied.  It may also be used to identify patients who did not have a graduated compression stocking device applied for VTE prophylaxis for an allowable reason when used with a negation rationale attribute. Using the Quality Data Model, this data element maps to the Device category.),(Inclusion Criteria: Only include codes which represent graduated compression stockings.),(Exclusion Criteria: None) -- Subject constrained to the Graduated compression stockings (GCS)"
-Subject value is type GraduatedCompressionStockingsGcs
+Subject value is type GraduatedCompressionStockingsGCS
     0..0   Reason
 
 EntryElement: GroupAStreptococcusTest
@@ -3746,14 +3746,14 @@ Subject value is type GynecologicalSurgery
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: HivDiagnosis
+EntryElement: HIVDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ResultValue constrained to codes in the HIV valueset `(2.16.840.1.113883.3.464.1003.120.12.1003)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.120.12.1003/expansion
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: Hiv1Diagnosis
+EntryElement: HIV1Diagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the HIV 1 valueset `(2.16.840.1.113883.3.464.1003.120.12.1004)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.120.12.1004/expansion
@@ -3761,15 +3761,15 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: Hiv1And2TestsMeaningfulUseSet
+EntryElement: HIV1And2TestsMeaningfulUseSet
 Based on: LaboratoryTest
 Description: " -- ObservableCode constrained to 'HIV 1 and 2 tests - Meaningful Use set' LOINC code"
 ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/75622-1/info
 
-EntryElement: Hiv1And2TestsMeaningfulUseSetPerformed
+EntryElement: HIV1And2TestsMeaningfulUseSetPerformed
 Based on: LaboratoryTestPerformed
 Description: " -- Subject constrained to the HIV 1 and 2 tests - Meaningful Use set"
-Subject value is type Hiv1And2TestsMeaningfulUseSet
+Subject value is type HIV1And2TestsMeaningfulUseSet
 
 EntryElement: HpvTest
 Based on: LaboratoryTest
@@ -4136,15 +4136,15 @@ Subject value is type HighRiskMedicationsWithDaysSupplyCriteria
     0..0   Reason
     0..0   NegationRationale
 
-EntryElement: HipDysfunctionAndOsteoarthritisOutcomeScoreForJointReplacementHoosjr
+EntryElement: HipDysfunctionAndOsteoarthritisOutcomeScoreForJointReplacementHOOSJr
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the Hip Dysfunction and Osteoarthritis Outcome Score for Joint Replacement [HOOSJR] valueset `(2.16.840.1.113883.3.464.1003.118.12.1210)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1210/expansion
 
-EntryElement: HipDysfunctionAndOsteoarthritisOutcomeScoreForJointReplacementHoosjrPerformed
+EntryElement: HipDysfunctionAndOsteoarthritisOutcomeScoreForJointReplacementHOOSJrPerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Hip Dysfunction and Osteoarthritis Outcome Score for Joint Replacement [HOOSJR]"
-Subject value is type HipDysfunctionAndOsteoarthritisOutcomeScoreForJointReplacementHoosjr
+Subject value is type HipDysfunctionAndOsteoarthritisOutcomeScoreForJointReplacementHOOSJr
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
@@ -4297,15 +4297,15 @@ Based on: AdmissionSource
 Description: "(Clinical Focus: This set of values identifies hospital environments where a patient may receive inpatient or outpatient care.),(Data Element Scope: The intent of this data element is to identify hospital environments where a patient may receive inpatient or outpatient care.  Using the Quality Data Model, this particular element will map to the Transfer category.),(Inclusion Criteria: Use the concept of hospital environment (22232009) and all its children.  Codes used are to be SNOMED-CT codes only.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1111.126/expansion
 
-EntryElement: HumanImmunodeficiencyVirusHivLaboratoryTestCodesAbAndAg
+EntryElement: HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbAndAg
 Based on: LaboratoryTest
 Description: "(Clinical Focus: Screening for HIV infection),(Data Element Scope: Laboratory tests used for HIV screening. The scope of the value set is to include some secondary HIV tests that may be present in an EHR to assure a measure of screening does not miss patients who are tested and avoid unnecessary retesting to meet the expectations of a quality measure.),(Inclusion Criteria: Laboratory tests for HIV-1 and HIV-2 antibodies or antigens.),(Exclusion Criteria: Home HIV testing, HIV genotyping tests, HIV RNA tests, HIV cultures, clinical codes used to document care provided to HIV-infected patients.) -- ObservableCode constrained to codes in the Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag) valueset `(2.16.840.1.113762.1.4.1056.50)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1056.50/expansion
 
-EntryElement: HumanImmunodeficiencyVirusHivLaboratoryTestCodesAbAndAgPerformed
+EntryElement: HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbAndAgPerformed
 Based on: LaboratoryTestPerformed
 Description: "(Clinical Focus: Screening for HIV infection),(Data Element Scope: Laboratory tests used for HIV screening. The scope of the value set is to include some secondary HIV tests that may be present in an EHR to assure a measure of screening does not miss patients who are tested and avoid unnecessary retesting to meet the expectations of a quality measure.),(Inclusion Criteria: Laboratory tests for HIV-1 and HIV-2 antibodies or antigens.),(Exclusion Criteria: Home HIV testing, HIV genotyping tests, HIV RNA tests, HIV cultures, clinical codes used to document care provided to HIV-infected patients.) -- Subject constrained to the Human Immunodeficiency Virus (HIV) Laboratory Test Codes (Ab and Ag)"
-Subject value is type HumanImmunodeficiencyVirusHivLaboratoryTestCodesAbAndAg
+Subject value is type HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbAndAg
     0..0   AuthorDatetime
     0..0   Status
     0..0   Method
@@ -4442,15 +4442,15 @@ Subject value is type HysterectomyWithNoResidualCervix
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: Inr
+EntryElement: INR
 Based on: LaboratoryTest
 Description: "(Clinical Focus: This set of values contains codes for laboratory test for INR, or International Normalized Ratio.),(Data Element Scope: The intent of this data element is to identify INR laboratory tests.  Using the Quality Data Model, this data element maps to the Laboratory Test category.),(Inclusion Criteria: Only include codes which represent a laboratory test of INR (International Normalized Ratio).  These are LOINC codes.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the INR valueset `(2.16.840.1.113883.3.117.1.7.1.213)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.213/expansion
 
-EntryElement: InrPerformed
+EntryElement: INRPerformed
 Based on: LaboratoryTestPerformed
 Description: "(Clinical Focus: This set of values contains codes for laboratory test for INR, or International Normalized Ratio.),(Data Element Scope: The intent of this data element is to identify INR laboratory tests.  Using the Quality Data Model, this data element maps to the Laboratory Test category.),(Inclusion Criteria: Only include codes which represent a laboratory test of INR (International Normalized Ratio).  These are LOINC codes.),(Exclusion Criteria: None) -- Subject constrained to the INR"
-Subject value is type Inr
+Subject value is type INR
     0..0   RelevantPeriod
     0..0   Status
     0..0   Method
@@ -4469,30 +4469,30 @@ Based on: MedicationOrder
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Imipramine"
 Subject value is type Imipramine
 
-EntryElement: InactivatedPolioVaccineIpv
+EntryElement: InactivatedPolioVaccineIPV
 Based on: Immunization
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObjectTypeCode constrained to codes in the Inactivated Polio Vaccine (IPV) valueset `(2.16.840.1.113883.3.464.1003.196.12.1219)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.196.12.1219/expansion
 
-EntryElement: InactivatedPolioVaccineIpvAdministered
+EntryElement: InactivatedPolioVaccineIPVAdministered
 Based on: ImmunizationAdministered
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Inactivated Polio Vaccine (IPV)"
-Subject value is type InactivatedPolioVaccineIpv
+Subject value is type InactivatedPolioVaccineIPV
     0..0   Reason
     0..0   Dosage
     0..0   Supply
     0..0   Route
     0..0   NegationRationale
 
-EntryElement: InactivatedPolioVaccineIpvAdministered
+EntryElement: InactivatedPolioVaccineIPVAdministered
 Based on: Procedure
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the Inactivated Polio Vaccine (IPV) Administered valueset `(2.16.840.1.113883.3.464.1003.110.12.1045)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.110.12.1045/expansion
 
-EntryElement: InactivatedPolioVaccineIpvAdministeredPerformed
+EntryElement: InactivatedPolioVaccineIPVAdministeredPerformed
 Based on: ProcedurePerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Inactivated Polio Vaccine (IPV) Administered"
-Subject value is type InactivatedPolioVaccineIpvAdministered
+Subject value is type InactivatedPolioVaccineIPVAdministered
     0..0   Reason
     0..0   Method
     0..0   Result
@@ -4616,25 +4616,25 @@ Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Influenza virus vaccine adverse reaction (disorder)' SNOMEDCT code"
 ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/420113004/info
 
-EntryElement: InjectableFactorXaInhibitorForVteProphylaxis
+EntryElement: InjectableFactorXaInhibitorForVTEProphylaxis
 Based on: Medication
 Description: "(Clinical Focus: This set of values contains codes which identify a select medication-an injectable Factor Xa inhibitor-which is used for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to identify patients who are on a select Injectable Factor Xa Inhibitor as prophylaxis for VTE.  Using the Quality Data Model, this data element maps to the Medication category.),(Inclusion Criteria: Only include codes which represent injectable Factor Xa inhibitor medications.  These are RxNorm codes.),(Exclusion Criteria: None.) -- ObjectTypeCode constrained to codes in the Injectable Factor Xa Inhibitor for VTE Prophylaxis valueset `(2.16.840.1.113883.3.117.1.7.1.211)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.211/expansion
 
-EntryElement: InjectableFactorXaInhibitorForVteProphylaxisAdministered
+EntryElement: InjectableFactorXaInhibitorForVTEProphylaxisAdministered
 Based on: MedicationAdministered
 Description: "(Clinical Focus: This set of values contains codes which identify a select medication-an injectable Factor Xa inhibitor-which is used for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to identify patients who are on a select Injectable Factor Xa Inhibitor as prophylaxis for VTE.  Using the Quality Data Model, this data element maps to the Medication category.),(Inclusion Criteria: Only include codes which represent injectable Factor Xa inhibitor medications.  These are RxNorm codes.),(Exclusion Criteria: None.) -- Subject constrained to the Injectable Factor Xa Inhibitor for VTE Prophylaxis"
-Subject value is type InjectableFactorXaInhibitorForVteProphylaxis
+Subject value is type InjectableFactorXaInhibitorForVTEProphylaxis
     0..0   Dosage
     0..0   Supply
     0..0   Frequency
     0..0   Route
     0..0   Reason
 
-EntryElement: InjectableFactorXaInhibitorForVteProphylaxisOrder
+EntryElement: InjectableFactorXaInhibitorForVTEProphylaxisOrder
 Based on: MedicationOrder
 Description: "(Clinical Focus: This set of values contains codes which identify a select medication-an injectable Factor Xa inhibitor-which is used for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to identify patients who are on a select Injectable Factor Xa Inhibitor as prophylaxis for VTE.  Using the Quality Data Model, this data element maps to the Medication category.),(Inclusion Criteria: Only include codes which represent injectable Factor Xa inhibitor medications.  These are RxNorm codes.),(Exclusion Criteria: None.) -- Subject constrained to the Injectable Factor Xa Inhibitor for VTE Prophylaxis"
-Subject value is type InjectableFactorXaInhibitorForVteProphylaxis
+Subject value is type InjectableFactorXaInhibitorForVTEProphylaxis
     0..0   ActiveDatetime
     0..0   Refills
     0..0   Dosage
@@ -4689,26 +4689,26 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.
     0..0   RelatedTo
     0..0   NegationRationale
 
-EntryElement: IntermittentPneumaticCompressionDevicesIpc
+EntryElement: IntermittentPneumaticCompressionDevicesIPC
 Based on: Device
 Description: "(Clinical Focus: This set of values represents the different types of intermittent pneumatic compression devices used for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to represent the application of certain intermittent pneumatic compression devices. Using the Quality Data Model, this data element will map to the Device category.),(Inclusion Criteria: Only include codes which represent different types of intermittent pneumatic compression devices.),(Exclusion Criteria: None) -- ObjectTypeCode constrained to codes in the Intermittent pneumatic compression devices (IPC) valueset `(2.16.840.1.113883.3.117.1.7.1.214)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.214/expansion
 
-EntryElement: IntermittentPneumaticCompressionDevicesIpcApplied
+EntryElement: IntermittentPneumaticCompressionDevicesIPCApplied
 Based on: DeviceApplied
 Description: "(Clinical Focus: This set of values represents the different types of intermittent pneumatic compression devices used for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to represent the application of certain intermittent pneumatic compression devices. Using the Quality Data Model, this data element will map to the Device category.),(Inclusion Criteria: Only include codes which represent different types of intermittent pneumatic compression devices.),(Exclusion Criteria: None) -- Subject constrained to the Intermittent pneumatic compression devices (IPC)"
-Subject value is type IntermittentPneumaticCompressionDevicesIpc
+Subject value is type IntermittentPneumaticCompressionDevicesIPC
     0..0   Reason
     0..0   AnatomicalLocationSite
     0..0   AnatomicalApproachSite
 
-EntryElement: IntermittentPneumaticCompressionDevicesIpcOrder
+EntryElement: IntermittentPneumaticCompressionDevicesIPCOrder
 Based on: DeviceOrder
 Description: "(Clinical Focus: This set of values represents the different types of intermittent pneumatic compression devices used for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to represent the application of certain intermittent pneumatic compression devices. Using the Quality Data Model, this data element will map to the Device category.),(Inclusion Criteria: Only include codes which represent different types of intermittent pneumatic compression devices.),(Exclusion Criteria: None) -- Subject constrained to the Intermittent pneumatic compression devices (IPC)"
-Subject value is type IntermittentPneumaticCompressionDevicesIpc
+Subject value is type IntermittentPneumaticCompressionDevicesIPC
     0..0   Reason
 
-EntryElement: IntoleranceToAceInhibitorOrArbDiagnosis
+EntryElement: IntoleranceToACEInhibitorOrARBDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Intolerance to ACE Inhibitor or ARB valueset `(2.16.840.1.113883.3.526.3.1212)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1212/expansion
@@ -5033,15 +5033,15 @@ Subject value is type KneeReplacementSurgery
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: LdlTest
+EntryElement: LDLTest
 Based on: LaboratoryTest
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the LDL Test valueset `(2.16.840.1.113883.3.464.1003.198.11.1029)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.198.11.1029/expansion
 
-EntryElement: LdlTestPerformed
+EntryElement: LDLTestPerformed
 Based on: LaboratoryTestPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the LDL Test"
-Subject value is type LdlTest
+Subject value is type LDLTest
     0..0   AuthorDatetime
     0..0   Status
     0..0   Method
@@ -5051,15 +5051,15 @@ Subject value is type LdlTest
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: LdlC
+EntryElement: LDLC
 Based on: LaboratoryTest
 Description: "(Clinical Focus: This set of values contains lab tests commonly used for LDL cholesterol measurement.),(Data Element Scope: The intent of this data element is to identify patients who had a lab test on a source of serum or plasma. Using the Quality Data Model, this particular element would map to Laboratory Test category.),(Inclusion Criteria: Include LDL c tests using the source of serum or plasma based on a measurement scale of mass per volume.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the LDL-c valueset `(2.16.840.1.113883.3.117.1.7.1.215)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.215/expansion
 
-EntryElement: LdlCPerformed
+EntryElement: LDLCPerformed
 Based on: LaboratoryTestPerformed
 Description: "(Clinical Focus: This set of values contains lab tests commonly used for LDL cholesterol measurement.),(Data Element Scope: The intent of this data element is to identify patients who had a lab test on a source of serum or plasma. Using the Quality Data Model, this particular element would map to Laboratory Test category.),(Inclusion Criteria: Include LDL c tests using the source of serum or plasma based on a measurement scale of mass per volume.),(Exclusion Criteria: None) -- Subject constrained to the LDL-c"
-Subject value is type LdlC
+Subject value is type LDLC
     0..0   AuthorDatetime
     0..0   RelevantPeriod
     0..0   Status
@@ -5236,24 +5236,24 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1047.42
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: LowDoseUnfractionatedHeparinForVteProphylaxis
+EntryElement: LowDoseUnfractionatedHeparinForVTEProphylaxis
 Based on: Medication
 Description: "(Clinical Focus: This set of values contains unfractionated heparin medications with strengths that could reasonably be used for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to identify patients who are on low-dose unfractionated heparin as VTE prophylaxis. Using the Quality Data Model, this data element maps to the Medication category.),(Inclusion Criteria: Injectable products that could reasonably be used to achieve a dose of at least 5000 units when administered subcutaneously.),(Exclusion Criteria: Concentrations less than 250 UNT/ML.) -- ObjectTypeCode constrained to codes in the Low Dose Unfractionated Heparin for VTE Prophylaxis valueset `(2.16.840.1.113762.1.4.1045.39)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1045.39/expansion
 
-EntryElement: LowDoseUnfractionatedHeparinForVteProphylaxisAdministered
+EntryElement: LowDoseUnfractionatedHeparinForVTEProphylaxisAdministered
 Based on: MedicationAdministered
 Description: "(Clinical Focus: This set of values contains unfractionated heparin medications with strengths that could reasonably be used for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to identify patients who are on low-dose unfractionated heparin as VTE prophylaxis. Using the Quality Data Model, this data element maps to the Medication category.),(Inclusion Criteria: Injectable products that could reasonably be used to achieve a dose of at least 5000 units when administered subcutaneously.),(Exclusion Criteria: Concentrations less than 250 UNT/ML.) -- Subject constrained to the Low Dose Unfractionated Heparin for VTE Prophylaxis"
-Subject value is type LowDoseUnfractionatedHeparinForVteProphylaxis
+Subject value is type LowDoseUnfractionatedHeparinForVTEProphylaxis
     0..0   Dosage
     0..0   Supply
     0..0   Frequency
     0..0   Reason
 
-EntryElement: LowDoseUnfractionatedHeparinForVteProphylaxisOrder
+EntryElement: LowDoseUnfractionatedHeparinForVTEProphylaxisOrder
 Based on: MedicationOrder
 Description: "(Clinical Focus: This set of values contains unfractionated heparin medications with strengths that could reasonably be used for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to identify patients who are on low-dose unfractionated heparin as VTE prophylaxis. Using the Quality Data Model, this data element maps to the Medication category.),(Inclusion Criteria: Injectable products that could reasonably be used to achieve a dose of at least 5000 units when administered subcutaneously.),(Exclusion Criteria: Concentrations less than 250 UNT/ML.) -- Subject constrained to the Low Dose Unfractionated Heparin for VTE Prophylaxis"
-Subject value is type LowDoseUnfractionatedHeparinForVteProphylaxis
+Subject value is type LowDoseUnfractionatedHeparinForVTEProphylaxis
     0..0   ActiveDatetime
     0..0   Refills
     0..0   Dosage
@@ -5262,25 +5262,25 @@ Subject value is type LowDoseUnfractionatedHeparinForVteProphylaxis
     0..0   Method
     0..0   Reason
 
-EntryElement: LowMolecularWeightHeparinForVteProphylaxis
+EntryElement: LowMolecularWeightHeparinForVTEProphylaxis
 Based on: Medication
 Description: "(Clinical Focus: This set of values represents medications used for VTE prophylaxis.  The medications are low molecular weight heparins.  The medications included in this value set are administered parenterally.),(Data Element Scope: The intent of this data element is to identify patients who are on low molecular weight heparin therapy as VTE prophylaxis.  Using the Quality Data Model, this data element maps to the Medication category.),(Inclusion Criteria: Only include RxNorm codes which specifically represent low molecular weight heparins which are administered parenterally.),(Exclusion Criteria: None.) -- ObjectTypeCode constrained to codes in the Low Molecular Weight Heparin for VTE Prophylaxis valueset `(2.16.840.1.113883.3.117.1.7.1.219)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.219/expansion
 
-EntryElement: LowMolecularWeightHeparinForVteProphylaxisAdministered
+EntryElement: LowMolecularWeightHeparinForVTEProphylaxisAdministered
 Based on: MedicationAdministered
 Description: "(Clinical Focus: This set of values represents medications used for VTE prophylaxis.  The medications are low molecular weight heparins.  The medications included in this value set are administered parenterally.),(Data Element Scope: The intent of this data element is to identify patients who are on low molecular weight heparin therapy as VTE prophylaxis.  Using the Quality Data Model, this data element maps to the Medication category.),(Inclusion Criteria: Only include RxNorm codes which specifically represent low molecular weight heparins which are administered parenterally.),(Exclusion Criteria: None.) -- Subject constrained to the Low Molecular Weight Heparin for VTE Prophylaxis"
-Subject value is type LowMolecularWeightHeparinForVteProphylaxis
+Subject value is type LowMolecularWeightHeparinForVTEProphylaxis
     0..0   Dosage
     0..0   Supply
     0..0   Frequency
     0..0   Route
     0..0   Reason
 
-EntryElement: LowMolecularWeightHeparinForVteProphylaxisOrder
+EntryElement: LowMolecularWeightHeparinForVTEProphylaxisOrder
 Based on: MedicationOrder
 Description: "(Clinical Focus: This set of values represents medications used for VTE prophylaxis.  The medications are low molecular weight heparins.  The medications included in this value set are administered parenterally.),(Data Element Scope: The intent of this data element is to identify patients who are on low molecular weight heparin therapy as VTE prophylaxis.  Using the Quality Data Model, this data element maps to the Medication category.),(Inclusion Criteria: Only include RxNorm codes which specifically represent low molecular weight heparins which are administered parenterally.),(Exclusion Criteria: None.) -- Subject constrained to the Low Molecular Weight Heparin for VTE Prophylaxis"
-Subject value is type LowMolecularWeightHeparinForVteProphylaxis
+Subject value is type LowMolecularWeightHeparinForVTEProphylaxis
     0..0   ActiveDatetime
     0..0   Refills
     0..0   Dosage
@@ -5497,30 +5497,30 @@ Subject value is type MeaslesAntibodyTestIgGAntibodyPresence
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: MeaslesMumpsAndRubellaMmrVaccine
+EntryElement: MeaslesMumpsAndRubellaMMRVaccine
 Based on: Immunization
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObjectTypeCode constrained to codes in the Measles, Mumps and Rubella (MMR) Vaccine valueset `(2.16.840.1.113883.3.464.1003.196.12.1224)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.196.12.1224/expansion
 
-EntryElement: MeaslesMumpsAndRubellaMmrVaccineAdministered
+EntryElement: MeaslesMumpsAndRubellaMMRVaccineAdministered
 Based on: ImmunizationAdministered
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Measles, Mumps and Rubella (MMR) Vaccine"
-Subject value is type MeaslesMumpsAndRubellaMmrVaccine
+Subject value is type MeaslesMumpsAndRubellaMMRVaccine
     0..0   Reason
     0..0   Dosage
     0..0   Supply
     0..0   Route
     0..0   NegationRationale
 
-EntryElement: MeaslesMumpsAndRubellaMmrVaccineAdministered
+EntryElement: MeaslesMumpsAndRubellaMMRVaccineAdministered
 Based on: Procedure
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the Measles, Mumps and Rubella (MMR) Vaccine Administered valueset `(2.16.840.1.113883.3.464.1003.110.12.1031)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.110.12.1031/expansion
 
-EntryElement: MeaslesMumpsAndRubellaMmrVaccineAdministeredPerformed
+EntryElement: MeaslesMumpsAndRubellaMMRVaccineAdministeredPerformed
 Based on: ProcedurePerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Measles, Mumps and Rubella (MMR) Vaccine Administered"
-Subject value is type MeaslesMumpsAndRubellaMmrVaccineAdministered
+Subject value is type MeaslesMumpsAndRubellaMMRVaccineAdministered
     0..0   Reason
     0..0   Method
     0..0   Result
@@ -5720,7 +5720,7 @@ Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Moderate or Severe Impairment, Better Eye, Profound Impairment Lesser Eye valueset `(2.16.840.1.113883.3.526.3.1464)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1464/expansion
 
-EntryElement: ModerateOrSevereLvsdDiagnosis
+EntryElement: ModerateOrSevereLVSDDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Moderate or Severe LVSD valueset `(2.16.840.1.113883.3.526.3.1090)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1090/expansion
@@ -5836,7 +5836,7 @@ Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Neomycin adverse reaction (disorder)' SNOMEDCT code"
 ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/292927007/info
 
-EntryElement: NeonatalIntensiveCareUnitNicuFacilityLocations
+EntryElement: NeonatalIntensiveCareUnitNICUFacilityLocations
 Based on: FacilityLocations
 Description: "(Clinical Focus: This set of  values represent a  neonatal intensive care unit (NICU) location.),(Data Element Scope: The intent of this data element is to identify the NICU. Using the Quality Data Model, this particular element will map   as an attribute to an encounter.),(Inclusion Criteria: Include SNOMED CT codes that identify the NICU.),(Exclusion Criteria: None)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.75/expansion
@@ -5979,7 +5979,7 @@ Based on: Diagnosis
 Description: "(Clinical Focus: This grouping of value sets identifies patients who have a condition related to pregnancy or obstetrics.),(Data Element Scope: The intent of this data element is to identify patients who have a condition, problem or diagnosis related to pregnancy or obstetrics.  Using the Quality Data Model, this particular element will map to either the Diagnosis category.),(Inclusion Criteria: Only use codes which represent a condition, problem or diagnosis related to pregnancy or obstetrics.),(Exclusion Criteria: None.) -- ResultValue constrained to codes in the Obstetrics valueset `(2.16.840.1.113883.3.117.1.7.1.263)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.263/expansion
 
-EntryElement: ObstetricsVteDiagnosis
+EntryElement: ObstetricsVTEDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: This grouping of value sets identifies patients who have a venous thromboembolism related to pregnancy or obstetrics.),(Data Element Scope: The intent of this data element is to identify patients who have a venous thromboembolism related to pregnancy or obstetrics. Using the Quality Data Model, this particular element would map to the Diagnosis category or the Diagnosis attribute for the Encounter category.),(Inclusion Criteria: Only use codes which represent a venous thromboembolism related to pregnancy or obstetrics.),(Exclusion Criteria: None.) -- ResultValue constrained to codes in the Obstetrics VTE valueset `(2.16.840.1.113883.3.117.1.7.1.264)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.264/expansion
@@ -6103,15 +6103,15 @@ Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Optic Neuritis valueset `(2.16.840.1.113883.3.526.3.1467)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1467/expansion
 
-EntryElement: OralFactorXaInhibitorForVteProphylaxisOrVteTreatment
+EntryElement: OralFactorXaInhibitorForVTEProphylaxisOrVTETreatment
 Based on: Medication
 Description: "(Clinical Focus: This set of values identifies oral Factor Xa inhibitors indicated for VTE prophylaxis and treatment.),(Data Element Scope: The intent of this data element is to identify patients who receive oral factor Xa inhibitors for VTE prophylaxis.  Using the Quality Data Model, this particular element will map to the Medication category.),(Inclusion Criteria: Oral forms of factor Xa inhibitors.),(Exclusion Criteria: Other dose forms of factor Xa inhibitors.) -- ObjectTypeCode constrained to codes in the Oral Factor Xa Inhibitor for VTE Prophylaxis or VTE Treatment valueset `(2.16.840.1.113883.3.117.1.7.1.134)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.134/expansion
 
-EntryElement: OralFactorXaInhibitorForVteProphylaxisOrVteTreatmentAdministered
+EntryElement: OralFactorXaInhibitorForVTEProphylaxisOrVTETreatmentAdministered
 Based on: MedicationAdministered
 Description: "(Clinical Focus: This set of values identifies oral Factor Xa inhibitors indicated for VTE prophylaxis and treatment.),(Data Element Scope: The intent of this data element is to identify patients who receive oral factor Xa inhibitors for VTE prophylaxis.  Using the Quality Data Model, this particular element will map to the Medication category.),(Inclusion Criteria: Oral forms of factor Xa inhibitors.),(Exclusion Criteria: Other dose forms of factor Xa inhibitors.) -- Subject constrained to the Oral Factor Xa Inhibitor for VTE Prophylaxis or VTE Treatment"
-Subject value is type OralFactorXaInhibitorForVteProphylaxisOrVteTreatment
+Subject value is type OralFactorXaInhibitorForVTEProphylaxisOrVTETreatment
     0..0   AuthorDatetime
     0..0   Dosage
     0..0   Supply
@@ -6289,15 +6289,15 @@ Subject value is type Oxytocin
     0..0   Reason
     0..0   NegationRationale
 
-EntryElement: Pci
+EntryElement: PCI
 Based on: Procedure
 Description: "(Clinical Focus: This grouping value set contains procedures used to define percutaneous coronary intervention (PCI).),(Data Element Scope: The intent of this data element is to identify patients who had percutaneous coronary intervention (PCI) during an episode of acute myocardial infarction. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients receiving percutaneous coronary intervention (PCI). This is a grouping of ICD10PCS and SNOMEDCT codes.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the PCI valueset `(2.16.840.1.113762.1.4.1045.67)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1045.67/expansion
 
-EntryElement: PciPerformed
+EntryElement: PCIPerformed
 Based on: ProcedurePerformed
 Description: "(Clinical Focus: This grouping value set contains procedures used to define percutaneous coronary intervention (PCI).),(Data Element Scope: The intent of this data element is to identify patients who had percutaneous coronary intervention (PCI) during an episode of acute myocardial infarction. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients receiving percutaneous coronary intervention (PCI). This is a grouping of ICD10PCS and SNOMEDCT codes.),(Exclusion Criteria: None) -- Subject constrained to the PCI"
-Subject value is type Pci
+Subject value is type PCI
     0..0   AuthorDatetime
     0..0   Reason
     0..0   Method
@@ -6310,135 +6310,135 @@ Subject value is type Pci
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: Promis10GlobalMentalHealthScore
+EntryElement: PROMIS10GlobalMentalHealthScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the PROMIS 10 Global Mental Health Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1138)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1138/expansion
 
-EntryElement: Promis10GlobalMentalHealthScorePerformed
+EntryElement: PROMIS10GlobalMentalHealthScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the PROMIS 10 Global Mental Health Score"
-Subject value is type Promis10GlobalMentalHealthScore
+Subject value is type PROMIS10GlobalMentalHealthScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: Promis10GlobalPhysicalHealthScore
+EntryElement: PROMIS10GlobalPhysicalHealthScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the PROMIS 10 Global Physical Health Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1139)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1139/expansion
 
-EntryElement: Promis10GlobalPhysicalHealthScorePerformed
+EntryElement: PROMIS10GlobalPhysicalHealthScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the PROMIS 10 Global Physical Health Score"
-Subject value is type Promis10GlobalPhysicalHealthScore
+Subject value is type PROMIS10GlobalPhysicalHealthScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: Promis29AnxietyScore
+EntryElement: PROMIS29AnxietyScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the PROMIS 29 Anxiety Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1216)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1216/expansion
 
-EntryElement: Promis29AnxietyScorePerformed
+EntryElement: PROMIS29AnxietyScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the PROMIS 29 Anxiety Score"
-Subject value is type Promis29AnxietyScore
+Subject value is type PROMIS29AnxietyScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: Promis29DepressionScore
+EntryElement: PROMIS29DepressionScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the PROMIS 29 Depression Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1215)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1215/expansion
 
-EntryElement: Promis29DepressionScorePerformed
+EntryElement: PROMIS29DepressionScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the PROMIS 29 Depression Score"
-Subject value is type Promis29DepressionScore
+Subject value is type PROMIS29DepressionScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: Promis29FatigueScore
+EntryElement: PROMIS29FatigueScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the PROMIS 29 Fatigue Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1214)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1214/expansion
 
-EntryElement: Promis29FatigueScorePerformed
+EntryElement: PROMIS29FatigueScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the PROMIS 29 Fatigue Score"
-Subject value is type Promis29FatigueScore
+Subject value is type PROMIS29FatigueScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: Promis29PainInterferenceScore
+EntryElement: PROMIS29PainInterferenceScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the PROMIS 29 Pain Interference Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1213)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1213/expansion
 
-EntryElement: Promis29PainInterferenceScorePerformed
+EntryElement: PROMIS29PainInterferenceScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the PROMIS 29 Pain Interference Score"
-Subject value is type Promis29PainInterferenceScore
+Subject value is type PROMIS29PainInterferenceScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: Promis29PhysicalFunctionScore
+EntryElement: PROMIS29PhysicalFunctionScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the PROMIS 29 Physical Function Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1212)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1212/expansion
 
-EntryElement: Promis29PhysicalFunctionScorePerformed
+EntryElement: PROMIS29PhysicalFunctionScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the PROMIS 29 Physical Function Score"
-Subject value is type Promis29PhysicalFunctionScore
+Subject value is type PROMIS29PhysicalFunctionScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: Promis29SleepDisturbanceScore
+EntryElement: PROMIS29SleepDisturbanceScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the PROMIS 29 Sleep Disturbance Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1211)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1211/expansion
 
-EntryElement: Promis29SleepDisturbanceScorePerformed
+EntryElement: PROMIS29SleepDisturbanceScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the PROMIS 29 Sleep Disturbance Score"
-Subject value is type Promis29SleepDisturbanceScore
+Subject value is type PROMIS29SleepDisturbanceScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: Promis29SocialRolesScore
+EntryElement: PROMIS29SocialRolesScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the PROMIS 29 Social Roles Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1217)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1217/expansion
 
-EntryElement: Promis29SocialRolesScorePerformed
+EntryElement: PROMIS29SocialRolesScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the PROMIS 29 Social Roles Score"
-Subject value is type Promis29SocialRolesScore
+Subject value is type PROMIS29SocialRolesScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
@@ -6453,15 +6453,15 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.451
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: PainScoreHoos
+EntryElement: PainScoreHOOS
 Based on: Assessment
 Description: " -- ObservableCode constrained to 'Pain score [HOOS]' LOINC code"
 ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72097-9/info
 
-EntryElement: PainScoreHoosPerformed
+EntryElement: PainScoreHOOSPerformed
 Based on: AssessmentPerformed
 Description: " -- Subject constrained to the Pain score [HOOS]"
-Subject value is type PainScoreHoos
+Subject value is type PainScoreHOOS
 
 EntryElement: PalliativeCare
 Based on: Intervention
@@ -6598,7 +6598,7 @@ Based on: NegationRationale
 Description: "(Clinical Focus: This value set contains concepts related to patient-specific reasons for when a patient does not receive a therapy or service.),(Data Element Scope: This value set may be used as an attribute.),(Inclusion Criteria: Includes concepts related to patient-specific reasons for not receiving a therapy or service.),(Exclusion Criteria: No exclusions.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1008/expansion
 
-EntryElement: PatientReasonForAceInhibitorOrArbDeclineCommunicationFromPatientToProvider
+EntryElement: PatientReasonForACEInhibitorOrARBDeclineCommunicationFromPatientToProvider
 Based on: CommunicationFromPatientToProvider
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObservableCode constrained to codes in the Patient Reason for ACE Inhibitor or ARB Decline valueset `(2.16.840.1.113883.3.526.3.1140)`"
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1140/expansion
@@ -6767,15 +6767,15 @@ Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Pneumococcal vaccine adverse reaction (disorder)' SNOMEDCT code"
 ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/293116002/info
 
-EntryElement: PneumocystisJiroveciPneumoniaPcpProphylaxis
+EntryElement: PneumocystisJiroveciPneumoniaPCPProphylaxis
 Based on: Medication
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ObjectTypeCode constrained to codes in the Pneumocystis Jiroveci Pneumonia (PCP) Prophylaxis valueset `(2.16.840.1.113883.3.464.1003.196.12.1076)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.196.12.1076/expansion
 
-EntryElement: PneumocystisJiroveciPneumoniaPcpProphylaxisOrder
+EntryElement: PneumocystisJiroveciPneumoniaPCPProphylaxisOrder
 Based on: MedicationOrder
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Pneumocystis Jiroveci Pneumonia (PCP) Prophylaxis"
-Subject value is type PneumocystisJiroveciPneumoniaPcpProphylaxis
+Subject value is type PneumocystisJiroveciPneumoniaPCPProphylaxis
     0..0   ActiveDatetime
     0..0   RelevantPeriod
     0..0   Refills
@@ -7376,15 +7376,15 @@ Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Purulent Endophthalmitis valueset `(2.16.840.1.113883.3.526.3.1477)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1477/expansion
 
-EntryElement: QualityOfLifeScoreHoos
+EntryElement: QualityOfLifeScoreHOOS
 Based on: Assessment
 Description: " -- ObservableCode constrained to 'Quality of life score [HOOS]' LOINC code"
 ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72093-8/info
 
-EntryElement: QualityOfLifeScoreHoosPerformed
+EntryElement: QualityOfLifeScoreHOOSPerformed
 Based on: AssessmentPerformed
 Description: " -- Subject constrained to the Quality of life score [HOOS]"
-Subject value is type QualityOfLifeScoreHoos
+Subject value is type QualityOfLifeScoreHOOS
 
 EntryElement: QualityOfLifeScoreKccq
 Based on: Assessment
@@ -7540,7 +7540,7 @@ Based on: ProcedurePerformed
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Removal Procedures"
 Subject value is type RemovalProcedures
 
-EntryElement: RenalFailureDueToAceInhibitorDiagnosis
+EntryElement: RenalFailureDueToACEInhibitorDiagnosis
 Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Renal Failure Due to ACE Inhibitor valueset `(2.16.840.1.113883.3.526.3.1151)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1151/expansion
@@ -7833,15 +7833,15 @@ Subject value is type SpeechAndHearingEvaluation
     0..0   NegationRationale
     0..0   LengthOfStay
 
-EntryElement: SportRecreationScoreHoos
+EntryElement: SportRecreationScoreHOOS
 Based on: Assessment
 Description: " -- ObservableCode constrained to 'Sport-recreation score [HOOS]' LOINC code"
 ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72094-6/info
 
-EntryElement: SportRecreationScoreHoosPerformed
+EntryElement: SportRecreationScoreHOOSPerformed
 Based on: AssessmentPerformed
 Description: " -- Subject constrained to the Sport-recreation score [HOOS]"
-Subject value is type SportRecreationScoreHoos
+Subject value is type SportRecreationScoreHOOS
 
 EntryElement: StableAndUnstableAnginaDiagnosis
 Based on: Diagnosis
@@ -7968,15 +7968,15 @@ Based on: InterventionPerformed
 Description: "(Clinical Focus: This direct reference code captures the completion of a suicide risk assessment.),(Data Element Scope: This code may use QDM category Intervention.),(Inclusion Criteria: Includes 'Suicide risk assessment (procedure)' SNOMED CT code.),(Exclusion Criteria: Does not include concepts for completing a suicide risk assessment using standardized tools.) -- Subject constrained to the Suicide risk assessment (procedure)"
 Subject value is type SuicideRiskAssessmentProcedure
 
-EntryElement: SymptomsScoreHoos
+EntryElement: SymptomsScoreHOOS
 Based on: Assessment
 Description: " -- ObservableCode constrained to 'Symptoms score [HOOS]' LOINC code"
 ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72096-1/info
 
-EntryElement: SymptomsScoreHoosPerformed
+EntryElement: SymptomsScoreHOOSPerformed
 Based on: AssessmentPerformed
 Description: " -- Subject constrained to the Symptoms score [HOOS]"
-Subject value is type SymptomsScoreHoos
+Subject value is type SymptomsScoreHOOS
 
 EntryElement: SyphilisDiagnosis
 Based on: Diagnosis
@@ -8394,60 +8394,60 @@ Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Uveitis valueset `(2.16.840.1.113883.3.526.3.1444)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1444/expansion
 
-EntryElement: Vr36MentalComponentSummaryMcsScore
+EntryElement: VR36MentalComponentSummaryMCSScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the VR 36 Mental Component Summary (MCS) Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1225)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1225/expansion
 
-EntryElement: Vr36MentalComponentSummaryMcsScorePerformed
+EntryElement: VR36MentalComponentSummaryMCSScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the VR 36 Mental Component Summary (MCS) Score"
-Subject value is type Vr36MentalComponentSummaryMcsScore
+Subject value is type VR36MentalComponentSummaryMCSScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: Vr36PhysicalComponentSummaryPcsScore
+EntryElement: VR36PhysicalComponentSummaryPCSScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the VR 36 Physical Component Summary (PCS) Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1226)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1226/expansion
 
-EntryElement: Vr36PhysicalComponentSummaryPcsScorePerformed
+EntryElement: VR36PhysicalComponentSummaryPCSScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the VR 36 Physical Component Summary (PCS) Score"
-Subject value is type Vr36PhysicalComponentSummaryPcsScore
+Subject value is type VR36PhysicalComponentSummaryPCSScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: Vr12MentalComponentTScore
+EntryElement: VR12MentalComponentTScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the VR12 Mental Component T Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1177)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1177/expansion
 
-EntryElement: Vr12MentalComponentTScorePerformed
+EntryElement: VR12MentalComponentTScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the VR12 Mental Component T Score"
-Subject value is type Vr12MentalComponentTScore
+Subject value is type VR12MentalComponentTScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: Vr12PhysicalComponentTScore
+EntryElement: VR12PhysicalComponentTScore
 Based on: Assessment
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the VR12 Physical Component T Score valueset `(2.16.840.1.113883.3.464.1003.118.12.1176)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.118.12.1176/expansion
 
-EntryElement: Vr12PhysicalComponentTScorePerformed
+EntryElement: VR12PhysicalComponentTScorePerformed
 Based on: AssessmentPerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the VR12 Physical Component T Score"
-Subject value is type Vr12PhysicalComponentTScore
+Subject value is type VR12PhysicalComponentTScore
     0..0   NegationRationale
     0..0   Reason
     0..0   Method
@@ -8497,30 +8497,30 @@ Subject value is type VaricellaZosterAntibodyTestIgGAntibodyTiter
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: VaricellaZosterVaccineVzv
+EntryElement: VaricellaZosterVaccineVZV
 Based on: Immunization
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObjectTypeCode constrained to codes in the Varicella Zoster Vaccine (VZV) valueset `(2.16.840.1.113883.3.464.1003.196.12.1170)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.196.12.1170/expansion
 
-EntryElement: VaricellaZosterVaccineVzvAdministered
+EntryElement: VaricellaZosterVaccineVZVAdministered
 Based on: ImmunizationAdministered
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Varicella Zoster Vaccine (VZV)"
-Subject value is type VaricellaZosterVaccineVzv
+Subject value is type VaricellaZosterVaccineVZV
     0..0   Reason
     0..0   Dosage
     0..0   Supply
     0..0   Route
     0..0   NegationRationale
 
-EntryElement: VaricellaZosterVaccineVzvAdministered
+EntryElement: VaricellaZosterVaccineVZVAdministered
 Based on: Procedure
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- ObservableCode constrained to codes in the Varicella Zoster Vaccine (VZV) Administered valueset `(2.16.840.1.113883.3.464.1003.110.12.1040)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.110.12.1040/expansion
 
-EntryElement: VaricellaZosterVaccineVzvAdministeredPerformed
+EntryElement: VaricellaZosterVaccineVZVAdministeredPerformed
 Based on: ProcedurePerformed
 Description: "(Clinical Focus: ),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) -- Subject constrained to the Varicella Zoster Vaccine (VZV) Administered"
-Subject value is type VaricellaZosterVaccineVzvAdministered
+Subject value is type VaricellaZosterVaccineVZVAdministered
     0..0   Reason
     0..0   Method
     0..0   Result
@@ -8566,23 +8566,23 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: VenousFootPumpsVfp
+EntryElement: VenousFootPumpsVFP
 Based on: Device
 Description: "(Clinical Focus: This set of values identifies patients who have a venous foot pump device applied for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to identify patients who have a venous foot pump device applied for VTE prophylaxis. Using the Quality Data Model, this particular element will map to the Device category.),(Inclusion Criteria: Only use codes which represent venous foot pump devices which are used for VTE prophylaxis.),(Exclusion Criteria: None) -- ObjectTypeCode constrained to codes in the Venous foot pumps (VFP) valueset `(2.16.840.1.113883.3.117.1.7.1.230)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.230/expansion
 
-EntryElement: VenousFootPumpsVfpApplied
+EntryElement: VenousFootPumpsVFPApplied
 Based on: DeviceApplied
 Description: "(Clinical Focus: This set of values identifies patients who have a venous foot pump device applied for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to identify patients who have a venous foot pump device applied for VTE prophylaxis. Using the Quality Data Model, this particular element will map to the Device category.),(Inclusion Criteria: Only use codes which represent venous foot pump devices which are used for VTE prophylaxis.),(Exclusion Criteria: None) -- Subject constrained to the Venous foot pumps (VFP)"
-Subject value is type VenousFootPumpsVfp
+Subject value is type VenousFootPumpsVFP
     0..0   Reason
     0..0   AnatomicalLocationSite
     0..0   AnatomicalApproachSite
 
-EntryElement: VenousFootPumpsVfpOrder
+EntryElement: VenousFootPumpsVFPOrder
 Based on: DeviceOrder
 Description: "(Clinical Focus: This set of values identifies patients who have a venous foot pump device applied for VTE prophylaxis.),(Data Element Scope: The intent of this data element is to identify patients who have a venous foot pump device applied for VTE prophylaxis. Using the Quality Data Model, this particular element will map to the Device category.),(Inclusion Criteria: Only use codes which represent venous foot pump devices which are used for VTE prophylaxis.),(Exclusion Criteria: None) -- Subject constrained to the Venous foot pumps (VFP)"
-Subject value is type VenousFootPumpsVfp
+Subject value is type VenousFootPumpsVFP
     0..0   Reason
 
 EntryElement: VentricularAssistDevicePlacement
