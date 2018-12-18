@@ -115,7 +115,7 @@ ResultValue value is type Quantity
 
 Element:     RelatedTo
 Based on:	 Observation
-Description: "An attribute that indicates one QDM data element fulfills the expecations of another QDM data element. See Appendix A.4 for examples for using relatedTo."
+Description: "An attribute that indicates one QDM data element fulfills the expecations of another QDM data element."
 ResultValue value is type string
 
 Element:     RelevantPeriod
