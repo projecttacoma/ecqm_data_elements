@@ -15,12 +15,12 @@ ResultValue value is type CodeableConcept
 
 Element:     AnatomicalApproachSite
 Based on:	 Observation
-Description: "The anatomical site or structure where the diagnosis/problem manifests itself (a). The anatomical site or structure where that is the focus of the action represented by the datatype (b)."
+Description: "The anatomical site or structure where the diagnosis/problem manifests itself (a). The anatomical site or structure that is the focus of the action represented by the datatype (b)."
 ResultValue value is type CodeableConcept
 
 Element:     AnatomicalLocationSite
 Based on:    Observation
-Description: "The anatomical site or structure where the diagnosis/problem manifests itself (a). The anatomical site or structure where that is the focus of the action represented by the datatype (b)."
+Description: "The anatomical site or structure where the diagnosis/problem manifests itself (a). The anatomical site or structure that is the focus of the action represented by the datatype (b)."
 ResultValue value is type CodeableConcept
 
 Element: AuthorDatetime
@@ -30,12 +30,12 @@ ResultValue value is type dateTime
 
 Element:     Components
 Based on:	 Observation
-Description: "Elements included or documented as part of evaluations or test panels. Examples include: specific questions included in assesments, tests included in a laboratory test panel, observations included in a cardiac exam during a physical examination. Each assessment, diagnostic study, laboratory test, physical exam or procedure may have one or more components."
+Description: "Elements included or documented as part of evaluations or test panels. Examples include: specific questions included in assessments, tests included in a laboratory test panel, observations included in a cardiac exam during a physical examination. Each assessment, diagnostic study, laboratory test, physical exam or procedure may have one or more components."
 ResultValue value is type CodeableConcept
 
 Element:     Diagnoses
 Based on:	 Observation
-Description: "Coded diagnoses/problems addressed during the encounter. The diagnoses attribute is intended to capture ALL diagnoses, including principal diagnosis. Use of the Encounter, Performed: diagnoses attribute and the Diagnosis datatype is redundant for relating the diagnosis to the Encounter, Performed. The Encounter, Performed: diagnoses syntax is preferred. Referencing the same diagnosis using Encounter, Performed (diagnoses attribute) and Diagnosis (datatype) should only occur if the measure must define a specified length of a prevalence period, e.g., The measure must assure that the diagnoseis have been present for at least some defined time period before the encounter, and were addressed during the Encounter"
+Description: "Coded diagnoses/problems addressed during the encounter. The diagnoses attribute is intended to capture ALL diagnoses, including principal diagnosis. Use of the Encounter, Performed: diagnoses attribute and the Diagnosis datatype is redundant for relating the diagnosis to the Encounter, Performed. The Encounter, Performed: diagnoses syntax is preferred. Referencing the same diagnosis using Encounter, Performed (diagnoses attribute) and Diagnosis (datatype) should only occur if the measure must define a specified length of a prevalence period, e.g., The measure must assure that the diagnoses have been present for at least some defined time period before the encounter, and were addressed during the Encounter"
 ResultValue value is type CodeableConcept
 
 Element:     DischargeDisposition

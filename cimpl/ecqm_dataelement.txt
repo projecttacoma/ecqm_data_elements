@@ -735,12 +735,12 @@ Subject value is type AntidepressantMedication
 
 EntryElement: AntithromboticTherapy
 Based on: Medication
-Description: "(Clinical Focus: This set of values contains anticoagulant and antiplatelet drugs used to reduce stroke mortality and morbidity.),(Data Element Scope: The intent of this data element is to identify patients who receive antithombotic therapy following stroke. Using the Quality Data Model, this particular element would map to the Medication category.),(Inclusion Criteria: Include single and multi-ingredient drugs. Oral, rectal, and injectable dose forms should be included. Antithrombotic medications include anticoagulants and antiplatelet drugs.),(Exclusion Criteria: Exclude enoxaparin and heparin codes generally given for VTE prophylaxis.) -- ObjectTypeCode constrained to codes in the Antithrombotic Therapy valueset `(2.16.840.1.113883.3.117.1.7.1.201)`. "
+Description: "(Clinical Focus: This set of values contains anticoagulant and antiplatelet drugs used to reduce stroke mortality and morbidity.),(Data Element Scope: The intent of this data element is to identify patients who receive antithrombotic therapy following stroke. Using the Quality Data Model, this particular element would map to the Medication category.),(Inclusion Criteria: Include single and multi-ingredient drugs. Oral, rectal, and injectable dose forms should be included. Antithrombotic medications include anticoagulants and antiplatelet drugs.),(Exclusion Criteria: Exclude enoxaparin and heparin codes generally given for VTE prophylaxis.) -- ObjectTypeCode constrained to codes in the Antithrombotic Therapy valueset `(2.16.840.1.113883.3.117.1.7.1.201)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.201/expansion
 
 EntryElement: AntithromboticTherapyAdministered
 Based on: MedicationAdministered
-Description: "(Clinical Focus: This set of values contains anticoagulant and antiplatelet drugs used to reduce stroke mortality and morbidity.),(Data Element Scope: The intent of this data element is to identify patients who receive antithombotic therapy following stroke. Using the Quality Data Model, this particular element would map to the Medication category.),(Inclusion Criteria: Include single and multi-ingredient drugs. Oral, rectal, and injectable dose forms should be included. Antithrombotic medications include anticoagulants and antiplatelet drugs.),(Exclusion Criteria: Exclude enoxaparin and heparin codes generally given for VTE prophylaxis.) -- Subject constrained to the Antithrombotic Therapy"
+Description: "(Clinical Focus: This set of values contains anticoagulant and antiplatelet drugs used to reduce stroke mortality and morbidity.),(Data Element Scope: The intent of this data element is to identify patients who receive antithrombotic therapy following stroke. Using the Quality Data Model, this particular element would map to the Medication category.),(Inclusion Criteria: Include single and multi-ingredient drugs. Oral, rectal, and injectable dose forms should be included. Antithrombotic medications include anticoagulants and antiplatelet drugs.),(Exclusion Criteria: Exclude enoxaparin and heparin codes generally given for VTE prophylaxis.) -- Subject constrained to the Antithrombotic Therapy"
 Subject value is type AntithromboticTherapy
     0..0   Dosage
     0..0   Supply
@@ -750,7 +750,7 @@ Subject value is type AntithromboticTherapy
 
 EntryElement: AntithromboticTherapyDischarge
 Based on: MedicationDischarge
-Description: "(Clinical Focus: This set of values contains anticoagulant and antiplatelet drugs used to reduce stroke mortality and morbidity.),(Data Element Scope: The intent of this data element is to identify patients who receive antithombotic therapy following stroke. Using the Quality Data Model, this particular element would map to the Medication category.),(Inclusion Criteria: Include single and multi-ingredient drugs. Oral, rectal, and injectable dose forms should be included. Antithrombotic medications include anticoagulants and antiplatelet drugs.),(Exclusion Criteria: Exclude enoxaparin and heparin codes generally given for VTE prophylaxis.) -- Subject constrained to the Antithrombotic Therapy"
+Description: "(Clinical Focus: This set of values contains anticoagulant and antiplatelet drugs used to reduce stroke mortality and morbidity.),(Data Element Scope: The intent of this data element is to identify patients who receive antithrombotic therapy following stroke. Using the Quality Data Model, this particular element would map to the Medication category.),(Inclusion Criteria: Include single and multi-ingredient drugs. Oral, rectal, and injectable dose forms should be included. Antithrombotic medications include anticoagulants and antiplatelet drugs.),(Exclusion Criteria: Exclude enoxaparin and heparin codes generally given for VTE prophylaxis.) -- Subject constrained to the Antithrombotic Therapy"
 Subject value is type AntithromboticTherapy
     0..0   Refills
     0..0   Dosage
@@ -760,7 +760,7 @@ Subject value is type AntithromboticTherapy
 
 EntryElement: AntithromboticTherapyOrder
 Based on: MedicationOrder
-Description: "(Clinical Focus: This set of values contains anticoagulant and antiplatelet drugs used to reduce stroke mortality and morbidity.),(Data Element Scope: The intent of this data element is to identify patients who receive antithombotic therapy following stroke. Using the Quality Data Model, this particular element would map to the Medication category.),(Inclusion Criteria: Include single and multi-ingredient drugs. Oral, rectal, and injectable dose forms should be included. Antithrombotic medications include anticoagulants and antiplatelet drugs.),(Exclusion Criteria: Exclude enoxaparin and heparin codes generally given for VTE prophylaxis.) -- Subject constrained to the Antithrombotic Therapy"
+Description: "(Clinical Focus: This set of values contains anticoagulant and antiplatelet drugs used to reduce stroke mortality and morbidity.),(Data Element Scope: The intent of this data element is to identify patients who receive antithrombotic therapy following stroke. Using the Quality Data Model, this particular element would map to the Medication category.),(Inclusion Criteria: Include single and multi-ingredient drugs. Oral, rectal, and injectable dose forms should be included. Antithrombotic medications include anticoagulants and antiplatelet drugs.),(Exclusion Criteria: Exclude enoxaparin and heparin codes generally given for VTE prophylaxis.) -- Subject constrained to the Antithrombotic Therapy"
 Subject value is type AntithromboticTherapy
     0..0   ActiveDatetime
     0..0   Refills
@@ -886,7 +886,7 @@ ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version
 
 EntryElement: Asthma1PrincipalDiagnosis
 Based on: PrincipalDiagnosis
-Description: "(Clinical Focus: This grouping value set contains codes indicative of a diagnosis of asthma.),(Data Element Scope: The intent of this data element is to identify patients who have a diagnosis of asthma.  Using the Quality Data Model, this particular element will map to the Diagnosis attribute for the Encounter category.),(Inclusion Criteria: Include codes representing any form of asthma. This is a grouping of ICD-9-CM, ICD-10-CM and SNOMED-CT codes.),(Exclusion Criteria: None)"
+Description: "(Clinical Focus: This grouping value set contains codes indicative of a diagnosis of asthma.),(Data Element Scope: The intent of this data element is to identify patients who have a diagnosis of asthma.  Using the Quality Data Model, this particular element will map to the Diagnosis attribute for the Encounter category.),(Inclusion Criteria: Include codes representing any form of asthma. This is a grouping of ICD-9-CM, ICD-10-CM and SNOMED CT codes.),(Exclusion Criteria: None)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.271/expansion
 
 EntryElement: AtherosclerosisAndPeripheralArterialDiseaseDiagnosis
@@ -1392,12 +1392,12 @@ Subject value is type Butabarbital
 
 EntryElement: CABGSurgeries
 Based on: Procedure
-Description: "(Clinical Focus: This grouping of value sets identifies patients who have a CABG surgical procedure.),(Data Element Scope: The intent of this data element is to identify patients who have a CABG surgical procedure.  Using the Quality Data Model, this particular element will map to the Procedure category.),(Inclusion Criteria: Only use codes which represent CABG surgical procedures.  Codes used are to be ICD10PCS, ICD9 or SNOMED-CT codes only.),(Exclusion Criteria: Exclude codes that represent a CABG performed using a scope.) -- ObservableCode constrained to codes in the CABG Surgeries valueset `(2.16.840.1.113883.3.666.5.694)`. "
+Description: "(Clinical Focus: This grouping of value sets identifies patients who have a CABG surgical procedure.),(Data Element Scope: The intent of this data element is to identify patients who have a CABG surgical procedure.  Using the Quality Data Model, this particular element will map to the Procedure category.),(Inclusion Criteria: Only use codes which represent CABG surgical procedures.  Codes used are to be ICD10PCS, ICD9 or SNOMED CT codes only.),(Exclusion Criteria: Exclude codes that represent a CABG performed using a scope.) -- ObservableCode constrained to codes in the CABG Surgeries valueset `(2.16.840.1.113883.3.666.5.694)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.694/expansion
 
 EntryElement: CABGSurgeriesPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: This grouping of value sets identifies patients who have a CABG surgical procedure.),(Data Element Scope: The intent of this data element is to identify patients who have a CABG surgical procedure.  Using the Quality Data Model, this particular element will map to the Procedure category.),(Inclusion Criteria: Only use codes which represent CABG surgical procedures.  Codes used are to be ICD10PCS, ICD9 or SNOMED-CT codes only.),(Exclusion Criteria: Exclude codes that represent a CABG performed using a scope.) -- Subject constrained to the CABG Surgeries"
+Description: "(Clinical Focus: This grouping of value sets identifies patients who have a CABG surgical procedure.),(Data Element Scope: The intent of this data element is to identify patients who have a CABG surgical procedure.  Using the Quality Data Model, this particular element will map to the Procedure category.),(Inclusion Criteria: Only use codes which represent CABG surgical procedures.  Codes used are to be ICD10PCS, ICD9 or SNOMED CT codes only.),(Exclusion Criteria: Exclude codes that represent a CABG performed using a scope.) -- Subject constrained to the CABG Surgeries"
 Subject value is type CABGSurgeries
     0..0   AuthorDatetime
     0..0   Reason
@@ -1564,7 +1564,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003
 
 EntryElement: CareServicesInLongTermResidentialFacilityPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set identifies patients living in assisted living, domicilliary care or rest homes who have had an interaction with a member of their medical team.),(Data Element Scope: This value set is developed for the encounter QDM datatype. It can potentially be used for other datatypes as well.),(Inclusion Criteria: Includes services provided to new and established patients living in assisted living, domicilliary care or rest home.),(Exclusion Criteria: Excludes visits in settings other than assisted living, domicilliary care or rest homes) -- Subject constrained to the Care Services in Long-Term Residential Facility"
+Description: "(Clinical Focus: This value set identifies patients living in assisted living, domiciliary care or rest homes who have had an interaction with a member of their medical team.),(Data Element Scope: This value set is developed for the encounter QDM datatype. It can potentially be used for other datatypes as well.),(Inclusion Criteria: Includes services provided to new and established patients living in assisted living, domiciliary care or rest home.),(Exclusion Criteria: Excludes visits in settings other than assisted living, domiciliary care or rest homes) -- Subject constrained to the Care Services in Long-Term Residential Facility."
 Subject value is type CareServicesInLongTermResidentialFacility
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -1675,12 +1675,12 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.141
 
 EntryElement: CesareanBirth
 Based on: Procedure
-Description: "(Clinical Focus: This grouping of value sets contain procedures that represent a cesarean section.),(Data Element Scope: The intent of this data element is to identify cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 9 CM, ICD 10 CM, and SNOMED CT codes that identify cesarean section.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the Cesarean Birth valueset `(2.16.840.1.113883.3.117.1.7.1.282)`. "
+Description: "(Clinical Focus: This grouping of value sets contains procedures that represent a cesarean section.),(Data Element Scope: The intent of this data element is to identify cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 9 CM, ICD 10 CM, and SNOMED CT codes that identify cesarean section.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the Cesarean Birth valueset `(2.16.840.1.113883.3.117.1.7.1.282)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.282/expansion
 
 EntryElement: CesareanBirthPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: This grouping of value sets contain procedures that represent a cesarean section.),(Data Element Scope: The intent of this data element is to identify cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 9 CM, ICD 10 CM, and SNOMED CT codes that identify cesarean section.),(Exclusion Criteria: None) -- Subject constrained to the Cesarean Birth"
+Description: "(Clinical Focus: This grouping of value sets contains procedures that represent a cesarean section.),(Data Element Scope: The intent of this data element is to identify cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 9 CM, ICD 10 CM, and SNOMED CT codes that identify cesarean section.),(Exclusion Criteria: None) -- Subject constrained to the Cesarean Birth"
 Subject value is type CesareanBirth
     0..0   AuthorDatetime
     0..0   Reason
@@ -2185,7 +2185,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.141
 
 EntryElement: CornualEctopicPregnancyDiagnosis
 Based on: Diagnosis
-Description: "(Clinical Focus: This set of values contains diagnosis that represent a cornual ectopic pregnancy),(Data Element Scope: The intent of this data element is to identify a cornual ectopic pregnancy.),(Inclusion Criteria: Includes codes representing cornual ectopic pregancy),(Exclusion Criteria: Excludes codes representing ectopic pregnancies other than cornual ectopic pregnancies, such as tubal ectopic pregnancies.) -- ResultValue constrained to codes in the Cornual Ectopic Pregnancy valueset `(2.16.840.1.113762.1.4.1110.12)`"
+Description: "(Clinical Focus: This set of values contains diagnosis that represent a cornual ectopic pregnancy.),(Data Element Scope: The intent of this data element is to identify a cornual ectopic pregnancy.),(Inclusion Criteria: Includes codes representing cornual ectopic pregnancy.),(Exclusion Criteria: Excludes codes representing ectopic pregnancies other than cornual ectopic pregnancies, such as tubal ectopic pregnancies.) -- ResultValue constrained to codes in the Cornual Ectopic Pregnancy valueset `(2.16.840.1.113762.1.4.1110.12)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1110.12/expansion
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
@@ -2949,7 +2949,7 @@ Subject value is type DischargeServicesObservationCare
 
 EntryElement: DischargeToAcuteCareFacilityDischargeDisposition
 Based on: DischargeDisposition
-Description: "(Clinical Focus: This set of values contains procedures used to represent the discharge of a patient to an acute care facility.),(Data Element Scope: The intent of this data element is to identify the final place or setting to which the patient was discharged on the day of discharge from a particular inpatient encounter. This particular value set intends to identify patients who where discharged to an acute care facility. Using the Quality Data Model, this particular value set is used with the Attribute of 'Discharge Disposition' used with the Encounter category.),(Inclusion Criteria: Only SNOMED CT codes representing short-term acute care hospitals, including specialty hospitals, should be included.),(Exclusion Criteria: None)"
+Description: "(Clinical Focus: This set of values contains procedures used to represent the discharge of a patient to an acute care facility.),(Data Element Scope: The intent of this data element is to identify the final place or setting to which the patient was discharged on the day of discharge from a particular inpatient encounter. This particular value set intends to identify patients who were discharged to an acute care facility. Using the Quality Data Model, this particular value set is used with the Attribute of 'Discharge Disposition' used with the Encounter category.),(Inclusion Criteria: Only SNOMED CT codes representing short-term acute care hospitals, including specialty hospitals, should be included.),(Exclusion Criteria: None)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.87/expansion
 
 EntryElement: DischargeToHomeOrPoliceCustodyDischargeDisposition
@@ -2959,17 +2959,17 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1
 
 EntryElement: DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
 Based on: DischargeDisposition
-Description: "(Clinical Focus: This set of values contains procedures used to represent the discharge of a patient to a health care facility for hospice care.),(Data Element Scope: The intent of this data element is to identify the final place or setting to which the patient was discharged on the day of discharge from a particular  inpatient encounter. This particular value set intends to identify patients who where discharged to a health care facility for hospice care. Using the Quality Data Model, this particular value set is used with the Attribute of 'Discharge status' used with the 'Encounter' category.),(Inclusion Criteria: Only SNOMED CT codes representing  health care facilities for hospice care  should be included.),(Exclusion Criteria: None)"
+Description: "(Clinical Focus: This set of values contains procedures used to represent the discharge of a patient to a health care facility for hospice care.),(Data Element Scope: The intent of this data element is to identify the final place or setting to which the patient was discharged on the day of discharge from a particular  inpatient encounter. This particular value set intends to identify patients who were discharged to a health care facility for hospice care. Using the Quality Data Model, this particular value set is used with the Attribute of 'Discharge status' used with the 'Encounter' category.),(Inclusion Criteria: Only SNOMED CT codes representing  health care facilities for hospice care  should be included.),(Exclusion Criteria: None)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.207/expansion
 
 EntryElement: DischargedToHomeForHospiceCareDischargeDisposition
 Based on: DischargeDisposition
-Description: "(Clinical Focus: This set of values contains procedures used to represent the discharge of a patient to home for hospice care.),(Data Element Scope: The intent of this data element is to identify the final place or setting to which the patient was discharged on the day of discharge from a particular  inpatient encounter. This particular value set intends to identify patients who where discharged to home for hospice care.  Using the Quality Data Model, this particular value set is used with the Attribute of 'Discharge status' used with the 'Encounter' category.),(Inclusion Criteria: Only SNOMED CT codes representing discharge to home for hospice care should be included.),(Exclusion Criteria: None)"
+Description: "(Clinical Focus: This set of values contains procedures used to represent the discharge of a patient to home for hospice care.),(Data Element Scope: The intent of this data element is to identify the final place or setting to which the patient was discharged on the day of discharge from a particular  inpatient encounter. This particular value set intends to identify patients who were discharged to home for hospice care.  Using the Quality Data Model, this particular value set is used with the Attribute of 'Discharge status' used with the 'Encounter' category.),(Inclusion Criteria: Only SNOMED CT codes representing discharge to home for hospice care should be included.),(Exclusion Criteria: None)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.209/expansion
 
 EntryElement: DischargedToRehabilitationFacilityDischargeDisposition
 Based on: DischargeDisposition
-Description: "(Clinical Focus: This set of values contains procedures that represent the discharge of a patient to rehabilitation facility.),(Data Element Scope: The intent of this data element is to identify the final place or setting to which the patient was discharged on the day of discharge from a particular inpatient encounter. This particular value set intends to identify patients who where discharged to a rehabilitation facility. Using the Quality Data Model, this particular value set is used with the Attribute of 'Discharge status' used with the 'Encounter' category.),(Inclusion Criteria: Only SNOMED CT codes representing  rehabilitation facilities should be included.),(Exclusion Criteria: None)"
+Description: "(Clinical Focus: This set of values contains procedures that represent the discharge of a patient to rehabilitation facility.),(Data Element Scope: The intent of this data element is to identify the final place or setting to which the patient was discharged on the day of discharge from a particular inpatient encounter. This particular value set intends to identify patients who were discharged to a rehabilitation facility. Using the Quality Data Model, this particular value set is used with the Attribute of 'Discharge status' used with the 'Encounter' category.),(Inclusion Criteria: Only SNOMED CT codes representing  rehabilitation facilities should be included.),(Exclusion Criteria: None)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.132/expansion
 
 EntryElement: Disopyramide
@@ -3546,12 +3546,12 @@ Subject value is type GeneralSurgery
 
 EntryElement: GeneralOrNeuraxialAnesthesia
 Based on: Procedure
-Description: "(Clinical Focus: This group of value sets identifies patients who have a surgical procedure where a general and/or neuraxial anesthesia is used.),(Data Element Scope: The intent of this data element is to identify patients who have a surgical procedure where general and/or neuraxial anesthesia is used.  Using the Quality Data Model, this particular element will map to the Procedure category.),(Inclusion Criteria: Only use codes which represent general and/or neuraxial anesthesia.  Codes used are to be ICD10PCS, ICD9 or SNOMED-CT codes only.),(Exclusion Criteria: None.) -- ObservableCode constrained to codes in the General or Neuraxial Anesthesia valueset `(2.16.840.1.113883.3.666.5.1743)`. "
+Description: "(Clinical Focus: This group of value sets identifies patients who have a surgical procedure where a general and/or neuraxial anesthesia is used.),(Data Element Scope: The intent of this data element is to identify patients who have a surgical procedure where general and/or neuraxial anesthesia is used.  Using the Quality Data Model, this particular element will map to the Procedure category.),(Inclusion Criteria: Only use codes which represent general and/or neuraxial anesthesia.  Codes used are to be ICD10PCS, ICD9 or SNOMED CT codes only.),(Exclusion Criteria: None.) -- ObservableCode constrained to codes in the General or Neuraxial Anesthesia valueset `(2.16.840.1.113883.3.666.5.1743)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.1743/expansion
 
 EntryElement: GeneralOrNeuraxialAnesthesiaPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: This group of value sets identifies patients who have a surgical procedure where a general and/or neuraxial anesthesia is used.),(Data Element Scope: The intent of this data element is to identify patients who have a surgical procedure where general and/or neuraxial anesthesia is used.  Using the Quality Data Model, this particular element will map to the Procedure category.),(Inclusion Criteria: Only use codes which represent general and/or neuraxial anesthesia.  Codes used are to be ICD10PCS, ICD9 or SNOMED-CT codes only.),(Exclusion Criteria: None.) -- Subject constrained to the General or Neuraxial Anesthesia"
+Description: "(Clinical Focus: This group of value sets identifies patients who have a surgical procedure where a general and/or neuraxial anesthesia is used.),(Data Element Scope: The intent of this data element is to identify patients who have a surgical procedure where general and/or neuraxial anesthesia is used.  Using the Quality Data Model, this particular element will map to the Procedure category.),(Inclusion Criteria: Only use codes which represent general and/or neuraxial anesthesia.  Codes used are to be ICD10PCS, ICD9 or SNOMED CT codes only.),(Exclusion Criteria: None.) -- Subject constrained to the General or Neuraxial Anesthesia"
 Subject value is type GeneralOrNeuraxialAnesthesia
     0..0   AuthorDatetime
     0..0   Reason
@@ -3953,7 +3953,7 @@ Subject value is type Hemodialysis
 
 EntryElement: HemorrhagicStrokePrincipalDiagnosis
 Based on: PrincipalDiagnosis
-Description: "(Clinical Focus: This grouping of value sets identifies patients who have had a hemorrhagic stroke, or stroke caused by hemorrhage.),(Data Element Scope: The intent of this data element is to identify patients who have a diagnosis of hemorrhagic stroke, or stroke caused by a hemorrhage.  Using the Quality Data Model, this particular element would map to the Principal Diagnosis attribute for the Encounter category.),(Inclusion Criteria: Only use codes which represent a diagnosis of hemorrhagic stroke, or stroke caused by hemorrhage.  This is a grouping of  ICD10CM and SNOMED-CT codes.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This grouping of value sets identifies patients who have had a hemorrhagic stroke, or stroke caused by hemorrhage.),(Data Element Scope: The intent of this data element is to identify patients who have a diagnosis of hemorrhagic stroke, or stroke caused by a hemorrhage.  Using the Quality Data Model, this particular element would map to the Principal Diagnosis attribute for the Encounter category.),(Inclusion Criteria: Only use codes which represent a diagnosis of hemorrhagic stroke, or stroke caused by hemorrhage.  This is a grouping of  ICD10CM and SNOMED CT codes.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.212/expansion
 
 EntryElement: HepatitisADiagnosis
@@ -4294,7 +4294,7 @@ Subject value is type HospitalObservationCareInitial
 
 EntryElement: HospitalSettingsAdmissionSource
 Based on: AdmissionSource
-Description: "(Clinical Focus: This set of values identifies hospital environments where a patient may receive inpatient or outpatient care.),(Data Element Scope: The intent of this data element is to identify hospital environments where a patient may receive inpatient or outpatient care.  Using the Quality Data Model, this particular element will map to the Transfer category.),(Inclusion Criteria: Use the concept of hospital environment (22232009) and all its children.  Codes used are to be SNOMED-CT codes only.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This set of values identifies hospital environments where a patient may receive inpatient or outpatient care.),(Data Element Scope: The intent of this data element is to identify hospital environments where a patient may receive inpatient or outpatient care.  Using the Quality Data Model, this particular element will map to the Transfer category.),(Inclusion Criteria: Use the concept of hospital environment (22232009) and all its children.  Codes used are to be SNOMED CT codes only.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1111.126/expansion
 
 EntryElement: HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbAndAg
@@ -4753,15 +4753,15 @@ Subject value is type IntracranialNeurosurgery
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: IntravenousOrIntraArterialThrombolyticTPaTherapy
+EntryElement: IntravenousOrIntraArterialThrombolytictPATherapy
 Based on: Procedure
 Description: "(Clinical Focus: This grouping value set contain procedures that represent intravenous or intra-arterial thrombolytic (t-PA) therapy.),(Data Element Scope: The intent of this data element is to identify intravenous or intra-arterial  thrombolytic (t-PA) therapy procedures.  Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include  codes that identify  intravenous or intra-arterial  thrombolytic (t-PA) therapy procedures.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the Intravenous or Intra-arterial Thrombolytic (t-PA) Therapy valueset `(2.16.840.1.113762.1.4.1045.21)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1045.21/expansion
 
-EntryElement: IntravenousOrIntraArterialThrombolyticTPaTherapyPerformed
+EntryElement: IntravenousOrIntraArterialThrombolytictPATherapyPerformed
 Based on: ProcedurePerformed
 Description: "(Clinical Focus: This grouping value set contain procedures that represent intravenous or intra-arterial thrombolytic (t-PA) therapy.),(Data Element Scope: The intent of this data element is to identify intravenous or intra-arterial  thrombolytic (t-PA) therapy procedures.  Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include  codes that identify  intravenous or intra-arterial  thrombolytic (t-PA) therapy procedures.),(Exclusion Criteria: None) -- Subject constrained to the Intravenous or Intra-arterial Thrombolytic (t-PA) Therapy"
-Subject value is type IntravenousOrIntraArterialThrombolyticTPaTherapy
+Subject value is type IntravenousOrIntraArterialThrombolytictPATherapy
     0..0   AuthorDatetime
     0..0   Reason
     0..0   Method
@@ -4774,9 +4774,9 @@ Subject value is type IntravenousOrIntraArterialThrombolyticTPaTherapy
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: IntravenousRouteRoute
+EntryElement: IntravenousRoute
 Based on: Route
-Description: "(Clinical Focus: This set of values identifies the route by which a medication is administered, in this case an intravenous route.),(Data Element Scope: The intent of this data element is to identify the route by which a medication is administered, in this case an intravenous route.  Using the Quality Data Model, this particular element is an attribute.),(Inclusion Criteria: Only use codes which identify an intravenous route for giving a medication. Codes used are to be SNOMED-CT codes only.),(Exclusion Criteria: None)"
+Description: "(Clinical Focus: This set of values identifies the route by which a medication is administered, in this case an intravenous route.),(Data Element Scope: The intent of this data element is to identify the route by which a medication is administered, in this case an intravenous route.  Using the Quality Data Model, this particular element is an attribute.),(Inclusion Criteria: Only use codes which identify an intravenous route for giving a medication. Codes used are to be SNOMED CT codes only.),(Exclusion Criteria: None)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.222/expansion
 
 EntryElement: IntussusceptionDiagnosis
@@ -4789,7 +4789,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: IschemicStrokePrincipalDiagnosis
 Based on: PrincipalDiagnosis
-Description: "(Clinical Focus: This grouping of value sets identifies patients who have had a stroke caused by ischemia, where the blood supply is restricted to an area of the brain by something like thrombosis or an embolism.),(Data Element Scope: The intent of this data element is to identify patients who have a diagnosis of ischemic stroke, or stroke caused by ischemia.  Using the Quality Data Model, this particular element would map to the Principal Diagnosis attribute for the Encounter category or to the Diagnosis Category.),(Inclusion Criteria: Only use codes which represent a diagnosis of ischemic stroke, or stroke caused by ischemia.  This is a grouping of ICD10CM and SNOMED-CT codes and concepts.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This grouping of value sets identifies patients who have had a stroke caused by ischemia, where the blood supply is restricted to an area of the brain by something like thrombosis or an embolism.),(Data Element Scope: The intent of this data element is to identify patients who have a diagnosis of ischemic stroke, or stroke caused by ischemia.  Using the Quality Data Model, this particular element would map to the Principal Diagnosis attribute for the Encounter category or to the Diagnosis Category.),(Inclusion Criteria: Only use codes which represent a diagnosis of ischemic stroke, or stroke caused by ischemia.  This is a grouping of ICD10CM and SNOMED CT codes and concepts.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.247/expansion
 
 EntryElement: IschemicHeartDiseaseOrCoronaryOcclusionRuptureOrThrombosisDiagnosis
@@ -5956,7 +5956,7 @@ Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Nystagmus and Other Irregular Eye Movements valueset `(2.16.840.1.113883.3.526.3.1465)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1465/expansion
 
-EntryElement: OncAdministrativeSexPatientCharacteristicGender
+EntryElement: ONCAdministrativeSexPatientCharacteristicGender
 Based on: PatientCharacteristicGender
 Description: "(Clinical Focus: Gender identity restricted to only Male and Female used in administrative situations requiring a restriction to these two categories.),(Data Element Scope: Gender),(Inclusion Criteria: Male and Female only.),(Exclusion Criteria: Any gender identity that is not male or female.) -- ResultValue constrained to codes in the ONC Administrative Sex valueset `(2.16.840.1.113762.1.4.1)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1/expansion
@@ -6004,12 +6004,12 @@ Subject value is type OccupationalTherapyEvaluation
 
 EntryElement: OfficeVisit
 Based on: Encounter
-Description: "(Clinical Focus: This value set indentifies patients who have had an office or other outpatient visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- ActivityCode constrained to codes in the Office Visit valueset `(2.16.840.1.113883.3.464.1003.101.11.1005)`. "
+Description: "(Clinical Focus: This value set identifies patients who have had an office or other outpatient visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- ActivityCode constrained to codes in the Office Visit valueset `(2.16.840.1.113883.3.464.1003.101.11.1005)`. "
 ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.101.11.1005/expansion
 
 EntryElement: OfficeVisitPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set indentifies patients who have had an office or other outpatient visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Office Visit"
+Description: "(Clinical Focus: This value set identifies patients who have had an office or other outpatient visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Office Visit"
 Subject value is type OfficeVisit
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -6217,12 +6217,12 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.146
 
 EntryElement: OutpatientConsultation
 Based on: Encounter
-Description: "(Clinical Focus: This value set indentifies patients who have had an outpatient interaction at an office with a member of their medical care team.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- ActivityCode constrained to codes in the Outpatient Consultation valueset `(2.16.840.1.113883.3.464.1003.101.12.1008)`. "
+Description: "(Clinical Focus: This value set identifies patients who have had an outpatient interaction at an office with a member of their medical care team.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- ActivityCode constrained to codes in the Outpatient Consultation valueset `(2.16.840.1.113883.3.464.1003.101.12.1008)`. "
 ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.101.12.1008/expansion
 
 EntryElement: OutpatientConsultationPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set indentifies patients who have had an outpatient interaction at an office with a member of their medical care team.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Outpatient Consultation"
+Description: "(Clinical Focus: This value set identifies patients who have had an outpatient interaction at an office with a member of their medical care team.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Outpatient Consultation"
 Subject value is type OutpatientConsultation
     0..0   AdmissionSource
     0..0   DischargeDisposition
@@ -6233,12 +6233,12 @@ Subject value is type OutpatientConsultation
 
 EntryElement: OutpatientConsultation1
 Based on: Encounter
-Description: "(Clinical Focus: This value set indentifies patients who have had an outpatient interaction at an office with a member of their medical care team.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- ActivityCode constrained to codes in the Outpatient Consultation1 valueset `(2.16.840.1.113883.3.464.1003.101.11.1040)`. "
+Description: "(Clinical Focus: This value set identifies patients who have had an outpatient interaction at an office with a member of their medical care team.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- ActivityCode constrained to codes in the Outpatient Consultation1 valueset `(2.16.840.1.113883.3.464.1003.101.11.1040)`. "
 ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.101.11.1040/expansion
 
 EntryElement: OutpatientConsultation1Performed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set indentifies patients who have had an outpatient interaction at an office with a member of their medical care team.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Outpatient Consultation1"
+Description: "(Clinical Focus: This value set identifies patients who have had an outpatient interaction at an office with a member of their medical care team.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive history, evaluation, and management of a patient in an office or outpatient facility. Patient can be presenting with problems that are minor to high severity.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Outpatient Consultation1"
 Subject value is type OutpatientConsultation1
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -6552,7 +6552,7 @@ Subject value is type Paroxetine
 
 EntryElement: PassOrReferResult
 Based on: Result
-Description: "(Clinical Focus: This set of values contains findings that indicate the normal findings on hearing examination or referral is needed. This value set contains SNOMED-CT codes.),(Data Element Scope: The intent of this data element is to identify patients who have received newborn hearing screening with result of pass or refer, mapped to QDM attribute of result.),(Inclusion Criteria: Includes SNOMED-CT codes. Includes normal finding on hearing examination and referral.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This set of values contains findings that indicate the normal findings on hearing examination or referral is needed. This value set contains SNOMED CT codes.),(Data Element Scope: The intent of this data element is to identify patients who have received newborn hearing screening with result of pass or refer, mapped to QDM attribute of result.),(Inclusion Criteria: Includes SNOMED CT codes. Includes normal finding on hearing examination and referral.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.1.214079.1.1.6/expansion
 
 EntryElement: PathologicMyopiaDiagnosis
@@ -6562,7 +6562,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.143
 
 EntryElement: PatientExpiredDischargeDisposition
 Based on: DischargeDisposition
-Description: "(Clinical Focus: This value set identifies a patient who has died in the hospital.),(Data Element Scope: The intent of this data element is to identify the discharge status of patient expired as an attribute of the inpatient encounter.  Using the Quality Data Model, this value set is used for this attribute.),(Inclusion Criteria: Only include codes for a patient who had died in the hospital.  Codes used are to be SNOMED-CT codes only.),(Exclusion Criteria: None)"
+Description: "(Clinical Focus: This value set identifies a patient who has died in the hospital.),(Data Element Scope: The intent of this data element is to identify the discharge status of patient expired as an attribute of the inpatient encounter.  Using the Quality Data Model, this value set is used for this attribute.),(Inclusion Criteria: Only include codes for a patient who had died in the hospital.  Codes used are to be SNOMED CT codes only.),(Exclusion Criteria: None)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.309/expansion
 
 EntryElement: PatientHealthQuestionnaire9ItemPhq9TotalScoreReported
@@ -6612,7 +6612,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.600.791/e
 
 EntryElement: PatientRefusalNegationRationale
 Based on: NegationRationale
-Description: "(Clinical Focus: This set of values contains situations representing a patient's refusal for treatment.),(Data Element Scope: The intent of this data element is to identify reasons a patient refuses treatment.  Using the Quality Data Model, this particular element will map to the ' reason' attribute.),(Inclusion Criteria: This value set includes concepts that identify refusal of any intervention (including procedures, treatment, medication, counseling, screening).‚Äã),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This set of values contains situations representing a patient's refusal for treatment.),(Data Element Scope: The intent of this data element is to identify reasons a patient refuses treatment.  Using the Quality Data Model, this particular element will map to the ' reason' attribute.),(Inclusion Criteria: This value set includes concepts that identify refusal of any intervention (including procedures, treatment, medication, counseling, screening).),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.93/expansion
 
 EntryElement: PatientNotAmbulatoryResult
@@ -6627,7 +6627,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.3591/e
 
 EntryElement: PerforationOfUterusDiagnosis
 Based on: Diagnosis
-Description: "(Clinical Focus: This set of values contains diagnoses that represent perforation of the uterus.),(Data Element Scope: The intent of this data element is to identify perforation of the uterus.),(Inclusion Criteria: Includes codes that identify perforation of the uterus.),(Exclusion Criteria: Excludes codes indentifying perforation to body structures other than the uterus.) -- ResultValue constrained to codes in the Perforation of Uterus valueset `(2.16.840.1.113762.1.4.1110.14)`"
+Description: "(Clinical Focus: This set of values contains diagnoses that represent perforation of the uterus.),(Data Element Scope: The intent of this data element is to identify perforation of the uterus.),(Inclusion Criteria: Includes codes that identify perforation of the uterus.),(Exclusion Criteria: Excludes codes identifying perforation to body structures other than the uterus.) -- ResultValue constrained to codes in the Perforation of Uterus valueset `(2.16.840.1.113762.1.4.1110.14)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1110.14/expansion
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
@@ -6853,24 +6853,6 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.
     0..0   RelatedTo
     0..0   NegationRationale
 
-EntryElement: PreventiveCareEstablishedOfficeVisit0To17
-Based on: Encounter
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ActivityCode constrained to codes in the Preventive Care - Established Office Visit, 0 to 17 valueset `(2.16.840.1.113883.3.464.1003.101.11.1120)`. "
-ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.101.11.1120/expansion
-
-EntryElement: PreventiveCareEstablishedOfficeVisit0To17Performed
-Based on: EncounterPerformed
-Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- Subject constrained to the Preventive Care - Established Office Visit, 0 to 17"
-Subject value is type PreventiveCareEstablishedOfficeVisit0To17
-    0..0   AuthorDatetime
-    0..0   AdmissionSource
-    0..0   DischargeDisposition
-    0..0   FacilityLocations
-    0..0   Diagnoses
-    0..0   PrincipalDiagnosis
-    0..0   NegationRationale
-    0..0   LengthOfStay
-
 EntryElement: PreventiveCareInitialOfficeVisit0To17
 Based on: Encounter
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ActivityCode constrained to codes in the Preventive Care - Initial Office Visit, 0 to 17 valueset `(2.16.840.1.113883.3.464.1003.101.11.1110)`. "
@@ -6891,12 +6873,12 @@ Subject value is type PreventiveCareInitialOfficeVisit0To17
 
 EntryElement: PreventiveCareServicesEstablishedOfficeVisit18AndUp
 Based on: Encounter
-Description: "(Clinical Focus: This value set indentifies patients over the age of 18 who have had an established preventive care office visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- ActivityCode constrained to codes in the Preventive Care Services - Established Office Visit, 18 and Up valueset `(2.16.840.1.113883.3.464.1003.101.11.1125)`. "
+Description: "(Clinical Focus: This value set identifies patients over the age of 18 who have had an established preventive care office visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- ActivityCode constrained to codes in the Preventive Care Services - Established Office Visit, 18 and Up valueset `(2.16.840.1.113883.3.464.1003.101.11.1125)`. "
 ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.101.11.1125/expansion
 
 EntryElement: PreventiveCareServicesEstablishedOfficeVisit18AndUpPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set indentifies patients over the age of 18 who have had an established preventive care office visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Preventive Care Services - Established Office Visit, 18 and Up"
+Description: "(Clinical Focus: This value set identifies patients over the age of 18 who have had an established preventive care office visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Preventive Care Services - Established Office Visit, 18 and Up"
 Subject value is type PreventiveCareServicesEstablishedOfficeVisit18AndUp
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -6997,12 +6979,12 @@ Subject value is type PreventiveCareServicesIndividualCounseling
 
 EntryElement: PreventiveCareServicesInitialOfficeVisit18AndUp
 Based on: Encounter
-Description: "(Clinical Focus: This value set indentifies patients over the age of 18 who have had an initial preventive care office visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- ActivityCode constrained to codes in the Preventive Care Services-Initial Office Visit, 18 and Up valueset `(2.16.840.1.113883.3.464.1003.101.11.1115)`. "
+Description: "(Clinical Focus: This value set identifies patients over the age of 18 who have had an initial preventive care office visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- ActivityCode constrained to codes in the Preventive Care Services-Initial Office Visit, 18 and Up valueset `(2.16.840.1.113883.3.464.1003.101.11.1115)`. "
 ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.101.11.1115/expansion
 
 EntryElement: PreventiveCareServicesInitialOfficeVisit18AndUpPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set indentifies patients over the age of 18 who have had an initial preventive care office visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Preventive Care Services-Initial Office Visit, 18 and Up"
+Description: "(Clinical Focus: This value set identifies patients over the age of 18 who have had an initial preventive care office visit.),(Data Element Scope: This value set was intended to map to the QDM data type of encounter.),(Inclusion Criteria: Includes comprehensive preventive medicine reevaluation and management of an individual over the age of 18.),(Exclusion Criteria: Excludes non-office visits, including telehealth services.) -- Subject constrained to the Preventive Care Services-Initial Office Visit, 18 and Up"
 Subject value is type PreventiveCareServicesInitialOfficeVisit18AndUp
     0..0   AuthorDatetime
     0..0   AdmissionSource
@@ -7933,9 +7915,9 @@ Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Streptomycin adverse reaction (disorder)' SNOMEDCT code"
 ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/292925004/info
 
-EntryElement: SubcutaneousRouteRoute
+EntryElement: SubcutaneousRoute
 Based on: Route
-Description: "(Clinical Focus: This set of values identifies the route by which a medication is administered, in this case a subcutaneous route.),(Data Element Scope: The intent of this data element is to identify the route by which a medication is administered, in this case a subcutaneous route.  Using the Quality Data Model, this particular element is an attribute.),(Inclusion Criteria: Only use codes which identify a subcutaneous route for giving a medication.  These are SNOMED-CT codes.),(Exclusion Criteria: None)"
+Description: "(Clinical Focus: This set of values identifies the route by which a medication is administered, in this case a subcutaneous route.),(Data Element Scope: The intent of this data element is to identify the route by which a medication is administered, in this case a subcutaneous route.  Using the Quality Data Model, this particular element is an attribute.),(Inclusion Criteria: Only use codes which identify a subcutaneous route for giving a medication.  These are SNOMED CT codes.),(Exclusion Criteria: None)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.223/expansion
 
 EntryElement: SubstanceAbusePrincipalDiagnosis
@@ -8070,15 +8052,15 @@ Subject value is type TenYearProbabilityOfAllMajorOsteoporosisRelatedFracture
     0..0   Components
     0..0   RelatedTo
 
-EntryElement: ThrombolyticTPaTherapy
+EntryElement: ThrombolytictPATherapy
 Based on: Medication
-Description: "(Clinical Focus: This set of values contains medications that are prescribed for Thrombolytic (t-PA) Therapy for treatment of ischemic stroke.),(Data Element Scope: The intent of this data element is to identify patients who are administered  appropriate Thrombolytic (t-PA) Therapy for stroke. Using the Quality Data Model, this particular element would map to the 'Medication' category.),(Inclusion Criteria: Include RxNorm  thombolytic medications appropriate for stroke treatment consistent with administration by IV route.),(Exclusion Criteria: None.) -- ObjectTypeCode constrained to codes in the Thrombolytic (t-PA) Therapy valueset `(2.16.840.1.113883.3.117.1.7.1.226)`. "
+Description: "(Clinical Focus: This set of values contains medications that are prescribed for Thrombolytic (t-PA) Therapy for treatment of ischemic stroke.),(Data Element Scope: The intent of this data element is to identify patients who are administered  appropriate Thrombolytic (t-PA) Therapy for stroke. Using the Quality Data Model, this particular element would map to the 'Medication' category.),(Inclusion Criteria: Include RxNorm  thrombolytic medications appropriate for stroke treatment consistent with administration by IV route.),(Exclusion Criteria: None.) -- ObjectTypeCode constrained to codes in the Thrombolytic (t-PA) Therapy valueset `(2.16.840.1.113883.3.117.1.7.1.226)`. "
 ObjectTypeCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.226/expansion
 
-EntryElement: ThrombolyticTPaTherapyAdministered
+EntryElement: ThrombolytictPATherapyAdministered
 Based on: MedicationAdministered
-Description: "(Clinical Focus: This set of values contains medications that are prescribed for Thrombolytic (t-PA) Therapy for treatment of ischemic stroke.),(Data Element Scope: The intent of this data element is to identify patients who are administered  appropriate Thrombolytic (t-PA) Therapy for stroke. Using the Quality Data Model, this particular element would map to the 'Medication' category.),(Inclusion Criteria: Include RxNorm  thombolytic medications appropriate for stroke treatment consistent with administration by IV route.),(Exclusion Criteria: None.) -- Subject constrained to the Thrombolytic (t-PA) Therapy"
-Subject value is type ThrombolyticTPaTherapy
+Description: "(Clinical Focus: This set of values contains medications that are prescribed for Thrombolytic (t-PA) Therapy for treatment of ischemic stroke.),(Data Element Scope: The intent of this data element is to identify patients who are administered  appropriate Thrombolytic (t-PA) Therapy for stroke. Using the Quality Data Model, this particular element would map to the 'Medication' category.),(Inclusion Criteria: Include RxNorm  thrombolytic medications appropriate for stroke treatment consistent with administration by IV route.),(Exclusion Criteria: None.) -- Subject constrained to the Thrombolytic (t-PA) Therapy"
+Subject value is type ThrombolytictPATherapy
     0..0   AuthorDatetime
     0..0   Dosage
     0..0   Supply

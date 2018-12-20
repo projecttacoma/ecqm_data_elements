@@ -1434,8 +1434,8 @@ EntryElement: TelehealthServicesorTelephoneManagementUnion
     0..* TelephoneManagementPerformed
 
 EntryElement: ThrombolyticTherapyMedicationorProceduresUnion
-    0..* IntravenousOrIntraArterialThrombolyticTPaTherapyPerformed
-    0..* ThrombolyticTPaTherapyAdministered
+    0..* IntravenousOrIntraArterialThrombolytictPATherapyPerformed
+    0..* ThrombolytictPATherapyAdministered
 
 EntryElement: TreatmentInitiationUnion
     0..* AlcoholAndDrugDependenceTreatmentPerformed
