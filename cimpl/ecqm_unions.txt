@@ -110,7 +110,7 @@ EntryElement: DTaPVaccinationUnion
     0..* DTaPVaccineAdministered
     0..* DTaPVaccineAdministeredPerformed
 
-EntryElement: DeliveryEncounterwithJustifyingConditionsUnion
+EntryElement: DeliveryEncounterWithJustifyingConditionsUnion
     0..* ConditionsPossiblyJustifyingElectiveDeliveryPriorTo39WeeksGestationDiagnosis
     0..* EncounterInpatientPerformed
 
@@ -156,10 +156,6 @@ EntryElement: DenominatorExclusions3Union
 EntryElement: InterventionComfortMeasuresUnion
     0..* ComfortMeasuresOrder
     0..* ComfortMeasuresPerformed
-
-EntryElement: Union21
-    0..* CMS160v7
-    0..* CMS159v7
 
 EntryElement: DepressionDiagnosesUnion
     0..* DysthymiaDiagnosis
@@ -410,9 +406,6 @@ EntryElement: HistoryofClinicalASCVDDiagnosesUnion
     0..* MyocardialInfarctionDiagnosis
     0..* StableAndUnstableAnginaDiagnosis
 
-EntryElement: Union44
-    0..* CMS347v2
-
 EntryElement: HistoryofClinicalASCVDProceduresUnion
     0..* CABGSurgeriesPerformed
     0..* CarotidInterventionPerformed
@@ -469,9 +462,6 @@ EntryElement: IndependentRiskFactorsApplicableAnyTimeUnion
     0..* OsteogenesisImperfectaDiagnosis
     0..* PsoriaticArthritisDiagnosis
     0..* Type1DiabetesDiagnosis
-
-EntryElement: Union50
-    0..* CMS249v1
 
 EntryElement: IndependentRiskFactorsBeforeMeasurementPeriodUnion
     0..* AromataseInhibitorsActive
