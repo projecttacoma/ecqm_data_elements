@@ -273,7 +273,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.124
 
 EntryElement: AcuteOrEvolvingMIPrincipalDiagnosis
 Based on: PrincipalDiagnosis
-Description: "(Clinical Focus: This grouping value set contains diagnoses used to identify patients with an acute or evolving myocardial infarction.),(Data Element Scope: The intent of this data element is to identify hospital environments where a patient may receive inpatient or outpatient care. Using the Quality Data Model, this value set is used with the \"Admission Source\" attribute of the \"Encounter\" category.),(Inclusion Criteria: Include codes that represent the concept of hospital environment. Codes included are SNOMED CT 22232009 and all its children. ),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This grouping value set contains diagnoses used to identify patients with an acute or evolving myocardial infarction (ST-segment elevation MI).),(Data Element Scope: The intent of this data element is to identify patients with an acute or evolving myocardial infarction (ST-segment elevation MI). Using the Quality Data Model, this value set is used with the “Principal Diagnosis” attribute of the “Encounter” category.),(Inclusion Criteria: Include codes that identify diagnosis of acute or evolving myocardial infarction (ST-segment elevation MI). This is a grouping of ICD-10-CM and SNOMED CT codes.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.3022/expansion
 
 EntryElement: AdditionalEvaluationForDepressionAdolescent
