@@ -881,7 +881,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.362
 
 EntryElement: AsthmaActionPlanCommunicationFromProviderToPatient
 Based on: CommunicationFromProviderToPatient
-Description: " -- ObservableCode constrained to 'Asthma action plan' LOINC code"
+Description: "(Clinical Focus: This code represents an asthma management plan document commonly provided to patients, parents and others. It provides guidance for three situations that can occur for asthmatics.),(Data Element Scope: The intent of this data element is to identify asthma management plan documents to determine their communication to the patient/caregiver. Using the Quality Data Model, this data element maps to the Communication category.),(Inclusion Criteria: Codes representing asthma management plan documents, including the following components: 1) Methods and timing of rescue actions; 2) Appropriate use of long-term asthma medications (controllers); 3) Appropriate use of rescue, quick-relief, or short acting medications of choice to quickly relieve asthma exacerbations (relievers); 4) information on avoidance or mitigation of environmental and other triggers; 5) information regarding arrangements for referral or follow-up care with a healthcare provider.),(Exclusion Criteria: None.) -- ObservableCode constrained to 'Asthma action plan' LOINC code"
 ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/69981-9/info
 
 EntryElement: Asthma1PrincipalDiagnosis
