@@ -515,17 +515,17 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 EntryElement: AnaphylaxisDueToHaemophilusInfluenzaeTypeBVaccineDisorderDiagnosis
 Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Anaphylaxis due to Haemophilus influenzae type b vaccine (disorder)' SNOMED CT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/433621000124101/info
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/433621000124101/info
 
 EntryElement: AnaphylaxisDueToHepatitisBVaccineDisorderDiagnosis
 Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Anaphylaxis due to Hepatitis B vaccine (disorder)' SNOMED CT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428321000124101/info
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428321000124101/info
 
 EntryElement: AnaphylaxisDueToRotavirusVaccineDisorderDiagnosis
 Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Anaphylaxis due to rotavirus vaccine (disorder)' SNOMED CT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428331000124103/info
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428331000124103/info
 
 EntryElement: AndrogenDeprivationTherapyForUrologyCare
 Based on: Medication
@@ -1139,7 +1139,7 @@ Subject value is type Benztropine
 EntryElement: BestCorrectedVisualAcuityObservableEntity
 Based on: PhysicalExam
 Description: " -- ObservableCode constrained to 'Best corrected visual acuity (observable entity)' SNOMED CT code"
-ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/419775003/info
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/419775003/info
 
 EntryElement: BestCorrectedVisualAcuityObservableEntityPerformed
 Based on: PhysicalExamPerformed
@@ -2099,7 +2099,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1
 EntryElement: CongenitalAbsenceOfCervixDisorderDiagnosis
 Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Congenital absence of cervix (disorder)' SNOMED CT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/37687000/info
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/37687000/info
 
 EntryElement: ConjugatedEstrogens
 Based on: Medication
@@ -3007,7 +3007,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.145
 EntryElement: DocumentationOfCurrentMedicationsProcedure
 Based on: Procedure
 Description: " -- ObservableCode constrained to 'Documentation of current medications (procedure)' SNOMED CT code"
-ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428191000124101/info
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428191000124101/info
 
 EntryElement: DocumentationOfCurrentMedicationsProcedurePerformed
 Based on: ProcedurePerformed
@@ -4614,7 +4614,7 @@ Subject value is type InfluenzaVaccine1
 EntryElement: InfluenzaVirusVaccineAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Influenza virus vaccine adverse reaction (disorder)' SNOMED CT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/420113004/info
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/420113004/info
 
 EntryElement: InjectableFactorXaInhibitorForVTEProphylaxis
 Based on: Medication
@@ -5225,7 +5225,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1046.6/
 
 EntryElement: LiveBirthNewbornBornInHospitalDiagnoses
 Based on: Diagnoses
-Description: "(Clinical Focus: This set of values contains diagnoses that are commonly used in the inpatient setting for newborn live born, and born in hospital. This value set is a grouping value set composed of  ICD-10-CM and SNOMED CT value sets.),(Data Element Scope: The intent of this data element is to identify patients who have an active diagnosis of newborn live born. Using the Quality Data Model, this value set is used with \"Diagnosis\" category or the attributes \"Principal Diagnosis\" or \"Diagnoses\" attributes of the \"Encounter\" category.),(Inclusion Criteria: This value set includes ICD-10-CM  and SNOMED CT value sets.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This set of values contains diagnoses that are commonly used in the inpatient setting for newborn live born, and born in hospital. This value set is a grouping value set composed of  ICD-10-CM and SNOMED CT value sets.),(Data Element Scope: The intent of this data element is to identify patients who have an active diagnosis of newborn live born. Using the Quality Data Model, this value set is used with 'Diagnosis' category or the attributes 'Principal Diagnosis' or 'Diagnoses' attributes of the 'Encounter' category.),(Inclusion Criteria: This value set includes ICD-10-CM  and SNOMED CT value sets.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1046.6/expansion
 
 EntryElement: LiverDiseaseDiagnosis
@@ -5435,7 +5435,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 EntryElement: MaternalPostpartumDepressionCareRegimeTherapy
 Based on: Intervention
 Description: " -- ActivityCode constrained to 'Maternal postpartum depression care (regime/therapy)' SNOMED CT code"
-ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428231000124106/info
+ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428231000124106/info
 
 EntryElement: MaternalPostpartumDepressionCareRegimeTherapyPerformed
 Based on: InterventionPerformed
@@ -5445,7 +5445,7 @@ Subject value is type MaternalPostpartumDepressionCareRegimeTherapy
 EntryElement: MaternalPostpartumDepressionScreeningProcedure
 Based on: Assessment
 Description: " -- ObservableCode constrained to 'Maternal postpartum depression screening (procedure)' SNOMED CT code"
-ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428221000124108/info
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428221000124108/info
 
 EntryElement: MaternalPostpartumDepressionScreeningProcedurePerformed
 Based on: AssessmentPerformed
@@ -5834,7 +5834,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 EntryElement: NeomycinAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Neomycin adverse reaction (disorder)' SNOMED CT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/292927007/info
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/292927007/info
 
 EntryElement: NeonatalIntensiveCareUnitNICUFacilityLocations
 Based on: FacilityLocations
@@ -6765,7 +6765,7 @@ Subject value is type PneumococcalVaccineAdministered
 EntryElement: PneumococcalVaccineAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Pneumococcal vaccine adverse reaction (disorder)' SNOMED CT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/293116002/info
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/293116002/info
 
 EntryElement: PneumocystisJiroveciPneumoniaPCPProphylaxis
 Based on: Medication
@@ -6790,12 +6790,12 @@ Subject value is type PneumocystisJiroveciPneumoniaPCPProphylaxis
 EntryElement: PoliomyelitisVaccineAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Poliomyelitis vaccine adverse reaction (disorder)' SNOMED CT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/293117006/info
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/293117006/info
 
 EntryElement: PolymyxinBAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Polymyxin B adverse reaction (disorder)' SNOMED CT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/292992006/info
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/292992006/info
 
 EntryElement: PositiveFindingResult
 Based on: Result
@@ -7767,7 +7767,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.102
 EntryElement: SevereDementiaDisorderDiagnosis
 Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Severe dementia (disorder)' SNOMED CT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428351000124105/info
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428351000124105/info
 
 EntryElement: SexuallyActive
 Based on: Assessment
@@ -7913,7 +7913,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 EntryElement: StreptomycinAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
 Description: " -- ResultValue constrained to 'Streptomycin adverse reaction (disorder)' SNOMED CT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/292925004/info
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/292925004/info
 
 EntryElement: SubcutaneousRoute
 Based on: Route
@@ -7943,7 +7943,7 @@ Subject value is type SuicideRiskAssessment
 EntryElement: SuicideRiskAssessmentProcedure
 Based on: Intervention
 Description: " -- ActivityCode constrained to 'Suicide risk assessment (procedure)' SNOMED CT code"
-ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/225337009/info
+ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/225337009/info
 
 EntryElement: SuicideRiskAssessmentProcedurePerformed
 Based on: InterventionPerformed
@@ -8569,11 +8569,7 @@ Subject value is type VenousFootPumpsVFP
 
 EntryElement: VentricularAssistDevicePlacement
 Based on: Procedure
-<<<<<<< HEAD
-Description: "(Clinical Focus: This grouping value set contains procedures used to identify the placement of a ventricular assist device.),(Data Element Scope: The intent of this data element is to identify procedures for ventricular assist device placement. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients with ventricular assist device placement. This is a grouping of ICD-10-PCS and SNOMED CT codes.),(Exclusion Criteria: None.) -- ObservableCode constrained to codes in the Ventricular Assist Device placement valueset `(2.16.840.1.113883.3.666.5.3015)`. "
-=======
-Description: "(Clinical Focus: This grouping value set contains procedures used to identify the placement of a ventricular assist device.),(Data Element Scope: The intent of this data element is to identify procedures for ventricular assist device placement. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients with ventricular assist device placement. This is a grouping of ICD-10-PCS and SNOMEDCT codes.),(Exclusion Criteria: None.) -- ObservableCode constrained to codes in the Ventricular Assist Device placement value set `(2.16.840.1.113883.3.666.5.3015)`. "
->>>>>>> Change valueset to value set in the CIMPL
+Description: "(Clinical Focus: This grouping value set contains procedures used to identify the placement of a ventricular assist device.),(Data Element Scope: The intent of this data element is to identify procedures for ventricular assist device placement. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients with ventricular assist device placement. This is a grouping of ICD-10-PCS and SNOMED CT codes.),(Exclusion Criteria: None.) -- ObservableCode constrained to codes in the Ventricular Assist Device placement value set `(2.16.840.1.113883.3.666.5.3015)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.3015/expansion
 
 EntryElement: VentricularAssistDevicePlacementPerformed
