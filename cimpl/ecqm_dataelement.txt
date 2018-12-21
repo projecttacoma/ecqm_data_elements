@@ -514,18 +514,18 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: AnaphylaxisDueToHaemophilusInfluenzaeTypeBVaccineDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to 'Anaphylaxis due to Haemophilus influenzae type b vaccine (disorder)' SNOMEDCT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/433621000124101/info
+Description: " -- ResultValue constrained to 'Anaphylaxis due to Haemophilus influenzae type b vaccine (disorder)' SNOMED CT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/433621000124101/info
 
 EntryElement: AnaphylaxisDueToHepatitisBVaccineDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to 'Anaphylaxis due to Hepatitis B vaccine (disorder)' SNOMEDCT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428321000124101/info
+Description: " -- ResultValue constrained to 'Anaphylaxis due to Hepatitis B vaccine (disorder)' SNOMED CT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428321000124101/info
 
 EntryElement: AnaphylaxisDueToRotavirusVaccineDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to 'Anaphylaxis due to rotavirus vaccine (disorder)' SNOMEDCT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428331000124103/info
+Description: " -- ResultValue constrained to 'Anaphylaxis due to rotavirus vaccine (disorder)' SNOMED CT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428331000124103/info
 
 EntryElement: AndrogenDeprivationTherapyForUrologyCare
 Based on: Medication
@@ -899,12 +899,12 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1047.21
 
 EntryElement: AtrialAblation
 Based on: Procedure
-Description: "(Clinical Focus: This grouping value set represents atrial ablation procedures.),(Data Element Scope: The intent of this data element is to identify patients with a history of atrial ablation procedure. Using the Quality Data Model, this particular element would map to the Procedure category.),(Inclusion Criteria: Include codes that identify patients with a history of atrial ablation procedure. This is a grouping of ICD10CM and SNOMEDCT codes.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.) -- ObservableCode constrained to codes in the Atrial Ablation valueset `(2.16.840.1.113883.3.117.1.7.1.203)`. "
+Description: "(Clinical Focus: This grouping value set represents atrial ablation procedures.),(Data Element Scope: The intent of this data element is to identify patients with a history of atrial ablation procedure. Using the Quality Data Model, this particular element would map to the Procedure category.),(Inclusion Criteria: Include codes that identify patients with a history of atrial ablation procedure. This is a grouping of ICD-10-CM and SNOMED CT codes.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.) -- ObservableCode constrained to codes in the Atrial Ablation valueset `(2.16.840.1.113883.3.117.1.7.1.203)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.203/expansion
 
 EntryElement: AtrialAblationPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: This grouping value set represents atrial ablation procedures.),(Data Element Scope: The intent of this data element is to identify patients with a history of atrial ablation procedure. Using the Quality Data Model, this particular element would map to the Procedure category.),(Inclusion Criteria: Include codes that identify patients with a history of atrial ablation procedure. This is a grouping of ICD10CM and SNOMEDCT codes.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.) -- Subject constrained to the Atrial Ablation"
+Description: "(Clinical Focus: This grouping value set represents atrial ablation procedures.),(Data Element Scope: The intent of this data element is to identify patients with a history of atrial ablation procedure. Using the Quality Data Model, this particular element would map to the Procedure category.),(Inclusion Criteria: Include codes that identify patients with a history of atrial ablation procedure. This is a grouping of ICD-10-CM and SNOMED CT codes.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.) -- Subject constrained to the Atrial Ablation"
 Subject value is type AtrialAblation
     0..0   AuthorDatetime
     0..0   Reason
@@ -920,7 +920,7 @@ Subject value is type AtrialAblation
 
 EntryElement: AtrialFibrillationFlutterDiagnosis
 Based on: Diagnosis
-Description: "(Clinical Focus: This grouping value set contains diagnoses used to identify patients with a history of atrial fibrillation/flutter or a current finding of atrial fibrillation/flutter.),(Data Element Scope: The intent of this data element is to identify patients with a diagnosis of atrial fibrillation or flutter. Using the Quality Data Model, this particular element would map to the Diagnosis category or the Diagnosis attribute for the Encounter category.),(Inclusion Criteria: Include codes that identify patients with a history of atrial fibrillation/flutter or a current finding of atrial fibrillation/flutter. This is a grouping of ICD10CM, ICD9CM and SNOMEDCT codes.),(Exclusion Criteria: None.) -- ResultValue constrained to codes in the Atrial Fibrillation/Flutter valueset `(2.16.840.1.113883.3.117.1.7.1.202)`"
+Description: "(Clinical Focus: This grouping value set contains diagnoses used to identify patients with a history of atrial fibrillation/flutter or a current finding of atrial fibrillation/flutter.),(Data Element Scope: The intent of this data element is to identify patients with a diagnosis of atrial fibrillation or flutter. Using the Quality Data Model, this particular element would map to the Diagnosis category or the Diagnosis attribute for the Encounter category.),(Inclusion Criteria: Include codes that identify patients with a history of atrial fibrillation/flutter or a current finding of atrial fibrillation/flutter. This is a grouping of ICD-10-CM, ICD-9-CM and SNOMED CT codes.),(Exclusion Criteria: None.) -- ResultValue constrained to codes in the Atrial Fibrillation/Flutter valueset `(2.16.840.1.113883.3.117.1.7.1.202)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.202/expansion
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
@@ -928,7 +928,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1
 
 EntryElement: AtrialFibrillationFlutterDiagnoses
 Based on: Diagnoses
-Description: "(Clinical Focus: This grouping value set contains diagnoses used to identify patients with a history of atrial fibrillation/flutter or a current finding of atrial fibrillation/flutter.),(Data Element Scope: The intent of this data element is to identify patients with a diagnosis of atrial fibrillation or flutter. Using the Quality Data Model, this particular element would map to the Diagnosis category or the Diagnosis attribute for the Encounter category.),(Inclusion Criteria: Include codes that identify patients with a history of atrial fibrillation/flutter or a current finding of atrial fibrillation/flutter. This is a grouping of ICD10CM, ICD9CM and SNOMEDCT codes.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This grouping value set contains diagnoses used to identify patients with a history of atrial fibrillation/flutter or a current finding of atrial fibrillation/flutter.),(Data Element Scope: The intent of this data element is to identify patients with a diagnosis of atrial fibrillation or flutter. Using the Quality Data Model, this particular element would map to the Diagnosis category or the Diagnosis attribute for the Encounter category.),(Inclusion Criteria: Include codes that identify patients with a history of atrial fibrillation/flutter or a current finding of atrial fibrillation/flutter. This is a grouping of ICD-10-CM, ICD-9-CM and SNOMED CT codes.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.202/expansion
 
 EntryElement: AtrioventricularBlockDiagnosis
@@ -1138,8 +1138,8 @@ Subject value is type Benztropine
 
 EntryElement: BestCorrectedVisualAcuityObservableEntity
 Based on: PhysicalExam
-Description: " -- ObservableCode constrained to 'Best corrected visual acuity (observable entity)' SNOMEDCT code"
-ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/419775003/info
+Description: " -- ObservableCode constrained to 'Best corrected visual acuity (observable entity)' SNOMED CT code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/419775003/info
 
 EntryElement: BestCorrectedVisualAcuityObservableEntityPerformed
 Based on: PhysicalExamPerformed
@@ -2040,19 +2040,19 @@ Subject value is type Colonoscopy
 
 EntryElement: ComfortMeasures
 Based on: Intervention
-Description: "(Clinical Focus: This set of values contains care regimes used to define comfort measure care.),(Data Element Scope: The intent of this data element is to identify patients receiving comfort measures care. Using the Quality Data Model, this particular element would map to the Intervention category.),(Inclusion Criteria: Include SNOMEDCT regime and therapy codes for comfort measures, terminal care, dying care, and hospice care.),(Exclusion Criteria: None.) -- ActivityCode constrained to codes in the Comfort Measures valueset `(1.3.6.1.4.1.33895.1.3.0.45)`. "
+Description: "(Clinical Focus: This set of values contains care regimes used to define comfort measure care.),(Data Element Scope: The intent of this data element is to identify patients receiving comfort measures care. Using the Quality Data Model, this particular element would map to the Intervention category.),(Inclusion Criteria: Include SNOMED CT regime and therapy codes for comfort measures, terminal care, dying care, and hospice care.),(Exclusion Criteria: None.) -- ActivityCode constrained to codes in the Comfort Measures valueset `(1.3.6.1.4.1.33895.1.3.0.45)`. "
 ActivityCode from https://vsac.nlm.nih.gov/valueset/1.3.6.1.4.1.33895.1.3.0.45/expansion
 
 EntryElement: ComfortMeasuresOrder
 Based on: InterventionOrder
-Description: "(Clinical Focus: This set of values contains care regimes used to define comfort measure care.),(Data Element Scope: The intent of this data element is to identify patients receiving comfort measures care. Using the Quality Data Model, this particular element would map to the Intervention category.),(Inclusion Criteria: Include SNOMEDCT regime and therapy codes for comfort measures, terminal care, dying care, and hospice care.),(Exclusion Criteria: None.) -- Subject constrained to the Comfort Measures"
+Description: "(Clinical Focus: This set of values contains care regimes used to define comfort measure care.),(Data Element Scope: The intent of this data element is to identify patients receiving comfort measures care. Using the Quality Data Model, this particular element would map to the Intervention category.),(Inclusion Criteria: Include SNOMED CT regime and therapy codes for comfort measures, terminal care, dying care, and hospice care.),(Exclusion Criteria: None.) -- Subject constrained to the Comfort Measures"
 Subject value is type ComfortMeasures
     0..0   Reason
     0..0   NegationRationale
 
 EntryElement: ComfortMeasuresPerformed
 Based on: InterventionPerformed
-Description: "(Clinical Focus: This set of values contains care regimes used to define comfort measure care.),(Data Element Scope: The intent of this data element is to identify patients receiving comfort measures care. Using the Quality Data Model, this particular element would map to the Intervention category.),(Inclusion Criteria: Include SNOMEDCT regime and therapy codes for comfort measures, terminal care, dying care, and hospice care.),(Exclusion Criteria: None.) -- Subject constrained to the Comfort Measures"
+Description: "(Clinical Focus: This set of values contains care regimes used to define comfort measure care.),(Data Element Scope: The intent of this data element is to identify patients receiving comfort measures care. Using the Quality Data Model, this particular element would map to the Intervention category.),(Inclusion Criteria: Include SNOMED CT regime and therapy codes for comfort measures, terminal care, dying care, and hospice care.),(Exclusion Criteria: None.) -- Subject constrained to the Comfort Measures"
 Subject value is type ComfortMeasures
     0..0   Reason
     0..0   Result
@@ -2098,8 +2098,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1
 
 EntryElement: CongenitalAbsenceOfCervixDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to 'Congenital absence of cervix (disorder)' SNOMEDCT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/37687000/info
+Description: " -- ResultValue constrained to 'Congenital absence of cervix (disorder)' SNOMED CT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/37687000/info
 
 EntryElement: ConjugatedEstrogens
 Based on: Medication
@@ -3006,8 +3006,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.145
 
 EntryElement: DocumentationOfCurrentMedicationsProcedure
 Based on: Procedure
-Description: " -- ObservableCode constrained to 'Documentation of current medications (procedure)' SNOMEDCT code"
-ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428191000124101/info
+Description: " -- ObservableCode constrained to 'Documentation of current medications (procedure)' SNOMED CT code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428191000124101/info
 
 EntryElement: DocumentationOfCurrentMedicationsProcedurePerformed
 Based on: ProcedurePerformed
@@ -3190,12 +3190,12 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.353
 
 EntryElement: EndotrachealIntubation
 Based on: Procedure
-Description: "(Clinical Focus: This grouping value set contains procedures used to define endotracheal intubation.),(Data Element Scope: The intent of this data element is to identify patients who receive endotracheal intubation as a medical procedure. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients receiving an endotracheal airway inserted into the trachea. This is a grouping of ICD10PCS and SNOMEDCT codes.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the Endotracheal Intubation valueset `(2.16.840.1.113762.1.4.1045.69)`. "
+Description: "(Clinical Focus: This grouping value set contains procedures used to define endotracheal intubation.),(Data Element Scope: The intent of this data element is to identify patients who receive endotracheal intubation as a medical procedure. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients receiving an endotracheal airway inserted into the trachea. This is a grouping of ICD10PCS and SNOMED CT codes.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the Endotracheal Intubation valueset `(2.16.840.1.113762.1.4.1045.69)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1045.69/expansion
 
 EntryElement: EndotrachealIntubationPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: This grouping value set contains procedures used to define endotracheal intubation.),(Data Element Scope: The intent of this data element is to identify patients who receive endotracheal intubation as a medical procedure. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients receiving an endotracheal airway inserted into the trachea. This is a grouping of ICD10PCS and SNOMEDCT codes.),(Exclusion Criteria: None) -- Subject constrained to the Endotracheal Intubation"
+Description: "(Clinical Focus: This grouping value set contains procedures used to define endotracheal intubation.),(Data Element Scope: The intent of this data element is to identify patients who receive endotracheal intubation as a medical procedure. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients receiving an endotracheal airway inserted into the trachea. This is a grouping of ICD10PCS and SNOMED CT codes.),(Exclusion Criteria: None) -- Subject constrained to the Endotracheal Intubation"
 Subject value is type EndotrachealIntubation
     0..0   AuthorDatetime
     0..0   Reason
@@ -3953,7 +3953,7 @@ Subject value is type Hemodialysis
 
 EntryElement: HemorrhagicStrokePrincipalDiagnosis
 Based on: PrincipalDiagnosis
-Description: "(Clinical Focus: This grouping of value sets identifies patients who have had a hemorrhagic stroke, or stroke caused by hemorrhage.),(Data Element Scope: The intent of this data element is to identify patients who have a diagnosis of hemorrhagic stroke, or stroke caused by a hemorrhage.  Using the Quality Data Model, this particular element would map to the Principal Diagnosis attribute for the Encounter category.),(Inclusion Criteria: Only use codes which represent a diagnosis of hemorrhagic stroke, or stroke caused by hemorrhage.  This is a grouping of  ICD10CM and SNOMED CT codes.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This grouping of value sets identifies patients who have had a hemorrhagic stroke, or stroke caused by hemorrhage.),(Data Element Scope: The intent of this data element is to identify patients who have a diagnosis of hemorrhagic stroke, or stroke caused by a hemorrhage.  Using the Quality Data Model, this particular element would map to the Principal Diagnosis attribute for the Encounter category.),(Inclusion Criteria: Only use codes which represent a diagnosis of hemorrhagic stroke, or stroke caused by hemorrhage.  This is a grouping of  ICD-10-CM and SNOMED CT codes.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.212/expansion
 
 EntryElement: HepatitisADiagnosis
@@ -4613,8 +4613,8 @@ Subject value is type InfluenzaVaccine1
 
 EntryElement: InfluenzaVirusVaccineAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to 'Influenza virus vaccine adverse reaction (disorder)' SNOMEDCT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/420113004/info
+Description: " -- ResultValue constrained to 'Influenza virus vaccine adverse reaction (disorder)' SNOMED CT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/420113004/info
 
 EntryElement: InjectableFactorXaInhibitorForVTEProphylaxis
 Based on: Medication
@@ -4789,7 +4789,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: IschemicStrokePrincipalDiagnosis
 Based on: PrincipalDiagnosis
-Description: "(Clinical Focus: This grouping of value sets identifies patients who have had a stroke caused by ischemia, where the blood supply is restricted to an area of the brain by something like thrombosis or an embolism.),(Data Element Scope: The intent of this data element is to identify patients who have a diagnosis of ischemic stroke, or stroke caused by ischemia.  Using the Quality Data Model, this particular element would map to the Principal Diagnosis attribute for the Encounter category or to the Diagnosis Category.),(Inclusion Criteria: Only use codes which represent a diagnosis of ischemic stroke, or stroke caused by ischemia.  This is a grouping of ICD10CM and SNOMED CT codes and concepts.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This grouping of value sets identifies patients who have had a stroke caused by ischemia, where the blood supply is restricted to an area of the brain by something like thrombosis or an embolism.),(Data Element Scope: The intent of this data element is to identify patients who have a diagnosis of ischemic stroke, or stroke caused by ischemia.  Using the Quality Data Model, this particular element would map to the Principal Diagnosis attribute for the Encounter category or to the Diagnosis Category.),(Inclusion Criteria: Only use codes which represent a diagnosis of ischemic stroke, or stroke caused by ischemia.  This is a grouping of ICD-10-CM and SNOMED CT codes and concepts.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.247/expansion
 
 EntryElement: IschemicHeartDiseaseOrCoronaryOcclusionRuptureOrThrombosisDiagnosis
@@ -5434,8 +5434,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: MaternalPostpartumDepressionCareRegimeTherapy
 Based on: Intervention
-Description: " -- ActivityCode constrained to 'Maternal postpartum depression care (regime/therapy)' SNOMEDCT code"
-ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428231000124106/info
+Description: " -- ActivityCode constrained to 'Maternal postpartum depression care (regime/therapy)' SNOMED CT code"
+ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428231000124106/info
 
 EntryElement: MaternalPostpartumDepressionCareRegimeTherapyPerformed
 Based on: InterventionPerformed
@@ -5444,8 +5444,8 @@ Subject value is type MaternalPostpartumDepressionCareRegimeTherapy
 
 EntryElement: MaternalPostpartumDepressionScreeningProcedure
 Based on: Assessment
-Description: " -- ObservableCode constrained to 'Maternal postpartum depression screening (procedure)' SNOMEDCT code"
-ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428221000124108/info
+Description: " -- ObservableCode constrained to 'Maternal postpartum depression screening (procedure)' SNOMED CT code"
+ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428221000124108/info
 
 EntryElement: MaternalPostpartumDepressionScreeningProcedurePerformed
 Based on: AssessmentPerformed
@@ -5833,8 +5833,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: NeomycinAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to 'Neomycin adverse reaction (disorder)' SNOMEDCT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/292927007/info
+Description: " -- ResultValue constrained to 'Neomycin adverse reaction (disorder)' SNOMED CT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/292927007/info
 
 EntryElement: NeonatalIntensiveCareUnitNICUFacilityLocations
 Based on: FacilityLocations
@@ -6291,12 +6291,12 @@ Subject value is type Oxytocin
 
 EntryElement: PCI
 Based on: Procedure
-Description: "(Clinical Focus: This grouping value set contains procedures used to define percutaneous coronary intervention (PCI).),(Data Element Scope: The intent of this data element is to identify patients who had percutaneous coronary intervention (PCI) during an episode of acute myocardial infarction. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients receiving percutaneous coronary intervention (PCI). This is a grouping of ICD10PCS and SNOMEDCT codes.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the PCI valueset `(2.16.840.1.113762.1.4.1045.67)`. "
+Description: "(Clinical Focus: This grouping value set contains procedures used to define percutaneous coronary intervention (PCI).),(Data Element Scope: The intent of this data element is to identify patients who had percutaneous coronary intervention (PCI) during an episode of acute myocardial infarction. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients receiving percutaneous coronary intervention (PCI). This is a grouping of ICD10PCS and SNOMED CT codes.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the PCI valueset `(2.16.840.1.113762.1.4.1045.67)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1045.67/expansion
 
 EntryElement: PCIPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: This grouping value set contains procedures used to define percutaneous coronary intervention (PCI).),(Data Element Scope: The intent of this data element is to identify patients who had percutaneous coronary intervention (PCI) during an episode of acute myocardial infarction. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients receiving percutaneous coronary intervention (PCI). This is a grouping of ICD10PCS and SNOMEDCT codes.),(Exclusion Criteria: None) -- Subject constrained to the PCI"
+Description: "(Clinical Focus: This grouping value set contains procedures used to define percutaneous coronary intervention (PCI).),(Data Element Scope: The intent of this data element is to identify patients who had percutaneous coronary intervention (PCI) during an episode of acute myocardial infarction. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients receiving percutaneous coronary intervention (PCI). This is a grouping of ICD10PCS and SNOMED CT codes.),(Exclusion Criteria: None) -- Subject constrained to the PCI"
 Subject value is type PCI
     0..0   AuthorDatetime
     0..0   Reason
@@ -6764,8 +6764,8 @@ Subject value is type PneumococcalVaccineAdministered
 
 EntryElement: PneumococcalVaccineAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to 'Pneumococcal vaccine adverse reaction (disorder)' SNOMEDCT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/293116002/info
+Description: " -- ResultValue constrained to 'Pneumococcal vaccine adverse reaction (disorder)' SNOMED CT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/293116002/info
 
 EntryElement: PneumocystisJiroveciPneumoniaPCPProphylaxis
 Based on: Medication
@@ -6789,13 +6789,13 @@ Subject value is type PneumocystisJiroveciPneumoniaPCPProphylaxis
 
 EntryElement: PoliomyelitisVaccineAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to 'Poliomyelitis vaccine adverse reaction (disorder)' SNOMEDCT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/293117006/info
+Description: " -- ResultValue constrained to 'Poliomyelitis vaccine adverse reaction (disorder)' SNOMED CT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/293117006/info
 
 EntryElement: PolymyxinBAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to 'Polymyxin B adverse reaction (disorder)' SNOMEDCT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/292992006/info
+Description: " -- ResultValue constrained to 'Polymyxin B adverse reaction (disorder)' SNOMED CT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/292992006/info
 
 EntryElement: PositiveFindingResult
 Based on: Result
@@ -7088,7 +7088,7 @@ Subject value is type PrimaryTkaProcedure
 
 EntryElement: PrincipalOrdinality
 Based on: Ordinality
-Description: "(Clinical Focus: This set of values contains the qualifier value used to identify the term principal.),(Data Element Scope: The intent of this data element is to identify and define the qualifier value principal. Using the Quality Data Model, this particular element would map to the ordinality attribute.),(Inclusion Criteria: Include SNOMEDCT codes that define the principal qualifier value.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.)"
+Description: "(Clinical Focus: This set of values contains the qualifier value used to identify the term principal.),(Data Element Scope: The intent of this data element is to identify and define the qualifier value principal. Using the Quality Data Model, this particular element would map to the ordinality attribute.),(Inclusion Criteria: Include SNOMED CT codes that define the principal qualifier value.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.14/expansion
 
 EntryElement: PriorParsPlanaVitrectomy
@@ -7766,8 +7766,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.102
 
 EntryElement: SevereDementiaDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to 'Severe dementia (disorder)' SNOMEDCT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/428351000124105/info
+Description: " -- ResultValue constrained to 'Severe dementia (disorder)' SNOMED CT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/428351000124105/info
 
 EntryElement: SexuallyActive
 Based on: Assessment
@@ -7912,8 +7912,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: StreptomycinAdverseReactionDisorderDiagnosis
 Based on: Diagnosis
-Description: " -- ResultValue constrained to 'Streptomycin adverse reaction (disorder)' SNOMEDCT code"
-ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/292925004/info
+Description: " -- ResultValue constrained to 'Streptomycin adverse reaction (disorder)' SNOMED CT code"
+ResultValue from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/292925004/info
 
 EntryElement: SubcutaneousRoute
 Based on: Route
@@ -7942,8 +7942,8 @@ Subject value is type SuicideRiskAssessment
 
 EntryElement: SuicideRiskAssessmentProcedure
 Based on: Intervention
-Description: " -- ActivityCode constrained to 'Suicide risk assessment (procedure)' SNOMEDCT code"
-ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/225337009/info
+Description: " -- ActivityCode constrained to 'Suicide risk assessment (procedure)' SNOMED CT code"
+ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMED CT/version/2017-09/code/225337009/info
 
 EntryElement: SuicideRiskAssessmentProcedurePerformed
 Based on: InterventionPerformed
@@ -8569,12 +8569,12 @@ Subject value is type VenousFootPumpsVFP
 
 EntryElement: VentricularAssistDevicePlacement
 Based on: Procedure
-Description: "(Clinical Focus: This grouping value set contains procedures used to identify the placement of a ventricular assist device.),(Data Element Scope: The intent of this data element is to identify procedures for ventricular assist device placement. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients with ventricular assist device placement. This is a grouping of ICD-10-PCS and SNOMEDCT codes.),(Exclusion Criteria: None.) -- ObservableCode constrained to codes in the Ventricular Assist Device placement valueset `(2.16.840.1.113883.3.666.5.3015)`. "
+Description: "(Clinical Focus: This grouping value set contains procedures used to identify the placement of a ventricular assist device.),(Data Element Scope: The intent of this data element is to identify procedures for ventricular assist device placement. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients with ventricular assist device placement. This is a grouping of ICD-10-PCS and SNOMED CT codes.),(Exclusion Criteria: None.) -- ObservableCode constrained to codes in the Ventricular Assist Device placement valueset `(2.16.840.1.113883.3.666.5.3015)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.3015/expansion
 
 EntryElement: VentricularAssistDevicePlacementPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: This grouping value set contains procedures used to identify the placement of a ventricular assist device.),(Data Element Scope: The intent of this data element is to identify procedures for ventricular assist device placement. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients with ventricular assist device placement. This is a grouping of ICD-10-PCS and SNOMEDCT codes.),(Exclusion Criteria: None.) -- Subject constrained to the Ventricular Assist Device placement"
+Description: "(Clinical Focus: This grouping value set contains procedures used to identify the placement of a ventricular assist device.),(Data Element Scope: The intent of this data element is to identify procedures for ventricular assist device placement. Using the Quality Data Model, this particular element would map to the Procedure, Performed datatype.),(Inclusion Criteria: Include codes that identify patients with ventricular assist device placement. This is a grouping of ICD-10-PCS and SNOMED CT codes.),(Exclusion Criteria: None.) -- Subject constrained to the Ventricular Assist Device placement"
 Subject value is type VentricularAssistDevicePlacement
     0..0   AuthorDatetime
     0..0   Reason
