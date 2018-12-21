@@ -273,7 +273,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.124
 
 EntryElement: AcuteOrEvolvingMIPrincipalDiagnosis
 Based on: PrincipalDiagnosis
-Description: "(Clinical Focus: This grouping value set contains diagnoses used to identify patients with an acute or evolving myocardial infarction.),(Data Element Scope: The intent of this data element is to identify patients with an acute or evolving myocardial infarction. Using the Quality Data Model, this particular element would map to the Result attribute.),(Inclusion Criteria: Include codes that identify patients with an acute myocardial infarction. This is a grouping of ICD10CM and SNOMEDCT codes.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This grouping value set contains diagnoses used to identify patients with an acute or evolving myocardial infarction.),(Data Element Scope: The intent of this data element is to identify hospital environments where a patient may receive inpatient or outpatient care. Using the Quality Data Model, this value set is used with the \"Admission Source\" attribute of the \"Encounter\" category.),(Inclusion Criteria: Include codes that represent the concept of hospital environment. Codes included are SNOMED CT 22232009 and all its children. ),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.3022/expansion
 
 EntryElement: AdditionalEvaluationForDepressionAdolescent
@@ -1680,7 +1680,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.
 
 EntryElement: CesareanBirthPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: This grouping of value sets contains procedures that represent a cesarean section.),(Data Element Scope: The intent of this data element is to identify cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 9 CM, ICD 10 CM, and SNOMED CT codes that identify cesarean section.),(Exclusion Criteria: None) -- Subject constrained to the Cesarean Birth"
+Description: "(Clinical Focus: This grouping of value sets contains procedures that represent a cesarean section.),(Data Element Scope: The intent of this data element is to identify cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD-9-CM, ICD-10-CM, and SNOMED CT codes that identify cesarean section.),(Exclusion Criteria: None) -- Subject constrained to the Cesarean Birth"
 Subject value is type CesareanBirth
     0..0   AuthorDatetime
     0..0   Reason
@@ -1937,7 +1937,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.
 
 EntryElement: ClassicalCesareanBirthPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: This grouping of value sets contain procedures that represent cesarean section.),(Data Element Scope: The intent of this data element is to identify classical cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 10 PCS, and SNOMED CT codes that identify the classical cesarean section.),(Exclusion Criteria: None) -- Subject constrained to the Classical Cesarean Birth"
+Description: "(Clinical Focus: This grouping of value sets contain procedures that represent cesarean section.),(Data Element Scope: The intent of this data element is to identify classical cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD-10-PCS, and SNOMED CT codes that identify the classical cesarean section.),(Exclusion Criteria: None) -- Subject constrained to the Classical Cesarean Birth"
 Subject value is type ClassicalCesareanBirth
     0..0   AuthorDatetime
     0..0   Reason
@@ -2085,7 +2085,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1056.54
 
 EntryElement: ConditionsPossiblyJustifyingElectiveDeliveryPriorTo39WeeksGestationDiagnosis
 Based on: Diagnosis
-Description: "(Clinical Focus: This set of values contains diagnoses that represent conditions possibly justifying elective delivery prior to 39 weeks gestation.),(Data Element Scope: The intent of this data element is to identify conditions possibly justifying elective delivery prior to 39 weeks gestation. Using the Quality Data Model, this particular element will map to the 'Diagnosis' category.),(Inclusion Criteria: Include ICD 10 CM and SNOMED CT codes that  identify conditions possibly justifying elective delivery prior to 39 weeks gestation.),(Exclusion Criteria: None.) -- ResultValue constrained to codes in the Conditions Possibly Justifying Elective Delivery Prior to 39 Weeks Gestation valueset `(2.16.840.1.113883.3.117.1.7.1.286)`"
+Description: "(Clinical Focus: This set of values contains diagnoses that represent conditions possibly justifying elective delivery prior to 39 weeks gestation.),(Data Element Scope: The intent of this data element is to identify conditions possibly justifying elective delivery prior to 39 weeks gestation. Using the Quality Data Model, this particular element will map to the 'Diagnosis' category.),(Inclusion Criteria: Include ICD-10-CM and SNOMED CT codes that identify conditions possibly justifying elective delivery prior to 39 weeks gestation.),(Exclusion Criteria: None.) -- ResultValue constrained to codes in the Conditions Possibly Justifying Elective Delivery Prior to 39 Weeks Gestation valueset `(2.16.840.1.113883.3.117.1.7.1.286)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.286/expansion
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
@@ -3150,7 +3150,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: EncounterInpatient
 Based on: Encounter
-Description: "(Clinical Focus: This set of values identify the most common inpatient encounter types.),(Data Element Scope: The intent of this data element is to identify patients who have had an inpatient encounter. Using the Quality Data Model, this particular element will map to the 'encounter' category.),(Inclusion Criteria: Only SNOMED CT codes representing inpatient encounter should be included.),(Exclusion Criteria: None.) -- ActivityCode constrained to codes in the Encounter Inpatient valueset `(2.16.840.1.113883.3.666.5.307)`. "
+Description: "(Clinical Focus: This set of values identify the most common inpatient encounter types.),(Data Element Scope: The intent of this data element is to identify patients who have had an inpatient encounter. Using the Quality Data Model, this particular element will map to the 'Encounter' category.),(Inclusion Criteria: Only SNOMED CT codes representing inpatient encounter should be included.),(Exclusion Criteria: None.) -- ActivityCode constrained to codes in the Encounter Inpatient valueset `(2.16.840.1.113883.3.666.5.307)`. "
 ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.307/expansion
 
 EntryElement: EncounterInpatientPerformed
@@ -4294,7 +4294,7 @@ Subject value is type HospitalObservationCareInitial
 
 EntryElement: HospitalSettingsAdmissionSource
 Based on: AdmissionSource
-Description: "(Clinical Focus: This set of values identifies hospital environments where a patient may receive inpatient or outpatient care.),(Data Element Scope: The intent of this data element is to identify hospital environments where a patient may receive inpatient or outpatient care.  Using the Quality Data Model, this particular element will map to the Transfer category.),(Inclusion Criteria: Use the concept of hospital environment (22232009) and all its children.  Codes used are to be SNOMED CT codes only.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This set of values identifies hospital environments where a patient may receive inpatient or outpatient care.),(Data Element Scope: The intent of this data element is to identify hospital environments where a patient may receive inpatient or outpatient care. Using the Quality Data Model, this value set is used with the \"Admission Source\" attribute of the \"Encounter\" category.),(Inclusion Criteria:  Include codes that represent the concept of hospital environment. Codes included are SNOMED CT 22232009 and all its children. ),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1111.126/expansion
 
 EntryElement: HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbAndAg
@@ -5225,7 +5225,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1046.6/
 
 EntryElement: LiveBirthNewbornBornInHospitalDiagnoses
 Based on: Diagnoses
-Description: "(Clinical Focus: This set of values contains diagnoses that are commonly used in the inpatient setting for newborn live born, and born in hospital. This value set is a grouping value set composed of  ICD-10-CM and SNOMED CT value sets.),(Data Element Scope: The intent of this data element is to identify patients who have active diagnosis, mapped to QDM 'Diagnosis' or to the 'Principal Diagnosis' or 'Diagnosis' attributes of the QDM 'Encounter' datatype.),(Inclusion Criteria: This value set includes ICD-10-CM  and SNOMED CT value sets.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This set of values contains diagnoses that are commonly used in the inpatient setting for newborn live born, and born in hospital. This value set is a grouping value set composed of  ICD-10-CM and SNOMED CT value sets.),(Data Element Scope: The intent of this data element is to identify patients who have an active diagnosis of newborn live born. Using the Quality Data Model, this value set is used with \"Diagnosis\" category or the attributes \"Principal Diagnosis\" or \"Diagnoses\" attributes of the \"Encounter\" category.),(Inclusion Criteria: This value set includes ICD-10-CM  and SNOMED CT value sets.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1046.6/expansion
 
 EntryElement: LiverDiseaseDiagnosis
@@ -5549,7 +5549,7 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.
 
 EntryElement: MedicalInductionOfLaborPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: This set of values contains procedures that represent the medical induction of labor.),(Data Element Scope: The intent of this data element is to identify medical induction of labor. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 9 CM and SNOMED CT codes that identify the medical induction of labor.),(Exclusion Criteria: None.) -- Subject constrained to the Medical Induction of Labor"
+Description: "(Clinical Focus: This set of values contains procedures that represent the medical induction of labor.),(Data Element Scope: The intent of this data element is to identify medical induction of labor. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD-9-CM and SNOMED CT codes that identify the medical induction of labor.),(Exclusion Criteria: None.) -- Subject constrained to the Medical Induction of Labor"
 Subject value is type MedicalInductionOfLabor
     0..0   AuthorDatetime
     0..0   Reason
@@ -6552,7 +6552,7 @@ Subject value is type Paroxetine
 
 EntryElement: PassOrReferResult
 Based on: Result
-Description: "(Clinical Focus: This set of values contains findings that indicate the normal findings on hearing examination or referral is needed. This value set contains SNOMED CT codes.),(Data Element Scope: The intent of this data element is to identify patients who have received newborn hearing screening with result of pass or refer, mapped to QDM attribute of result.),(Inclusion Criteria: Includes SNOMED CT codes. Includes normal finding on hearing examination and referral.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This set of values contains findings that indicate the normal findings on hearing examination or referral is needed. This value set contains SNOMED CT codes.),(Data Element Scope: The intent of this data element is to identify newly born patients who have received a complete hearing screening with result of pass or refer. Using the Quality Data Model, this value set is used with the “Result” attribute of the “Diagnostic Study” category.  ),(Inclusion Criteria: Include codes that represent normal findings on a hearing examination and indicate that a referral is needed. The value set includes SNOMED CT codes. ),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.1.214079.1.1.6/expansion
 
 EntryElement: PathologicMyopiaDiagnosis
@@ -7316,7 +7316,7 @@ Subject value is type PsychVisitPsychotherapy
 
 EntryElement: PsychiatricMentalHealthDiagnosisPrincipalDiagnosis
 Based on: PrincipalDiagnosis
-Description: "(Clinical Focus: This grouping value set identifies diagnoses that are commonly used in the inpatient setting for psychiatric and mental health disorders.),(Data Element Scope: The intent of this data element is to identify patients who have an active diagnosis for a psychiatric or mental health disorder.   Using the Quality Data Model, this particular element will map to the 'diagnosis' category.),(Inclusion Criteria: Include codes representing an active diagnosis for psychiatric and mental health disorders utilizing  ICD 10 CM and SNOMED CT codes systems.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This grouping value set identifies diagnoses that are commonly used in the inpatient setting for psychiatric and mental health disorders.),(Data Element Scope: The intent of this data element is to identify patients who have an active diagnosis for a psychiatric or mental health disorder. Using the Quality Data Model, this value set is used with \"Principal Diagnosis\"  attribute of the \"Encounter\" category.),(Inclusion Criteria: Include codes representing a principal diagnosis of a psychiatric or mental health disorder. This value set includes ICD-10-CM and SNOMED CT codes.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.299/expansion
 
 EntryElement: Psychoanalysis
