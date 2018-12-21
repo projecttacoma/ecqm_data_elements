@@ -1675,7 +1675,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.141
 
 EntryElement: CesareanBirth
 Based on: Procedure
-Description: "(Clinical Focus: This grouping of value sets contains procedures that represent a cesarean section.),(Data Element Scope: The intent of this data element is to identify cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 9 CM, ICD 10 CM, and SNOMED CT codes that identify cesarean section.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the Cesarean Birth valueset `(2.16.840.1.113883.3.117.1.7.1.282)`. "
+Description: "(Clinical Focus: This grouping of value sets contains procedures that represent a cesarean section.),(Data Element Scope: The intent of this data element is to identify cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD-9-CM, ICD-10-CM, and SNOMED CT codes that identify cesarean section.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the Cesarean Birth valueset `(2.16.840.1.113883.3.117.1.7.1.282)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.282/expansion
 
 EntryElement: CesareanBirthPerformed
@@ -2093,7 +2093,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1
 
 EntryElement: ConditionsPossiblyJustifyingElectiveDeliveryPriorTo39WeeksGestationDiagnoses
 Based on: Diagnoses
-Description: "(Clinical Focus: This set of values contains diagnoses that represent conditions possibly justifying elective delivery prior to 39 weeks gestation.),(Data Element Scope: The intent of this data element is to identify conditions possibly justifying elective delivery prior to 39 weeks gestation. Using the Quality Data Model, this particular element will map to the 'Diagnosis' category.),(Inclusion Criteria: Include ICD 10 CM and SNOMED CT codes that  identify conditions possibly justifying elective delivery prior to 39 weeks gestation.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This set of values contains diagnoses that represent conditions possibly justifying elective delivery prior to 39 weeks gestation.),(Data Element Scope: The intent of this data element is to identify conditions possibly justifying elective delivery prior to 39 weeks gestation. Using the Quality Data Model, this particular element will map to the 'Diagnosis' category.),(Inclusion Criteria: Include ICD-10-CM and SNOMED CT codes that  identify conditions possibly justifying elective delivery prior to 39 weeks gestation.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.286/expansion
 
 EntryElement: CongenitalAbsenceOfCervixDisorderDiagnosis
@@ -3502,7 +3502,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: GalactosemiaDiagnosis
 Based on: Diagnosis
-Description: "(Clinical Focus: This grouping value set include diagnoses that represent galactosemia.),(Data Element Scope: The intent of this data element is to identify galactosemia. Using the Quality Data Model, this particular element will map to the 'Diagnosis' categories.),(Inclusion Criteria: Include ICD 10 CM and SNOMED CT codes that identify galactosemia.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.) -- ResultValue constrained to codes in the Galactosemia valueset `(2.16.840.1.113883.3.117.1.7.1.35)`"
+Description: "(Clinical Focus: This grouping value set include diagnoses that represent galactosemia.),(Data Element Scope: The intent of this data element is to identify galactosemia. Using the Quality Data Model, this particular element will map to the 'Diagnosis' categories.),(Inclusion Criteria: Include ICD-10-CM and SNOMED CT codes that identify galactosemia.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.) -- ResultValue constrained to codes in the Galactosemia valueset `(2.16.840.1.113883.3.117.1.7.1.35)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.35/expansion
     0..0   AuthorDatetime
     0..0   AnatomicalLocationSite
@@ -3510,7 +3510,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1
 
 EntryElement: GalactosemiaDiagnoses
 Based on: Diagnoses
-Description: "(Clinical Focus: This grouping value set include diagnoses that represent galactosemia.),(Data Element Scope: The intent of this data element is to identify galactosemia. Using the Quality Data Model, this particular element will map to the 'Diagnosis' categories.),(Inclusion Criteria: Include ICD 10 CM and SNOMED CT codes that identify galactosemia.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.)"
+Description: "(Clinical Focus: This grouping value set include diagnoses that represent galactosemia.),(Data Element Scope: The intent of this data element is to identify galactosemia. Using the Quality Data Model, this particular element will map to the 'Diagnosis' categories.),(Inclusion Criteria: Include ICD-10-CM and SNOMED CT codes that identify galactosemia.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.35/expansion
 
 EntryElement: GastricBypassSurgery
@@ -5544,7 +5544,7 @@ Subject value is type Meclizine
 
 EntryElement: MedicalInductionOfLabor
 Based on: Procedure
-Description: "(Clinical Focus: This set of values contains procedures that represent the medical induction of labor.),(Data Element Scope: The intent of this data element is to identify medical induction of labor. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 9 CM and SNOMED CT codes that identify the medical induction of labor.),(Exclusion Criteria: None.) -- ObservableCode constrained to codes in the Medical Induction of Labor valueset `(2.16.840.1.113883.3.117.1.7.1.288)`. "
+Description: "(Clinical Focus: This set of values contains procedures that represent the medical induction of labor.),(Data Element Scope: The intent of this data element is to identify medical induction of labor. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD-9-CM and SNOMED CT codes that identify the medical induction of labor.),(Exclusion Criteria: None.) -- ObservableCode constrained to codes in the Medical Induction of Labor valueset `(2.16.840.1.113883.3.117.1.7.1.288)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.288/expansion
 
 EntryElement: MedicalInductionOfLaborPerformed
