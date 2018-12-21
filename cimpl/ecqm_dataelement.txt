@@ -4294,7 +4294,7 @@ Subject value is type HospitalObservationCareInitial
 
 EntryElement: HospitalSettingsAdmissionSource
 Based on: AdmissionSource
-Description: "(Clinical Focus: This set of values identifies hospital environments where a patient may receive inpatient or outpatient care.),(Data Element Scope: The intent of this data element is to identify hospital environments where a patient may receive inpatient or outpatient care. Using the Quality Data Model, this value set is used with the \"Admission Source\" attribute of the \"Encounter\" category.),(Inclusion Criteria:  Include codes that represent the concept of hospital environment. Codes included are SNOMED CT 22232009 and all its children. ),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This set of values identifies hospital environments where a patient may receive inpatient or outpatient care.),(Data Element Scope: The intent of this data element is to identify hospital environments where a patient may receive inpatient or outpatient care. Using the Quality Data Model, this value set is used with the 'Admission Source' attribute of the 'Encounter' category.),(Inclusion Criteria:  Include codes that represent the concept of hospital environment. Codes included are SNOMED CT 22232009 and all its children. ),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1111.126/expansion
 
 EntryElement: HumanImmunodeficiencyVirusHIVLaboratoryTestCodesAbAndAg
