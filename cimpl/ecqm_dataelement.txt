@@ -1932,7 +1932,7 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
 
 EntryElement: ClassicalCesareanBirth
 Based on: Procedure
-Description: "(Clinical Focus: This grouping of value sets contain procedures that represent cesarean section.),(Data Element Scope: The intent of this data element is to identify classical cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 10 PCS, and SNOMED CT codes that identify the classical cesarean section.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the Classical Cesarean Birth value set `(2.16.840.1.113883.3.117.1.7.1.421)`. "
+Description: "(Clinical Focus: This grouping of value sets contain procedures that represent cesarean section.),(Data Element Scope: The intent of this data element is to identify classical cesarean section. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD-10-PCS, and SNOMED CT codes that identify the classical cesarean section.),(Exclusion Criteria: None) -- ObservableCode constrained to codes in the Classical Cesarean Birth value set `(2.16.840.1.113883.3.117.1.7.1.421)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.421/expansion
 
 EntryElement: ClassicalCesareanBirthPerformed
@@ -6521,12 +6521,12 @@ Subject value is type PapTest
 
 EntryElement: ParenteralNutrition
 Based on: Procedure
-Description: "(Clinical Focus: This grouping value set contains procedures that represent parenteral infusion.),(Data Element Scope: The intent of this data element is to identify parenteral infusion procedures. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 10 PCS, and SNOMED CT codes that identify parenteral infusion.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.) -- ObservableCode constrained to codes in the Parenteral Nutrition value set `(2.16.840.1.113883.3.117.1.7.1.38)`. "
+Description: "(Clinical Focus: This grouping value set contains procedures that represent parenteral infusion.),(Data Element Scope: The intent of this data element is to identify parenteral infusion procedures. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD-10-PCS, and SNOMED CT codes that identify parenteral infusion.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.) -- ObservableCode constrained to codes in the Parenteral Nutrition value set `(2.16.840.1.113883.3.117.1.7.1.38)`. "
 ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.38/expansion
 
 EntryElement: ParenteralNutritionPerformed
 Based on: ProcedurePerformed
-Description: "(Clinical Focus: This grouping value set contains procedures that represent parenteral infusion.),(Data Element Scope: The intent of this data element is to identify parenteral infusion procedures. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD 10 PCS, and SNOMED CT codes that identify parenteral infusion.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.) -- Subject constrained to the Parenteral Nutrition"
+Description: "(Clinical Focus: This grouping value set contains procedures that represent parenteral infusion.),(Data Element Scope: The intent of this data element is to identify parenteral infusion procedures. Using the Quality Data Model, this particular element will map to the 'Procedure' category.),(Inclusion Criteria: Include ICD-10-PCS, and SNOMED CT codes that identify parenteral infusion.),(Exclusion Criteria: Exclude codes that do not meet the inclusion criteria.) -- Subject constrained to the Parenteral Nutrition"
 Subject value is type ParenteralNutrition
     0..0   AuthorDatetime
     0..0   Reason
