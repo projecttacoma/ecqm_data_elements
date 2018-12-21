@@ -112,7 +112,7 @@ Description: "Data elements that meet criteria using this datatype should docume
 
 EntryElement: DiagnosticStudyPerformed
 Based on: Activity
-Description: "Data elements that meet criteria using this datatype should document the completion of the diagnostic study indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – when the diagnostic study is initiated stopTime – when the diagnostic study is completed Examples: 1) Initiation of a treadmill stress test to the time the treadmill stress test has completed. 2) Initiation of the ultrasound study until completion of the ultrasound study"
+Description: "Data elements that meet criteria using this datatype should document the completion of the diagnostic study indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – when the diagnostic study is initiated. stopTime – when the diagnostic study is completed. Examples: 1) Initiation of a treadmill stress test to the time the treadmill stress test has completed. 2) Initiation of the ultrasound study until completion of the ultrasound study."
     Subject value is type DiagnosticStudy
     0..1   AuthorDatetime
     0..1   RelevantPeriod
@@ -141,7 +141,7 @@ Description: "Data elements that meet criteria using this datatype should docume
 
 EntryElement: EncounterPerformed
 Based on: Activity
-Description: "Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time) stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location"
+Description: "Data elements that meet criteria using this datatype should document that the encounter indicated by the QDM category and its corresponding value set is in progress or has been completed. Timing: The Relevant Period addresses: startTime – The time the encounter began (admission time). stopTime – The time the encounter ended (discharge time). The Author dateTime addresses when an Encounter is documented. Documentation can occur at the beginning, during, at the end or subsequent to the end of an Encounter. The Author dateTime should be used only if the Relevant Period cannot be obtained. The Location Period is an attribute of the attribute facility location addresses: startTime = the time the patient arrived at the location; stopTime = the time the patient departed from the location."
     Subject value is type Encounter
     0..1   AuthorDatetime
     0..1   AdmissionSource
@@ -299,7 +299,7 @@ Description: "Data elements that meet criteria using this datatype should docume
 
 EntryElement: PatientCharacteristicPayer
 Based on: Observation
-Description: "Data elements that meet criteria using this datatype should document that the patient has one or more of the payers indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – The first day of insurance coverage with the referenced payer stopTime – The last day of insurance coverage with the referenced payer."
+Description: "Data elements that meet criteria using this datatype should document that the patient has one or more of the payers indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – The first day of insurance coverage with the referenced payer. stopTime – The last day of insurance coverage with the referenced payer."
     Subject value is type Patient
     0..1   RelevantPeriod
 
@@ -328,7 +328,7 @@ Description: "Data elements that meet criteria using this datatype should docume
 
 EntryElement: Procedure
 Based on: Observation
-Description: "Procedure is derived directly from HL7 and Canada Health Infoway: “An Act whose immediate and primary outcome (post-condition) is the alteration of the physical condition of the subject. ... Procedure is but one among several types of clinical activities such as observation, substance- administrations, and communicative interactions ... Procedure does not comprise all acts of [sic] whose intent is intervention or treatment.” A procedure may be a surgery or other type of physical manipulation of a person’s body in whole or in part for purposes of making observations and diagnoses or providing treatment"
+Description: "Procedure is derived directly from HL7 and Canada Health Infoway: 'An Act whose immediate and primary outcome (post-condition) is the alteration of the physical condition of the subject. Procedure is but one among several types of clinical activities such as observation, substance- administrations, and communicative interactions. Procedure does not comprise all acts of [sic] whose intent is intervention or treatment.' A procedure may be a surgery or other type of physical manipulation of a person’s body in whole or in part for purposes of making observations and diagnoses or providing treatment."
     Subject value is type Patient
 
 EntryElement: ProcedureOrder
@@ -345,7 +345,7 @@ Description: "Data elements that meet criteria using this datatype should docume
 
 EntryElement: ProcedurePerformed
 Based on: Activity
-Description: "Data elements that meet criteria using this datatype should document the completion of the procedure indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: StartTime = the time the procedure begins; StopTime = the time the procedure is completed NOTE: 1) Timing refers to a single instance of a procedure. If a measure seeks to evaluate multiple procedures over a period of time, the measure developer should use CQL logic to represent the query request. 2) The Incision dateTime is a single point in time available from the Operating Room and/or Anesthesia Record."
+Description: "Data elements that meet criteria using this datatype should document the completion of the procedure indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: StartTime = the time the procedure begins; StopTime = the time the procedure is completed. NOTE: 1) Timing refers to a single instance of a procedure. If a measure seeks to evaluate multiple procedures over a period of time, the measure developer should use CQL logic to represent the query request. 2) The Incision dateTime is a single point in time available from the Operating Room and/or Anesthesia Record."
     Subject value is type Procedure
     0..1   AuthorDatetime
     0..1   RelevantPeriod
