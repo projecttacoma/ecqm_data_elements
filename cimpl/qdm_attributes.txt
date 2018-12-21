@@ -100,7 +100,7 @@ ResultValue value is type CodeableConcept
 
 Element:     Reason
 Based on:	 Observation
-Description: "The thought process or justification for the datatype. In some measures, specific treatments are acceptable inclusion criteria only if a justified reason is present. Each of these measures uses a value set (often, but not exclusively, using SNOMED- CT®) to express acceptable justification reasons. Other measures specify reasons as justification for exclusions. Examples include patient, system, or medical-related reasons for declining to perform specific actions. Each of these measures also uses a value set to express acceptable justification reasons for declining to perform expected actions."
+Description: "The thought process or justification for the datatype. In some measures, specific treatments are acceptable inclusion criteria only if a justified reason is present. Each of these measures uses a value set (often, but not exclusively, using SNOMED CT) to express acceptable justification reasons. Other measures specify reasons as justification for exclusions. Examples include patient, system, or medical-related reasons for declining to perform specific actions. Each of these measures also uses a value set to express acceptable justification reasons for declining to perform expected actions."
 ResultValue value is type CodeableConcept
 
 Element:     ReferenceRange
