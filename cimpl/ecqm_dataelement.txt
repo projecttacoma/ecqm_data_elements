@@ -3369,8 +3369,8 @@ Subject value is type FecalOccultBloodTestFOBT
     0..0   NegationRationale
     0..0   Components
 
-EntryElement: FemalePatientCharacteristicGender
-Based on: PatientCharacteristicGender
+EntryElement: FemalePatientCharacteristicSex
+Based on: PatientCharacteristicSex
 Description: "(Clinical Focus: Concepts that represent Female when assessing quality measures),(Data Element Scope: Gender),(Inclusion Criteria: Appropriate female gender concepts),(Exclusion Criteria: Concepts representing Male gender) -- ResultValue constrained to codes in the Female valueset `(2.16.840.1.113883.3.560.100.2)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.560.100.2/expansion
 
@@ -5385,8 +5385,8 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.
     0..0   AnatomicalLocationSite
     0..0   Severity
 
-EntryElement: MalePatientCharacteristicGender
-Based on: PatientCharacteristicGender
+EntryElement: MalePatientCharacteristicSex
+Based on: PatientCharacteristicSex
 Description: "(Clinical Focus: Concepts that represent Male when assessing quality measures),(Data Element Scope: Gender),(Inclusion Criteria: Appropriate male gender concepts),(Exclusion Criteria: concepts representing Female gender) -- ResultValue constrained to codes in the Male valueset `(2.16.840.1.113883.3.560.100.1)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.560.100.1/expansion
 
@@ -5956,8 +5956,8 @@ Based on: Diagnosis
 Description: "(Clinical Focus: Under Development),(Data Element Scope: Under Development),(Inclusion Criteria: Under Development),(Exclusion Criteria: Under Development) -- ResultValue constrained to codes in the Nystagmus and Other Irregular Eye Movements valueset `(2.16.840.1.113883.3.526.3.1465)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.1465/expansion
 
-EntryElement: ONCAdministrativeSexPatientCharacteristicGender
-Based on: PatientCharacteristicGender
+EntryElement: ONCAdministrativeSexPatientCharacteristicSex
+Based on: PatientCharacteristicSex
 Description: "(Clinical Focus: Gender identity restricted to only Male and Female used in administrative situations requiring a restriction to these two categories.),(Data Element Scope: Gender),(Inclusion Criteria: Male and Female only.),(Exclusion Criteria: Any gender identity that is not male or female.) -- ResultValue constrained to codes in the ONC Administrative Sex valueset `(2.16.840.1.113762.1.4.1)`"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1/expansion
 
@@ -6066,7 +6066,7 @@ ActivityCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.12
 
 EntryElement: OphthalmologicalServicesPerformed
 Based on: EncounterPerformed
-Description: "(Clinical Focus: This value set contains concepts related to ophthalmological visits.),(Data Element Scope:  This value set may use QDM category Encounter.),(Inclusion Criteria: Includes relevant encounters during which the patient sees an eye care professional.),(Exclusion Criteria: No exclusions.)")
+Description: "(Clinical Focus: This value set contains concepts related to ophthalmological visits.),(Data Element Scope:  This value set may use QDM category Encounter.),(Inclusion Criteria: Includes relevant encounters during which the patient sees an eye care professional.),(Exclusion Criteria: No exclusions.)"
 Subject value is type OphthalmologicalServices
     0..0   AuthorDatetime
     0..0   AdmissionSource

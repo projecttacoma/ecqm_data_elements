@@ -1,0 +1,413 @@
+Grammar: DataElement 5.0
+Namespace: ecqm.measure.eh
+Description: "EH Measures"
+Uses: shr.core, shr.base, shr.entity, ecqm.dataelement, ecqm.unions, ecqm.measure
+
+EntryElement: CMS102v7
+Based on: CmsEcqmComposition
+Description: "Assessed for Rehabilitation (STK-10). Each year about 700,000 people experience a new or recurrent stroke, which is the nation's third leading cause of death. Approximately two thirds of these individuals survive and require rehabilitation. Stroke is a leading cause of serious, long-term disability in the United States, with about 4.4 million stroke survivors alive today. Forty percent of stroke patients are left with moderate functional impairment and 15 to 30 percent with severe disability. More than 60% of those who have experienced stroke, serious injury, or a disabling disease have never received rehabilitation. Stroke rehabilitation should begin as soon as the diagnosis of stroke is established and life-threatening problems are under control. Among the high priorities for stroke are to mobilize the patient and encourage resumption of self-care activities as soon as possible. A considerable body of evidence indicates better clinical outcomes when patients with stroke are treated in a setting that provides coordinated, multidisciplinary stroke-related evaluation and services. Effective rehabilitation interventions initiated early following stroke can enhance the recovery process and minimize functional disability. The primary goal of rehabilitation is to prevent complications, minimize impairments, and maximize function."
+    0..* NonElectiveInpatientEncounterPerformed
+    0..* DischargedToRehabilitationFacilityDischargeDisposition
+    0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
+    0..* DischargedToHomeForHospiceCareDischargeDisposition
+    0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* HemorrhagicStrokePrincipalDiagnosis
+    0..* IschemicStrokePrincipalDiagnosis
+    0..* EmergencyDepartmentVisitPerformed
+    0..* ComfortMeasuresOrder
+    0..* ComfortMeasuresPerformed
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* RehabilitationAssessmentPerformed
+    0..* RehabilitationTherapyPerformed
+    0..* MedicalReasonNegationRationale
+    0..* PatientRefusalNegationRationale
+    0..* InterventionComfortMeasuresUnion
+    0..* RehabilitationAssessmentorTherapyUnion
+    0..* NoRehabProcedureUnion
+    0..* NoRehabilitationAssessmentorTherapyUnion
+    0..* Numerator2Union
+
+EntryElement: CMS104v7
+Based on: CmsEcqmComposition
+Description: "Discharged on Antithrombotic Therapy (STK-02). The effectiveness of antithrombotic agents in reducing stroke mortality, stroke-related morbidity and recurrence rates has been studied in several large clinical trials. While the use of these agents for patients with acute ischemic stroke and transient ischemic attacks continues to be the subject of study, substantial evidence is available from completed studies. Data at this time suggest that antithrombotic therapy should be prescribed at discharge following acute ischemic stroke to reduce stroke mortality and morbidity as long as no contraindications exist. For patients with a stroke due to a cardioembolic source (eg atrial fibrillation, mechanical heart valve), warfarin is recommended unless contraindicated. In recent years, novel oral anticoagulant agents (NOACs) have been developed and approved by the U.S. Food and Drug Administration (FDA) for stroke prevention, and may be considered as an alternative to warfarin for select patients. Anticoagulation therapy is not generally recommended for secondary stroke prevention in patients presumed to have a non-cardioembolic stroke. Anticoagulants at doses to prevent venous thromboembolism are insufficient antithrombotic therapy to prevent recurrent ischemic stroke or TIA."
+    0..* NonElectiveInpatientEncounterPerformed
+    0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
+    0..* DischargedToHomeForHospiceCareDischargeDisposition
+    0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* HemorrhagicStrokePrincipalDiagnosis
+    0..* IschemicStrokePrincipalDiagnosis
+    0..* EmergencyDepartmentVisitPerformed
+    0..* ComfortMeasuresOrder
+    0..* ComfortMeasuresPerformed
+    0..* AntithromboticTherapyDischarge
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* InterventionComfortMeasuresUnion
+
+EntryElement: CMS105v7
+Based on: CmsEcqmComposition
+Description: "Discharged on Statin Medication (STK-06). There is an extensive and consistent body of evidence supporting the use of statins for secondary prevention in patients with clinically evident atherosclerotic cardiovascular disease (ASCVD), which includes individuals with ischemic stroke due to large artery atherosclerosis, individuals with ischemic stroke due to intrinsic small vessel disease, and individuals with ischemic stroke not directly due to atherosclerosis but with clinically evident atherosclerotic disease in an uninvolved cerebral or noncerebral bed.  Both women and men with clinical ASCVD are at increased risk for recurrent ASCVD and ASCVD death.  High-intensity statin therapy should be initiated or continued as first-line therapy in women and men less than or equal to 75 years of age who have clinical ASCVD, unless contraindicated. In patients with clinical ASCVD and a contraindication to high-intensity statin therapy, moderate-intensity therapy should be considered as an alternative if it can be tolerated.  In individuals greater than 75 years of age, the potential for ASCVD risk reduction benefits, adverse effects, drug-drug interactions, and patient preferences should be considered, and statin therapy individualized based on these considerations (Stone, 2013)."
+    0..* StatinAllergenAllergyIntolerance
+    0..* NonElectiveInpatientEncounterPerformed
+    0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
+    0..* DischargedToHomeForHospiceCareDischargeDisposition
+    0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* HemorrhagicStrokePrincipalDiagnosis
+    0..* IschemicStrokePrincipalDiagnosis
+    0..* EmergencyDepartmentVisitPerformed
+    0..* ComfortMeasuresOrder
+    0..* ComfortMeasuresPerformed
+    0..* LDLCPerformed
+    0..* StatinGrouperDischarge
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* InterventionComfortMeasuresUnion
+    0..* DenominatorExceptionsUnion
+
+EntryElement: CMS107v7
+Based on: CmsEcqmComposition
+Description: "Stroke Education (STK-08). There are many examples of how patient education programs for specific chronic conditions have increased healthful behaviors, improved health status, and/or decreased health care costs of their participants. Clinical practice guidelines include recommendations for patient and family education during hospitalization as well as information about resources for social support services. Some clinical trials have shown measurable benefits in patient and caregiver outcomes with the application of education and support strategies. The type of stroke experienced and the resulting outcomes will play a large role in determining not only the course of treatment but also what education will be required. Patient education should include information about the event (eg, cause, treatment, and risk factors), the role of various medications or strategies, as well as desirable lifestyle modifications to reduce risk or improve outcomes. Family/caregivers will also need guidance in planning effective and realistic care strategies appropriate to the patient's prognosis and potential for rehabilitation."
+    0..* WrittenInformationGivenCommunicationFromProviderToPatient
+    0..* ActivationOfEmergencyMedicalSystemEducationCommunicationFromProviderToPatient
+    0..* InstructionsForFollowUpAfterDischargeCommunicationFromProviderToPatient
+    0..* PrescribedMedicationsEducationCommunicationFromProviderToPatient
+    0..* RiskFactorsEducationCommunicationFromProviderToPatient
+    0..* WarningSignsAndSymptomsEducationCommunicationFromProviderToPatient
+    0..* NonElectiveInpatientEncounterPerformed
+    0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
+    0..* DischargedToHomeForHospiceCareDischargeDisposition
+    0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* HemorrhagicStrokePrincipalDiagnosis
+    0..* IschemicStrokePrincipalDiagnosis
+    0..* EmergencyDepartmentVisitPerformed
+    0..* ComfortMeasuresOrder
+    0..* ComfortMeasuresPerformed
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* InterventionComfortMeasuresUnion
+    0..* Numerator4Union
+
+EntryElement: CMS108v7
+Based on: CmsEcqmComposition
+Description: "Venous Thromboembolism Prophylaxis (VTE-1). Hospitalized patients at high-risk for VTE may develop an asymptomatic deep vein thrombosis (DVT), and die from pulmonary embolism (PE) even before the diagnosis is suspected. The majority of fatal events occur as sudden or abrupt death, underscoring the importance of prevention as the most critical action step for reducing death from PE (Geerts, et al, 2008). The estimated annual incidence of deep-vein thrombosis (DVT) and pulmonary embolism (PE), known collectively as venous thromboembolism (VTE), is approximately 900,000 (Geerts, et al, 2008). Approximately two-thirds of cases of DVT or PE are associated with recent hospitalization. This is consistent with the 2001 report by The Agency for Healthcare Research and Quality (AHRQ). AHRQ indicates that 'the appropriate application of effective preventive measures in hospitals has major potential for improving patient safety by reducing the incidence of venous thromboembolism' (Shojania, 2001). Despite its proven effectiveness, rates of appropriate thromboprophylaxis remain low in both medical and surgical patients. A recent analysis from the ENDORSE survey, which evaluated prophylaxis rates in 17,084 major surgery patients, found that more than one third of patients at risk for VTE (38%) did not receive prophylaxis and that rates varied by surgery type (Cohen, et al., 2008). In a review of evidence-based patient safety practices, the Agency for Healthcare Research and Quality defined thromboprophylaxis against VTE as the 'number one patient safety practice' for hospitalized patients (Shojania, 2001). Updated 'safe practices' published by the National Quality Forum (NQF) recommend routine evaluation of hospitalized patients for risk of VTE and use of appropriate prophylaxis (National Quality Forum. National Voluntary Consensus Standards for Prevention and Care of Venous Thromboembolism, 2006). As noted by the ACCP, a vast number of randomized clinical trials provide irrefutable evidence that thromboprophylaxis reduces VTE events, and there are studies that have also shown that fatal PE is prevented by thromboprophylaxis (Geerts, et al. 2008). Some select surgeries have previously been monitored in the Surgical Care Improvement Project; since performance on these surgeries has achieved very high levels, they are not included in this measure."
+    0..* RiskForVenousThromboembolismPerformed
+    0..* IntermittentPneumaticCompressionDevicesIPCApplied
+    0..* IntermittentPneumaticCompressionDevicesIPCOrder
+    0..* VenousFootPumpsVFPApplied
+    0..* VenousFootPumpsVFPOrder
+    0..* GraduatedCompressionStockingsGCSApplied
+    0..* GraduatedCompressionStockingsGCSOrder
+    0..* ObstetricsDiagnosis
+    0..* ObstetricsVTEDiagnosis
+    0..* AtrialFibrillationFlutterDiagnosis
+    0..* VenousThromboembolismDiagnosis
+    0..* EmergencyDepartmentVisitPerformed
+    0..* EncounterInpatientPerformed
+    0..* ComfortMeasuresOrder
+    0..* ComfortMeasuresPerformed
+    0..* INRPerformed
+    0..* LowDoseUnfractionatedHeparinForVTEProphylaxisAdministered
+    0..* LowDoseUnfractionatedHeparinForVTEProphylaxisOrder
+    0..* InjectableFactorXaInhibitorForVTEProphylaxisAdministered
+    0..* InjectableFactorXaInhibitorForVTEProphylaxisOrder
+    0..* LowMolecularWeightHeparinForVTEProphylaxisAdministered
+    0..* LowMolecularWeightHeparinForVTEProphylaxisOrder
+    0..* WarfarinAdministered
+    0..* WarfarinOrder
+    0..* GlycoproteinIIbIIIaInhibitorsAdministered
+    0..* DirectThrombinInhibitorAdministered
+    0..* UnfractionatedHeparinAdministered
+    0..* OralFactorXaInhibitorForVTEProphylaxisOrVTETreatmentAdministered
+    0..* IntravenousRoute
+    0..* SubcutaneousRoute
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* GeneralSurgeryPerformed
+    0..* PrincipalOrdinality
+    0..* GynecologicalSurgeryPerformed
+    0..* HipFractureSurgeryPerformed
+    0..* HipReplacementSurgeryPerformed
+    0..* IntracranialNeurosurgeryPerformed
+    0..* KneeReplacementSurgeryPerformed
+    0..* UrologicalSurgeryPerformed
+    0..* GeneralOrNeuraxialAnesthesiaPerformed
+    0..* InterventionComfortMeasuresUnion
+    0..* NoVTEProphylaxisDeviceAppliedorOrderedUnion
+    0..* NoVTEProphylaxisMedicationAdministeredorOrderedUnion
+    0..* SCIPVTESelectedSurgeryUnion
+    0..* VTEProphylaxisbyMedicationAdministeredorDeviceAppliedUnion
+    0..* VTEProphylaxisReceivedonDayoforDayAfterAdmissionorProcedureUnion
+    0..* MedicationOralFactorXaInhibitorAdministeredonDayoforDayAfterAdmissionorProcedureUnion
+    0..* EncounterWithPriororPresentDiagnosisofAtrialFibrillationorVTEUnion
+    0..* DenominatorExclusions3Union
+    0..* IsInLowRiskforVtEorOnAnticoagulantUnion
+    0..* LowRiskforVtEorAnticoagulantAdministeredUnion
+    0..* NoVTEProphylaxisDuetoMedicalReasonUnion
+    0..* NoVTEProphylaxisUnion
+    0..* NoVTEProphylaxisMedicationorDeviceDuetoPatientRefusalUnion
+    0..* NoVTEProphylaxisDuetoPatientRefusalUnion
+    0..* NumeratorUnion
+
+EntryElement: CMS111v7
+Based on: CmsEcqmComposition
+Description: "Median Admit Decision Time to ED Departure Time for Admitted Patients (ED-2). Reducing the time patients remain in the emergency department (ED) can improve access to treatment and increase quality of care. Reducing this time potentially improves access to care specific to the patient condition and increases the capability to provide additional treatment. In recent times, EDs have experienced significant overcrowding. Although once only a problem in large, urban, teaching hospitals, the phenomenon has spread to other suburban and rural healthcare organizations. According to a 2002 national U.S. survey, more than 90 percent of large hospitals report EDs operating 'at' or 'over' capacity. Approximately one third of hospitals in the U.S. report increases in ambulance diversion in a given year, whereas up to half report crowded conditions in the ED. In a recent national survey, 40 percent of hospital leaders viewed ED crowding as a symptom of workforce shortages. ED crowding may result in delays in the administration of medication such as antibiotics for pneumonia and has been associated with perceptions of compromised emergency care. For patients with non-ST-segment-elevation myocardial infarction, long ED stays were associated with decreased use of guideline-recommended therapies and a higher risk of recurrent myocardial infarction. Overcrowding and heavy emergency resource demand have led to a number of problems, including ambulance refusals, prolonged patient waiting times, increased suffering for those who wait, rushed and unpleasant treatment environments, and potentially poor patient outcomes. When EDs are overwhelmed, their ability to respond to community emergencies and disasters may be compromised."
+    0..* DecisionToAdmitToHospitalInpatientOrder
+    0..* EmergencyDepartmentVisitPerformed
+    0..* HospitalSettingsAdmissionSource
+    0..* EncounterInpatientPerformed
+    0..* PsychiatricMentalHealthDiagnosisPrincipalDiagnosis
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+
+EntryElement: CMS113v7
+Based on: CmsEcqmComposition
+Description: "Elective Delivery (PC-01). For almost 3 decades, the American College of Obstetricians and Gynecologists (ACOG) and the American Academy of Pediatrics (AAP) have had in place a standard requiring 39 completed weeks gestation prior to ELECTIVE delivery, either vaginal or operative (ACOG, 1996). A survey conducted in 2007 of almost 20,000 births in HCA hospitals throughout the U.S. carried out in conjunction with the March of Dimes at the request of ACOG revealed that almost 1/3 of all babies delivered in the United States are electively delivered with 5% of all deliveries in the U.S. delivered in a manner violating ACOG/AAP guidelines. Most of these are for convenience, and result in significant short term neonatal morbidity (neonatal intensive care unit admission rates of 13- 21%) (Clark et al., 2009). According to Glantz (2005), compared to spontaneous labor, elective inductions result in more cesarean births and longer maternal length of stay. The American Academy of Family Physicians (2000) also notes that elective induction doubles the cesarean delivery rate. Repeat elective cesarean births before 39 weeks gestation also result in higher rates of adverse respiratory outcomes, mechanical ventilation, sepsis and hypoglycemia for the newborns (Tita et al., 2009)."
+    0..* EstimatedGestationalAgeAtDeliveryPerformed
+    0..* TimeOfDeliveryPerformed
+    0..* LaborPerformed
+    0..* CornualEctopicPregnancyDiagnosis
+    0..* PerforationOfUterusDiagnosis
+    0..* UterineRuptureDiagnosis
+    0..* UterineWindowDiagnosis
+    0..* ConditionsPossiblyJustifyingElectiveDeliveryPriorTo39WeeksGestationDiagnosis
+    0..* ConditionsPossiblyJustifyingElectiveDeliveryPriorTo39WeeksGestationDiagnoses
+    0..* EncounterInpatientPerformed
+    0..* OxytocinAdministered
+    0..* DinoprostoneAdministered
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* ArtificialRuptureOfMembranesPerformed
+    0..* DeliveryProceduresPerformed
+    0..* TransabdominalCerclagePerformed
+    0..* UterineHornPerformed
+    0..* MetroplastyPerformed
+    0..* CesareanBirthPerformed
+    0..* MedicalInductionOfLaborPerformed
+    0..* ClassicalCesareanBirthPerformed
+    0..* MyomectomyPerformed
+    0..* DeliveryEncounterWithJustifyingConditionsUnion
+    0..* MedicalInductionMedicationUnion
+    0..* MedicalInductionProcedureUnion
+    0..* MedicalInductionWhileNotInLaborUnion
+    0..* HistoryofUterineSurgeryProcedureUnion
+    0..* HistoryofUterineSurgeryDiagnosisUnion
+    0..* Numerator5Union
+
+EntryElement: CMS190v7
+Based on: CmsEcqmComposition
+Description: "Intensive Care Unit Venous Thromboembolism Prophylaxis (VTE-2). Approximately two-thirds of cases of Deep Vein Thrombosis (DVT) or Pulmonary Emboli (PE) are associated with recent hospitalization. This is consistent with the 2001 report by Agency for Healthcare Research and Quality (Shojania, et al., 2001). AHRQ reports that 'the appropriate application of effective preventive measures in hospitals has major potential for improving patient safety, by reducing the incidence of VTE.' Almost all hospitalized patients have at least one risk factor for Venous Thromboembolism (VTE), and approximately 40% have three or more risk factors. Without thromboprophylaxis, the incidence of objectively confirmed, hospital-acquired DVT is approximately 10% to 40% among medical or general surgical patients and 40% to 60% following major orthopedic surgery (Geerts et al., 2008). Commonly, criteria for admission to the Intensive Care Unit (ICU) itself, puts patient's at an increased risk for developing VTE, and subsequent increased risk of morbidity from PE. Some risk factors are related to the acute illness present that allowed for the admission to the ICU unit, and some risk factors may be acquired during the ICU admission due to subsequent medical treatments, for example limitations of mobility, presence of central venous lines or mechanical ventilation and subsequent pharmacological paralysis.  Reports of DVT in the population of ICU patients vary in relation to the acuity of the illness in this population. DVT in ICU patients diagnosed with routine venography or Doppler ultrasound found ranges between 10% to 100%. Five studies prospectively screened patients who were not receiving thromboprophylaxis during their ICU stays. The rates of DVT using Fibrinogen Uptake Test, Doppler Ultrasound or venography ranged from 13 to 31% (Geerts et al., 2008).  It is essential for all ICUs to assess each patient upon admission to the ICU unit, a change in level of status, for the need for VTE prophylaxis due to the above increased development of risk factors (Geerts, et al., 2004). Some select surgeries have previously been monitored in the Surgical Care Improvement Project; since performance on these surgeries has achieved very high levels, they are not included in this measure."
+    0..* RiskForVenousThromboembolismPerformed
+    0..* IntermittentPneumaticCompressionDevicesIPCApplied
+    0..* IntermittentPneumaticCompressionDevicesIPCOrder
+    0..* VenousFootPumpsVFPApplied
+    0..* VenousFootPumpsVFPOrder
+    0..* GraduatedCompressionStockingsGCSApplied
+    0..* GraduatedCompressionStockingsGCSOrder
+    0..* ObstetricsDiagnosis
+    0..* ObstetricsVTEDiagnosis
+    0..* AtrialFibrillationFlutterDiagnosis
+    0..* VenousThromboembolismDiagnosis
+    0..* EmergencyDepartmentVisitPerformed
+    0..* EncounterInpatientPerformed
+    0..* ComfortMeasuresOrder
+    0..* ComfortMeasuresPerformed
+    0..* INRPerformed
+    0..* LowDoseUnfractionatedHeparinForVTEProphylaxisAdministered
+    0..* LowDoseUnfractionatedHeparinForVTEProphylaxisOrder
+    0..* InjectableFactorXaInhibitorForVTEProphylaxisAdministered
+    0..* InjectableFactorXaInhibitorForVTEProphylaxisOrder
+    0..* LowMolecularWeightHeparinForVTEProphylaxisAdministered
+    0..* LowMolecularWeightHeparinForVTEProphylaxisOrder
+    0..* WarfarinAdministered
+    0..* WarfarinOrder
+    0..* GlycoproteinIIbIIIaInhibitorsAdministered
+    0..* DirectThrombinInhibitorAdministered
+    0..* UnfractionatedHeparinAdministered
+    0..* OralFactorXaInhibitorForVTEProphylaxisOrVTETreatmentAdministered
+    0..* IntravenousRoute
+    0..* SubcutaneousRoute
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* GeneralSurgeryPerformed
+    0..* PrincipalOrdinality
+    0..* GynecologicalSurgeryPerformed
+    0..* HipFractureSurgeryPerformed
+    0..* HipReplacementSurgeryPerformed
+    0..* IntracranialNeurosurgeryPerformed
+    0..* KneeReplacementSurgeryPerformed
+    0..* UrologicalSurgeryPerformed
+    0..* GeneralOrNeuraxialAnesthesiaPerformed
+    0..* InterventionComfortMeasuresUnion
+    0..* NoVTEProphylaxisDeviceAppliedorOrderedUnion
+    0..* NoVTEProphylaxisMedicationAdministeredorOrderedUnion
+    0..* SCIPVTESelectedSurgeryUnion
+    0..* VTEProphylaxisbyMedicationAdministeredorDeviceAppliedUnion
+    0..* IsInLowRiskforVtEorOnAnticoagulantUnion
+    0..* LowRiskforVtEorAnticoagulantAdministeredUnion
+    0..* NoVTEProphylaxisDuetoMedicalReasonUnion
+    0..* NoVTEProphylaxisUnion
+    0..* NoVTEProphylaxisMedicationorDeviceDuetoPatientRefusalUnion
+    0..* NoVTEProphylaxisDuetoPatientRefusalUnion
+    0..* VTEProphylaxisReceivedonDayoforDayAfterFirstICUStayorProcedureUnion
+    0..* MedicationOralFactorXaInhibitorAdministeredonDayoforDayAfterFirstICUStayorProcedureUnion
+    0..* EncounterWithPriororPresentDiagnosisofAtrialFibrillationorVte0Union
+    0..* Numerator0Union
+
+EntryElement: CMS26v6
+Based on: CmsEcqmComposition
+Description: "Home Management Plan of Care (HMPC) Document Given to Patient/Caregiver (CAC-3). Asthma is the most common chronic disease in children and a major cause of morbidity and health care costs nationally (Adams, et al, 2001). In 2005, 5.2% of children with asthma had at least one asthma attack in the previous year (3.8 million children). Nearly two of every three children who currently have asthma had at least one attack in the past 12 months. Chronic asthma in children can account for an annual loss of more than 14 million school days per year, according to the Asthma and Allergy Foundation (Asthma Facts and Figures). It is clear from multiple sources of evidence including the National Heart Lung and Blood Institute (NHLBI) Guidelines that actual self-management of asthma by the patient or caregiver leads to more positive outcomes. Appropriate self-management is completely reliant upon patient education. Patient education is more effective when it aims at training self-management skills that will alter behavior (Norris, et al, 2001). NHLBI notes that review of asthma management by expert clinicians is necessary but not sufficient to improve outcomes. Active learning, participating and verbalization of understanding are all strategies that a healthcare organization must incorporate with parents or caregivers of asthmatic children in order for them to understand and make the appropriate changes that can impact the disease in the child in question. Education programs have been effective in improving lung function, feelings of self-esteem, and consequently decreased missed days of school in children and adolescents (Phipatanakul, 2004). Acute hospitalization follow up is imperative to a successful discharge from the hospital, providing the caretaker with the resource information needed to contact the follow up facility, medical office or clinic setting (Schatz, et al, 2009). Environmental control consists of removal of asthma triggers from the environment. Multiple studies support the positive correlation of household maintenance factors such as control of cockroach dust, and the number of acute asthma attacks in asthmatic children (McConnell, et al, 2005 and Eggleston, et al, 2005). Evidence from Carter et al, (2001) supported by the National Institute of Health (NIH) grant found specifically that reduction in triggers such as household conditions i.e. dust mites, cockroach, cats and presence of molds and fungus, resulted in a decrease in acute care visits and an overall positive outcome of children. Rescue action education related to early recognition of symptoms and proper action to control incidence of asthma attacks is noted to have positive outcomes for asthmatic children (Ducharme and Bhogal, 2008)."
+    0..* AsthmaActionPlanCommunicationFromProviderToPatient
+    0..* EncounterInpatientPerformed
+    0..* DischargeToHomeOrPoliceCustodyDischargeDisposition
+    0..* Asthma1PrincipalDiagnosis
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* Numerator3Union
+
+EntryElement: CMS31v7
+Based on: CmsEcqmComposition
+Description: "Hearing Screening Prior To Hospital Discharge (EHDI-1a). Birthing facility staff should review the effectiveness and timeliness of screening relative to nursery discharge. Benchmarks set within the EHCP may trigger hospital or jurisdictional compliance activities, such as re-writing of procedural guidelines or re-training of screening staff."
+    0..* LiveBirthNewbornBornInHospitalDiagnosis
+    0..* LiveBirthNewbornBornInHospitalDiagnoses
+    0..* NewbornHearingScreenLeftPerformed
+    0..* NewbornHearingScreenRightPerformed
+    0..* PassOrReferResult
+    0..* EncounterInpatientPerformed
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* InitialPopulationUnion
+    0..* Numerator1Union
+
+EntryElement: CMS32v8
+Based on: CmsEcqmComposition
+Description: "Median Time from ED Arrival to ED Departure for Discharged ED Patients (ED-3). In recent times, EDs have experienced significant overcrowding. Although once only a problem in large, urban, teaching hospitals, the phenomenon has spread to other suburban and rural healthcare organizations. According to a 2002 national U.S. survey, more than 90 percent of large hospitals report EDs operating 'at' or 'over' capacity. Overcrowding and heavy emergency resource demand have led to a number of problems, including ambulance refusals, prolonged patient waiting times, increased suffering for those who wait, rushed and unpleasant treatment environments, and potentially poor patient outcomes. Approximately one third of hospitals in the U.S. report increases in ambulance diversion in a given year, whereas up to half report crowded conditions in the ED. In a recent national survey, 40 percent of hospital leaders viewed ED crowding as a symptom of workforce shortages. ED crowding may result in delays in the administration of medication such as antibiotics for pneumonia and has been associated with perceptions of compromised emergency care. For patients with non-ST-segment-elevation myocardial infarction, long ED stays were associated with decreased use of guideline-recommended therapies and a higher risk of recurrent myocardial infarction. When EDs are overwhelmed, their ability to respond to community emergencies and disasters may be compromised."
+    0..* ObservationServicesOrder
+    0..* EmergencyDepartmentVisitPerformed
+    0..* EncounterInpatientPerformed
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* MeasurePopulationExclusionsUnion
+
+EntryElement: CMS53v7
+Based on: CmsEcqmComposition
+Description: "Primary PCI Received Within 90 Minutes of Hospital Arrival (AMI-8a). The early use of primary angioplasty in patients with ST-segment myocardial infarction (STEMI) results in a significant reduction in mortality and morbidity. The earlier primary coronary intervention is provided, the more effective it is (Brodie, 1998 and DeLuca, 2004). National guidelines recommend the prompt initiation of PCI in patients presenting with ST-elevation myocardial infarction (O'Gara, 2013; and Levine 2011)."
+    0..* CardiopulmonaryArrestDiagnosis
+    0..* ElectrocardiogramECGPerformed
+    0..* EncounterInpatientPerformed
+    0..* AcuteOrEvolvingMIPrincipalDiagnosis
+    0..* EmergencyDepartmentVisitPerformed
+    0..* FibrinolyticTherapyAdministered
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* PCIPerformed
+    0..* EndotrachealIntubationPerformed
+    0..* AorticBalloonPumpInsertionPerformed
+    0..* VentricularAssistDevicePlacementPerformed
+    0..* ExceptionProceduresUnion
+    0..* DenominatorExceptions0Union
+
+EntryElement: CMS55v7
+Based on: CmsEcqmComposition
+Description: "Median Time from ED Arrival to ED Departure for Admitted ED Patients (ED-1). In recent times, EDs have experienced significant overcrowding. Although once only a problem in large, urban, teaching hospitals, the phenomenon has spread to other suburban and rural healthcare organizations. According to a 2002 national U.S. survey, more than 90% of large hospitals report EDs operating 'at' or 'over' capacity. Approximately one third of hospitals in the US report increases in ambulance diversion in a given year, whereas up to half report crowded conditions in the ED. In a recent national survey, 40% of hospital leaders viewed ED crowding as a symptom of workforce shortages. ED crowding may result in delays in the administration of medication such as antibiotics for pneumonia and has been associated with perceptions of compromised emergency care. For patients with non-ST-segment-elevation myocardial infarction, long ED stays were associated with decreased use of guideline-recommended therapies and a higher risk of recurrent myocardial infarction. Overcrowding and heavy emergency resource demand have led to a number of problems, including ambulance refusals, prolonged patient waiting times, increased suffering for those who wait, rushed and unpleasant treatment environments, and potentially poor patient outcomes. When EDs are overwhelmed, their ability to respond to community emergencies and disasters may be compromised."
+    0..* EmergencyDepartmentVisitPerformed
+    0..* HospitalSettingsAdmissionSource
+    0..* EncounterInpatientPerformed
+    0..* PsychiatricMentalHealthDiagnosisPrincipalDiagnosis
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+
+EntryElement: CMS71v8
+Based on: CmsEcqmComposition
+Description: "Anticoagulation Therapy for Atrial Fibrillation/Flutter (STK-03). Nonvalvular atrial fibrillation (NVAF) is a common arrhythmia and an important risk factor for stroke. It is one of several conditions and lifestyle factors that have been identified as risk factors for stroke. It has been estimated that over 2 million adults in the United States have NVAF. While the median age of patients with atrial fibrillation is 75 years, the incidence increases with advancing age. For example, The Framingham Heart Study noted a dramatic increase in stroke risk associated with atrial fibrillation with advancing age, from 1.5% for those 50 to 59 years of age to 23.5% for those 80 to 89 years of age. Furthermore, a prior stroke or transient ischemic attack (TIA) are among a limited number of predictors of high stroke risk within the population of patients with atrial fibrillation. Therefore, much emphasis has been placed on identifying methods for preventing recurrent ischemic stroke as well as preventing first stroke. Prevention strategies focus on the modifiable risk factors such as hypertension, smoking, and atrial fibrillation. Analysis of five placebo-controlled clinical trials investigating the efficacy of warfarin in the primary prevention of thromboembolic stroke, found the relative risk of thromboembolic stroke was reduced by 68% for atrial fibrillation patients treated with warfarin. The administration of anticoagulation therapy, unless there are contraindications, is an established effective strategy in preventing recurrent stroke in high stroke risk-atrial fibrillation patients with TIA or prior stroke."
+    0..* AtrialFibrillationFlutterDiagnosis
+    0..* AtrialFibrillationFlutterDiagnoses
+    0..* NonElectiveInpatientEncounterPerformed
+    0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
+    0..* DischargedToHomeForHospiceCareDischargeDisposition
+    0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* HemorrhagicStrokePrincipalDiagnosis
+    0..* IschemicStrokePrincipalDiagnosis
+    0..* EmergencyDepartmentVisitPerformed
+    0..* ComfortMeasuresOrder
+    0..* ComfortMeasuresPerformed
+    0..* AnticoagulantTherapyDischarge
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* AtrialAblationPerformed
+    0..* InterventionComfortMeasuresUnion
+    0..* DenominatorUnion
+
+EntryElement: CMS72v7
+Based on: CmsEcqmComposition
+Description: "Antithrombotic Therapy By End of Hospital Day 2 (STK-05). The effectiveness of antithrombotic agents in reducing stroke mortality, stroke-related morbidity and recurrence rates has been studied in several large clinical trials. While the use of these agents for patients with acute ischemic stroke and transient ischemic attacks continues to be the subject of study, substantial evidence is available from completed studies. Data at this time suggest that antithrombotic therapy should be administered within 2 days of symptom onset in acute ischemic stroke patients to reduce stroke mortality and morbidity as long as no contraindications exist. Anticoagulants at doses to prevent venous thromboembolism are insufficient antithrombotic therapy to prevent recurrent ischemic stroke or TIA."
+    0..* NonElectiveInpatientEncounterPerformed
+    0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
+    0..* DischargedToHomeForHospiceCareDischargeDisposition
+    0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* HemorrhagicStrokePrincipalDiagnosis
+    0..* IschemicStrokePrincipalDiagnosis
+    0..* EmergencyDepartmentVisitPerformed
+    0..* ComfortMeasuresOrder
+    0..* ComfortMeasuresPerformed
+    0..* AntithromboticTherapyAdministered
+    0..* AntithromboticTherapyOrder
+    0..* ThrombolytictPATherapyAdministered
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* IntravenousOrIntraArterialThrombolytictPATherapyPerformed
+    0..* ThrombolyticTherapyMedicationorProceduresUnion
+    0..* DenominatorExclusions2Union
+    0..* NoAntithromboticOrderedUnion
+    0..* InterventionComfortMeasuresUnion
+
+EntryElement: CMS9v7
+Based on: CmsEcqmComposition
+Description: "Exclusive Breast Milk Feeding (PC-05). Exclusive breast milk feeding for the first 6 months of neonatal life has long been the expressed goal of World Health Organization (WHO), Department of Health and Human Services (DHHS), American Academy of Pediatrics (AAP) and American College of Obstetricians and Gynecologists (ACOG). ACOG has recently reiterated its position (ACOG, 2007). A recent Cochrane review substantiates the benefits (Kramer et al., 2002). Much evidence has now focused on the prenatal and intrapartum period as critical for the success of exclusive (or any) BF (Centers for Disease Control and Prevention [CDC], 2007; Petrova et al., 2007; Shealy et al., 2005; Taveras et al., 2004). Exclusive breast milk feeding rate during birth hospital stay has been calculated by the California Department of Public Health for the last several years using newborn genetic disease testing data. Healthy People 2010 and the CDC have also been active in promoting this goal."
+    0..* EstimatedGestationalAgeAtBirthPerformed
+    0..* SingleLiveBornNewbornBornInHospitalDiagnosis
+    0..* SingleLiveBornNewbornBornInHospitalDiagnoses
+    0..* GalactosemiaDiagnosis
+    0..* GalactosemiaDiagnoses
+    0..* EncounterInpatientPerformed
+    0..* PatientExpiredDischargeDisposition
+    0..* DischargeToAcuteCareFacilityDischargeDisposition
+    0..* NeonatalIntensiveCareUnitNICUFacilityLocations
+    0..* EthnicityPatientCharacteristicEthnicity
+    0..* ONCAdministrativeSexPatientCharacteristicSex
+    0..* PayerPatientCharacteristicPayer
+    0..* RacePatientCharacteristicRace
+    0..* ParenteralNutritionPerformed
+    0..* DietaryIntakeOtherThanBreastMilkAdministered
+    0..* BreastMilkAdministered
+    0..* SingleLiveBirthEncounterUnion

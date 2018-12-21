@@ -176,7 +176,7 @@ Description: "Intervention represents a course of action intended to achieve a r
 
 EntryElement: InterventionOrder
 Based on: Activity
-Description: "Data elements that meet criteria using this datatype should document a request to perform the intervention indicated by the QDM category and its corresponding value set. Timing: The time the order is signed; Author dateTime"
+Description: "Data elements that meet criteria using this datatype should document a request to perform the intervention indicated by the QDM category and its corresponding value set. Timing: The time the order is signed; Author dateTime."
     Subject value is type Intervention
     0..1   AuthorDatetime
     0..1   Reason
@@ -184,7 +184,7 @@ Description: "Data elements that meet criteria using this datatype should docume
 
 EntryElement: InterventionPerformed
 Based on: Activity
-Description: "Data elements that meet criteria using this datatype should document the completion of the intervention indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – The time the intervention begins stopTime – The time the intervention ends NOTE - timing refers to a single instance of an intervention. If a measure seeks to evaluate multiple interventions over a period of time, the measure developer should use CQL logic to represent the query request."
+Description: "Data elements that meet criteria using this datatype should document the completion of the intervention indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – The time the intervention begins. stopTime – The time the intervention ends. NOTE - timing refers to a single instance of an intervention. If a measure seeks to evaluate multiple interventions over a period of time, the measure developer should use CQL logic to represent the query request."
     Subject value is type Intervention
     0..1   AuthorDatetime
     0..1   RelevantPeriod
@@ -241,7 +241,6 @@ EntryElement: MedicationAdministered
 Based on: Activity
 Description: "Data elements that meet criteria using this datatype should document that the medication indicated by the QDM category and its corresponding value set was actually administered to the patient. Timing: The Relevant Period addresses: startTime = when a single medication administration event starts (e.g., the initiation of an intravenous infusion, or administering a pill or IM injection to a patient); stopTime = when a single medication administration event ends (e.g., the end time of the intravenous infusion, or the administration of a pill or IM injection is completed - for pills and IM injections, the start and stop times are the same). NOTE – Measure developers should address multiple administrations over a period of time using CQL logic."
     Subject value is type Medication
-    0..1   AuthorDatetime
     0..1   RelevantPeriod
     0..1   Dosage
     0..1   Supply
@@ -254,7 +253,6 @@ EntryElement: MedicationDischarge
 Based on: Activity
 Description: "Data elements that meet criteria using this datatype should document that the medications indicated by the QDM category and its corresponding value set should be taken by or given to the patient after being discharged from an inpatient encounter. Timing: The time the discharge medication list on the discharge instruction form is authored."
     Subject value is type Medication
-    0..1   AuthorDatetime
     0..1   Refills
     0..1   Dosage
     0..1   Supply
@@ -266,7 +264,6 @@ EntryElement: MedicationDispensed
 Based on: Observation
 Description: "Data elements that meet criteria using this datatype should document that a prescription for the medication indicated by the QDM category and its corresponding value set has been dispensed and provided to the patient or patient proxy. In the ambulatory setting, medications are primarily taken directly by patients and not directly observed. Hence, dispensed, or fulfillment, information is the closest health provider documentation of medication compliance. In settings where patients attest to taking medications in electronic format (perhaps a Personal Health Record), patient attestation of medication taken may be available. The QDM datatype, Medication, Administered addresses medication taken; to address the source of the information, a measure addressing such patient attestation would require use of the dataflow attribute, source. Timing: The time the medication dispensing event occurs; the Author dateTime. Timing: The Relevant Period addresses: startTime = when the first administration of the medication is expected. If not specified. the startTime defaults to the Author dateTime (the time the medication dispensing event occurs). stopTime = when the medication supply provided by the dispensing event is expected to be completed. Note that when calculating cumulative medication duration, the medication dispensed stopTime may be present directly in the fulfillment record. If the stopTime is not available, the duration in days is the difference between the Relevant Period start and stop times. The record may indicate which of the available refills the fulfillment represents but each dispensing event is unique. Therefore, the measure developer should use CQL logic to address multiple dispensing events over a period of time."
     Subject value is type Patient
-    0..1   AuthorDatetime
     0..1   RelevantPeriod
     0..1   Refills
     0..1   Dosage
@@ -279,7 +276,6 @@ EntryElement: MedicationOrder
 Based on: Activity
 Description: "Data elements that meet criteria using this datatype should document a request to a pharmacy to provide the medication indicated by the QDM category and its corresponding value set. Timing: The Author dateTime is the time the order is signed. Timing: The Relevant Period addresses: startTime = when the first administration of the medication is expected. The first administration may be expected at the time of the order or at a specified future date (i.e., the active time for the order); such information should be identified in the medication order. If the startTime is not specified in the order, the startTime defaults to the Author dateTime (the time the order is signed). stopTime = when the medication supply provided by the medication order is expected to be completed, including all fulfillments covered by the number of refills. Note that when calculating cumulative medication duration, the stopTime may be present directly in the medication order. If the stopTime is not available, the duration in days is the difference between the Relevant Period start and stop times multiplied by (1 + the number of refills)."
     Subject value is type Medication
-    0..1   ActiveDatetime
     0..1   RelevantPeriod
     0..1   AuthorDatetime
     0..1   Refills
@@ -296,14 +292,14 @@ Based on: Observation
 Description: "Data elements that meet criteria using this datatype should document that the patient has one or more of the ethnicities indicated by the QDM category and its corresponding value set. Timing: Ethnicity does not have a specific timing. Measures using Patient Characteristic, Ethnicity should address the most recent entry in the clinical record."
     Subject value is type Patient
 
-EntryElement: PatientCharacteristicGender
+EntryElement: PatientCharacteristicSex
 Based on: Observation
 Description: "Data elements that meet criteria using this datatype should document that the patient's sex matches the QDM category and its corresponding value set. Timing: Birth (administrative) sex does not have a specific timing."
     Subject value is type Patient
 
 EntryElement: PatientCharacteristicPayer
 Based on: Observation
-Description: "Data elements that meet criteria using this datatype should document that the patient has one or more of the payers indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – The first day of insurance coverage with the referenced payer stopTime – The last day of insurance coverage with the referenced payer"
+Description: "Data elements that meet criteria using this datatype should document that the patient has one or more of the payers indicated by the QDM category and its corresponding value set. Timing: The Relevant Period addresses: startTime – The first day of insurance coverage with the referenced payer stopTime – The last day of insurance coverage with the referenced payer."
     Subject value is type Patient
     0..1   RelevantPeriod
 
