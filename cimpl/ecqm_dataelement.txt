@@ -7611,12 +7611,12 @@ ObservableCode from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.
 
 EntryElement: RiskForVenousThromboembolism
 Based on: Assessment
-Description: " -- ObservableCode constrained to 'Risk for venous thromboembolism' LOINC code"
+Description: "(Clinical Focus: This set of values identify a tool used to assess the amount of risk that a patient has to develop a VTE.),(Data Element Scope: The intent of this data element is to identify patients who have an assessment of their risk to develop a VTE. Using the Quality Data Model, this particular element will map to the Risk Category Assessment category with a result attribute.),(Inclusion Criteria: Only use codes which represent a risk assessment tool used to assess a patient's risk to develop a VTE. Codes used are to be LOINC only.),(Exclusion Criteria: Exclude any codes which are not LOINC or which are LOINC, but which do not represent a risk assessment tool used to assess a patient's risk to develop a VTE.) -- ObservableCode constrained to 'Risk for venous thromboembolism' LOINC code"
 ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/72136-5/info
 
 EntryElement: RiskForVenousThromboembolismPerformed
 Based on: AssessmentPerformed
-Description: " -- Subject constrained to the Risk for venous thromboembolism"
+Description: "(Clinical Focus: This set of values identify a tool used to assess the amount of risk that a patient has to develop a VTE.),(Data Element Scope: The intent of this data element is to identify patients who have an assessment of their risk to develop a VTE. Using the Quality Data Model, this particular element will map to the Risk Category Assessment category with a result attribute.),(Inclusion Criteria: Only use codes which represent a risk assessment tool used to assess a patient's risk to develop a VTE. Codes used are to be LOINC only.),(Exclusion Criteria: Exclude any codes which are not LOINC or which are LOINC, but which do not represent a risk assessment tool used to assess a patient's risk to develop a VTE.) -- Subject constrained to the Risk for venous thromboembolism"
 Subject value is type RiskForVenousThromboembolism
 
 EntryElement: RotavirusVaccine3DoseSchedule
