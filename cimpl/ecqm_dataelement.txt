@@ -7316,7 +7316,7 @@ Subject value is type PsychVisitPsychotherapy
 
 EntryElement: PsychiatricMentalHealthDiagnosisPrincipalDiagnosis
 Based on: PrincipalDiagnosis
-Description: "(Clinical Focus: This grouping value set identifies diagnoses that are commonly used in the inpatient setting for psychiatric and mental health disorders.),(Data Element Scope: The intent of this data element is to identify patients who have an active diagnosis for a psychiatric or mental health disorder. Using the Quality Data Model, this value set is used with \"Principal Diagnosis\"  attribute of the \"Encounter\" category.),(Inclusion Criteria: Include codes representing a principal diagnosis of a psychiatric or mental health disorder. This value set includes ICD-10-CM and SNOMED CT codes.),(Exclusion Criteria: None.)"
+Description: "(Clinical Focus: This grouping value set identifies diagnoses that are commonly used in the inpatient setting for psychiatric and mental health disorders.),(Data Element Scope: The intent of this data element is to identify patients who have an active diagnosis for a psychiatric or mental health disorder. Using the Quality Data Model, this value set is used with 'Principal Diagnosis'  attribute of the 'Encounter' category.),(Inclusion Criteria: Include codes representing a principal diagnosis of a psychiatric or mental health disorder. This value set includes ICD-10-CM and SNOMED CT codes.),(Exclusion Criteria: None.)"
 ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.117.1.7.1.299/expansion
 
 EntryElement: Psychoanalysis
