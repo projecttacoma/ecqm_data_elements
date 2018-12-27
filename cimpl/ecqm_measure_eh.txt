@@ -92,12 +92,7 @@ Description: "Stroke Education (STK-08). There are many examples of how patient 
     0..* WarningSignsAndSymptomsEducationCommunicationFromProviderToPatient
     0..* PatientRefusalNegationRationale
     0..* NonElectiveInpatientEncounterPerformed
-    0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
-    0..* DischargedToHomeForHospiceCareDischargeDisposition
-    0..* LeftAgainstMedicalAdviceDischargeDisposition
-    0..* PatientExpiredDischargeDisposition
     0..* DischargeToHomeOrPoliceCustodyDischargeDisposition
-    0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
     0..* EmergencyDepartmentVisitPerformed
@@ -394,11 +389,6 @@ EntryElement: CMS72v7
 Based on: CmsEcqmComposition
 Description: "Antithrombotic Therapy By End of Hospital Day 2 (STK-05). The effectiveness of antithrombotic agents in reducing stroke mortality, stroke-related morbidity and recurrence rates has been studied in several large clinical trials. While the use of these agents for patients with acute ischemic stroke and transient ischemic attacks continues to be the subject of study, substantial evidence is available from completed studies. Data at this time suggest that antithrombotic therapy should be administered within 2 days of symptom onset in acute ischemic stroke patients to reduce stroke mortality and morbidity as long as no contraindications exist. Anticoagulants at doses to prevent venous thromboembolism are insufficient antithrombotic therapy to prevent recurrent ischemic stroke or TIA."
     0..* NonElectiveInpatientEncounterPerformed
-    0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
-    0..* DischargedToHomeForHospiceCareDischargeDisposition
-    0..* LeftAgainstMedicalAdviceDischargeDisposition
-    0..* PatientExpiredDischargeDisposition
-    0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
     0..* EmergencyDepartmentVisitPerformed
