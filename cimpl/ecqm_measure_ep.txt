@@ -478,6 +478,9 @@ Description: "Heart Failure (HF): Angiotensin-Converting Enzyme (ACE) Inhibitor 
     0..* PatientProviderInteractionPerformed
     0..* ACEInhibitorOrARBActive
     0..* ACEInhibitorOrARBOrder
+    0..* MedicalReason1NegationRationale
+    0..* PatientReasonNegationRationale
+    0..* SystemReasonNegationRationale
     0..* EthnicityPatientCharacteristicEthnicity
     0..* ONCAdministrativeSexPatientCharacteristicSex
     0..* PayerPatientCharacteristicPayer
@@ -553,6 +556,7 @@ Description: "Initiation and Engagement of Alcohol and Other Drug Dependence Tre
 EntryElement: CMS138v7
 Based on: CmsEcqmComposition
 Description: "Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention. This measure is intended to promote adult tobacco screening and tobacco cessation interventions for those who use tobacco products. There is good evidence that tobacco screening and brief cessation intervention (including counseling and/or pharmacotherapy) is successful in helping tobacco users quit. Tobacco users who are able to stop using tobacco lower their risk for heart disease, lung disease, and stroke."
+    0..* MedicalReason1NegationRationale
     0..* LimitedLifeExpectancyDiagnosis
     0..* OfficeVisit1Performed
     0..* HomeHealthcareServicesPerformed
@@ -616,6 +620,8 @@ Description: "Diabetic Retinopathy: Communication with the Physician Managing On
     0..* LevelOfSeverityOfRetinopathyFindingsCommunicationFromProviderToProvider
     0..* MacularEdemaFindingsAbsentCommunicationFromProviderToProvider
     0..* MacularEdemaFindingsPresentCommunicationFromProviderToProvider
+    0..* MedicalReason1NegationRationale
+    0..* PatientReasonNegationRationale
     0..* DiabeticRetinopathyDiagnosis
     0..* MacularExamPerformed
     0..* OfficeVisit1Performed
@@ -634,6 +640,7 @@ Description: "Primary Open-Angle Glaucoma (POAG): Optic Nerve Evaluation. Change
     0..* PrimaryOpenAngleGlaucomaDiagnosis
     0..* CupToDiscRatioPerformed
     0..* OpticDiscExamForStructuralAbnormalitiesPerformed
+    0..* MedicalReason1NegationRationale
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
     0..* NursingFacilityVisitPerformed
@@ -673,6 +680,9 @@ Description: "Heart Failure (HF): Beta-Blocker Therapy for Left Ventricular Syst
     0..* PatientProviderInteractionPerformed
     0..* BetaBlockerTherapyForLVSDActive
     0..* BetaBlockerTherapyForLVSDOrder
+    0..* MedicalReason1NegationRationale
+    0..* PatientReasonNegationRationale
+    0..* SystemReasonNegationRationale
     0..* EthnicityPatientCharacteristicEthnicity
     0..* ONCAdministrativeSexPatientCharacteristicSex
     0..* PayerPatientCharacteristicPayer
@@ -711,6 +721,9 @@ Description: "Coronary Artery Disease (CAD): Beta-Blocker Therapy-Prior Myocardi
     0..* BetaBlockerTherapyOrder
     0..* BetaBlockerTherapyForLVSDActive
     0..* BetaBlockerTherapyForLVSDOrder
+    0..* MedicalReason1NegationRationale
+    0..* PatientReasonNegationRationale
+    0..* SystemReasonNegationRationale
     0..* EthnicityPatientCharacteristicEthnicity
     0..* ONCAdministrativeSexPatientCharacteristicSex
     0..* PayerPatientCharacteristicPayer
@@ -787,6 +800,7 @@ EntryElement: CMS149v7
 Based on: CmsEcqmComposition
 Description: "Dementia: Cognitive Assessment. Dementia is often characterized by the gradual onset and continuing cognitive decline in one or more domains including memory, executive function, language, judgment, and spatial abilities. (APA, 2007) Cognitive deterioration represents a major source of morbidity and mortality and poses a significant burden on affected individuals and their caregivers. (NIH, 2010) Although cognitive deterioration follows a different course depending on the type of dementia, significant rates of decline have been reported. For example, one study found that the annual rate of decline for Alzheimer's disease patients was more than four times that of older adults with no cognitive impairment. (Wilson et al., 2010) Nevertheless, measurable cognitive abilities remain throughout the course of dementia. (APA, 2007) Initial and ongoing assessments of cognition are fundamental to the proper management of patients with dementia. These assessments serve as the basis for identifying treatment goals, developing a treatment plan, monitoring the effects of treatment, and modifying treatment as appropriate."
     0..* StandardizedToolsForAssessmentOfCognitionPerformed
+    0..* PatientReasonNegationRationale
     0..* DementiaMentalDegenerationsDiagnosis
     0..* OfficeVisit1Performed
     0..* OutpatientConsultationPerformed
@@ -1424,6 +1438,7 @@ Description: "Bone density evaluation for patients with prostate cancer and rece
     0..* ProstateCancerDiagnosis
     0..* DEXADualEnergyXrayAbsorptiometryBoneDensityForUrologyCareOrder
     0..* DEXADualEnergyXrayAbsorptiometryBoneDensityForUrologyCarePerformed
+    0..* PatientReasonRefusedNegationRationale
     0..* OfficeVisit1Performed
     0..* AndrogenDeprivationTherapyForUrologyCareActive
     0..* EthnicityPatientCharacteristicEthnicity
