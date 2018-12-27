@@ -11,6 +11,8 @@ Description: "Assessed for Rehabilitation (STK-10). Each year about 700,000 peop
     0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
     0..* DischargedToHomeForHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* PatientExpiredDischargeDisposition
+    0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
     0..* EmergencyDepartmentVisitPerformed
@@ -37,12 +39,16 @@ Description: "Discharged on Antithrombotic Therapy (STK-02). The effectiveness o
     0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
     0..* DischargedToHomeForHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* PatientExpiredDischargeDisposition
+    0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
     0..* EmergencyDepartmentVisitPerformed
     0..* ComfortMeasuresOrder
     0..* ComfortMeasuresPerformed
     0..* AntithromboticTherapyDischarge
+    0..* MedicalReasonNegationRationale
+    0..* PatientRefusalNegationRationale
     0..* EthnicityPatientCharacteristicEthnicity
     0..* ONCAdministrativeSexPatientCharacteristicSex
     0..* PayerPatientCharacteristicPayer
@@ -57,6 +63,8 @@ Description: "Discharged on Statin Medication (STK-06). There is an extensive an
     0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
     0..* DischargedToHomeForHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* PatientExpiredDischargeDisposition
+    0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
     0..* EmergencyDepartmentVisitPerformed
@@ -64,6 +72,8 @@ Description: "Discharged on Statin Medication (STK-06). There is an extensive an
     0..* ComfortMeasuresPerformed
     0..* LDLCPerformed
     0..* StatinGrouperDischarge
+    0..* MedicalReasonNegationRationale
+    0..* PatientRefusalNegationRationale
     0..* EthnicityPatientCharacteristicEthnicity
     0..* ONCAdministrativeSexPatientCharacteristicSex
     0..* PayerPatientCharacteristicPayer
@@ -80,10 +90,14 @@ Description: "Stroke Education (STK-08). There are many examples of how patient 
     0..* PrescribedMedicationsEducationCommunicationFromProviderToPatient
     0..* RiskFactorsEducationCommunicationFromProviderToPatient
     0..* WarningSignsAndSymptomsEducationCommunicationFromProviderToPatient
+    0..* PatientRefusalNegationRationale
     0..* NonElectiveInpatientEncounterPerformed
     0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
     0..* DischargedToHomeForHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* PatientExpiredDischargeDisposition
+    0..* DischargeToHomeOrPoliceCustodyDischargeDisposition
+    0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
     0..* EmergencyDepartmentVisitPerformed
@@ -106,6 +120,8 @@ Description: "Venous Thromboembolism Prophylaxis (VTE-1). Hospitalized patients 
     0..* VenousFootPumpsVFPOrder
     0..* GraduatedCompressionStockingsGCSApplied
     0..* GraduatedCompressionStockingsGCSOrder
+    0..* MedicalReasonNegationRationale
+    0..* PatientRefusalNegationRationale
     0..* ObstetricsDiagnosis
     0..* ObstetricsVTEDiagnosis
     0..* AtrialFibrillationFlutterDiagnosis
@@ -218,6 +234,8 @@ Description: "Intensive Care Unit Venous Thromboembolism Prophylaxis (VTE-2). Ap
     0..* VenousFootPumpsVFPOrder
     0..* GraduatedCompressionStockingsGCSApplied
     0..* GraduatedCompressionStockingsGCSOrder
+    0..* MedicalReasonNegationRationale
+    0..* PatientRefusalNegationRationale
     0..* ObstetricsDiagnosis
     0..* ObstetricsVTEDiagnosis
     0..* AtrialFibrillationFlutterDiagnosis
@@ -304,6 +322,8 @@ Based on: CmsEcqmComposition
 Description: "Median Time from ED Arrival to ED Departure for Discharged ED Patients (ED-3). In recent times, EDs have experienced significant overcrowding. Although once only a problem in large, urban, teaching hospitals, the phenomenon has spread to other suburban and rural healthcare organizations. According to a 2002 national U.S. survey, more than 90 percent of large hospitals report EDs operating 'at' or 'over' capacity. Overcrowding and heavy emergency resource demand have led to a number of problems, including ambulance refusals, prolonged patient waiting times, increased suffering for those who wait, rushed and unpleasant treatment environments, and potentially poor patient outcomes. Approximately one third of hospitals in the U.S. report increases in ambulance diversion in a given year, whereas up to half report crowded conditions in the ED. In a recent national survey, 40 percent of hospital leaders viewed ED crowding as a symptom of workforce shortages. ED crowding may result in delays in the administration of medication such as antibiotics for pneumonia and has been associated with perceptions of compromised emergency care. For patients with non-ST-segment-elevation myocardial infarction, long ED stays were associated with decreased use of guideline-recommended therapies and a higher risk of recurrent myocardial infarction. When EDs are overwhelmed, their ability to respond to community emergencies and disasters may be compromised."
     0..* ObservationServicesOrder
     0..* EmergencyDepartmentVisitPerformed
+    0..* DischargeToAcuteCareFacilityDischargeDisposition
+    0..* PsychiatricMentalHealthDiagnosisPrincipalDiagnosis
     0..* EncounterInpatientPerformed
     0..* EthnicityPatientCharacteristicEthnicity
     0..* ONCAdministrativeSexPatientCharacteristicSex
@@ -352,12 +372,16 @@ Description: "Anticoagulation Therapy for Atrial Fibrillation/Flutter (STK-03). 
     0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
     0..* DischargedToHomeForHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* PatientExpiredDischargeDisposition
+    0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
     0..* EmergencyDepartmentVisitPerformed
     0..* ComfortMeasuresOrder
     0..* ComfortMeasuresPerformed
     0..* AnticoagulantTherapyDischarge
+    0..* MedicalReasonNegationRationale
+    0..* PatientRefusalNegationRationale
     0..* EthnicityPatientCharacteristicEthnicity
     0..* ONCAdministrativeSexPatientCharacteristicSex
     0..* PayerPatientCharacteristicPayer
@@ -373,6 +397,8 @@ Description: "Antithrombotic Therapy By End of Hospital Day 2 (STK-05). The effe
     0..* DischargedToHealthCareFacilityForHospiceCareDischargeDisposition
     0..* DischargedToHomeForHospiceCareDischargeDisposition
     0..* LeftAgainstMedicalAdviceDischargeDisposition
+    0..* PatientExpiredDischargeDisposition
+    0..* DischargeToAcuteCareFacilityDischargeDisposition
     0..* HemorrhagicStrokePrincipalDiagnosis
     0..* IschemicStrokePrincipalDiagnosis
     0..* EmergencyDepartmentVisitPerformed
@@ -380,6 +406,8 @@ Description: "Antithrombotic Therapy By End of Hospital Day 2 (STK-05). The effe
     0..* ComfortMeasuresPerformed
     0..* AntithromboticTherapyAdministered
     0..* AntithromboticTherapyOrder
+    0..* MedicalReasonNegationRationale
+    0..* PatientRefusalNegationRationale
     0..* ThrombolytictPATherapyAdministered
     0..* EthnicityPatientCharacteristicEthnicity
     0..* ONCAdministrativeSexPatientCharacteristicSex
