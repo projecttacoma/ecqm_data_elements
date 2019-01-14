@@ -15,7 +15,7 @@ ResultValue value is type CodeableConcept
 
 Element:     AnatomicalApproachSite
 Based on:	 Observation
-Description: "The anatomical site or structure where the diagnosis/problem manifests itself (a). The anatomical site or structure that is the focus of the action represented by the datatype (b)."
+Description: "The anatomical site or structure through which the action represented by the datatype reaches, or should reach, its target."
 ResultValue value is type CodeableConcept
 
 Element:     AnatomicalLocationSite
