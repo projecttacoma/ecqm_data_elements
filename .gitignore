@@ -2,3 +2,4 @@
 /.project
 /out*
 /.settings
+**/.DS_Store
