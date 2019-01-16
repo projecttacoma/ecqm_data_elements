@@ -5,7 +5,7 @@ Uses: shr.core, shr.base, shr.entity, qdm.attribute
 
 EntryElement: AdverseEvent
 Based on: Observation
-Description: "Adverse Event is used to define any untoward medical occurrence associated with the clinical care delivery, whether or not considered drug related."
+Description: "Data elements that meet criteria using this datatype should document the Adverse Event and its corresponding value set."
     Subject value is type Patient
     0..1   AuthorDatetime
     0..1   RelevantPeriod
@@ -89,7 +89,8 @@ Description: "Data elements that meet criteria using this datatype should docume
 
 EntryElement: Diagnosis
 Based on: Observation
-Description: "Condition/Diagnosis/Problem represents a practitioner’s identification of a patient’s disease, illness, injury, or condition. This category contains a single datatype to represent all of these concepts: Diagnosis. A practitioner determines the diagnosis by means of examination, diagnostic test results, patient history, and/or family history. Diagnoses are usually considered unfavorable, but may also represent neutral or favorable conditions that affect a patient’s plan of care (e.g., pregnancy). The QDM does not prescribe the source of diagnosis data in the EHR. Diagnoses may be found in a patient’s problem list, encounter diagnosis list, claims data, or other sources within the EHR. The preferred terminology for diagnoses is SNOMED CT, but diagnoses may also be encoded using ICD-9/10. The Diagnosis datatype should not be used for differential diagnoses or rule-out diagnoses (neither of which are currently supported by the QDM)."
+Description: "Data elements that meet criteria using this datatype should document the Condition/Diagnosis/Problem and its corresponding value set. The onset dateTime corresponds to the implicit start dateTime of the datatype and the abatement dateTime corresponds to the implicit stop dateTime of the datatype. If the abatement dateTime is not present, then the diagnosis is considered to still be active. When this datatype is used with timing relationships, the criterion is looking for an active diagnosis for the time frame indicated by the timing relationships.  
+Timing: The Prevalence Period references the time from the onset date to the abatement date."
     Subject value is type Patient
     0..1   AuthorDatetime
     0..1   PrevalencePeriod
