@@ -3585,7 +3585,9 @@ ResultValue from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.146
 
 EntryElement: GleasonScoreInSpecimenQualitative
 Based on: LaboratoryTest
-Description: " -- ObservableCode constrained to 'Gleason score in Specimen Qualitative' LOINC code"
+Description: "(Clinical Focus: This direct reference code captures a qualitative Gleason score.),(Data Element Scope: This code may use QDM category Laboratory Test.),(Inclusion Criteria:  Includes 
+'Gleason score in Specimen Qualitative' LOINC code.
+),(Exclusion Criteria: No exclusions.) -- ObservableCode constrained to 'Gleason score in Specimen Qualitative' LOINC code"
 ObservableCode from https://vsac.nlm.nih.gov/context/cs/codesystem/LOINC/version/2.63/code/35266-6/info
 
 EntryElement: GleasonScoreInSpecimenQualitativePerformed
@@ -7942,7 +7944,7 @@ Subject value is type SuicideRiskAssessment
 
 EntryElement: SuicideRiskAssessmentProcedure
 Based on: Intervention
-Description: " -- ActivityCode constrained to 'Suicide risk assessment (procedure)' SNOMED CT code"
+Description: "(Clinical Focus: This direct reference code captures the completion of a suicide risk assessment.),(Data Element Scope: This code may use QDM category Intervention.),(Inclusion Criteria: Includes 'Suicide risk assessment (procedure)' SNOMED CT code.),(Exclusion Criteria: Does not include concepts for completing a suicide risk assessment using standardized tools.) -- ActivityCode constrained to 'Suicide risk assessment (procedure)' SNOMED CT code"
 ActivityCode from https://vsac.nlm.nih.gov/context/cs/codesystem/SNOMEDCT/version/2017-09/code/225337009/info
 
 EntryElement: SuicideRiskAssessmentProcedurePerformed
